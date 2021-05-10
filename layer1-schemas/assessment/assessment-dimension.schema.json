@@ -18,5 +18,10 @@
       }
     }
   ],
-  "required": ["name"]
+  "required": [
+    "name"
+  ],
+  "x-tags": [
+    "assessment"
+  ]
 }

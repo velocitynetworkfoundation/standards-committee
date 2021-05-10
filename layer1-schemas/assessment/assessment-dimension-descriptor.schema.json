@@ -26,5 +26,8 @@
         }
       }
     }
+  ],
+  "x-tags": [
+    "assessment"
   ]
 }
