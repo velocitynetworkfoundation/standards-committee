@@ -1,0 +1,120 @@
+{
+  "$schema": "http://json-schema.org/draft-07/schema#",
+  "description": "Badge",
+  "$id": "badge",
+  "type": "object",
+  "definitions": {
+    "obiProfile": {
+      "type": "object",
+      "properties": {
+        "id": {
+          "type": "string",
+          "format": "uri",
+          "description": "https://example.com/profiles/alice"
+        },
+        "type": {
+          "type": "string",
+          "enum": [
+            "Profile",
+            "Issuer"
+          ]
+        },
+        "name": {
+          "type": "string",
+          "description": "Example Issuer"
+        },
+        "url": {
+          "type": "string",
+          "format": "uri",
+          "description": "http://example.com"
+        },
+        "email": {
+          "type": "string",
+          "format": "email",
+          "description": "test@example.com"
+        },
+        "image": {
+          "type": "string",
+          "format": "uri"
+        }
+      },
+      "required": [
+        "id",
+        "type"
+      ],
+      "additionalProperties": false
+    }
+  },
+  "additionalProperties": false,
+  "properties": {
+    "hasCredential": {
+      "type": "object",
+      "required": [
+        "type",
+        "name",
+        "description",
+        "image",
+        "criteria",
+        "issuer"
+      ],
+      "properties": {
+        "id": {
+          "type": "string",
+          "format": "uri"
+        },
+        "type": {
+          "type": "string",
+          "enum": [
+            "BadgeClass"
+          ]
+        },
+        "name": {
+          "type": "string",
+          "pattern": "^[a-zA-Z0-9\\s]*$",
+          "maxLength": 64
+        },
+        "description": {
+          "type": "string",
+          "pattern": "^[a-zA-Z0-9\\s]*$",
+          "maxLength": 64
+        },
+        "image": {
+          "type": "string",
+          "format": "uri"
+        },
+        "criteria": {
+          "type": "string",
+          "description": "https://example.org/robotics-badge.html",
+          "pattern": "^[a-zA-Z0-9\\s]*$",
+          "maxLength": 64
+        },
+        "issuer": {
+          "oneOf": [
+            {
+              "type": "string",
+              "format": "uri"
+            },
+            {
+              "$ref": "#/definitions/obiProfile"
+            }
+          ]
+        },
+        "tags": {
+          "type": "array",
+          "items": {
+            "type": "string"
+          }
+        },
+        "alignment": {
+          "type": "array",
+          "items": {
+            "$ref": "../subtypes/alignment.schema.json"
+          }
+        }
+      }
+    }
+  },
+  "required": [
+    "hasCredential"
+  ]
+}

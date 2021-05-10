@@ -1,0 +1,96 @@
+{
+  "title": "course-completion",
+  "$id": "https://velocitynetwork.foundation/schemas/course-completion",
+  "allOf": [
+    {
+      "$ref": "./course-descriptor.schema.json"
+    },
+    {
+      "type": "object",
+      "properties": {
+        "grade": {
+          "$ref": "../subtypes/score.schema.json"
+        },
+        "registrationDate": {
+          "$ref": "../subtypes/date.schema.json"
+        },
+        "startDate": {
+          "$ref": "../subtypes/date.schema.json"
+        },
+        "completionDate": {
+          "$ref": "../subtypes/date.schema.json"
+        }
+      }
+    }
+  ],
+  "required": [
+    "provider",
+    "title",
+    "completionDate"
+  ],
+  "x-examples": {
+    "Uni Of Chicago": {
+      "@context": "https://velocitynetwork.foundation/contexts/course",
+      "provider": {
+        "name": "The University of Chicago",
+        "identifier": "did:ion:EiClkZMDxPKqC9c-umQfTkR8vvZ9JPhl_xLDI9Nfk38w5w",
+        "place": {
+          "addressLocality": "Chicago",
+          "addressRegion": "IL",
+          "addressCountry": "US"
+        }
+      },
+      "title": "Introduction to Philosophy of Education",
+      "courseCode": "0618.1032.01",
+      "description": "The concept of education had a key role in philosophy since Ancient Greece . Moreover, pholosophical method is used by maky thinkers to clarify the concept of education and related concepts. The course will serve as an introduction to key writings in the philosophy of education from Plato to Ranciere.",
+      "courseMode": "Lecture",
+      "duration": "PT56H",
+      "registrationDate": "2020-05-01",
+      "startDate": "2020-10-01",
+      "completionDate": "2020-12-20",
+      "grade": {
+        "method": {
+          "description": "GPA",
+          "passingScore": "0.7"
+        },
+        "scoreValue": "3.8",
+        "passFail": "Pass"
+      }
+    },
+    "Separate Content Provider": {
+      "@context": "https://velocitynetwork.foundation/contexts/course",
+      "provider": {
+        "name": "ACME Inc",
+        "identifier": "did:velocity:0xc257274276a4e539741ca11b590b9447b26a8051",
+        "place": {
+          "addressLocality": "Miami",
+          "addressRegion": "FL",
+          "addressCountry": "US"
+        }
+      },
+      "contentProvider": {
+        "name": "Flaxman Training Center",
+        "identifier": "did:velocity:0xc30b69405238038080c641cc20a63715ca97d706",
+        "place": {
+          "addressLocality": "Fort Lauderdale",
+          "addressRegion": "FL",
+          "addressCountry": "US"
+        }
+      },
+      "title": "Fire and safety training",
+      "courseCode": "FST",
+      "description": "Yearly refresher training for HQ employees.",
+      "courseType": "Workshop",
+      "courseMode": "Instructor led",
+      "duration": "PT4H",
+      "completionDate": "2021-05-01",
+      "grade": {
+        "method": {
+          "type": "CriterionReferenced"
+        },
+        "result": "partly attended",
+        "passFail": "fail"
+      }
+    }
+  }
+}

@@ -1,0 +1,22 @@
+{
+  "title": "assessment-dimension.schema",
+  "$schema": "http://json-schema.org/draft-07/schema#",
+  "$id": "https://velocitynetwork.foundation/schemas/assessment-dimension",
+  "allOf": [
+    {
+      "$ref": "./assessment-dimension-descriptor.schema.json"
+    },
+    {
+      "type": "object",
+      "properties": {
+        "score": {
+          "$ref": "../subtypes/score.schema.json"
+        },
+        "date": {
+          "$ref": "../subtypes/date.schema.json"
+        }
+      }
+    }
+  ],
+  "required": ["name"]
+}

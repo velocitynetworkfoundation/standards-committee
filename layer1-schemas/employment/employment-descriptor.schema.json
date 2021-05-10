@@ -1,0 +1,32 @@
+{
+  "title": "employment-descriptor.schema",
+  "$id": "https://velocitynetwork.foundation/schemas/employment-descriptor",
+  "allOf": [
+    {
+      "$ref": "../json-ld-context.schema.json"
+    },
+    {
+      "type": "object",
+      "properties": {
+        "legalEmployer": {
+          "$ref": "../subtypes/organization.schema.json"
+        },
+        "role": {
+          "type": "string"
+        },
+        "description": {
+          "type": "string"
+        },
+        "employmentType": {
+          "type": "string"
+        },
+        "place": {
+          "$ref": "../subtypes/place.schema.json"
+        },
+        "alignment ": {
+          "$ref": "../subtypes/alignment.schema.json"
+        }
+      }
+    }
+  ]
+}

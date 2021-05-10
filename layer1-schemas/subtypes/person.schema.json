@@ -1,0 +1,61 @@
+{
+  "title": "person.schema",
+  "$id": "https://velocitynetwork.foundation/schemas/person",
+  "allOf": [
+    {
+      "$ref": "../json-ld-context.schema.json"
+    },
+    {
+      "type": "object",
+      "properties": {
+        "givenName": {
+          "type": "string"
+        },
+        "familyName": {
+          "type": "string"
+        },
+        "additionalName": {
+          "type": "string"
+        },
+        "namePrefix": {
+          "type": "string"
+        },
+        "nameSuffix": {
+          "type": "string"
+        },
+        "birthDate": {
+          "type": "string",
+          "format": "date"
+        },
+        "birthPlace": {
+          "$ref": "./place.schema.json"
+        },
+        "gender": {
+          "type": "string",
+          "enum": [
+            "male",
+            "female"
+          ]
+        }
+      }
+    }
+  ],
+  "required": [
+    "givenName"
+  ],
+  "x-examples": {
+    "Olivia Hafez": {
+      "givenName": "Olivia",
+      "familyName": "Hafez",
+      "additionalName": "Melanie",
+      "namePrefix": "Dr",
+      "birthDate": "1994-06-20",
+      "birthPlace": {
+        "addressLocality": "Baltimore",
+        "addressRegion": "MD",
+        "addressCountry": "US"
+      },
+      "gender": "Female"
+    }
+  }
+}

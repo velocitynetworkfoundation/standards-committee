@@ -1,0 +1,99 @@
+{
+  "title": "assessment.schema",
+  "$schema": "http://json-schema.org/draft-07/schema#",
+  "$id": "https://velocitynetwork.foundation/schemas/assessment",
+  "allOf": [
+    {
+      "$ref": "./assessment-dimension.schema.json"
+    },
+    {
+      "type": "object",
+      "properties": {
+        "authority": {
+          "$ref": "../subtypes/organization.schema.json"
+        },
+        "dimensions": {
+          "type": "array",
+          "items": {
+            "$ref": "./assessment-dimension.schema.json"
+          }
+        }
+      }
+    }
+  ],
+  "required": [
+    "authority",
+    "name"
+  ],
+  "x-examples": {
+    "Korn Ferry": {
+      "@context": "https://velocitynetwork.foundation/contexts/assessment",
+      "authority": {
+        "name": "Korn Ferry",
+        "identifier": "did:velocity:0xc30b69405238038080c641cc20a63715ca97d706",
+        "place": {
+          "addressLocality": "Los Angeles",
+          "addressRegion": "CA",
+          "addressCountry": "US"
+        }
+      },
+      "name": "Leadership",
+      "description": "Korn Ferry's leadership assessment takes a contemporary, whole-person view of behavior. It values indidivdual qualities that impact and govern leaders' job performance in areasof Competencies, Exepriences, Traits, and Drivers. ",
+      "score": {
+        "method": {
+          "type": "NormReferenced",
+          "description": "Korn Ferry global norm 2018. Norm size: 25,000.  score range 1-10."
+        },
+        "scoreValue": "8.9"
+      },
+      "date": "2018-09-01",
+      "dimensions": [
+        {
+          "name": "Credibility",
+          "description": "The degree of consistency between a person's words and actions.",
+          "score": {
+            "method": {
+              "type": "NormReferenced",
+              "description": "Korn Ferry global norm 2018. Norm size: 25,000.  score range 1-10."
+            },
+            "scoreValue": "7.2"
+          },
+          "date": "2018-09-01"
+        },
+        {
+          "name": "Strategy",
+          "description": "The strategic capability of a person",
+          "score": {
+            "method": {
+              "type": "NormReferenced",
+              "description": "Korn Ferry global norm 2018. Norm size: 25,000.  score range 1-10."
+            },
+            "scoreValue": "9.1"
+          },
+          "date": "2018-08-31"
+        }
+      ]
+    },
+    "Color Blindness": {
+      "@context": "https://velocitynetwork.foundation/contexts/assessment",
+      "authority": {
+        "name": "The institute for occupational health ",
+        "place": {
+          "addressLocality": "New Rochelle ",
+          "addressRegion": "NY",
+          "addressCountry": "US"
+        }
+      },
+      "name": "Color blindness",
+      "score": {
+        "method": {
+          "type": "CriterionReferenced",
+          "description": "Standard Ishihara color plate test"
+        },
+        "result": "Normal color vision",
+        "passFail": "pass"
+      },
+      "date": "2021-05-29"
+    }
+  }
+}

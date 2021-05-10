@@ -1,0 +1,49 @@
+{
+  "title": "employment-past.schema",
+  "$id": "https://velocitynetwork.foundation/schemas/employment-past",
+  "allOf": [
+    {
+      "$ref": "./employment-descriptor.schema.json"
+    },
+    {
+      "type": "object",
+      "properties": {
+        "startDate": {
+          "$ref": "../subtypes/date.schema.json"
+        },
+        "endDate": {
+          "$ref": "../subtypes/date.schema.json"
+        }
+      }
+    }
+  ],
+  "required": [
+    "startDate",
+    "endDate"
+  ],
+  "x-examples": {
+    "Example Past Employment": {
+      "@context": "https://velocitynetwork.foundation/contexts/employment",
+      "legalEmployer": {
+        "name": "Ocatgon Bank",
+        "identifier": "did:velocity:0xc257274276a4e539741ca11b590b9447b26a8051",
+        "place": {
+          "addressLocality": "London",
+          "addressRegion": "ENG",
+          "addressCountry": "UK"
+        }
+      },
+      "role": "Accountant",
+      "description": "Junior accountant in the mortgage department",
+      "employmentType": "Internship",
+      "place": {
+        "name": "Branch 4644",
+        "addressLocality": "Birmingham",
+        "addressRegion": "ENG",
+        "addressCountry": "UK"
+      },
+      "startDate": "2017-01",
+      "endDate": "2017-07"
+    }
+  }
+}

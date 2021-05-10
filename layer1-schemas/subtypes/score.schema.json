@@ -1,0 +1,68 @@
+{
+  "title": "score.schema",
+  "$id": "https://velocitynetwork.foundation/schemas/score",
+  "allOf": [
+    {
+      "$ref": "../json-ld-context.schema.json"
+    },
+    {
+      "type": "object",
+      "properties": {
+        "method": {
+          "type": "object",
+          "properties": {
+            "type": {
+              "type": "string",
+              "enum": [
+                "NormReferenced",
+                "CriterionReferenced"
+              ]
+            },
+            "description": {
+              "type": "string"
+            },
+            "alignment": {
+              "type": "array",
+              "items": {
+                "$ref": "./alignment.schema.json"
+              }
+            },
+            "passingScore": {
+              "type": "string"
+            }
+          }
+        },
+        "scoreValue": {
+          "type": "string"
+        },
+        "result": {
+          "type": "string"
+        },
+        "passFail": {
+          "type": "string",
+          "enum": [
+            "pass",
+            "fail"
+          ]
+        }
+      }
+    }
+  ],
+  "x-examples": {
+    "GPA": {
+      "method": {
+        "description": "GPA",
+        "passingScore": "0.7"
+      },
+      "scoreValue": "3.8",
+      "passFail": "Pass"
+    },
+    "Assessmention Score relative norm": {
+      "method": {
+        "type": "NormReferenced",
+        "description": "Description of the norm group and its size"
+      },
+      "scoreValue": "80"
+    }
+  }
+}

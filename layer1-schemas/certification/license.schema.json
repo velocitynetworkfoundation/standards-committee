@@ -1,0 +1,47 @@
+{
+  "title": "license.schema",
+  "$schema": "http://json-schema.org/draft-07/schema#",
+  "$id": "https://velocitynetwork.foundation/schemas/license",
+  "allOf": [
+    {
+      "$ref": "./certification-license-descriptor.json"
+    },
+    {
+      "type": "object",
+      "properties": {
+        "identifier": {
+          "type": "string"
+        },
+        "validity": {
+          "$ref": "../subtypes/validity.schema.json"
+        }
+      }
+    }
+  ],
+  "required": ["authority", "name", "identifier"],
+  "x-examples": {
+    "Licensed Practical Nurse (LPN)": {
+      "@context": "https://velocitynetwork.foundation/contexts/certification-license",
+      "authority": {
+        "name": "New Jersey Board of Nursing",
+        "did": "did:velocity:0xc257274276a4e539741ca11b590b9447b26a8052",
+        "place": {
+          "addressLocality": "Newark",
+          "addressRegion": "NJ",
+          "addressCountry": "US"
+        }
+      },
+      "name": "Licensed Practical Nurse",
+      "description": "As an assistant to physicians and registered nurses (RNs), a licensed practical nurse (LPN) takes care of basic nursing duties in settings such as hospitals, nursing homes, and long-term care facilities.  To acquiire the license the applicant must sit for the NCLEX-LPN exam.",
+      "identifier": "7765430",
+      "validity": {
+        "firstValidFrom": "2018-07-01",
+        "validFrom": "2020-07-01",
+        "validIn": {
+          "addressRegion": "NJ",
+          "addressCountry": "US"
+        }
+      }
+    }
+  }
+}

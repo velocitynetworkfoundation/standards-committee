@@ -1,0 +1,27 @@
+{
+  "title": "email.schema",
+  "$id": "https://velocitynetwork.foundation/schemas/email",
+  "allOf": [
+    {
+      "$ref": "../json-ld-context.schema.json"
+    },
+    {
+      "type": "object",
+      "properties": {
+        "email": {
+          "type": "string",
+          "format": "email"
+        }
+      }
+    }
+  ],
+  "required": [
+    "email"
+  ],
+  "x-examples": {
+    "Olivia's Email": {
+      "@context": "https://velocitynetwork.foundation/contexts/email",
+      "email": "olivia.hafez@example.com"
+    }
+  }
+}

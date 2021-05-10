@@ -1,0 +1,27 @@
+{
+  "title": "phone.schema",
+  "$id": "https://velocitynetwork.foundation/schemas/phone",
+  "allOf": [
+    {
+      "$ref": "../json-ld-context.schema.json"
+    },
+    {
+      "type": "object",
+      "properties": {
+        "phone": {
+          "type": "string",
+          "pattern": "^\\+[1-9]\\d{1,14}$"
+        }
+      }
+    }
+  ],
+  "required": [
+    "phone"
+  ],
+  "x-examples": {
+    "Olivia's Phone": {
+      "@context": "https://velocitynetwork.foundation/contexts/phone",
+      "phone": "+19177777777"
+    }
+  }
+}

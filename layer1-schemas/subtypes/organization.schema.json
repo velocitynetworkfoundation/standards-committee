@@ -1,0 +1,35 @@
+{
+  "title": "organization.schema",
+  "$id": "https://velocitynetwork.foundation/schemas/organization",
+  "allOf": [
+    {
+      "$ref": "../json-ld-context.schema.json"
+    },
+    {
+      "type": "object",
+      "properties": {
+        "name": {
+          "type": "string"
+        },
+        "identifier": {
+          "$ref": "./did.schema.json"
+        },
+        "place": {
+          "$ref": "./place.schema.json"
+        }
+      }
+    }
+  ],
+  "required": ["name"],
+  "x-examples": {
+    "Government Agency Example": {
+      "name": "New Jersey Motor Vehicle Commission",
+      "identifier": "did:velocity:0xc30b69405238038080c641cc20a63715ca97d706",
+      "place": {
+        "addressLocality": "Trenton",
+        "addressRegion": "NJ",
+        "addressCountry": "US"
+      }
+    }
+  }
+}

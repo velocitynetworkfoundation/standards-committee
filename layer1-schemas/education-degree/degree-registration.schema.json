@@ -1,0 +1,60 @@
+{
+  "title": "degree-registation",
+  "$id": "https://velocitynetwork.foundation/schemas/degree-registration",
+  "allOf": [
+    {
+      "$ref": "./degree-descriptor.schema.json"
+    },
+    {
+      "type": "object",
+      "properties": {
+        "registrationDate": {
+          "$ref": "../subtypes/date.schema.json"
+        },
+        "startDate": {
+          "$ref": "../subtypes/date.schema.json"
+        }
+      }
+    }
+  ],
+  "x-examples": {
+    "XYZ Uni - Nursing - Registration": {
+      "@context": "https://velocitynetwork.foundation/contexts/degree",
+      "institution": {
+        "name": "XYZ University",
+        "identifier": "did:web:www.xyzuniversity.com",
+        "place": {
+          "addressLocality": "Chicago",
+          "addressRegion": "IL",
+          "addressCountry": "US"
+        }
+      },
+      "school": {
+        "name": "School of nursing",
+        "place": {
+          "name": "Florida Branch",
+          "addressLocality": "Fort Myers",
+          "addressRegion": "FL",
+          "addressCountry": "US"
+        }
+      },
+      "programName": "RN to BSN",
+      "programType": "1 year full time program",
+      "programMode": "Online",
+      "degreeName": "Bachelor of Science",
+      "degreeMajor": [
+        "Nursing"
+      ],
+      "description": "Starfield College’s RN to BSN Online Option allows working nurses to advance your degree in as few as 3 semesters.\n If you are a registered nurse with an active RN license looking to earn your BSN, Chamberlain's online RN to BSN option can help prepare you for the next step in your career.\n Our RN to BSN online option allows you to earn your degree while you work.",
+      "alignment": {
+        "targetName": "Bachelor of Science in Nursing, RN to BSN",
+        "targetUrl": "https://credentialfinder.org/credential/5769/Bachelor_of_Science_in_Nursing,_RN_to_BSN",
+        "targetDescription": "The RN to BSN completion program has been developed to address the specific needs of working registered nurses who return to the university to earn the BSN.",
+        "targetFramework": "Credential Engine's Credential Registry"
+      },
+      "registrationDate": "2011-05",
+      "startDate": "2011-10"
+    }
+  },
+  "description": ""
+}

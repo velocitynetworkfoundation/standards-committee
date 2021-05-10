@@ -1,0 +1,45 @@
+{
+  "title": "course-descriptor",
+  "$id": "https://velocitynetwork.foundation/schemas/course-descriptor",
+  "allOf": [
+    {
+      "$ref": "../json-ld-context.schema.json"
+    },
+    {
+      "type": "object",
+      "properties": {
+        "provider": {
+          "$ref": "../subtypes/organization.schema.json"
+        },
+        "contentProvider": {
+          "$ref": "../subtypes/organization.schema.json"
+        },
+        "title": {
+          "type": "string"
+        },
+        "courseCode": {
+          "type": "string"
+        },
+        "description": {
+          "type": "string"
+        },
+        "courseType": {
+          "type": "string"
+        },
+        "courseMode": {
+          "type": "string"
+        },
+        "courseLevel": {
+          "type": "string"
+        },
+        "duration": {
+          "type": "string",
+          "format": "duration"
+        },
+        "alignment": {
+          "$ref": "../subtypes/alignment.schema.json"
+        }
+      }
+    }
+  ]
+}

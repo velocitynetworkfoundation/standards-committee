@@ -1,0 +1,52 @@
+{
+  "title": "address.schema",
+  "$id": "https://velocitynetwork.foundation/schemas/address.schema",
+  "allOf": [
+    {
+      "$ref": "../json-ld-context.schema.json"
+    },
+    {
+      "type": "object",
+      "properties": {
+        "streetAddress": {
+          "type": "string"
+        },
+        "addressLocality": {
+          "type": "string"
+        },
+        "addressRegion": {
+          "type": "string",
+          "pattern": "^[A-Za-z0-9]{1,3}$"
+        },
+        "postCode": {
+          "type": "string"
+        },
+        "addressCountry": {
+          "type": "string",
+          "pattern": "^[A-Z]{2}$"
+        }
+      }
+    }
+  ],
+  "required": [
+    "addressCountry"
+  ],
+  "x-examples": {
+    "US Address": {
+      "@context": "https://velocitynetwork.foundation/contexts/address",
+      "streetAddress": "3 Dairy Ln",
+      "addressLocality": "Long Valley",
+      "addressRegion": "NJ",
+      "postCode": "32796",
+      "addressCountry": "US"
+    },
+    "EU Address": {
+      "@context": "https://velocitynetwork.foundation/contexts/Address",
+      "streetAddress": "C/ Santa Engarcia 13b 4º-2ª  Bellaterra",
+      "addressLocality": "Cerdanyola del Vallès",
+      "addressRegion": "CAT",
+      "postCode": "B08193",
+      "addressCountry": "ES"
+    }
+  }
+}

@@ -1,0 +1,50 @@
+{
+  "title": "degree-descriptor",
+  "$id": "https://velocitynetwork.foundation/schemas/degree-descriptor",
+  "allOf": [
+    {
+      "$ref": "../json-ld-context.schema.json"
+    },
+    {
+      "type": "object",
+      "properties": {
+        "institution": {
+          "$ref": "../subtypes/organization.schema.json"
+        },
+        "school": {
+          "$ref": "../subtypes/organization.schema.json"
+        },
+        "programName": {
+          "type": "string"
+        },
+        "programType": {
+          "type": "string"
+        },
+        "programMode": {
+          "type": "string"
+        },
+        "degreeName": {
+          "type": "string"
+        },
+        "degreeMajor": {
+          "type": "array",
+          "items": {
+            "type": "string"
+          }
+        },
+        "degreeMinor": {
+          "type": "array",
+          "items": {
+            "type": "string"
+          }
+        },
+        "description": {
+          "type": "string"
+        },
+        "alignment": {
+          "$ref": "../subtypes/alignment.schema.json"
+        }
+      }
+    }
+  ]
+}

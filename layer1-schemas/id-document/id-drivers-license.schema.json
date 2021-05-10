@@ -1,0 +1,72 @@
+{
+  "title": "drivers-license.schema",
+  "$schema": "http://json-schema.org/draft-07/schema#",
+  "$id": "https://velocitynetwork.foundation/schemas/drivers-license",
+  "allOf": [
+    {
+      "$ref": "../json-ld-context.schema.json"
+    },
+    {
+      "type": "object",
+      "properties": {
+        "authority": {
+          "$ref": "../subtypes/organization.schema.json"
+        },
+        "validity": {
+          "$ref": "../subtypes/validity.schema.json"
+        },
+        "person": {
+          "$ref": "../subtypes/person.schema.json"
+        },
+        "identifier": {
+          "type": "string"
+        },
+        "nationality": {
+          "type": "string",
+          "pattern": "^[A-Z]{2}$"
+        },
+        "postalAddress": {
+          "$ref": "../subtypes/address.schema.json"
+        }
+      }
+    }
+  ],
+  "required": [
+    "authority",
+    "validity",
+    "person",
+    "identifier"
+  ],
+  "x-examples": {
+    "Noah's Drivers License": {
+      "@context": "https://velocitynetwork.foundation/contexts/id-document",
+      "authority": {
+        "name": "DMV State of California",
+        "identifier": "did:velocity:0xc257274276a4e539741ca11b590b9447b26a8051",
+        "place": {
+          "addressLocality": "Sacramento",
+          "addressRegion": "CA",
+          "addressCountry": "US"
+        }
+      },
+      "validity": {
+        "validFrom": "2009-08-21",
+        "validUntil": "2014-08-21"
+      },
+      "person": {
+        "givenName": "Noah",
+        "familyName": "Brown",
+        "birthDate": "1990-08-21",
+        "gender": "Male"
+      },
+      "identifier": "G1234568",
+      "address": {
+        "streetAddress": "2468 Amherst Avenue",
+        "addressLocality": "Fresno",
+        "addressRegion": "CA",
+        "postCode": "93722",
+        "addressCountry": "US"
+      }
+    }
+  }
+}

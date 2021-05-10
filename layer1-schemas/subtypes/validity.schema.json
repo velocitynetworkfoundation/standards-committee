@@ -1,0 +1,44 @@
+{
+  "title": "validity.schema",
+  "$id": "https://velocitynetwork.foundation/schemas/validity",
+  "allOf": [
+    {
+      "$ref": "../json-ld-context.schema.json"
+    },
+    {
+      "type": "object",
+      "properties": {
+        "firstValidFrom": {
+          "type": "string",
+          "format": "date"
+        },
+        "validFrom": {
+          "oneOf": [
+            {
+              "format": "date"
+            },
+            {
+              "format": "date-time"
+            }
+          ],
+          "type": "string"
+        },
+        "validUntil": {
+          "oneOf": [
+            {
+              "format": "date"
+            },
+            {
+              "format": "date-time"
+            }
+          ],
+          "type": "string"
+        },
+        "validIn": {
+          "$ref": "./place.schema.json"
+        }
+      }
+    }
+  ],
+  "x-examples": {}
+}
