@@ -27,6 +27,13 @@
         }
       }
     }
+  ], 
+  "required": [
+    "authority",
+    "validity",
+    "person",
+    "identifier",
+    "nationality"
   ],
   "x-examples": {
     "Andrew's UK Passport": {

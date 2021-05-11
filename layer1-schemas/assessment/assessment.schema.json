@@ -21,6 +21,10 @@
       }
     }
   ],
+  "required": [
+    "authority",
+    "name"
+  ],
   "x-examples": {
     "Korn Ferry": {
       "@context": "https://velocitynetwork.foundation/contexts/assessment",
