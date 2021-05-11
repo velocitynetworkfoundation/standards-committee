@@ -40,17 +40,17 @@
           "addressCountry": "US"
         }
       },
-      "title": "Introduction to Philosophy of Education",
+      "courseName": "Introduction to Philosophy of Education",
       "courseCode": "0618.1032.01",
       "description": "The concept of education had a key role in philosophy since Ancient Greece . Moreover, pholosophical method is used by maky thinkers to clarify the concept of education and related concepts. The course will serve as an introduction to key writings in the philosophy of education from Plato to Ranciere.",
       "courseMode": "Lecture",
-      "duration": "PT56H",
+      "courseDuration": "PT56H",
       "registrationDate": "2020-05-01",
       "startDate": "2020-10-01",
       "completionDate": "2020-12-20",
       "grade": {
-        "method": {
-          "description": "GPA",
+        "scoreMethod": {
+          "scoreMethodDescription": "GPA",
           "passingScore": "0.7"
         },
         "scoreValue": "3.8",
@@ -77,16 +77,16 @@
           "addressCountry": "US"
         }
       },
-      "title": "Fire and safety training",
+      "courseName": "Fire and safety training",
       "courseCode": "FST",
       "description": "Yearly refresher training for HQ employees.",
       "courseType": "Workshop",
       "courseMode": "Instructor led",
-      "duration": "PT4H",
+      "courseDuration": "PT4H",
       "completionDate": "2021-05-01",
       "grade": {
-        "method": {
-          "type": "CriterionReferenced"
+        "scoreMethod": {
+          "scoreMethodType": "CriterionReferenced"
         },
         "result": "partly attended",
         "passFail": "fail"

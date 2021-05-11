@@ -28,13 +28,6 @@
       }
     }
   ],
-  "required": [
-    "authority",
-    "validity",
-    "person",
-    "identifier",
-    "nationality"
-  ],
   "x-examples": {
     "Andrew's UK Passport": {
       "@context": "https://velocitynetwork.foundation/contexts/id-document",

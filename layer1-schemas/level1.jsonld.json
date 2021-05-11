@@ -5,13 +5,15 @@
     "vnf": "https://velocitynetwork.foundation/contexts/",
     "obi": "https://w3id.org/openbadges/v2",
 
-    "Address": "schema:Address",
-    "Place": "schema:Address",
+    "Address": "schema:PostalAddress",
     "streetAddress": "schema:streetAddress",
     "addressLocality": "schema:addressLocality",
     "addressRegion": "schema:addressRegion",
     "postCode": "schema:postalCode",
     "addressCountry": "schema:addressCountry",
+
+    "Place": "schema:PostalAddress",
+    "name": "schema:name",
     
     "Validity-1.0": "vnf:Validity-1.0",
     "firstValidFrom": { "@id": "vnf:firstValidFrom", "@type": "schema:Date" },
@@ -33,7 +35,6 @@
     "gender": "schema:gender",
 
     "Organization": "schema:Organization",
-    "name": "schema:name",
     "identifier": {
       "@id": "schema:identifier", 
       "@type": "@id"
@@ -52,13 +53,13 @@
 
     "Score-1.0": "vnf:Score-1.0",
     "scoreMethod": { "@id": "vnf:scoringMethod", "@type": "@id" },
-    "scoreType": "ceterms:scoringMethodType",
-    "description": "ceterms:scoringMethodDescription",
+    "scoreMethodType": "ceterms:scoringMethodType",
+    "scoreMethodDescription": "ceterms:scoringMethodDescription",
     "alignment": { "@id": "vnf:alignment", "@type": "@id" },
     "passingScore": "ceterms:requires",
     "scoreValue": "vnf:scoreValue",
-    "result": "vnf:scoreResult",
-    "passFail": "vnf:scorePassFail",
+    "result": "vnf:result",
+    "passFail": "vnf:passFail",
     
     "Email-1.0": "vnf:Email-1.0",
     "email": "schema:email",
@@ -71,9 +72,10 @@
     "validity": { "@id": "vnf:validity", "@type": "@id" },
     "person": { "@id": "vnf:person", "@type": "@id" },
     "nationality": "schema:addressCountry",
-    "postalAddress": { "@id": "vnf:address", "@type": "@id" },
+    "postalAddress": { "@id": "vnf:postalAddress", "@type": "@id" },
 
     "Employment-1.0": "vnf:Employment-1.0",
+    "description": "schema:description",
     "legalEmployer": { "@id": "vnf:legalEmployer", "@type": "@id" },
     "role": "schema:roleName",
     "employmentType": "schema:employmentType",
@@ -89,28 +91,29 @@
     "degreeName": "schema:educationalCredentialAwarded",
     "degreeMajor": "ceterms:degreeMajor",
     "degreeMinor": "ceterms:degreeMinor",
-    "score": { "@id": "vnf:score", "@type": "@id" },
     "honors": "vnf:honors",
+    "grade": { "@id": "vnf:score", "@type": "@id" },
     "registrationDate": { "@id": "vnf:registrationDate", "@type": "schema:Date"},
     "conferredDate": { "@id": "vnf:conferredDate", "@type": "schema:Date"},
 
     "Course-1.0": "vnf:Course-1.0",
     "provider": { "@id": "vnf:provider", "@type": "@id" },
     "contentProvider": { "@id": "vnf:contentProvider", "@type": "@id" },
-    "title": "schema:educationalCredentialAwarded",
+    "courseName": "schema:educationalCredentialAwarded",
     "courseCode": "schema:courseCode",
     "courseType": "schema:programType",
     "courseMode": "schema:educationalProgramMode",
     "courseLevel": "schema:educationalLevel",
-    "duration": "schema:timeToComplete",
-    "grade": "vnf:score",
+    "courseDuration": "schema:timeToComplete",
     "completionDate": { "@id": "vnf:completionDate", "@type": "schema:Date"},
 
     "Assessment-1.0": "vnf:Assessment-1.0",
-    "level": "schema:educationalLevel",
-    "method": "ceterms:assessmentMethodDescription",
-    "date": { "@id": "vnf:date", "@type": "schema:Date"},  
-    "dimensions": { "@id": "vnf:dimensions", "@container": "@list" },  
+    "assesses": "schema:assesses",
+    "assessmentLevel": "schema:educationalLevel",
+    "assessmentMethod": "ceterms:assessmentMethodDescription",
+    "assessmentDate": { "@id": "vnf:assessmentDate", "@type": "schema:Date"},  
+    "assessmentDimensions": { "@id": "vnf:assessmentDimensions", "@container": "@list" },  
+    "score": { "@id": "vnf:score", "@type": "@id" },
 
     "Certifcation-1.0": "vnf:Certifcation-1.0",
     "License-1.0": "vnf:License-1.0"

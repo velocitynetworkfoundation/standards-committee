@@ -12,13 +12,16 @@
         "name": {
           "type": "string"
         },
+        "assesses": {
+          "type": "string"
+        },
         "description": {
           "type": "string"
         },
-        "level": {
+        "assessmentLevel": {
           "type": "string"
         },
-        "method": {
+        "assessmentMethod": {
           "type": "string"
         },
         "alignment": {

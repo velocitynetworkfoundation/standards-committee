@@ -12,7 +12,7 @@
         "score": {
           "$ref": "../subtypes/score.schema.json"
         },
-        "date": {
+        "assessmentDate": {
           "$ref": "../subtypes/date.schema.json"
         }
       }

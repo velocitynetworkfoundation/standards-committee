@@ -14,13 +14,13 @@
         "contentProvider": {
           "$ref": "../subtypes/organization.schema.json"
         },
-        "title": {
-          "type": "string"
-        },
-        "courseCode": {
+        "courseName": {
           "type": "string"
         },
         "description": {
+          "type": "string"
+        },
+        "courseCode": {
           "type": "string"
         },
         "courseType": {
@@ -32,7 +32,7 @@
         "courseLevel": {
           "type": "string"
         },
-        "duration": {
+        "courseDuration": {
           "type": "string",
           "format": "duration"
         },
@@ -41,5 +41,6 @@
         }
       }
     }
-  ]
+  ],
+  "x-examples": {}
 }

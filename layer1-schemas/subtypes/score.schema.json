@@ -41,8 +41,8 @@
         "passFail": {
           "type": "string",
           "enum": [
-            "pass",
-            "fail"
+            "Pass",
+            "Fail"
           ]
         }
       }
@@ -57,7 +57,7 @@
       "scoreValue": "3.8",
       "passFail": "Pass"
     },
-    "Assessmention Score relative norm": {
+    "Assessment Score relative norm": {
       "method": {
         "type": "NormReferenced",
         "description": "Description of the norm group and its size"

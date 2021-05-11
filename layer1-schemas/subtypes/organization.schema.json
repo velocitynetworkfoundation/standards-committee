@@ -1,4 +1,4 @@
-{
+  {
   "title": "organization.schema",
   "$id": "https://velocitynetwork.foundation/schemas/organization",
   "allOf": [

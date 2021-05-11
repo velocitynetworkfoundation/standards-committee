@@ -33,8 +33,8 @@
         "gender": {
           "type": "string",
           "enum": [
-            "male",
-            "female"
+            "Male",
+            "Female"
           ]
         }
       }

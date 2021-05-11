@@ -20,7 +20,7 @@
         "conferredDate": {
           "$ref": "../subtypes/date.schema.json"
         },
-        "score": {
+        "grade": {
           "$ref": "../subtypes/score.schema.json"
         },
         "honors": {
