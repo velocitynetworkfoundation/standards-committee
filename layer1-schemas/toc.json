@@ -1,0 +1,19 @@
+{
+  "items": [
+    {
+      "type": "divider",
+      "title": "Divider"
+    },
+    {
+      "type": "group",
+      "title": "Sub Types",
+      "items": [
+        {
+          "type": "item",
+          "title": "Address",
+          "uri": "subtypes/address.schema.json"
+        }
+      ]
+    }
+  ]
+}
