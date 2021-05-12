@@ -11,7 +11,7 @@
         {
           "type": "item",
           "title": "Assessment",
-          "uri": "subtypes/assessment.schema.json"
+          "uri": "assessment/assessment.schema.json"
         }
       ]
     },
@@ -22,7 +22,7 @@
         {
           "type": "item",
           "title": "Certification",
-          "uri": "subtypes/certification.schema.json"
+          "uri": "certification/certification.schema.json"
         },
         {
           "type": "item",
@@ -38,38 +38,38 @@
         {
           "type": "item",
           "title": "Course Registration",
-          "uri": "subtypes/course-registration.schema.json"
+          "uri": "course/course-registration.schema.json"
         },
         {
           "type": "item",
           "title": "Course Attendance",
-          "uri": "subtypes/course-attendance.schema.json"
+          "uri": "course/course-attendance.schema.json"
         },
         {
           "type": "item",
           "title": "Course Completion",
-          "uri": "subtypes/course-completion.schema.json"
+          "uri": "course/course-completion.schema.json"
         }
       ]
     },
     {
       "type": "group",
-      "title": "Degrees",
+      "title": "Education Degrees",
       "items": [
        {
           "type": "item",
           "title": "Degree Registration",
-          "uri": "subtypes/degree-registration.schema.json"
+          "uri": "education-degree/degree-registration.schema.json"
         },
         {
           "type": "item",
           "title": "Degree Attendance",
-          "uri": "subtypes/degree-study.schema.json"
+          "uri": "education-degree/degree-study.schema.json"
         },
         {
           "type": "item",
           "title": "Degree Graduation",
-          "uri": "subtypes/degree-graduation.schema.json"
+          "uri": "education-degree/degree-graduation.schema.json"
         }
       ]
     },
@@ -80,12 +80,12 @@
         {
           "type": "item",
           "title": "Employment - Current",
-          "uri": "subtypes/employment-current.schema.json"
+          "uri": "employment/employment-current.schema.json"
         },
         {
           "type": "item",
           "title": "Employment - Past",
-          "uri": "subtypes/employment-past.schema.json"
+          "uri": "employment/employment-past.schema.json"
         }
       ]
     },
@@ -96,17 +96,17 @@
         {
           "type": "item",
           "title": "Id Document",
-          "uri": "subtypes/id-document.schema.json"
+          "uri": "id-document/id-document.schema.json"
         },
         {
           "type": "item",
           "title": "Email",
-          "uri": "subtypes/email.schema.json"
+          "uri": "id-document/email.schema.json"
         },
         {
           "type": "item",
           "title": "Phone",
-          "uri": "subtypes/phone.schema.json"
+          "uri": "id-document/phone.schema.json"
         }
       ]
     },
@@ -117,7 +117,7 @@
         {
           "type": "item",
           "title": "Open Badge",
-          "uri": "subtypes/openbadge.schema.json"
+          "uri": "openbadge/openbadge.schema.json"
         }
       ]
     },

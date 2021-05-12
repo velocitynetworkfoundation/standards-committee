@@ -68,6 +68,7 @@
     "phone": "schema:telephone",
 
     "IdDocument-1.0": "vnf:IdDocument-1.0",
+    "documentType": "schema:additionalType",
     "authority": { "@id": "vnf:authority", "@type": "@id" },
     "validity": { "@id": "vnf:validity", "@type": "@id" },
     "person": { "@id": "vnf:person", "@type": "@id" },
