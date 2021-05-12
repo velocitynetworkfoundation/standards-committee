@@ -2,18 +2,163 @@
   "items": [
     {
       "type": "divider",
-      "title": "Models"
+      "title": "Credential Models"
     },
     {
       "type": "group",
-      "title": "Sub Types",
+      "title": "Assessments",
       "items": [
         {
           "type": "item",
-          "title": "Address",
-          "uri": "subtypes/address.schema.json"
+          "title": "Assessment",
+          "uri": "subtypes/assessment.schema.json"
         }
       ]
+    },
+    {
+      "type": "group",
+      "title": "Certifications and Licenses",
+      "items": [
+        {
+          "type": "item",
+          "title": "Certification",
+          "uri": "subtypes/certification.schema.json"
+        },
+        {
+          "type": "item",
+          "title": "License",
+          "uri": "subtypes/license.schema.json"
+        }
+      ]
+    },
+    {
+      "type": "group",
+      "title": "Courses",
+      "items": [
+        {
+          "type": "item",
+          "title": "Course Registration",
+          "uri": "subtypes/course-registration.schema.json"
+        },
+        {
+          "type": "item",
+          "title": "Course Attendance",
+          "uri": "subtypes/course-attendance.schema.json"
+        },
+        {
+          "type": "item",
+          "title": "Course Completion",
+          "uri": "subtypes/course-completion.schema.json"
+        }
+      ]
+    },
+    {
+      "type": "group",
+      "title": "Degrees",
+      "items": [
+       {
+          "type": "item",
+          "title": "Degree Registration",
+          "uri": "subtypes/degree-registration.schema.json"
+        },
+        {
+          "type": "item",
+          "title": "Degree Attendance",
+          "uri": "subtypes/degree-study.schema.json"
+        },
+        {
+          "type": "item",
+          "title": "Degree Graduation",
+          "uri": "subtypes/degree-graduation.schema.json"
+        }
+      ]
+    },
+    {
+      "type": "group",
+      "title": "Employment Roles",
+      "items": [
+        {
+          "type": "item",
+          "title": "Employment - Current",
+          "uri": "subtypes/employment-current.schema.json"
+        },
+        {
+          "type": "item",
+          "title": "Employment - Past",
+          "uri": "subtypes/employment-past.schema.json"
+        }
+      ]
+    },
+    {
+      "type": "group",
+      "title": "Id Documents",
+      "items": [
+        {
+          "type": "item",
+          "title": "Id Document",
+          "uri": "subtypes/id-document.schema.json"
+        },
+        {
+          "type": "item",
+          "title": "Email",
+          "uri": "subtypes/email.schema.json"
+        },
+        {
+          "type": "item",
+          "title": "Phone",
+          "uri": "subtypes/phone.schema.json"
+        }
+      ]
+    },
+    {
+      "type": "group",
+      "title": "Open Badge",
+      "items": [
+        {
+          "type": "item",
+          "title": "Open Badge",
+          "uri": "subtypes/openbadge.schema.json"
+        }
+      ]
+    },
+    {
+      "type": "divider",
+      "title": "Sub Types"
+    },
+    {
+      "type": "item",
+      "title": "Address",
+      "uri": "subtypes/address.schema.json"
+    },
+    {
+      "type": "item",
+      "title": "Alignment",
+      "uri": "subtypes/alignment.schema.json"
+    },
+    {
+      "type": "item",
+      "title": "Organization",
+      "uri": "subtypes/organization.schema.json"
+    },
+    {
+      "type": "item",
+      "title": "Person",
+      "uri": "subtypes/person.schema.json"
+    },
+    {
+      "type": "item",
+      "title": "Place",
+      "uri": "subtypes/place.schema.json"
+    },
+    {
+      "type": "item",
+      "title": "Score",
+      "uri": "subtypes/score.schema.json"
+    },
+    {
+      "type": "item",
+      "title": "Validity",
+      "uri": "subtypes/validity.schema.json"
     }
   ]
 }
