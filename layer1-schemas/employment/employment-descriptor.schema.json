@@ -28,5 +28,6 @@
         }
       }
     }
-  ]
+  ],
+  "x-internal": true
 }

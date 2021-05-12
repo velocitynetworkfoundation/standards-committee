@@ -1,5 +1,6 @@
 {
   "title": "calendar-date.schema",
   "type": "string",
-  "pattern": "^\\d\\d\\d\\d(-\\d\\d)?(-\\d\\d)?$"
+  "pattern": "^\\d\\d\\d\\d(-\\d\\d)?(-\\d\\d)?$",
+  "x-internal": true
 }

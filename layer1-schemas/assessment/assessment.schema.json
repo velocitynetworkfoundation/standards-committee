@@ -38,6 +38,7 @@
         }
       },
       "name": "Leadership",
+      "assesses": "Leadership capabilities",
       "description": "Korn Ferry's leadership assessment takes a contemporary, whole-person view of behavior. It values indidivdual qualities that impact and govern leaders' job performance in areasof Competencies, Exepriences, Traits, and Drivers. ",
       "score": {
         "scoreMethod": {
@@ -61,8 +62,8 @@
           "assessmentDate": "2018-09-01"
         },
         {
-          "name": "Strategy",
-          "description": "The strategic capability of a person",
+          "name": "Assertiveness",
+          "description": "The assertiveness of a person",
           "score": {
             "scoreMethod": {
               "scoreMethodType": "NormReferenced",
@@ -85,6 +86,7 @@
         }
       },
       "name": "Color blindness",
+      "assesses": "Color blindness",
       "score": {
         "method": {
           "type": "CriterionReferenced",
@@ -98,5 +100,6 @@
   },
   "x-tags": [
     "assessment"
-  ]
+  ],
+  "description": ""
 }

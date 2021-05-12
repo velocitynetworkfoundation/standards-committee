@@ -28,9 +28,6 @@
       }
     }
   ],
-  "required": [
-    "addressCountry"
-  ],
   "x-examples": {
     "US Address": {
       "@context": "https://velocitynetwork.foundation/contexts/address",

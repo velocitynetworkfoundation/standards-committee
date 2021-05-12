@@ -42,5 +42,6 @@
       }
     }
   ],
-  "x-examples": {}
+  "x-examples": {},
+  "x-internal": true
 }
