@@ -27,7 +27,7 @@
         {
           "type": "item",
           "title": "License",
-          "uri": "layer1-schemas/subtypes/license.schema.json"
+          "uri": "layer1-schemas/certification/license.schema.json"
         }
       ]
     },
