@@ -11,7 +11,7 @@
         {
           "type": "item",
           "title": "Assessment",
-          "uri": "assessment/assessment.schema.json"
+          "uri": "layer1-schemas/assessment/assessment.schema.json"
         }
       ]
     },
@@ -22,12 +22,12 @@
         {
           "type": "item",
           "title": "Certification",
-          "uri": "certification/certification.schema.json"
+          "uri": "layer1-schemas/certification/certification.schema.json"
         },
         {
           "type": "item",
           "title": "License",
-          "uri": "subtypes/license.schema.json"
+          "uri": "layer1-schemas/subtypes/license.schema.json"
         }
       ]
     },
@@ -38,17 +38,17 @@
         {
           "type": "item",
           "title": "Course Registration",
-          "uri": "course/course-registration.schema.json"
+          "uri": "layer1-schemas/course/course-registration.schema.json"
         },
         {
           "type": "item",
           "title": "Course Attendance",
-          "uri": "course/course-attendance.schema.json"
+          "uri": "layer1-schemas/course/course-attendance.schema.json"
         },
         {
           "type": "item",
           "title": "Course Completion",
-          "uri": "course/course-completion.schema.json"
+          "uri": "layer1-schemas/course/course-completion.schema.json"
         }
       ]
     },
@@ -59,17 +59,17 @@
        {
           "type": "item",
           "title": "Degree Registration",
-          "uri": "education-degree/degree-registration.schema.json"
+          "uri": "layer1-schemas/education-degree/degree-registration.schema.json"
         },
         {
           "type": "item",
           "title": "Degree Attendance",
-          "uri": "education-degree/degree-study.schema.json"
+          "uri": "layer1-schemas/education-degree/degree-study.schema.json"
         },
         {
           "type": "item",
           "title": "Degree Graduation",
-          "uri": "education-degree/degree-graduation.schema.json"
+          "uri": "layer1-schemas/education-degree/degree-graduation.schema.json"
         }
       ]
     },
@@ -80,12 +80,12 @@
         {
           "type": "item",
           "title": "Employment - Current",
-          "uri": "employment/employment-current.schema.json"
+          "uri": "layer1-schemas/employment/employment-current.schema.json"
         },
         {
           "type": "item",
           "title": "Employment - Past",
-          "uri": "employment/employment-past.schema.json"
+          "uri": "layer1-schemas/employment/employment-past.schema.json"
         }
       ]
     },
@@ -96,17 +96,17 @@
         {
           "type": "item",
           "title": "Id Document",
-          "uri": "id-document/id-document.schema.json"
+          "uri": "layer1-schemas/id-document/id-document.schema.json"
         },
         {
           "type": "item",
           "title": "Email",
-          "uri": "id-document/email.schema.json"
+          "uri": "layer1-schemas/id-document/email.schema.json"
         },
         {
           "type": "item",
           "title": "Phone",
-          "uri": "id-document/phone.schema.json"
+          "uri": "layer1-schemas/id-document/phone.schema.json"
         }
       ]
     },
@@ -117,7 +117,7 @@
         {
           "type": "item",
           "title": "Open Badge",
-          "uri": "openbadge/openbadge.schema.json"
+          "uri": "layer1-schemas/openbadge/openbadge.schema.json"
         }
       ]
     },
@@ -128,37 +128,37 @@
     {
       "type": "item",
       "title": "Address",
-      "uri": "subtypes/address.schema.json"
+      "uri": "layer1-schemas/subtypes/address.schema.json"
     },
     {
       "type": "item",
       "title": "Alignment",
-      "uri": "subtypes/alignment.schema.json"
+      "uri": "layer1-schemas/subtypes/alignment.schema.json"
     },
     {
       "type": "item",
       "title": "Organization",
-      "uri": "subtypes/organization.schema.json"
+      "uri": "layer1-schemas/subtypes/organization.schema.json"
     },
     {
       "type": "item",
       "title": "Person",
-      "uri": "subtypes/person.schema.json"
+      "uri": "layer1-schemas/subtypes/person.schema.json"
     },
     {
       "type": "item",
       "title": "Place",
-      "uri": "subtypes/place.schema.json"
+      "uri": "layer1-schemas/subtypes/place.schema.json"
     },
     {
       "type": "item",
       "title": "Score",
-      "uri": "subtypes/score.schema.json"
+      "uri": "layer1-schemas/subtypes/score.schema.json"
     },
     {
       "type": "item",
       "title": "Validity",
-      "uri": "subtypes/validity.schema.json"
+      "uri": "layer1-schemas/subtypes/validity.schema.json"
     }
   ]
 }
