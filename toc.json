@@ -159,6 +159,15 @@
       "type": "item",
       "title": "Validity",
       "uri": "layer1-schemas/subtypes/validity.schema.json"
+    },
+    {
+      "type": "divider",
+      "title": "JSON-LD Context"
+    },
+    {
+      "type": "item",
+      "title": "Level 1 Json-LD Context",
+      "uri": "layer1-schemas/layer1.context.json"
     }
   ]
 }
