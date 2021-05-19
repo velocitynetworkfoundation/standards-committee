@@ -167,7 +167,7 @@
     {
       "type": "item",
       "title": "Level 1 Json-LD Context",
-      "uri": "layer1-schemas/layer1.jsonld.json"
+      "uri": "https://github.com/velocitynetworkfoundation/standards-committee/blob/main/layer1-schemas/layer1.jsonld.json"
     }
   ]
 }
