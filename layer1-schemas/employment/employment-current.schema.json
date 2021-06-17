@@ -19,8 +19,8 @@
     "role",
     "startDate"
   ],
-  "x-examples": {
-    "Example Current Employment": {
+  "examples": [
+    {
       "@context": "https://velocitynetwork.foundation/contexts/employment",
       "legalEmployer": {
         "name": "Ocatgon Bank",
@@ -42,5 +42,5 @@
       },
       "startDate": "2017-01"
     }
-  }
+  ]
 }
