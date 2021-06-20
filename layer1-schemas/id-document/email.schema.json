@@ -13,16 +13,16 @@
           "format": "email",
           "description": "The email address."
         }
-      },
-      "required": [
-        "email"
-      ]
+      }
     }
   ],
-  "x-examples": {
-    "Olivia's Email": {
+  "required": [
+    "email"
+  ],
+  "examples": [
+    {
       "@context": "https://velocitynetwork.foundation/contexts/email",
       "email": "olivia.hafez@example.com"
     }
-  }
+  ]
 }
