@@ -37,8 +37,8 @@
     "person",
     "identifier"
   ],
-  "x-examples": {
-    "Noah's Drivers License": {
+  "examples": [
+    {
       "@context": "https://velocitynetwork.foundation/contexts/id-document",
       "authority": {
         "name": "DMV State of California",
@@ -68,5 +68,5 @@
         "addressCountry": "US"
       }
     }
-  }
+  ]
 }
