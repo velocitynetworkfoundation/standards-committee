@@ -18,15 +18,15 @@
         "place": {
           "$ref": "./place.schema.json"
         }
-      },
-      "required": [
-        "name",
-        "place"
-      ]
+      }
     }
   ],
-  "x-examples": {
-    "Government Agency Example": {
+  "required": [
+    "name",
+    "place"
+  ],
+  "examples": [
+    {
       "name": "New Jersey Motor Vehicle Commission",
       "identifier": "did:velocity:0xc30b69405238038080c641cc20a63715ca97d706",
       "place": {
@@ -35,5 +35,5 @@
         "addressCountry": "US"
       }
     }
-  }
+  ]
 }
