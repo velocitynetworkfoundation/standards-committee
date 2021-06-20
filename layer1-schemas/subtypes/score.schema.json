@@ -56,8 +56,8 @@
       }
     }
   ],
-  "x-examples": {
-    "GPA": {
+  "examples": [
+    {
       "method": {
         "description": "GPA",
         "passingScore": "0.7"
@@ -65,12 +65,12 @@
       "scoreValue": "3.8",
       "passFail": "Pass"
     },
-    "Assessment Score relative norm": {
+    {
       "method": {
         "type": "NormReferenced",
         "description": "Description of the norm group and its size"
       },
       "scoreValue": "80"
     }
-  }
+  ]
 }
