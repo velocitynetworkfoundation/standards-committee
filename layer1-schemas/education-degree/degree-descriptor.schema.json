@@ -55,11 +55,7 @@
             "$ref": "../subtypes/alignment.schema.json"
           }
         }
-      },
-      "required": [
-        "institution",
-        "degreeName"
-      ]
+      }
     }
   ],
   "x-internal": true
