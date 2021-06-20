@@ -31,14 +31,11 @@
           "pattern": "^[A-Z]{2}$",
           "description": "The country of the address."
         }
-      },
-      "required": [
-        "addressCountry"
-      ]
+      }
     }
   ],
-  "x-examples": {
-    "US Address": {
+  "examples": [
+    {
       "@context": "https://velocitynetwork.foundation/contexts/address",
       "streetAddress": "3 Dairy Ln",
       "addressLocality": "Long Valley",
@@ -46,7 +43,7 @@
       "postCode": "32796",
       "addressCountry": "US"
     },
-    "EU Address": {
+    {
       "@context": "https://velocitynetwork.foundation/contexts/Address",
       "streetAddress": "C/ Santa Engarcia 13b 4º-2ª  Bellaterra",
       "addressLocality": "Cerdanyola del Vallès",
@@ -54,5 +51,5 @@
       "postCode": "B08193",
       "addressCountry": "ES"
     }
-  }
+  ]
 }
