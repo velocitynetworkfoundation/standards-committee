@@ -20,14 +20,16 @@
         "completionDate": {
           "$ref": "../subtypes/date.schema.json"
         }
-      },
-      "required": [
-        "completionDate"
-      ]
+      }
     }
   ],
-  "x-examples": {
-    "Uni Of Chicago": {
+  "required": [
+    "provider",
+    "title",
+    "completionDate"
+  ],
+  "examples": [
+    {
       "@context": "https://velocitynetwork.foundation/contexts/course",
       "provider": {
         "name": "The University of Chicago",
@@ -55,7 +57,7 @@
         "passFail": "Pass"
       }
     },
-    "Separate Content Provider": {
+    {
       "@context": "https://velocitynetwork.foundation/contexts/course",
       "provider": {
         "name": "ACME Inc",
@@ -90,5 +92,5 @@
         "passFail": "fail"
       }
     }
-  }
+  ]
 }
