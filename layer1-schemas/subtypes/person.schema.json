@@ -48,7 +48,8 @@
     }
   ],
   "required": [
-    "givenName"
+    "givenName",
+    "birthDate"
   ],
   "examples": [
     {
