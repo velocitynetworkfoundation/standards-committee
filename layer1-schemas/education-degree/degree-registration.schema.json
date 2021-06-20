@@ -14,14 +14,14 @@
         "startDate": {
           "$ref": "../subtypes/date.schema.json"
         }
-      },
-      "required": [
-        "registrationDate"
-      ]
+      }
     }
   ],
-  "x-examples": {
-    "XYZ Uni - Nursing - Registration": {
+  "required": [
+    "institution", "conferredDate", "degreeName"
+  ],
+  "examples": [
+    {
       "@context": "https://velocitynetwork.foundation/contexts/degree",
       "institution": {
         "name": "XYZ University",
@@ -57,57 +57,6 @@
       },
       "registrationDate": "2011-05",
       "startDate": "2011-10"
-    }
-  },
-  "description": "",
-  "examples": [
-    {
-      "@context": "string",
-      "institution": {
-        "@context": "string",
-        "name": "string",
-        "identifier": "string",
-        "place": {
-          "@context": "string",
-          "name": "string",
-          "addressLocality": "string",
-          "addressRegion": "string",
-          "addressCountry": "string"
-        }
-      },
-      "school": {
-        "@context": "string",
-        "name": "string",
-        "identifier": "string",
-        "place": {
-          "@context": "string",
-          "name": "string",
-          "addressLocality": "string",
-          "addressRegion": "string",
-          "addressCountry": "string"
-        }
-      },
-      "programName": "string",
-      "programType": "string",
-      "programMode": "string",
-      "degreeName": "string",
-      "degreeMajor": [
-        "string"
-      ],
-      "degreeMinor": [
-        "string"
-      ],
-      "description": "string",
-      "alignment": {
-        "@context": "string",
-        "targetName": "string",
-        "targetUrl": "http://example.com",
-        "targetDescription": "string",
-        "targetCode": "string",
-        "targetFramework": "string"
-      },
-      "registrationDate": "string",
-      "startDate": "string"
     }
   ]
 }
