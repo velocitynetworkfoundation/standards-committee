@@ -41,17 +41,16 @@
         "postalAddress": {
           "$ref": "../subtypes/address.schema.json"
         }
-      },
-      "required": [
-        "documentType",
-        "authority",
-        "person",
-        "identifier"
-      ]
+      }
     }
   ],
-  "x-examples": {
-    "Noah's Drivers License": {
+  "required": [
+    "documentType",
+    "authority",
+    "person",
+    "identifier"
+  ],
+  "examples": [{
       "@context": "https://velocitynetwork.foundation/contexts/id-document",
       "documentType": "DriversLicense",
       "authority": {
@@ -82,7 +81,7 @@
         "addressCountry": "US"
       }
     },
-    "Portugese Id": {
+    {
       "@context": "https://velocitynetwork.foundation/contexts/id-document",
       "documentType": "NationalIdentityCard",
       "authority": {
@@ -114,7 +113,7 @@
       "identifier": "12345678",
       "nationality": "PT"
     },
-    "Andrew's UK Passport": {
+    {
       "@context": "https://velocitynetwork.foundation/contexts/id-document",
       "documentType": "Passport",
       "authority": {
@@ -142,5 +141,5 @@
       "identifier": "1081234567",
       "nationality": "GB"
     }
-  }
+  ]
 }
