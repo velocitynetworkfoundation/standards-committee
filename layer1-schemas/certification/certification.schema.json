@@ -19,8 +19,9 @@
       }
     }
   ],
-  "x-examples": {
-    "CNA": {
+  "required": ["authority", "name"],
+  "examples": [
+    {
       "@context": "https://velocitynetwork.foundation/contexts/certification-license",
       "authority": {
         "name": "New Jersey Department of Health",
@@ -50,5 +51,5 @@
         "targetFramework": "Credential Engine's Credential Registry"
       }
     }
-  }
+  ]
 }
