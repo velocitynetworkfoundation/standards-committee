@@ -14,15 +14,17 @@
         "endDate": {
           "$ref": "../subtypes/date.schema.json"
         }
-      },
-      "required": [
-        "startDate",
-        "endDate"
-      ]
+      }
     }
   ],
-  "x-examples": {
-    "Example Past Employment": {
+  "required": [
+    "legalEmployer",
+    "role",
+    "startDate",
+    "endDate
+  ],
+  "examples": [
+    {
       "@context": "https://velocitynetwork.foundation/contexts/employment",
       "legalEmployer": {
         "name": "Ocatgon Bank",
@@ -45,5 +47,5 @@
       "startDate": "2017-01",
       "endDate": "2017-07"
     }
-  }
+  ]
 }
