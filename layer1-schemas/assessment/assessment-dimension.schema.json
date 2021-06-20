@@ -8,6 +8,7 @@
     },
     {
       "type": "object",
+      "description": "Dimensions are sub-assessments within the parent assessment. Each dimension refers to a different aspect of what is being assessed.",
       "properties": {
         "score": {
           "$ref": "../subtypes/score.schema.json"

@@ -10,7 +10,8 @@
       "type": "object",
       "properties": {
         "identifier": {
-          "type": "string"
+          "type": "string",
+          "description": "The number or other unique identifier of the certification held by the person. "
         },
         "validity": {
           "$ref": "../subtypes/validity.schema.json"
@@ -19,8 +20,8 @@
     }
   ],
   "required": ["authority", "name"],
-  "x-examples": {
-    "CNA": {
+  "examples": [
+    {
       "@context": "https://velocitynetwork.foundation/contexts/certification-license",
       "authority": {
         "name": "New Jersey Department of Health",
@@ -50,5 +51,5 @@
         "targetFramework": "Credential Engine's Credential Registry"
       }
     }
-  }
+  ]
 }

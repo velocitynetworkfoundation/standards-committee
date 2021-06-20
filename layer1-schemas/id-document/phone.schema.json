@@ -10,7 +10,8 @@
       "properties": {
         "phone": {
           "type": "string",
-          "pattern": "^\\+[1-9]\\d{1,14}$"
+          "pattern": "^\\+[1-9]\\d{1,14}$",
+          "description": "The phone number including prefix."
         }
       }
     }
@@ -18,10 +19,10 @@
   "required": [
     "phone"
   ],
-  "x-examples": {
-    "Olivia's Phone": {
+  "examples": [
+    {
       "@context": "https://velocitynetwork.foundation/contexts/phone",
       "phone": "+19177777777"
     }
-  }
+  ]
 }

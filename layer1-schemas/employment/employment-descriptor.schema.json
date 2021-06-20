@@ -12,19 +12,34 @@
           "$ref": "../subtypes/organization.schema.json"
         },
         "role": {
-          "type": "string"
+          "type": "string",
+          "description": "The role the person has in the organization."
         },
         "description": {
-          "type": "string"
+          "type": "string",
+          "description": "A detailed description of the position."
         },
         "employmentType": {
-          "type": "string"
+          "type": "string",
+          "enum": [
+            "contract",
+            "temporary",
+            "permanent",
+            "internship",
+            "full time",
+            "part time"
+          ],
+          "description": "Any of: full-time, part-time, contract, temporary, permanent, internship. "
         },
         "place": {
           "$ref": "../subtypes/place.schema.json"
         },
         "alignment ": {
-          "$ref": "../subtypes/alignment.schema.json"
+          "type": "array",
+          "description": "A public resource to which the employment position is aligned.",
+          "items": {
+            "$ref": "../subtypes/alignment.schema.json"
+          }
         }
       }
     }

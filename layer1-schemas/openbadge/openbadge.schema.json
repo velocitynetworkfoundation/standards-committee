@@ -60,27 +60,32 @@
       "properties": {
         "id": {
           "type": "string",
-          "format": "uri"
+          "format": "uri",
+          "description": "Unique IRI for the BadgeClass. Most platforms to date can only handle HTTP-based IRIs. Issuers using signed assertions are encouraged to publish BadgeClasses using HTTP IRIs but may instead use ephemeral BadgeClasses that use an id in another scheme such as urn:uuid."
         },
         "type": {
           "type": "string",
           "enum": [
             "BadgeClass"
-          ]
+          ],
+          "description": "valid JSON-LD representation of the BadgeClass type. In most cases, this will simply be the string BadgeClass. An array including BadgeClass and other string elements that are either URLs or compact IRIs within the current context are allowed."
         },
         "name": {
           "type": "string",
           "pattern": "^[a-zA-Z0-9\\s]*$",
-          "maxLength": 64
+          "maxLength": 64,
+          "description": "The name of the achievement."
         },
         "description": {
           "type": "string",
           "pattern": "^[a-zA-Z0-9\\s]*$",
-          "maxLength": 64
+          "maxLength": 64,
+          "description": "A short description of the achievement."
         },
         "image": {
           "type": "string",
-          "format": "uri"
+          "format": "uri",
+          "description": "IRI or document representing an image of the achievement. This must be a PNG or SVG image."
         },
         "criteria": {
           "type": "string",
@@ -97,16 +102,19 @@
             {
               "$ref": "#/definitions/obiProfile"
             }
-          ]
+          ],
+          "description": "The organization that issued the badge."
         },
         "tags": {
           "type": "array",
+          "description": "Tags that describes the type of achievement.",
           "items": {
             "type": "string"
           }
         },
         "alignment": {
           "type": "array",
+          "description": "An object describing which objectives or educational standards this badge aligns to, if any.",
           "items": {
             "$ref": "../subtypes/alignment.schema.json"
           }

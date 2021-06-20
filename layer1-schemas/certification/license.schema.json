@@ -10,7 +10,8 @@
       "type": "object",
       "properties": {
         "identifier": {
-          "type": "string"
+          "type": "string",
+          "description": "The number or other unique identifier of the license held by the person. "
         },
         "validity": {
           "$ref": "../subtypes/validity.schema.json"
@@ -19,8 +20,8 @@
     }
   ],
   "required": ["authority", "name", "identifier"],
-  "x-examples": {
-    "Licensed Practical Nurse (LPN)": {
+  "examples": [ 
+    {
       "@context": "https://velocitynetwork.foundation/contexts/certification-license",
       "authority": {
         "name": "New Jersey Board of Nursing",
@@ -43,5 +44,5 @@
         }
       }
     }
-  }
+  ]
 }

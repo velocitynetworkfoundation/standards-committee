@@ -14,6 +14,7 @@
         },
         "assessmentDimensions": {
           "type": "array",
+          "description": "Dimensions are sub-assessments within the parent assessment. Each dimension refers to a different aspect of what is being assessed.",
           "items": {
             "$ref": "./assessment-dimension.schema.json"
           }
@@ -25,8 +26,8 @@
     "authority",
     "name"
   ],
-  "x-examples": {
-    "Korn Ferry": {
+  "examples": [
+    {
       "@context": "https://velocitynetwork.foundation/contexts/assessment",
       "authority": {
         "name": "Korn Ferry",
@@ -75,7 +76,7 @@
         }
       ]
     },
-    "Color Blindness": {
+    {
       "@context": "https://velocitynetwork.foundation/contexts/assessment",
       "authority": {
         "name": "The institute for occupational health ",
@@ -97,9 +98,8 @@
       },
       "date": "2021-05-29"
     }
-  },
+  ],
   "x-tags": [
     "assessment"
-  ],
-  "description": ""
+  ]
 }

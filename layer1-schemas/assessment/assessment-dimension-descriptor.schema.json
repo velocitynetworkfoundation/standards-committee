@@ -10,22 +10,31 @@
       "type": "object",
       "properties": {
         "name": {
-          "type": "string"
+          "type": "string",
+          "description": "The name of the assessment."
         },
         "assesses": {
-          "type": "string"
+          "type": "string",
+          "description": "The competency or learning outcome that is being assessed by the assessment. "
         },
         "description": {
-          "type": "string"
+          "type": "string",
+          "description": "A detailed description of the assessment. "
         },
         "assessmentLevel": {
-          "type": "string"
+          "type": "string",
+          "description": "The level of the assessment, e.g., standard, basic, advanced, etc. "
         },
         "assessmentMethod": {
-          "type": "string"
+          "type": "string",
+          "description": "The method for assessing, such as written exam, oral exam, role play, multiple choice, etc. "
         },
         "alignment": {
-          "$ref": "../subtypes/alignment.schema.json"
+          "type": "array",
+          "description": "A public resource to which the assessment is aligned. ",
+          "items": {
+            "$ref": "../subtypes/alignment.schema.json"
+          }
         }
       }
     }

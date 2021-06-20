@@ -17,7 +17,8 @@
             "NationalIdentityCard",
             "ProofOfAge",
             "ResidentPermit"
-          ]
+          ],
+          "description": "The type of document. One of: Passport, DriversLicense, NationalIdentityCard, ProofOfAge, ResidentPermitץ "
         },
         "authority": {
           "$ref": "../subtypes/organization.schema.json"
@@ -29,11 +30,13 @@
           "$ref": "../subtypes/person.schema.json"
         },
         "identifier": {
-          "type": "string"
+          "type": "string",
+          "description": "The id number. "
         },
         "nationality": {
           "type": "string",
-          "pattern": "^[A-Z]{2}$"
+          "pattern": "^[A-Z]{2}$",
+          "description": "The nationality of the person holding the document."
         },
         "postalAddress": {
           "$ref": "../subtypes/address.schema.json"
@@ -42,13 +45,13 @@
     }
   ],
   "required": [
+    "documentType",
     "authority",
-    "validity",
     "person",
     "identifier"
   ],
-  "x-examples": {
-    "Noah's Drivers License": {
+  "examples": [
+    {
       "@context": "https://velocitynetwork.foundation/contexts/id-document",
       "documentType": "DriversLicense",
       "authority": {
@@ -79,7 +82,7 @@
         "addressCountry": "US"
       }
     },
-     "Portugese Id": {
+    {
       "@context": "https://velocitynetwork.foundation/contexts/id-document",
       "documentType": "NationalIdentityCard",
       "authority": {
@@ -111,7 +114,7 @@
       "identifier": "12345678",
       "nationality": "PT"
     },
-    "Andrew's UK Passport": {
+    {
       "@context": "https://velocitynetwork.foundation/contexts/id-document",
       "documentType": "Passport",
       "authority": {
@@ -139,5 +142,5 @@
       "identifier": "1081234567",
       "nationality": "GB"
     }
-  }
+  ]
 }

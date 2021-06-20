@@ -17,8 +17,11 @@
       }
     }
   ],
-  "x-examples": {
-    "XYZ Uni - Nursing - Registration": {
+  "required": [
+    "institution", "degreeName", "registrationDate"
+  ],
+  "examples": [
+    {
       "@context": "https://velocitynetwork.foundation/contexts/degree",
       "institution": {
         "name": "XYZ University",
@@ -55,6 +58,5 @@
       "registrationDate": "2011-05",
       "startDate": "2011-10"
     }
-  },
-  "description": ""
+  ]
 }

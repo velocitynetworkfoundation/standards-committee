@@ -28,8 +28,8 @@
     "title",
     "completionDate"
   ],
-  "x-examples": {
-    "Uni Of Chicago": {
+  "examples": [
+    {
       "@context": "https://velocitynetwork.foundation/contexts/course",
       "provider": {
         "name": "The University of Chicago",
@@ -57,7 +57,7 @@
         "passFail": "Pass"
       }
     },
-    "Separate Content Provider": {
+    {
       "@context": "https://velocitynetwork.foundation/contexts/course",
       "provider": {
         "name": "ACME Inc",
@@ -92,5 +92,5 @@
         "passFail": "fail"
       }
     }
-  }
+  ]
 }

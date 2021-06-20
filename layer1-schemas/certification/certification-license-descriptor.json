@@ -13,13 +13,19 @@
           "$ref": "../subtypes/organization.schema.json"
         },
         "name": {
-          "type": "string"
+          "type": "string",
+          "description": "The name of the certification or license. "
         },
         "description": {
-          "type": "string"
+          "type": "string",
+          "description": "Detailed description of the certification or license. "
         },
         "alignment": {
-          "$ref": "../subtypes/alignment.schema.json"
+          "type": "array",
+          "description": "A public resource to which the certification or license is aligned.",
+          "items": {
+            "$ref": "../subtypes/alignment.schema.json"
+          }
         }
       }
     }

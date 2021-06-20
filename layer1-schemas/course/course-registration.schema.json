@@ -22,8 +22,8 @@
     "title",
     "registrationDate"
   ],
-  "x-examples": {
-    "Uni of Chicago": {
+  "examples": [
+    {
       "@context": "https://velocitynetwork.foundation/contexts/course",
       "provider": {
         "name": "The University of Chicago",
@@ -41,7 +41,7 @@
       "courseDuration": "PT56H",
       "registrationDate": "2020-05-01"
     },
-    "Separate Content Provider": {
+    {
       "@context": "https://velocitynetwork.foundation/contexts/course",
       "provider": {
         "name": "ACME Inc",
@@ -69,5 +69,5 @@
       "courseDuration": "PT4H",
       "registrationDate": "2021-05-01"
     }
-  }
+  ]
 }
