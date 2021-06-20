@@ -17,14 +17,16 @@
         "startDate": {
           "$ref": "../subtypes/date.schema.json"
         }
-      },
-      "required": [
-        "startDate"
-      ]
+      }
     }
   ],
-  "x-examples": {
-    "Uni Of Chicago": {
+  "required": [
+    "provider",
+    "title",
+    "startDate"
+  ],
+  "examples": [
+    {
       "@context": "https://velocitynetwork.foundation/contexts/course",
       "provider": {
         "name": "The University of Chicago",
@@ -43,7 +45,7 @@
       "registrationDate": "2020-05-01",
       "startDate": "2020-10-01"
     },
-    "Separate Content Provider": {
+    {
       "@context": "https://velocitynetwork.foundation/contexts/course",
       "provider": {
         "name": "ACME Inc",
@@ -71,5 +73,5 @@
       "courseDuration": "PT4H",
       "startDate": "2021-05-01"
     }
-  }
+  ]
 }
