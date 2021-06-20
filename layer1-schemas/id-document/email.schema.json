@@ -10,13 +10,14 @@
       "properties": {
         "email": {
           "type": "string",
-          "format": "email"
+          "format": "email",
+          "description": "The email address."
         }
-      }
+      },
+      "required": [
+        "email"
+      ]
     }
-  ],
-  "required": [
-    "email"
   ],
   "x-examples": {
     "Olivia's Email": {

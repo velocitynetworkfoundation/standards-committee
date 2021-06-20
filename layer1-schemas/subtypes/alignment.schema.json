@@ -9,25 +9,33 @@
       "type": "object",
       "properties": {
         "targetName": {
-          "type": "string"
+          "type": "string",
+          "description": "Name of the target alignment."
         },
         "targetUrl": {
           "type": "string",
-          "format": "uri"
+          "format": "uri",
+          "description": "URL of the target alignment. "
         },
         "targetDescription": {
-          "type": "string"
+          "type": "string",
+          "description": "Detailed description of the target alignment. "
         },
         "targetCode": {
-          "type": "string"
+          "type": "string",
+          "description": "Code of the target alignment. "
         },
         "targetFramework": {
-          "type": "string"
+          "type": "string",
+          "description": "The framework to which the target belongs. "
         }
-      }
+      },
+      "required": [
+        "targetName",
+        "targetUrl"
+      ]
     }
   ],
-  "required": ["targetName", "targetUrl"],
   "x-examples": {
     "Education Standard Example": {
       "targetName": "CCSS.ELA-Literacy.RST.11-12.3",

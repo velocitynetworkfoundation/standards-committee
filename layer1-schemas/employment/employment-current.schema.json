@@ -11,16 +11,14 @@
         "startDate": {
           "$ref": "../subtypes/date.schema.json"
         }
-      }
+      },
+      "required": [
+        "startDate"
+      ]
     }
   ],
-  "required": [
-    "legalEmployer",
-    "role",
-    "startDate"
-  ],
-  "examples": [
-    {
+  "x-examples": {
+    "Example Current Employment": {
       "@context": "https://velocitynetwork.foundation/contexts/employment",
       "legalEmployer": {
         "name": "Ocatgon Bank",
@@ -41,6 +39,44 @@
         "addressCountry": "UK"
       },
       "startDate": "2017-01"
+    }
+  },
+  "examples": [
+    {
+      "@context": "string",
+      "legalEmployer": {
+        "@context": "string",
+        "name": "string",
+        "identifier": "string",
+        "place": {
+          "@context": "string",
+          "name": "string",
+          "addressLocality": "string",
+          "addressRegion": "string",
+          "addressCountry": "string"
+        }
+      },
+      "role": "string",
+      "description": "string",
+      "employmentType": [
+        "full-time"
+      ],
+      "place": {
+        "@context": "string",
+        "name": "string",
+        "addressLocality": "string",
+        "addressRegion": "string",
+        "addressCountry": "string"
+      },
+      "alignment ": {
+        "@context": "string",
+        "targetName": "string",
+        "targetUrl": "http://example.com",
+        "targetDescription": "string",
+        "targetCode": "string",
+        "targetFramework": "string"
+      },
+      "startDate": "string"
     }
   ]
 }

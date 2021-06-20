@@ -20,13 +20,11 @@
         "completionDate": {
           "$ref": "../subtypes/date.schema.json"
         }
-      }
+      },
+      "required": [
+        "completionDate"
+      ]
     }
-  ],
-  "required": [
-    "provider",
-    "title",
-    "completionDate"
   ],
   "x-examples": {
     "Uni Of Chicago": {

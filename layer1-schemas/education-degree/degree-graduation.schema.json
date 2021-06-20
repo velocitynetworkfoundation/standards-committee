@@ -24,9 +24,13 @@
           "$ref": "../subtypes/score.schema.json"
         },
         "honors": {
-          "type": "string"
+          "type": "string",
+          "description": "The type of honors degree given, such as cum laude, merit, etc."
         }
-      }
+      },
+      "required": [
+        "conferredDate"
+      ]
     }
   ],
   "x-examples": {

@@ -14,12 +14,12 @@
         "endDate": {
           "$ref": "../subtypes/date.schema.json"
         }
-      }
+      },
+      "required": [
+        "startDate",
+        "endDate"
+      ]
     }
-  ],
-  "required": [
-    "startDate",
-    "endDate"
   ],
   "x-examples": {
     "Example Past Employment": {

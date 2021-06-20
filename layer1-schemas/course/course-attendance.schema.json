@@ -17,13 +17,11 @@
         "startDate": {
           "$ref": "../subtypes/date.schema.json"
         }
-      }
+      },
+      "required": [
+        "startDate"
+      ]
     }
-  ],
-  "required": [
-    "provider",
-    "title",
-    "startDate"
   ],
   "x-examples": {
     "Uni Of Chicago": {

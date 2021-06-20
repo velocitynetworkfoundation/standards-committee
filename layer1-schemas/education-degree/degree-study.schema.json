@@ -17,7 +17,10 @@
         "endDate": {
           "$ref": "../subtypes/date.schema.json"
         }
-      }
+      },
+      "required": [
+        "startDate"
+      ]
     }
   ],
   "x-examples": {

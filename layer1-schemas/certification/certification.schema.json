@@ -10,7 +10,8 @@
       "type": "object",
       "properties": {
         "identifier": {
-          "type": "string"
+          "type": "string",
+          "description": "The number or other unique identifier of the certification held by the person. "
         },
         "validity": {
           "$ref": "../subtypes/validity.schema.json"
@@ -18,7 +19,6 @@
       }
     }
   ],
-  "required": ["authority", "name"],
   "x-examples": {
     "CNA": {
       "@context": "https://velocitynetwork.foundation/contexts/certification-license",

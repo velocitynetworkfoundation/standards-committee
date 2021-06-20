@@ -9,22 +9,26 @@
       "type": "object",
       "properties": {
         "name": {
-          "type": "string"
+          "type": "string",
+          "description": "The name of the place, e.g., building name, branch name, etc."
         },
         "addressLocality": {
-          "type": "string"
+          "type": "string",
+          "description": "The locality where the place is, e.g., town or city name. "
         },
         "addressRegion": {
-          "type": "string"
+          "type": "string",
+          "description": "The region where the place is. For the US regions are states. "
         },
         "addressCountry": {
-          "type": "string"
+          "type": "string",
+          "description": "The country where the place is. "
         }
-      }
+      },
+      "required": [
+        "addressCountry"
+      ]
     }
-  ],
-  "required": [
-    "addressCountry"
   ],
   "x-examples": {
     "US Example with name": {
