@@ -50,13 +50,9 @@
             "$ref": "../subtypes/alignment.schema.json"
           }
         }
-      },
-      "required": [
-        "provider",
-        "courseName"
-      ]
+      }
     }
   ],
-  "x-examples": {},
+  "examples": {},
   "x-internal": true
 }
