@@ -17,14 +17,14 @@
         "endDate": {
           "$ref": "../subtypes/date.schema.json"
         }
-      },
-      "required": [
-        "startDate"
-      ]
+      }
     }
   ],
-  "x-examples": {
-    "XYZ Uni - Nursing - Study": {
+  "required": [
+    "institution", "degreeName", "startDate"
+  ],
+  "examples": [
+    {
       "@context": "https://velocitynetwork.foundation/contexts/degree",
       "institution": {
         "name": "XYZ University",
@@ -60,6 +60,5 @@
       },
       "startDate": "2011-10"
     }
-  },
-  "description": ""
+  ]
 }
