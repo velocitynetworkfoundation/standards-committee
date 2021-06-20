@@ -50,7 +50,8 @@
     "person",
     "identifier"
   ],
-  "examples": [{
+  "examples": [
+    {
       "@context": "https://velocitynetwork.foundation/contexts/id-document",
       "documentType": "DriversLicense",
       "authority": {
