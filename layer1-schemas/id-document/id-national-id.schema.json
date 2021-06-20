@@ -38,8 +38,8 @@
     "identifier",
     "nationality"
   ],
-  "x-examples": {
-    "Portugese Id": {
+  "examples": [
+    {
       "@context": "https://velocitynetwork.foundation/contexts/id-document",
       "authority": {
         "name": "Direção Geral da Administração da Justiça",
@@ -70,5 +70,5 @@
       "identifier": "12345678",
       "nationality": "PT"
     }
-  }
+  ]
 }
