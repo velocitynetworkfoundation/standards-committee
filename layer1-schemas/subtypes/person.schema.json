@@ -44,15 +44,14 @@
           ],
           "description": "The gender of the person. "
         }
-      },
-      "required": [
-        "givenName",
-        "birthDate"
-      ]
+      }
     }
   ],
-  "x-examples": {
-    "Olivia Hafez": {
+  "required": [
+    "givenName"
+  ],
+  "examples": [
+    {
       "givenName": "Olivia",
       "familyName": "Hafez",
       "additionalName": "Melanie",
@@ -64,25 +63,6 @@
         "addressCountry": "US"
       },
       "gender": "Female"
-    }
-  },
-  "examples": [
-    {
-      "@context": "string",
-      "givenName": "string",
-      "familyName": "string",
-      "middleName": "string",
-      "namePrefix": "string",
-      "nameSuffix": "string",
-      "birthDate": "2019-08-24",
-      "birthPlace": {
-        "@context": "string",
-        "name": "string",
-        "addressLocality": "string",
-        "addressRegion": "string",
-        "addressCountry": "string"
-      },
-      "gender": "Male"
     }
   ]
 }
