@@ -21,12 +21,12 @@
         }
       },
       "required": [
-        "authority"
+        "authority",
+        "name"
       ]
     }
   ],
-  "x-examples": {
-    "Korn Ferry": {
+  "examples": [{
       "@context": "https://velocitynetwork.foundation/contexts/assessment",
       "authority": {
         "name": "Korn Ferry",
@@ -75,7 +75,7 @@
         }
       ]
     },
-    "Color Blindness": {
+    {
       "@context": "https://velocitynetwork.foundation/contexts/assessment",
       "authority": {
         "name": "The institute for occupational health ",
@@ -97,7 +97,7 @@
       },
       "date": "2021-05-29"
     }
-  },
+  ],
   "x-tags": [
     "assessment"
   ],
