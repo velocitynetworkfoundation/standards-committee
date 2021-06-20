@@ -16,14 +16,12 @@
         "validity": {
           "$ref": "../subtypes/validity.schema.json"
         }
-      },
-      "required": [
-        "identifier"
-      ]
+      }
     }
   ],
-  "x-examples": {
-    "Licensed Practical Nurse (LPN)": {
+  "required": ["authority", "name", "identifier"],
+  "examples": [ 
+    {
       "@context": "https://velocitynetwork.foundation/contexts/certification-license",
       "authority": {
         "name": "New Jersey Board of Nursing",
@@ -46,5 +44,5 @@
         }
       }
     }
-  }
+  ]
 }
