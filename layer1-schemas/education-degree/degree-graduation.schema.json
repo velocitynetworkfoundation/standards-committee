@@ -27,14 +27,14 @@
           "type": "string",
           "description": "The type of honors degree given, such as cum laude, merit, etc."
         }
-      },
-      "required": [
-        "conferredDate"
-      ]
+      }
     }
   ],
-  "x-examples": {
-    "XYZ Uni - Nursing - Graduation": {
+  "required": [
+    "institution", "conferredDate", "degreeName"
+  ],
+  "examples": [
+    {
       "@context": "https://velocitynetwork.foundation/contexts/degree",
       "institution": {
         "name": "XYZ University",
@@ -73,6 +73,6 @@
       "conferredDate": "2014-01",
       "honors": "cum laude"
     }
-  },
+  ],
   "description": ""
 }
