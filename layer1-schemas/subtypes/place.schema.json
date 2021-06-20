@@ -24,25 +24,25 @@
           "type": "string",
           "description": "The country where the place is. "
         }
-      },
-      "required": [
-        "addressCountry"
-      ]
+      }
     }
   ],
-  "x-examples": {
-    "US Example with name": {
+  "required": [
+    "addressCountry"
+  ],
+  "examples": [
+    {
       "@context": "https://velocitynetwork.foundation/contexts/Place",
       "name": "Lincoln Square",
       "addressLocality": "NYC",
       "addressRegion": "NJ",
       "addressCountry": "US"
     },
-    "EU Example": {
+    {
       "@context": "https://velocitynetwork.foundation/contexts/Place",
       "addressLocality": "Las Ramblas",
       "addressRegion": "CAT",
       "addressCountry": "ES"
     }
-  }
+  ]
 }
