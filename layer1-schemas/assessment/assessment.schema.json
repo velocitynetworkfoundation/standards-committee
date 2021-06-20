@@ -19,14 +19,15 @@
             "$ref": "./assessment-dimension.schema.json"
           }
         }
-      },
-      "required": [
-        "authority",
-        "name"
-      ]
+      }
     }
   ],
-  "examples": [{
+  "required": [
+    "authority",
+    "name"
+  ],
+  "examples": [
+    {
       "@context": "https://velocitynetwork.foundation/contexts/assessment",
       "authority": {
         "name": "Korn Ferry",
@@ -100,6 +101,5 @@
   ],
   "x-tags": [
     "assessment"
-  ],
-  "description": ""
+  ]
 }
