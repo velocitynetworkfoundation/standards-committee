@@ -20,7 +20,7 @@
           "description": "A detailed description of the position."
         },
         "employmentType": {
-          "type": "string",
+          "type": "array",
           "enum": [
             "contract",
             "temporary",
@@ -29,7 +29,18 @@
             "full time",
             "part time"
           ],
-          "description": "Any of: full-time, part-time, contract, temporary, permanent, internship. "
+          "description": "Any of: full-time, part-time, contract, temporary, permanent, internship. ",
+          "items": {
+            "type": "string",
+            "enum": [
+              "full-time",
+              "part-time",
+              "contract",
+              "temporary",
+              "permanent",
+              "internship"
+            ]
+          }
         },
         "place": {
           "$ref": "../subtypes/place.schema.json"

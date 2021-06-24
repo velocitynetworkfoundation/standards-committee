@@ -35,6 +35,12 @@
           "items": {
             "$ref": "../subtypes/alignment.schema.json"
           }
+        },
+        "score": {
+          "$ref": "../subtypes/score.schema.json"
+        },
+        "assessmentDsate": {
+          "$ref": "../subtypes/date.schema.json"
         }
       }
     }

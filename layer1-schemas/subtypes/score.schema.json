@@ -8,11 +8,11 @@
     {
       "type": "object",
       "properties": {
-        "method": {
+        "scoreMethod": {
           "type": "object",
           "description": "The method acording to which the score is given. ",
           "properties": {
-            "type": {
+            "scoreMethodType": {
               "type": "string",
               "enum": [
                 "NormReferenced",
@@ -20,7 +20,7 @@
               ],
               "description": "One of: NormReferenced, CriterionReferenced."
             },
-            "description": {
+            "scoreMethodDescription": {
               "type": "string",
               "description": "A description of the scoring method used."
             },
@@ -58,19 +58,37 @@
   ],
   "examples": [
     {
-      "method": {
-        "description": "GPA",
+      "scoreMethod": {
+        "scoreMethodDescription": "GPA",
         "passingScore": "0.7"
       },
-      "scoreValue": "3.8",
+      "scoreValue": "3.9",
+      "result": "Distinction",
       "passFail": "Pass"
     },
     {
-      "method": {
-        "type": "NormReferenced",
-        "description": "Description of the norm group and its size"
+      "scoreMethod": {
+        "scoreMethodDescription": "0-100 range",
+        "passingScore": "60"
       },
-      "scoreValue": "80"
+      "scoreValue": "55",
+      "result": "Poor",
+      "passFail": "Fail"
+    },
+    {
+      "scoreMethod": {
+        "scoreMethodDescription": "Korn Ferry global norm 2018. Norm size: 25,000. Score range 1-10. ",
+        "scoreMethodType": "NormReferenced"
+      },
+      "scoreValue": "7.2"
+    },
+    {
+      "scoreMethod": {
+        "scoreMethodDescription": "All answers should be correct.",
+        "scoreMethodType": "CriterionReferenced"
+      },
+      "result": "Normal color vision",
+      "passFail": "Pass"
     }
   ]
 }

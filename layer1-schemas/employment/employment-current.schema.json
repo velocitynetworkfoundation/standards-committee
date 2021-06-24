@@ -27,20 +27,48 @@
         "identifier": "did:velocity:0xc257274276a4e539741ca11b590b9447b26a8051",
         "place": {
           "addressLocality": "London",
-          "addressRegion": "ENG",
-          "addressCountry": "UK"
+          "addressRegion": "GB-ENG",
+          "addressCountry": "GB"
         }
       },
       "role": "Accountant",
       "description": "Junior accountant in the mortgage department",
-      "employmentType": "Internship",
+      "employmentType": [
+        "internship",
+        "contract"
+      ],
       "place": {
         "name": "Branch 4644",
         "addressLocality": "Birmingham",
-        "addressRegion": "ENG",
-        "addressCountry": "UK"
+        "addressRegion": "GB-ENG",
+        "addressCountry": "GB"
       },
       "startDate": "2017-01"
+    },
+    {
+      "@context": "https://velocitynetwork.foundation/contexts/employment",
+      "legalEmployer": {
+        "name": "Microsoft Corporation",
+        "identifier": "did:velocity:0xc257274276a4e539741ca11b590b9447b26a8051",
+        "place": {
+          "addressLocality": "Bellevue",
+          "addressRegion": "WA",
+          "addressCountry": "US"
+        }
+      },
+      "role": "Project Manager",
+      "description": "Backend development project management",
+      "employmentType": [
+        "full-time",
+        "permanent"
+      ],
+      "place": {
+        "name": "Media Lab",
+        "addressLocality": "NYC",
+        "addressRegion": "NY",
+        "addressCountry": "US"
+      },
+      "startDate": "2013-10"
     }
   ]
 }

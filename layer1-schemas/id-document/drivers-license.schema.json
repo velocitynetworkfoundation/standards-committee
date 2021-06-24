@@ -1,0 +1,139 @@
+{
+  "title": "drivers-license.schema",
+  "$schema": "http://json-schema.org/draft-07/schema#",
+  "$id": "https://velocitynetwork.foundation/schemas/drivers-license",
+  "allOf": [
+    {
+      "$ref": "../json-ld-context.schema.json"
+    },
+    {
+      "type": "object",
+      "properties": {
+        "name": {
+          "type": "string",
+          "description": "The name of the license."
+        },
+        "authority": {
+          "$ref": "../subtypes/organization.schema.json"
+        },
+        "validity": {
+          "$ref": "../subtypes/validity.schema.json"
+        },
+        "person": {
+          "$ref": "../subtypes/person.schema.json"
+        },
+        "identifier": {
+          "type": "string",
+          "description": "The license number."
+        },
+        "address": {
+          "$ref": "../subtypes/address.schema.json"
+        },
+        "description": {
+          "type": "string",
+          "description": "Detailed description of the license, including, for example, the coding system used for endorsements and restrictions."
+        },
+        "endorsementCodes": {
+          "type": "array",
+          "description": "Endorsements to the license such as vehicle class A1, B.",
+          "items": {
+            "type": "string"
+          }
+        },
+        "restrictionCodes": {
+          "type": "array",
+          "description": "Restrictions to the license such as need to wear glasses.",
+          "items": {
+            "type": "string"
+          }
+        },
+        "alignment": {
+          "$ref": "../subtypes/alignment.schema.json"
+        }
+      }
+    }
+  ],
+  "required": [
+    "name",
+    "authority",
+    "identifier",
+    "person"
+  ],
+  "examples": [
+    {
+      "@context": "https://velocitynetwork.foundation/contexts/drivers-license",
+      "authority": {
+        "name": "DMV State of California",
+        "identifier": "did:velocity:0xc257274276a4e539741ca11b590b9447b26a8051",
+        "place": {
+          "addressLocality": "Sacramento",
+          "addressRegion": "CA",
+          "addressCountry": "US"
+        }
+      },
+      "validity": {
+        "validFrom": "2009-08-21",
+        "validUntil": "2014-08-21"
+      },
+      "person": {
+        "givenName": "Noah",
+        "familyName": "Brown",
+        "birthDate": "1990-08-21",
+        "gender": "Male"
+      },
+      "identifier": "string",
+      "address": {
+        "streetAddress": "string",
+        "addressLocality": "string",
+        "addressRegion": "string",
+        "postCode": "string",
+        "addressCountry": "string"
+      },
+      "name": "California Driver License",
+      "endorsementCodes": [
+        "A-H Hazardous materials"
+      ],
+      "restrictionCodes": [
+        "B-Corrective lenses"
+      ]
+    },
+    {
+      "@context": "https://velocitynetwork.foundation/contexts/drivers-license",
+      "authority": {
+        "name": "State of Israel Minsitry of Transport",
+        "identifier": "did:velocity:0xc257274276a4e539741ca11b590b9447b26a8051",
+        "place": {
+          "addressLocality": "Jerusalem",
+          "addressRegion": "IL-JM",
+          "addressCountry": "IL"
+        }
+      },
+      "validity": {
+        "validFrom": "2016-04-20",
+        "validUntil": "2026-04-20"
+      },
+      "person": {
+        "givenName": "Zoahr",
+        "familyName": "Argov",
+        "birthDate": "1955-7-16"
+      },
+      "identifier": "7198054",
+      "address": {
+        "streetAddress": "99 Dizzengof St.",
+        "addressLocality": "Tel Aviv",
+        "addressRegion": "IL-TA",
+        "postCode": "655332",
+        "addressCountry": "IL-TA"
+      },
+      "name": "State of Israel Driving License",
+      "endorsementCodes": [
+        "A1 - Motorcycle"
+      ],
+      "restrictionCodes": [
+        "Spectscles or contact lenses required"
+      ],
+      "description": "A driver's license is an official document that gives its owner the legal right to drive a vehicle, the type of ehich is determined by the category of the license. A computerized driving license in European standard carries a picture of the licensee and is given for a period of up to 10 years, except in cases where it is granted for two years (new driver) or five years (professional driver or veteran driver) only. Driver's license levels in Israel are adjusted to the levels used in Europe."
+    }
+  ],
+  "description": ""
+}

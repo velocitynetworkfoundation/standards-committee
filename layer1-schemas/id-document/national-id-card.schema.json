@@ -33,42 +33,69 @@
   ],
   "required": [
     "authority",
-    "validity",
     "person",
-    "identifier",
-    "nationality"
+    "identifier"
   ],
   "examples": [
     {
-      "@context": "https://velocitynetwork.foundation/contexts/id-document",
+      "@context": "https://velocitynetwork.foundation/contexts/national-id-card",
       "authority": {
         "name": "Direção Geral da Administração da Justiça",
         "identifier": "did:velocity:0xc257274276a4e539741ca11b590b9447b26a8051",
         "place": {
           "addressLocality": "Lisboa",
-          "addressRegion": "11",
+          "addressRegion": "PT11",
           "addressCountry": "PT"
         }
       },
       "validity": {
         "firstValidFrom": "2009-07-15",
-        "validFrom": "2019-07-15",
-        "validUntil": "2029-07-15"
+        "validFrom": "2009-07-15",
+        "validUntil": "2019-07-15"
       },
       "person": {
         "givenName": "Heurelho",
         "familyName": "Gomes",
-        "additionalName": "da Silva",
+        "middleName": "da Silva",
         "birthDate": "1985-01-22",
         "gender": "Male",
         "birthPlace": {
           "addressLocality": "Porto",
-          "addressRegion": "13",
+          "addressRegion": "PT13",
           "addressCountry": "PT"
         }
       },
       "identifier": "12345678",
       "nationality": "PT"
+    },
+    {
+      "@context": "https://velocitynetwork.foundation/contexts/id-document",
+      "authority": {
+        "name": "State of Israel Minsitry of Transport",
+        "identifier": "did:velocity:0xc257274276a4e539741ca11b590b9447b26a8051",
+        "place": {
+          "addressLocality": "Jerusaelm",
+          "addressRegion": "IL-JM",
+          "addressCountry": "IL"
+        }
+      },
+      "validity": {
+        "validFrom": "2009-12-15",
+        "validUntil": "2019-07-15"
+      },
+      "person": {
+        "givenName": "Ida",
+        "familyName": "Perlmuter",
+        "birthDate": "1986-06-24",
+        "gender": "Female",
+        "birthPlace": {
+          "addressLocality": "Jerusaelm",
+          "addressRegion": "IL-JM",
+          "addressCountry": "IL"
+        }
+      },
+      "identifier": "39642782",
+      "nationality": "IL"
     }
   ]
 }

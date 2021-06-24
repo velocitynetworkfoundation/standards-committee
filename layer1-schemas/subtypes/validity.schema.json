@@ -43,5 +43,22 @@
       }
     }
   ],
-  "examples": []
+  "examples": [
+    {
+      "@context": "https://velocitynetwork.foundation/contexts/Validity",
+      "firstValidFrom": "2015-01-18",
+      "validFrom": "2020-01-18",
+      "validUntil": "2025-01-18"
+    },
+    {
+      "@context": "https://velocitynetwork.foundation/contexts/Validity",
+      "firstValidFrom": "2016-03-14",
+      "validFrom": "2016-03-14",
+      "validUntil": "2018-03-14",
+      "validIn": {
+        "addressRegion": "NJ",
+        "addressCountry": "US"
+      }
+    }
+  ]
 }
