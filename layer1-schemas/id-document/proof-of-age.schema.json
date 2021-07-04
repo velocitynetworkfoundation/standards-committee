@@ -33,7 +33,7 @@
       }
     }
   ],
-    "required": [
+  "required": [
     "authority",
     "person",
     "identifier"
@@ -46,7 +46,7 @@
         "identifier": "did:velocity:0xc257274276a4e539741ca11b590b9447b26a8051",
         "place": {
           "addressLocality": "Melbourne",
-          "addressRegion": "VIC",
+          "addressRegion": "AU-VIC",
           "addressCountry": "AU"
         }
       },
@@ -65,7 +65,7 @@
       "postalAddress": {
         "streetAddress": "10 Admiral Rd",
         "addressLocality": "Melbourne",
-        "addressRegion": "VIC",
+        "addressRegion": "AU-VIC",
         "addressCountry": "AU"
       }
     }

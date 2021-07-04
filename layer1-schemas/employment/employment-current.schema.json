@@ -52,7 +52,7 @@
         "identifier": "did:velocity:0xc257274276a4e539741ca11b590b9447b26a8051",
         "place": {
           "addressLocality": "Bellevue",
-          "addressRegion": "WA",
+          "addressRegion": "US-WA",
           "addressCountry": "US"
         }
       },
@@ -64,8 +64,8 @@
       ],
       "place": {
         "name": "Media Lab",
-        "addressLocality": "NYC",
-        "addressRegion": "NY",
+        "addressLocality": "Buffalo",
+        "addressRegion": "US-NY",
         "addressCountry": "US"
       },
       "startDate": "2013-10"

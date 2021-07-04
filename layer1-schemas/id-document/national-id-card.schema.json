@@ -44,7 +44,7 @@
         "identifier": "did:velocity:0xc257274276a4e539741ca11b590b9447b26a8051",
         "place": {
           "addressLocality": "Lisboa",
-          "addressRegion": "PT11",
+          "addressRegion": "PT-11",
           "addressCountry": "PT"
         }
       },
@@ -61,7 +61,7 @@
         "gender": "Male",
         "birthPlace": {
           "addressLocality": "Porto",
-          "addressRegion": "PT13",
+          "addressRegion": "PT-13",
           "addressCountry": "PT"
         }
       },

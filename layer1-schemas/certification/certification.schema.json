@@ -31,7 +31,7 @@
         "did": "did:velocity:0xc257274276a4e539741ca11b590b9447b26a8051",
         "place": {
           "addressLocality": "Trenton",
-          "addressRegion": "NJ",
+          "addressRegion": "US-NJ",
           "addressCountry": "US"
         }
       },
@@ -42,7 +42,7 @@
         "validFrom": "2014-03-14",
         "validUntil": "2016-03-14",
         "validIn": {
-          "addressRegion": "NJ",
+          "addressRegion": "US-NJ",
           "addressCountry": "US"
         }
       },

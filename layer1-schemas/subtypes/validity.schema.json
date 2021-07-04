@@ -56,7 +56,7 @@
       "validFrom": "2016-03-14",
       "validUntil": "2018-03-14",
       "validIn": {
-        "addressRegion": "NJ",
+        "addressRegion": "US-NJ",
         "addressCountry": "US"
       }
     }

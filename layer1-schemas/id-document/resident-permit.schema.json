@@ -33,7 +33,7 @@
       }
     }
   ],
-    "required": [
+  "required": [
     "authority",
     "person",
     "identifier"
@@ -59,7 +59,7 @@
         "birthDate": "1976-10-17",
         "birthPlace": {
           "addressLocality": "Portland",
-          "addressRegion": "OR",
+          "addressRegion": "US-OR",
           "addressCountry": "US"
         }
       },

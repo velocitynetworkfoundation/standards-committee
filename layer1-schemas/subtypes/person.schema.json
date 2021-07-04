@@ -60,7 +60,7 @@
       "birthDate": "1994-06-20",
       "birthPlace": {
         "addressLocality": "Baltimore",
-        "addressRegion": "MD",
+        "addressRegion": "US-MD",
         "addressCountry": "US"
       },
       "gender": "Female"
@@ -72,7 +72,7 @@
       "birthDate": "1960-02-11",
       "birthPlace": {
         "addressLocality": "Lowell",
-        "addressRegion": "MA",
+        "addressRegion": "US-MA",
         "addressCountry": "US"
       },
       "gender": "Male",

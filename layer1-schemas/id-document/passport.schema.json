@@ -34,36 +34,7 @@
       }
     }
   ],
-  "x-examples": {
-    "Andrew's UK Passport": {
-      "@context": "https://velocitynetwork.foundation/contexts/id-document",
-      "authority": {
-        "name": "HM Passport office",
-        "place": {
-          "addressLocality": "London",
-          "addressRegion": "ENG",
-          "addressCountry": "UK"
-        }
-      },
-      "validity": {
-        "validFrom": "2011-11-06",
-        "validUntil": "2021-11-06"
-      },
-      "person": {
-        "givenName": "Andrew",
-        "familyName": "Hall",
-        "birthDate": "1977-08-24",
-        "birthPlace": {
-          "addressRegion": "ENG",
-          "addressCountry": "UK"
-        },
-        "gender": "Male"
-      },
-      "identifier": "1081234567",
-      "nationality": "GB"
-    }
-  },
-    "required": [
+  "required": [
     "documentCode",
     "authority",
     "identifier",
