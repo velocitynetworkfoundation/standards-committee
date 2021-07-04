@@ -35,7 +35,7 @@
       "@context": "https://velocitynetwork.foundation/contexts/Place",
       "name": "Lincoln Square",
       "addressLocality": "Buffalo",
-      "addressRegion": "NY",
+      "addressRegion": "US-NY",
       "addressCountry": "US"
     },
     {
@@ -47,14 +47,14 @@
     {
       "@context": "https://velocitynetwork.foundation/contexts/Place",
       "addressLocality": "Long Valley",
-      "addressRegion": "NJ",
+      "addressRegion": "US-NJ",
       "addressCountry": "US"
     },
     {
       "@context": "https://velocitynetwork.foundation/contexts/Place",
       "name": "Microsoft Visitor Center",
       "addressLocality": "Redmond",
-      "addressRegion": "WA",
+      "addressRegion": "US-WA",
       "addressCountry": "US"
     }
   ]

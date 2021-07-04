@@ -33,7 +33,7 @@
         "identifier": "did:web:www.xyzuniversity.com",
         "place": {
           "addressLocality": "Chicago",
-          "addressRegion": "IL",
+          "addressRegion": "US-IL",
           "addressCountry": "US"
         }
       },
@@ -42,7 +42,7 @@
         "place": {
           "name": "Florida Branch",
           "addressLocality": "Fort Myers",
-          "addressRegion": "FL",
+          "addressRegion": "US-FL",
           "addressCountry": "US"
         }
       },

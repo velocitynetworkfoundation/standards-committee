@@ -34,7 +34,7 @@
         "identifier": "did:velocity:0xc30b69405238038080c641cc20a63715ca97d706",
         "place": {
           "addressLocality": "Los Angeles",
-          "addressRegion": "CA",
+          "addressRegion": "US-CA",
           "addressCountry": "US"
         }
       },
@@ -84,7 +84,7 @@
         "name": "The institute for occupational health ",
         "place": {
           "addressLocality": "New Rochelle ",
-          "addressRegion": "NY",
+          "addressRegion": "US-NY",
           "addressCountry": "US"
         }
       },
@@ -108,7 +108,7 @@
         "name": "XYZ University ",
         "place": {
           "addressLocality": "Chicago ",
-          "addressRegion": "IL",
+          "addressRegion": "US-IL",
           "addressCountry": "US"
         }
       },

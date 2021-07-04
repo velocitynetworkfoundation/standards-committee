@@ -30,7 +30,7 @@
         "identifier": "did:ion:EiClkZMDxPKqC9c-umQfTkR8vvZ9JPhl_xLDI9Nfk38w5w",
         "place": {
           "addressLocality": "Chicago",
-          "addressRegion": "IL",
+          "addressRegion": "US-IL",
           "addressCountry": "US"
         }
       },
@@ -48,7 +48,7 @@
         "identifier": "did:velocity:0xc257274276a4e539741ca11b590b9447b26a8051",
         "place": {
           "addressLocality": "Morrisville",
-          "addressRegion": "NC",
+          "addressRegion": "US-NC",
           "addressCountry": "US"
         }
       },
@@ -76,7 +76,7 @@
         "identifier": "did:velocity:0xc257274276a4e539741ca11b590b9447b26a8051",
         "place": {
           "addressLocality": "Miami",
-          "addressRegion": "FL",
+          "addressRegion": "US-FL",
           "addressCountry": "US"
         }
       },
@@ -85,7 +85,7 @@
         "identifier": "did:velocity:0xc30b69405238038080c641cc20a63715ca97d706",
         "place": {
           "addressLocality": "Fort Lauderdale",
-          "addressRegion": "FL",
+          "addressRegion": "US-FL",
           "addressCountry": "US"
         }
       },

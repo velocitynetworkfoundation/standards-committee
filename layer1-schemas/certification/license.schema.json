@@ -46,7 +46,7 @@
         "did": "did:velocity:0xc257274276a4e539741ca11b590b9447b26a8052",
         "place": {
           "addressLocality": "Newark",
-          "addressRegion": "NJ",
+          "addressRegion": "US-NJ",
           "addressCountry": "US"
         }
       },
@@ -58,7 +58,7 @@
         "validFrom": "2020-07-01",
         "validUntil": "2022-07-01",
         "validIn": {
-          "addressRegion": "NJ",
+          "addressRegion": "US-NJ",
           "addressCountry": "US"
         }
       }
@@ -70,7 +70,7 @@
         "did": "did:velocity:0xc257274276a4e539741ca11b590b9447b26a8052",
         "place": {
           "addressLocality": "Sacramento",
-          "addressRegion": "CA",
+          "addressRegion": "US-CA",
           "addressCountry": "US"
         }
       },
@@ -81,7 +81,7 @@
         "firstValidFrom": "2014-05-10",
         "validFrom": "2014-05-10",
         "validIn": {
-          "addressRegion": "CA",
+          "addressRegion": "US-CA",
           "addressCountry": "US"
         }
       }
@@ -93,7 +93,7 @@
         "did": "did:velocity:0xc257274276a4e539741ca11b590b9447b26a8052",
         "place": {
           "addressLocality": "Sacramento",
-          "addressRegion": "CA",
+          "addressRegion": "US-CA",
           "addressCountry": "US"
         },
         "identifier": "string"

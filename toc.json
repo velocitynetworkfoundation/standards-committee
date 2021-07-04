@@ -100,6 +100,31 @@
         },
         {
           "type": "item",
+          "title": "Driver's License",
+          "uri": "layer1-schemas/id-document/drivers-license.schema.json"
+        },
+        {
+          "type": "item",
+          "title": "National ID Card",
+          "uri": "layer1-schemas/id-document/national-id-card.schema.json"
+        },
+        {
+          "type": "item",
+          "title": "Passport",
+          "uri": "layer1-schemas/id-document/passport.schema.json"
+        },
+        {
+          "type": "item",
+          "title": "Proof of Age",
+          "uri": "layer1-schemas/id-document/proof-of-age.schema.json"
+        },      
+        {
+          "type": "item",
+          "title": "Resident Permit",
+          "uri": "layer1-schemas/id-document/resident-permit.schema.json"
+        },
+        {
+          "type": "item",
           "title": "Email",
           "uri": "layer1-schemas/id-document/email.schema.json"
         },
