@@ -24,7 +24,7 @@
     "Person": "schema:Person",
     "givenName": "schema:givenName",
     "familyName": "schema:familyName",
-    "additionalName": "schema:additionalName",
+    "middleName": "schema:additionalName",
     "namePrefix": "schema:honorificPrefix",
     "nameSuffix": "schema:honorificSuffix",
     "birthDate": "schema:birthDate",
@@ -75,6 +75,12 @@
     "nationality": "schema:addressCountry",
     "postalAddress": { "@id": "vnf:postalAddress", "@type": "@id" },
 
+    "Passport-1.0": "vnf:Passport-1.0",
+    "documentCode": "schema:additionalType",
+
+    "driversLicense": "vnf:driversLicense-1.0",
+    "address": { "@id": "vnf:postalAddress", "@type": "@id" },
+
     "Employment-1.0": "vnf:Employment-1.0",
     "description": "schema:description",
     "legalEmployer": { "@id": "vnf:legalEmployer", "@type": "@id" },
@@ -117,6 +123,8 @@
     "score": { "@id": "vnf:score", "@type": "@id" },
 
     "Certifcation-1.0": "vnf:Certifcation-1.0",
+    "endorsementCodes": "vnf:endorsementCodes",
+    "restrictionCodes": "vnf:restrictionsCodes",
     "License-1.0": "vnf:License-1.0"
   }
 }
