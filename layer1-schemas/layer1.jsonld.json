@@ -123,8 +123,8 @@
     "score": { "@id": "vnf:score", "@type": "@id" },
 
     "Certifcation-1.0": "vnf:Certification-1.0",
-    "endorsementCodes": "vnf:endorsementCodes",
-    "restrictionCodes": "vnf:restrictionsCodes",
+    "endorsementCode": "vnf:endorsementCode",
+    "restrictionCode": "vnf:restrictionsCode",
     "License-1.0": "vnf:License-1.0"
   }
 }

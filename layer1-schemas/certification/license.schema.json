@@ -16,14 +16,14 @@
         "validity": {
           "$ref": "../subtypes/validity.schema.json"
         },
-        "endorsementCodes": {
+        "endorsementCode": {
           "type": "array",
           "description": "Endorsements to the license such as vehicle class A1, B, in driver's license, or specialties in nursing license.",
           "items": {
             "type": "string"
           }
         },
-        "restrictionCodes": {
+        "restrictionCode": {
           "type": "array",
           "description": "Restrictions to the license such as need to wear glasses in driver's license.",
           "items": {
@@ -32,11 +32,6 @@
         }
       }
     }
-  ],
-  "required": [
-    "authority",
-    "name",
-    "identifier"
   ],
   "examples": [
     {
@@ -104,10 +99,10 @@
         "validFrom": "2009-08-21",
         "validUntil": "2014-08-21"
       },
-      "endorsementCodes": [
+      "endorsementCode": [
         "A-H Hazardous materials"
       ],
-      "restrictionCodes": [
+      "restrictionCode": [
         "Spectscles or contact lenses required"
       ]
     }
