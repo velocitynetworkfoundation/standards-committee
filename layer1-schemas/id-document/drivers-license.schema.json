@@ -33,14 +33,14 @@
           "type": "string",
           "description": "Detailed description of the license, including, for example, the coding system used for endorsements and restrictions."
         },
-        "endorsementCodes": {
+        "endorsementCode": {
           "type": "array",
           "description": "Endorsements to the license such as vehicle class A1, B.",
           "items": {
             "type": "string"
           }
         },
-        "restrictionCodes": {
+        "restrictionCode": {
           "type": "array",
           "description": "Restrictions to the license such as need to wear glasses.",
           "items": {
@@ -52,12 +52,6 @@
         }
       }
     }
-  ],
-  "required": [
-    "name",
-    "authority",
-    "identifier",
-    "person"
   ],
   "examples": [
     {
@@ -90,10 +84,10 @@
         "addressCountry": "string"
       },
       "name": "California Driver License",
-      "endorsementCodes": [
+      "endorsementCode": [
         "A-H Hazardous materials"
       ],
-      "restrictionCodes": [
+      "restrictionCode": [
         "B-Corrective lenses"
       ]
     },
@@ -126,13 +120,13 @@
         "addressCountry": "IL-TA"
       },
       "name": "State of Israel Driving License",
-      "endorsementCodes": [
+      "endorsementCode": [
         "A1 - Motorcycle"
       ],
-      "restrictionCodes": [
-        "Spectscles or contact lenses required"
+      "restrictionCode": [
+        "Spectacles or contact lenses required"
       ],
-      "description": "A driver's license is an official document that gives its owner the legal right to drive a vehicle, the type of ehich is determined by the category of the license. A computerized driving license in European standard carries a picture of the licensee and is given for a period of up to 10 years, except in cases where it is granted for two years (new driver) or five years (professional driver or veteran driver) only. Driver's license levels in Israel are adjusted to the levels used in Europe."
+      "description": "A driver's license is an official document that gives its owner the legal right to drive a vehicle, the type of which is determined by the category of the license. A computerized driving license in European standard carries a picture of the licensee and is given for a period of up to 10 years, except in cases where it is granted for two years (new driver) or five years (professional driver or veteran driver) only. Driver's license levels in Israel are adjusted to the levels used in Europe."
     }
   ],
   "description": ""
