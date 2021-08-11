@@ -18,7 +18,9 @@
     }
   ],
   "required": [
-    "institution", "degreeName", "registrationDate"
+    "institution",
+    "degreeName",
+    "registrationDate"
   ],
   "examples": [
     {
@@ -28,7 +30,7 @@
         "identifier": "did:web:www.xyzuniversity.com",
         "place": {
           "addressLocality": "Chicago",
-          "addressRegion": "IL",
+          "addressRegion": "US-IL",
           "addressCountry": "US"
         }
       },
@@ -37,7 +39,7 @@
         "place": {
           "name": "Florida Branch",
           "addressLocality": "Fort Myers",
-          "addressRegion": "FL",
+          "addressRegion": "US-FL",
           "addressCountry": "US"
         }
       },
@@ -57,6 +59,45 @@
       },
       "registrationDate": "2011-05",
       "startDate": "2011-10"
+    },
+    {
+      "@context": "https://velocitynetwork.foundation/contexts/degree",
+      "institution": {
+        "name": "ABC University",
+        "identifier": "did:web:www.abcuniversity.com",
+        "place": {
+          "addressLocality": "Cardiff",
+          "addressRegion": "GB-WLS",
+          "addressCountry": "GB"
+        }
+      },
+      "school": {
+        "name": "College of Liberal Arts and Sciences",
+        "place": {
+          "name": "Graduate Studies Building",
+          "addressLocality": "Barry",
+          "addressRegion": "GB-WLS",
+          "addressCountry": "GB"
+        }
+      },
+      "programName": "Undergraduate program in psychology",
+      "programType": "60 credits full program",
+      "degreeName": "BSc",
+      "degreeMajor": [
+        "Psychology"
+      ],
+      "degreeMinor": [
+        "English"
+      ],
+      "description": "The program prepares students for graduate study, and so emphasizes practice in the research techniques which are used in graduate school and professionally later on.",
+      "alignment": {
+        "targetName": "Bachelor of Science (BS) in Psychology - General Psychology",
+        "targetUrl": "https://nces.ed.gov/ipeds/cipcode/cipdetail.aspx?y=55&cipid=88527",
+        "targetDescription": "A general program that focuses on the scientific study of individual and collective behavior, the physical and environmental bases of behavior, and the analysis and treatment of behavior problems and disorders. Includes instruction in the principles of the various subfields of psychology, research methods, and psychological assessment and testing methods.",
+        "targetCode": "42.0101",
+        "targetFramework": "CIP - Classification of Instructional Programs"
+      },
+      "registrationDate": "2021-05-15"
     }
   ]
 }

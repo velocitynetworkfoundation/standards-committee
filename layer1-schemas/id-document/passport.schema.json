@@ -1,0 +1,106 @@
+{
+  "title": "passport.schema",
+  "$schema": "http://json-schema.org/draft-07/schema#",
+  "$id": "https://velocitynetwork.foundation/schemas/passport",
+  "allOf": [
+    {
+      "$ref": "../json-ld-context.schema.json"
+    },
+    {
+      "type": "object",
+      "properties": {
+        "documentCode": {
+          "type": "string",
+          "description": "The type of passport. The letter P + an optional additional letter to indicate type, e.g. diplomatic. \nOne additional capital letter may be used, in the\ncharacter position after the letter P and at the discretion of the issuing State or organization."
+        },
+        "authority": {
+          "$ref": "../subtypes/organization.schema.json"
+        },
+        "validity": {
+          "$ref": "../subtypes/validity.schema.json"
+        },
+        "person": {
+          "$ref": "../subtypes/person.schema.json"
+        },
+        "identifier": {
+          "type": "string",
+          "description": "The passport number."
+        },
+        "nationality": {
+          "type": "string",
+          "pattern": "^[A-Z]{2}$",
+          "description": "The nationality of the person holding the passport. "
+        }
+      }
+    }
+  ],
+  "required": [
+    "documentCode",
+    "authority",
+    "identifier",
+    "person"
+  ],
+  "examples": [
+    {
+      "@context": "https://velocitynetwork.foundation/contexts/passport",
+      "documentCode": "P",
+      "authority": {
+        "name": "Ministry of Interior",
+        "identifier": "did:velocity:0xc257274276a4e539741ca11b590b9447b26a8051",
+        "place": {
+          "addressLocality": "Jerusalem",
+          "addressRegion": "IL-JM",
+          "addressCountry": "IL"
+        }
+      },
+      "validity": {
+        "validFrom": "2010-07-12",
+        "validUntil": "2020-07-12"
+      },
+      "person": {
+        "givenName": "Adi",
+        "familyName": "Gordon",
+        "birthDate": "1966-03-04",
+        "birthPlace": {
+          "addressLocality": "Binyamina",
+          "addressRegion": "IL-Z",
+          "addressCountry": "IL"
+        },
+        "gender": "Femle"
+      },
+      "identifier": "63039602",
+      "nationality": "IL"
+    },
+    {
+      "@context": "https://velocitynetwork.foundation/contexts/passport",
+      "documentCode": "PC",
+      "authority": {
+        "name": "HM Passport office",
+        "identifier": "did:velocity:0xc257274276a4e539741ca11b590b9447b26a8051",
+        "place": {
+          "addressLocality": "London",
+          "addressRegion": "GB-ENG",
+          "addressCountry": "GB"
+        },
+        "@context": "string"
+      },
+      "validity": {
+        "validFrom": "2011-11-6",
+        "validUntil": "2021-11-6"
+      },
+      "person": {
+        "givenName": "Andrew",
+        "familyName": "Hall",
+        "birthDate": "1988-08-24",
+        "birthPlace": {
+          "addressLocality": "Dorset",
+          "addressRegion": "GB-ENG",
+          "addressCountry": "GB"
+        },
+        "gender": "Male"
+      },
+      "identifier": "1081234567",
+      "nationality": "GB"
+    }
+  ]
+}

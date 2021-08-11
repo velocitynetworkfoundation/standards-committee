@@ -1,0 +1,110 @@
+{
+  "title": "resident-permit.schema",
+  "$schema": "http://json-schema.org/draft-07/schema#",
+  "$id": "https://velocitynetwork.foundation/schemas/id-document",
+  "allOf": [
+    {
+      "$ref": "../json-ld-context.schema.json"
+    },
+    {
+      "type": "object",
+      "properties": {
+        "authority": {
+          "$ref": "../subtypes/organization.schema.json"
+        },
+        "validity": {
+          "$ref": "../subtypes/validity.schema.json"
+        },
+        "person": {
+          "$ref": "../subtypes/person.schema.json"
+        },
+        "identifier": {
+          "type": "string",
+          "description": "The permit number. "
+        },
+        "nationality": {
+          "type": "string",
+          "pattern": "^[A-Z]{2}$",
+          "description": "The nationality of the person holding the permit."
+        },
+        "postalAddress": {
+          "$ref": "../subtypes/address.schema.json"
+        }
+      }
+    }
+  ],
+  "required": [
+    "authority",
+    "person",
+    "identifier"
+  ],
+  "examples": [
+    {
+      "@context": "https://velocitynetwork.foundation/contexts/resident-permit",
+      "authority": {
+        "name": "State of Israel Minsitry of Transport",
+        "identifier": "did:velocity:0xc257274276a4e539741ca11b590b9447b26a8051",
+        "place": {
+          "addressLocality": "Jerusalem",
+          "addressRegion": "IL-JM",
+          "addressCountry": "IL"
+        }
+      },
+      "validity": {
+        "validFrom": "2009-12-15"
+      },
+      "person": {
+        "givenName": "Hila",
+        "familyName": "Harlap",
+        "birthDate": "1976-10-17",
+        "birthPlace": {
+          "addressLocality": "Portland",
+          "addressRegion": "US-OR",
+          "addressCountry": "US"
+        }
+      },
+      "identifier": "39642782",
+      "nationality": "US",
+      "postalAddress": {
+        "streetAddress": "10 Mishmar Hyarden St.",
+        "addressLocality": "Givatayym",
+        "addressRegion": "IL-TA",
+        "addressCountry": "IL"
+      }
+    },
+    {
+      "@context": "https://velocitynetwork.foundation/contexts/resident-permit",
+      "authority": {
+        "name": "Dirección General de la Policía",
+        "identifier": "did:velocity:0xc257274276a4e539741ca11b590b9447b26a8051",
+        "place": {
+          "addressLocality": "Madrid",
+          "addressRegion": "ES-MD",
+          "addressCountry": "ES"
+        }
+      },
+      "validity": {
+        "validFrom": "2018-01-15",
+        "validuntil": "2019-01-15"
+      },
+      "person": {
+        "givenName": "Juana",
+        "familyName": "Villareal",
+        "birthDate": "2001-06-20",
+        "birthPlace": {
+          "addressLocality": "Buenos Aires",
+          "addressRegion": "AR-B",
+          "addressCountry": "AR"
+        }
+      },
+      "identifier": "X4795665G",
+      "nationality": "AR",
+      "postalAddress": {
+        "streetAddress": "280 c/ Muntaner",
+        "addressLocality": "Barcelona",
+        "addressRegion": "ES-CT",
+        "addressCountry": "ES"
+      }
+    }
+  ]
+}

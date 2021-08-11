@@ -31,7 +31,26 @@
       "identifier": "did:velocity:0xc30b69405238038080c641cc20a63715ca97d706",
       "place": {
         "addressLocality": "Trenton",
-        "addressRegion": "NJ",
+        "addressRegion": "US-NJ",
+        "addressCountry": "US"
+      }
+    },
+    {
+      "name": "Microsoft Corporation",
+      "identifier": "did:velocity:0xc30b69405238038080c641cc20a63715ca97d706",
+      "place": {
+        "addressLocality": "Portland",
+        "addressRegion": "US-OR",
+        "addressCountry": "US",
+        "name": "Microsoft Experience Center"
+      }
+    },
+    {
+      "name": "Harvard University",
+      "identifier": "did:velocity:0xc30b69405238038080c641cc20a63715ca97d706",
+      "place": {
+        "addressLocality": "Cambridge",
+        "addressRegion": "US-MA",
         "addressCountry": "US"
       }
     }

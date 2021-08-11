@@ -34,13 +34,15 @@
       }
     }
   ],
-  "required": ["addressCountry"],
+  "required": [
+    "addressCountry"
+  ],
   "examples": [
     {
       "@context": "https://velocitynetwork.foundation/contexts/address",
       "streetAddress": "3 Dairy Ln",
       "addressLocality": "Long Valley",
-      "addressRegion": "NJ",
+      "addressRegion": "US-NJ",
       "postCode": "32796",
       "addressCountry": "US"
     },
@@ -48,7 +50,7 @@
       "@context": "https://velocitynetwork.foundation/contexts/Address",
       "streetAddress": "C/ Santa Engarcia 13b 4º-2ª  Bellaterra",
       "addressLocality": "Cerdanyola del Vallès",
-      "addressRegion": "CAT",
+      "addressRegion": "ES-CT",
       "postCode": "B08193",
       "addressCountry": "ES"
     }

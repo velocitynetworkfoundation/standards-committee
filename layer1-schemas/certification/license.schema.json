@@ -15,12 +15,25 @@
         },
         "validity": {
           "$ref": "../subtypes/validity.schema.json"
+        },
+        "endorsementCode": {
+          "type": "array",
+          "description": "Endorsements to the license such as vehicle class A1, B, in driver's license, or specialties in nursing license.",
+          "items": {
+            "type": "string"
+          }
+        },
+        "restrictionCode": {
+          "type": "array",
+          "description": "Restrictions to the license such as need to wear glasses in driver's license.",
+          "items": {
+            "type": "string"
+          }
         }
       }
     }
   ],
-  "required": ["authority", "name", "identifier"],
-  "examples": [ 
+  "examples": [
     {
       "@context": "https://velocitynetwork.foundation/contexts/certification-license",
       "authority": {
@@ -28,7 +41,7 @@
         "did": "did:velocity:0xc257274276a4e539741ca11b590b9447b26a8052",
         "place": {
           "addressLocality": "Newark",
-          "addressRegion": "NJ",
+          "addressRegion": "US-NJ",
           "addressCountry": "US"
         }
       },
@@ -38,11 +51,60 @@
       "validity": {
         "firstValidFrom": "2018-07-01",
         "validFrom": "2020-07-01",
+        "validUntil": "2022-07-01",
         "validIn": {
-          "addressRegion": "NJ",
+          "addressRegion": "US-NJ",
           "addressCountry": "US"
         }
       }
+    },
+    {
+      "@context": "https://velocitynetwork.foundation/contexts/certification-license",
+      "authority": {
+        "name": "California State Board of Accountancy",
+        "did": "did:velocity:0xc257274276a4e539741ca11b590b9447b26a8052",
+        "place": {
+          "addressLocality": "Sacramento",
+          "addressRegion": "US-CA",
+          "addressCountry": "US"
+        }
+      },
+      "name": "CPA",
+      "description": "The CPA designation distinguishes licensed accounting professionals committed to protecting the public interest.These professionals offer financial statement audits and other attestation services to help inform investors about the financial health of organizations. They provide individuals and families with valuable knowledge and advice on taxes and financial planning.",
+      "identifier": "82532887",
+      "validity": {
+        "firstValidFrom": "2014-05-10",
+        "validFrom": "2014-05-10",
+        "validIn": {
+          "addressRegion": "US-CA",
+          "addressCountry": "US"
+        }
+      }
+    },
+    {
+      "@context": "https://velocitynetwork.foundation/contexts/certification-license",
+      "authority": {
+        "name": "DMV State of California",
+        "did": "did:velocity:0xc257274276a4e539741ca11b590b9447b26a8052",
+        "place": {
+          "addressLocality": "Sacramento",
+          "addressRegion": "US-CA",
+          "addressCountry": "US"
+        },
+        "identifier": "string"
+      },
+      "name": "California Driver's License",
+      "identifier": "G1234568",
+      "validity": {
+        "validFrom": "2009-08-21",
+        "validUntil": "2014-08-21"
+      },
+      "endorsementCode": [
+        "A-H Hazardous materials"
+      ],
+      "restrictionCode": [
+        "Spectscles or contact lenses required"
+      ]
     }
   ]
 }

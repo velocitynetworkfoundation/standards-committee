@@ -34,7 +34,7 @@
         "identifier": "did:velocity:0xc30b69405238038080c641cc20a63715ca97d706",
         "place": {
           "addressLocality": "Los Angeles",
-          "addressRegion": "CA",
+          "addressRegion": "US-CA",
           "addressCountry": "US"
         }
       },
@@ -49,6 +49,7 @@
         "scoreValue": "8.9"
       },
       "assessmentDate": "2018-09-01",
+      "assessmentMethod": "Written",
       "assessmentDimensions": [
         {
           "name": "Credibility",
@@ -60,7 +61,8 @@
             },
             "scoreValue": "7.2"
           },
-          "assessmentDate": "2018-09-01"
+          "assessmentDate": "2018-09-01",
+          "assessmentMethod": "Written"
         },
         {
           "name": "Assertiveness",
@@ -82,21 +84,48 @@
         "name": "The institute for occupational health ",
         "place": {
           "addressLocality": "New Rochelle ",
-          "addressRegion": "NY",
+          "addressRegion": "US-NY",
           "addressCountry": "US"
         }
       },
-      "name": "Color blindness",
+      "name": "Color blindness test",
       "assesses": "Color blindness",
       "score": {
-        "method": {
-          "type": "CriterionReferenced",
-          "description": "Standard Ishihara color plate test"
+        "scoreMethod": {
+          "scoreMethodType": "CriterionReferenced",
+          "scoreMethodDescription": "Standard Ishihara color plate test"
         },
         "result": "Normal color vision",
         "passFail": "pass"
       },
-      "date": "2021-05-29"
+      "assessmentDate": "2021-05-29",
+      "assessmentLevel": "Standard",
+      "assessmentMethod": "Online"
+    },
+    {
+      "@context": "https://velocitynetwork.foundation/contexts/assessment",
+      "authority": {
+        "name": "XYZ University ",
+        "place": {
+          "addressLocality": "Chicago ",
+          "addressRegion": "US-IL",
+          "addressCountry": "US"
+        }
+      },
+      "name": "Algebraic geometry - Final Exam",
+      "assesses": "Algebraic curves and surfaces",
+      "score": {
+        "scoreMethod": {
+          "scoreMethodtype": "criterionReferenced",
+          "scoreMethoddescription": "1-100 scale",
+          "passingScore": "60"
+        },
+        "scoreValue": "92",
+        "passFail": "pass"
+      },
+      "assessmentDate": "2019-06-20",
+      "assessmentLevel": "Intermediate",
+      "assessmentMethod": "Multiple choice"
     }
   ],
   "x-tags": [

@@ -18,5 +18,10 @@
       ]
     }
   },
-  "description": "Simplified context for Velocity Publishers to Use"
+  "description": "Simplified context for Velocity Publishers to Use",
+  "examples": [
+    {
+      "@context": "string"
+    }
+  ]
 }

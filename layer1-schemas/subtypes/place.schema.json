@@ -34,15 +34,28 @@
     {
       "@context": "https://velocitynetwork.foundation/contexts/Place",
       "name": "Lincoln Square",
-      "addressLocality": "NYC",
-      "addressRegion": "NJ",
+      "addressLocality": "Buffalo",
+      "addressRegion": "US-NY",
       "addressCountry": "US"
     },
     {
       "@context": "https://velocitynetwork.foundation/contexts/Place",
-      "addressLocality": "Las Ramblas",
-      "addressRegion": "CAT",
+      "addressLocality": "Cerdanyola del Vallès",
+      "addressRegion": "ES-CT",
       "addressCountry": "ES"
+    },
+    {
+      "@context": "https://velocitynetwork.foundation/contexts/Place",
+      "addressLocality": "Long Valley",
+      "addressRegion": "US-NJ",
+      "addressCountry": "US"
+    },
+    {
+      "@context": "https://velocitynetwork.foundation/contexts/Place",
+      "name": "Microsoft Visitor Center",
+      "addressLocality": "Redmond",
+      "addressRegion": "US-WA",
+      "addressCountry": "US"
     }
   ]
 }

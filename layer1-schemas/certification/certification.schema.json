@@ -19,7 +19,10 @@
       }
     }
   ],
-  "required": ["authority", "name"],
+  "required": [
+    "authority",
+    "name"
+  ],
   "examples": [
     {
       "@context": "https://velocitynetwork.foundation/contexts/certification-license",
@@ -28,7 +31,7 @@
         "did": "did:velocity:0xc257274276a4e539741ca11b590b9447b26a8051",
         "place": {
           "addressLocality": "Trenton",
-          "addressRegion": "NJ",
+          "addressRegion": "US-NJ",
           "addressCountry": "US"
         }
       },
@@ -36,10 +39,10 @@
       "identifier": "54377868",
       "validity": {
         "firstValidFrom": "2012-03-14",
-        "validFrom": "2012-03-14",
+        "validFrom": "2014-03-14",
         "validUntil": "2016-03-14",
         "validIn": {
-          "addressRegion": "NJ",
+          "addressRegion": "US-NJ",
           "addressCountry": "US"
         }
       },
@@ -50,6 +53,35 @@
         "targetCode": "ce-8570f9a5-e59e-48df-a7cd-00ffcc5fef56",
         "targetFramework": "Credential Engine's Credential Registry"
       }
+    },
+    {
+      "@context": "https://velocitynetwork.foundation/contexts/certification-license",
+      "authority": {
+        "name": "Microsoft",
+        "did": "did:velocity:0xc257274276a4e539741ca11b590b9447b26a8051",
+        "place": {
+          "addressLocality": "Redmond",
+          "addressRegion": "WA",
+          "addressCountry": "US",
+          "name": "Corporate Headquarters"
+        }
+      },
+      "name": "Azure Solutions Architect Expert",
+      "identifier": "E2000-1234",
+      "validity": {
+        "firstValidFrom": "2015-01-18",
+        "validFrom": "2015-01-18",
+        "validUntil": "2025-01-01"
+      },
+      "alignment": [
+        {
+          "targetName": "Azure Solutions Architect Expert Certification",
+          "targetUrl": "https://docs.microsoft.com/en-us/learn/certifications/azure-solutions-architect/",
+          "targetDescription": "Required exams: AZ-303AZ-304",
+          "targetFramework": "Microsoft Certifications"
+        }
+      ],
+      "description": "Responsibilities for this role include advising stakeholders and translating business requirements into secure, scalable, and reliable cloud solutions. An Azure Solution Architect partners with cloud administrators, cloud DBAs, and clients to implement solutions."
     }
   ]
 }

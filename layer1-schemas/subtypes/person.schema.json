@@ -48,21 +48,46 @@
     }
   ],
   "required": [
-    "givenName"
+    "givenName",
+    "birthDate"
   ],
   "examples": [
     {
       "givenName": "Olivia",
       "familyName": "Hafez",
-      "additionalName": "Melanie",
+      "middleName": "Melanie",
       "namePrefix": "Dr",
       "birthDate": "1994-06-20",
       "birthPlace": {
         "addressLocality": "Baltimore",
-        "addressRegion": "MD",
+        "addressRegion": "US-MD",
         "addressCountry": "US"
       },
       "gender": "Female"
+    },
+    {
+      "givenName": "Oliver",
+      "familyName": "Barrett ",
+      "namePrefix": "string",
+      "birthDate": "1960-02-11",
+      "birthPlace": {
+        "addressLocality": "Lowell",
+        "addressRegion": "US-MA",
+        "addressCountry": "US"
+      },
+      "gender": "Male",
+      "nameSuffix": "Jr"
+    },
+    {
+      "givenName": "Joan Manuel ",
+      "familyName": "Serrat Teresa",
+      "birthDate": "1943-12-27",
+      "birthPlace": {
+        "addressLocality": "Barcelona",
+        "addressRegion": "ES-CT",
+        "addressCountry": "ES"
+      },
+      "gender": "Male"
     }
   ]
 }
