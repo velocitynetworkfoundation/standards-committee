@@ -1,0 +1,97 @@
+ {
+  "display": {
+    "title": {
+      "path": [
+        "$.authority.name"
+      ]
+    },
+    "subtitle": {
+      "path": [
+        "$.name"
+      ]
+    },
+    "summary_detail": {
+      "path": [
+        "$.validity.validUntil"
+      ]
+    },
+    "description": {
+      "text": "All licenses on the Velocity Network"
+    },
+    "properties": [
+      {
+        "label": "License number",
+        "path": [
+          "$.identifier"
+        ]
+      },
+      {
+        "label": "License date",
+        "path": [
+          "$.validity.firstValidFrom"
+        ]
+      },
+      {
+        "label": "Renewal date",
+        "path": [
+          "$.validity.validFrom"
+        ]
+      },
+      {
+        "label": "Valid until",
+        "path": [
+          "$.validity.validUntil"
+        ]
+      },
+      {          
+        "label": "Locality",
+        "path": [
+          "$.validity.validIn.addressLocality"
+        ]
+      },
+      {          
+        "label": "Region",
+        "path": [
+          "$.validity.validIn.addressRegion"
+        ]
+      },
+      {          
+        "path": [
+          "$.validity.validIn.addressCountry"
+        ],
+        "label": "Country"
+      },
+      {
+        "label": "Endorsement codes",
+        "path": [
+          "$.endorsementCodes"
+        ]
+      },
+      {
+        "label": "Restriction codes",
+        "path": [
+          "$.restrictionCodes"
+        ]
+      },
+      {
+        "label": "Alignment",
+        "path": [
+          "$.alignment.targetName"
+        ]
+      },
+      {
+        "label": "Alignment URL",
+        "path": [
+          "$. alignment.targetUrl"
+        ]
+        
+      },
+      {
+        "label": "Alignment framework",
+        "path": [
+          "$. alignment.targetFramework"
+        ]      
+      }
+    ]
+  }
+}

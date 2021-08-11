@@ -1,0 +1,58 @@
+{
+  "authority.name": {
+    "ui.title": "Authority"
+  },
+  "name": {
+    "ui.title": "License name"
+  },
+  "identifier": {
+    "ui.title": "License number"
+  },
+  "validity.firstValidFrom": {
+    "ui.title": "License date",
+    "ui:widget": "date"
+  },
+  "validity.validFrom": {
+    "ui.title": "Renewal date",
+    "ui:widget": "date"
+  },
+  "validity.validUntil": {
+    "ui.title": "Valid until",
+    "ui:widget": "date"
+  },
+  "validity.validIn.addressCountry": {
+    "ui.title": "Country valid in",
+    "ui:enum": sortedCountries, <!-- load these in -->
+    "ui:widget": "select"
+  },
+  "validity.validIn.addressRegion": {
+    "ui.title": "State valid in",
+    "ui:enum": sortedRegions, <!-- load these in based on country selected above -->
+    "ui:widget": "select"
+  },
+  "validity.validIn.addressLocality": {
+    "ui.title": "Locality valid in"
+  },
+  "endorsementCodes": {
+    "ui.title": "Endorsement codes"
+  },
+  "restrictionCodes": {
+    "ui.title": "Restriction codes"
+  },
+  "*": {
+    "ui.widget": "hidden"
+  },
+  "ui:order": [
+    "authority.name",
+    "name",
+    "identifier",
+    "validity.firstValidFrom",
+    "validity.validFrom",
+    "validity.validUntil",
+    "validity.validIn.addressCountry",
+    "validity.validIn.addressRegion",
+    "validity.validIn.addressLocality",
+    "endorsementCodes",
+    "restrictionCodes"
+  ]
+}
