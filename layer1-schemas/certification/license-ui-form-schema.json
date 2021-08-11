@@ -1,37 +1,66 @@
 {
-  "authority.name": {
-    "ui.title": "Authority"
+  "authority": {
+    "name": {
+      "ui.title": "Authority"
+    },
+    "identifer": {
+      "ui.widget": "hidden"
+    },
+    "place": {
+      "ui.widget": "hidden"
+    }
   },
   "name": {
     "ui.title": "License name"
   },
+  "description": {
+    "ui.widget": "hidden"
+  },
   "identifier": {
-    "ui.title": "License number"
+    "ui.widget": "hidden"
   },
-  "validity.firstValidFrom": {
-    "ui.title": "License date",
-    "ui:widget": "date"
-  },
-  "validity.validFrom": {
-    "ui.title": "Renewal date",
-    "ui:widget": "date"
-  },
-  "validity.validUntil": {
-    "ui.title": "Valid until",
-    "ui:widget": "date"
-  },
-  "validity.validIn.addressCountry": {
-    "ui.title": "Country valid in",
-    "ui:enum": sortedCountries, <!-- load these in -->
-    "ui:widget": "select"
-  },
-  "validity.validIn.addressRegion": {
-    "ui.title": "State valid in",
-    "ui:enum": sortedRegions, <!-- load these in based on country selected above -->
-    "ui:widget": "select"
-  },
-  "validity.validIn.addressLocality": {
-    "ui.title": "Locality valid in"
+  "validity": {
+    "firstValidFrom": {
+      "ui.title": "License date",
+      "ui:widget": "date"
+    },
+    "validFrom": {
+      "ui.title": "Renewal date",
+      "ui:widget": "date"
+    },
+    "validUntil": {
+      "ui.title": "Valid until",
+      "ui:widget": "date"
+    },
+    "validIn": {
+      "name": {
+        "ui.widget": "hidden"
+      },
+      "addressCountry": {
+        "ui.title": "Country valid in",
+        "ui:enum": sortedCountries, <!-- load these in -->
+        "ui:widget": "select"
+      },
+      "addressRegion": {
+        "ui.title": "State valid in",
+        "ui:enum": sortedRegions, <!-- load these in based on country selected above -->
+        "ui:widget": "select"
+      },
+      "addressLocality": {
+        "ui.title": "Locality valid in"
+      },
+      "ui:order": [
+        "addressLocality",
+        "addressRegion",
+        "addressCountry"
+      ]
+    },
+    "ui:order": [    
+      "firstValidFrom",
+      "validFrom",
+      "validUntil",
+      "validIn"
+    ]
   },
   "endorsementCodes": {
     "ui.title": "Endorsement codes"
@@ -39,19 +68,14 @@
   "restrictionCodes": {
     "ui.title": "Restriction codes"
   },
-  "*": {
+  "alignment": {
     "ui.widget": "hidden"
   },
   "ui:order": [
-    "authority.name",
+    "authority",
     "name",
     "identifier",
-    "validity.firstValidFrom",
-    "validity.validFrom",
-    "validity.validUntil",
-    "validity.validIn.addressCountry",
-    "validity.validIn.addressRegion",
-    "validity.validIn.addressLocality",
+    "validity",
     "endorsementCodes",
     "restrictionCodes"
   ]
