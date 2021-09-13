@@ -2,75 +2,63 @@
   "display": {
     "title": {
       "path": [
-        "$.authority.name"
+        "$.provider.name"
       ]
     },
     "subtitle": {
       "path": [
-        "$.name"
+        "$.courseName"
       ]
     },
     "summary_detail": {
       "path": [
-        "$.validity.validUntil"
+        "$.registrationDate"
       ]
     },
     "description": {
-      "text": "License"
+      "text": "Course registration"
     },
     "properties": [
       {
-        "label": "License number",
+        "label": "Description",
         "path": [
-          "$.identifier"
+          "$.description"
         ]
       },
       {
-        "label": "License date",
+        "label": "Registration date",
         "path": [
-          "$.validity.firstValidFrom"
+          "$.registrationDate"
         ]
       },
       {
-        "label": "Renewal date",
+        "label": "Start date",
         "path": [
-          "$.validity.validFrom"
+          "$.startDate"
         ]
       },
       {
-        "label": "Valid until",
+        "label": "Course type",
         "path": [
-          "$.validity.validUntil"
-        ]
-      },
-      {          
-        "label": "Locality",
-        "path": [
-          "$.validity.validIn.addressLocality"
-        ]
-      },
-      {          
-        "label": "Region",
-        "path": [
-          "$.validity.validIn.addressRegion"
-        ]
-      },
-      {          
-        "path": [
-          "$.validity.validIn.addressCountry"
-        ],
-        "label": "Country"
-      },
-      {
-        "label": "Endorsement codes",
-        "path": [
-          "$.endorsementCodes"
+          "$.courseType"
         ]
       },
       {
-        "label": "Restriction codes",
+        "label": "Course mode",
         "path": [
-          "$.restrictionCodes"
+          "$.courseMode"
+        ]
+      },
+      {
+        "label": "Course level",
+        "path": [
+          "$.courseLevel"
+        ]
+      },
+      {
+        "label": "Course duration",
+        "path": [
+          "$.courseDuration"
         ]
       },
       {

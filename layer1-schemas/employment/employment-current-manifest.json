@@ -1,0 +1,79 @@
+ {
+  "display": {
+    "title": {
+      "path": [
+        "$.legalEmployer.name"
+      ]
+    },
+    "subtitle": {
+      "path": [
+        "$.role"
+      ]
+    },
+    "summary_detail": {
+      "path": [
+        "$.startDate"
+      ]
+    },
+    "description": {
+      "text": "Current employment position"
+    },
+    "properties": [
+      {
+        "label": "Role description",
+        "path": [
+          "$.description"
+        ]
+      },
+      {
+        "label": "Start date",
+        "path": [
+          "$.startDate"
+        ]
+      },
+      {
+        "label": "Place of work",
+        "path": [
+          "$.place.addressLocality"
+        ]
+      },
+      {
+        "label": "State or region of work",
+        "path": [
+          "$.place.addressRegion"
+        ]
+      },
+      {
+        "label": "Country of work",
+        "path": [
+          "$.place.country"
+        ]
+      },
+      {
+        "label": "Employment type",
+        "path": [
+          "$.employmentType"
+        ]
+      },
+      {
+        "label": "Alignment",
+        "path": [
+          "$.alignment.targetName"
+        ]
+      },
+      {
+        "label": "Alignment URL",
+        "path": [
+          "$. alignment.targetUrl"
+        ]
+        
+      },
+      {
+        "label": "Alignment framework",
+        "path": [
+          "$. alignment.targetFramework"
+        ]      
+      }
+    ]
+  }
+}

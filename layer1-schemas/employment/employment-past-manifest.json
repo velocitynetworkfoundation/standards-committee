@@ -2,75 +2,63 @@
   "display": {
     "title": {
       "path": [
-        "$.authority.name"
+        "$.legalEmployer.name"
       ]
     },
     "subtitle": {
       "path": [
-        "$.name"
+        "$.role"
       ]
     },
     "summary_detail": {
       "path": [
-        "$.validity.validUntil"
+        "$.endDate"
       ]
     },
     "description": {
-      "text": "License"
+      "text": "Past employment position"
     },
     "properties": [
       {
-        "label": "License number",
+        "label": "Role description",
         "path": [
-          "$.identifier"
+          "$.description"
         ]
       },
       {
-        "label": "License date",
+        "label": "Start Date",
         "path": [
-          "$.validity.firstValidFrom"
+          "$.startDate"
+        ]
+      },
+            {
+        "label": "End date",
+        "path": [
+          "$.endDate"
         ]
       },
       {
-        "label": "Renewal date",
+        "label": "Place of work",
         "path": [
-          "$.validity.validFrom"
+          "$.place.addressLocality"
         ]
       },
       {
-        "label": "Valid until",
+        "label": "State or region of work",
         "path": [
-          "$.validity.validUntil"
-        ]
-      },
-      {          
-        "label": "Locality",
-        "path": [
-          "$.validity.validIn.addressLocality"
-        ]
-      },
-      {          
-        "label": "Region",
-        "path": [
-          "$.validity.validIn.addressRegion"
-        ]
-      },
-      {          
-        "path": [
-          "$.validity.validIn.addressCountry"
-        ],
-        "label": "Country"
-      },
-      {
-        "label": "Endorsement codes",
-        "path": [
-          "$.endorsementCodes"
+          "$.place.addressRegion"
         ]
       },
       {
-        "label": "Restriction codes",
+        "label": "Country of work",
         "path": [
-          "$.restrictionCodes"
+          "$.place.country"
+        ]
+      },
+      {
+        "label": "Employment type",
+        "path": [
+          "$.employmentType"
         ]
       },
       {

@@ -1,0 +1,79 @@
+ {
+  "display": {
+    "title": {
+      "path": [
+        "$.issuer.name"
+      ]
+    },
+    "subtitle": {
+      "path": [
+        "$.type"
+      ]
+    },
+    "summary_detail": {
+      "path": [
+        "$.name"
+      ]
+    },
+    "description": {
+      "text": "Open badge"
+    },
+    "properties": [
+      {
+        "label": "Badge name",
+        "path": [
+          "$.name"
+        ]
+      },
+      {
+        "label": "Badge Id",
+        "path": [
+          "$.id"
+        ]
+      },
+            {
+        "label": "Description",
+        "path": [
+          "$.description"
+        ]
+      },
+      {
+        "label": "Criteria",
+        "path": [
+          "$.criteria"
+        ]
+      },
+      {
+        "label": "Tags",
+        "path": [
+          "$.tags"
+        ]
+      },
+      {
+        "label": "",
+        "path": [
+          "$.image"
+        ]
+      },
+      {
+        "label": "Alignment",
+        "path": [
+          "$.alignment.targetName"
+        ]
+      },
+      {
+        "label": "Alignment URL",
+        "path": [
+          "$. alignment.targetUrl"
+        ]
+        
+      },
+      {
+        "label": "Alignment framework",
+        "path": [
+          "$. alignment.targetFramework"
+        ]      
+      }
+    ]
+  }
+}

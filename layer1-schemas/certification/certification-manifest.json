@@ -16,19 +16,13 @@
       ]
     },
     "description": {
-      "text": "License"
+      "text": "Velocity Network certification credentials"
     },
     "properties": [
       {
-        "label": "License number",
+        "label": "Certification number",
         "path": [
           "$.identifier"
-        ]
-      },
-      {
-        "label": "License date",
-        "path": [
-          "$.validity.firstValidFrom"
         ]
       },
       {
