@@ -11,13 +11,13 @@
     }
   },
   "name": {
-    "ui.title": "License name"
+    "ui.title": "Certification name"
   },
   "description": {
     "ui.widget": "hidden"
   },
   "identifier": {
-    "ui.title": "License number"
+    "ui.title": "Certification number"
   },
   "validity": {
     "firstValidFrom": {
@@ -38,12 +38,12 @@
       },
       "addressCountry": {
         "ui.title": "Valid in country",
-        "ui:enum": sortedCountries, <!-- load these in -->
+        "ui:enum": "sortedCountries",
         "ui:widget": "select"
       },
       "addressRegion": {
         "ui.title": "Valid in state or region",
-        "ui:enum": sortedRegions, <!-- load these in based on country selected above -->
+        "ui:enum": "sortedRegions",
         "ui:widget": "select"
       },
       "addressLocality": {
@@ -62,12 +62,6 @@
       "validIn"
     ]
   },
-  "endorsementCodes": {
-    "ui.title": "Endorsement codes"
-  },
-  "restrictionCodes": {
-    "ui.title": "Restriction codes"
-  },
   "alignment": {
     "ui.widget": "hidden"
   },
@@ -75,8 +69,6 @@
     "authority",
     "name",
     "identifier",
-    "validity",
-    "endorsementCodes",
-    "restrictionCodes"
+    "validity"
   ]
 }
