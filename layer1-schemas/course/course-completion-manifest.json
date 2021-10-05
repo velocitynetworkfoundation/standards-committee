@@ -2,75 +2,87 @@
   "display": {
     "title": {
       "path": [
-        "$.authority.name"
+        "$.provider.name"
       ]
     },
     "subtitle": {
       "path": [
-        "$.name"
+        "$.courseName"
       ]
     },
     "summary_detail": {
       "path": [
-        "$.validity.validUntil"
+        "$.completionDate"
       ]
     },
     "description": {
-      "text": "License"
+      "text": "Course completion"
     },
     "properties": [
       {
-        "label": "License number",
+        "label": "Description",
         "path": [
-          "$.identifier"
+          "$.description"
         ]
       },
       {
-        "label": "License date",
+        "label": "Registration Date",
         "path": [
-          "$.validity.firstValidFrom"
+          "$.registrationDate"
         ]
       },
       {
-        "label": "Renewal date",
+        "label": "Start Date",
         "path": [
-          "$.validity.validFrom"
+          "$.startDate"
         ]
       },
       {
-        "label": "Valid until",
+        "label": "Completion Date",
         "path": [
-          "$.validity.validUntil"
+          "$.completionDate"
+        ]
+      },
+      {
+        "label": "Grade",
+        "path": [
+          "$.grade.scoreValue"
         ]
       },
       {          
-        "label": "Locality",
+        "label": "Result",
         "path": [
-          "$.validity.validIn.addressLocality"
+          "$.grade.result"
         ]
       },
       {          
-        "label": "Region",
+        "label": "Pass or fail",
         "path": [
-          "$.validity.validIn.addressRegion"
-        ]
-      },
-      {          
-        "path": [
-          "$.validity.validIn.addressCountry"
-        ],
-        "label": "Country"
-      },
-      {
-        "label": "Endorsement codes",
-        "path": [
-          "$.endorsementCodes"
+          "$.grade.passFail"
         ]
       },
       {
-        "label": "Restriction codes",
+        "label": "Course type",
         "path": [
-          "$.restrictionCodes"
+          "$.courseType"
+        ]
+      },
+      {
+        "label": "Course mode",
+        "path": [
+          "$.courseMode"
+        ]
+      },
+      {
+        "label": "Course level",
+        "path": [
+          "$.courseLevel"
+        ]
+      },
+      {
+        "label": "Course duration",
+        "path": [
+          "$.courseDuration"
         ]
       },
       {

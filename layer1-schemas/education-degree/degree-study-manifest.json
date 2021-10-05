@@ -2,75 +2,81 @@
   "display": {
     "title": {
       "path": [
-        "$.authority.name"
+        "$.institution.name"
       ]
     },
     "subtitle": {
       "path": [
-        "$.name"
+        "$.degreeName"
       ]
     },
     "summary_detail": {
       "path": [
-        "$.validity.validUntil"
+        "$.startDate"
       ]
     },
     "description": {
-      "text": "License"
+      "text": "Degree study"
     },
     "properties": [
       {
-        "label": "License number",
+        "label": "School or department",
         "path": [
-          "$.identifier"
+          "$.school.name"
         ]
       },
       {
-        "label": "License date",
+        "label": "Description",
         "path": [
-          "$.validity.firstValidFrom"
+          "$.description"
         ]
       },
       {
-        "label": "Renewal date",
+        "label": "Registration date",
         "path": [
-          "$.validity.validFrom"
+          "$.registrationDate"
         ]
       },
       {
-        "label": "Valid until",
+        "label": "Start date",
         "path": [
-          "$.validity.validUntil"
+          "$.startDate"
         ]
       },
-      {          
-        "label": "Locality",
+       {
+        "label": "End date",
         "path": [
-          "$.validity.validIn.addressLocality"
-        ]
-      },
-      {          
-        "label": "Region",
-        "path": [
-          "$.validity.validIn.addressRegion"
-        ]
-      },
-      {          
-        "path": [
-          "$.validity.validIn.addressCountry"
-        ],
-        "label": "Country"
-      },
-      {
-        "label": "Endorsement codes",
-        "path": [
-          "$.endorsementCodes"
+          "$.endDate"
         ]
       },
       {
-        "label": "Restriction codes",
+        "label": "Major",
         "path": [
-          "$.restrictionCodes"
+          "$.major"
+        ]
+      },
+      {
+        "label": "Minor",
+        "path": [
+          "$.minor"
+        ]
+      },
+      {
+        "label": "Program",
+        "path": [
+          "$.programName"
+        ]
+      },
+      {
+        "label": "Program type",
+        "path": [
+          "$.programType"
+        ]
+      },
+      {
+        "label": "Program mode",
+        "path": [
+          "$.programMode"
         ]
       },
       {
