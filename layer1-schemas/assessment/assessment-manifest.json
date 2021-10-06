@@ -1,0 +1,84 @@
+ {
+  "display": {
+    "title": {
+      "path": [
+        "$.authority.name"
+      ]
+    },
+    "subtitle": {
+      "path": [
+        "$.name"
+      ]
+    },
+    "summary_detail": {
+      "path": [
+        "$.assessmentDate"
+      ]
+    },
+    "description": {
+      "text": "Assessment"
+    },
+    "properties": [
+      {
+        "label": "Description",
+        "path": [
+          "$.description"
+        ]
+      },
+      {
+        "label": "Assesses",
+        "path": [
+          "$.assesses"
+        ]
+      },      
+      {
+        "label": "Score",
+        "path": [
+          "$.grade.scoreValue"
+        ]
+      },
+      {          
+        "label": "Result",
+        "path": [
+          "$.grade.result"
+        ]
+      },
+      {          
+        "label": "Pass or fail",
+        "path": [
+          "$.grade.passFail"
+        ]
+      },      
+      {
+        "label": "Assessment level",
+        "path": [
+          "$.assessmentLevel"
+        ]
+      },
+      {
+        "label": "Assessment method",
+        "path": [
+          "$.AssessmentMethod"
+        ]
+      },
+      {
+        "label": "Alignment",
+        "path": [
+          "$.alignment.targetName"
+        ]
+      },
+      {
+        "label": "Alignment URL",
+        "path": [
+          "$.alignment.targetUrl"
+        ]        
+      },
+      {
+        "label": "Alignment framework",
+        "path": [
+          "$.alignment.targetFramework"
+        ]      
+      }
+    ]
+  }
+}
