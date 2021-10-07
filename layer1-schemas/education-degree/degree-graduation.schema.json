@@ -30,6 +30,11 @@
       }
     }
   ],
+  "required": [
+    "institution",
+    "conferredDate",
+    "degreeName"
+  ],
   "examples": [
     {
       "@context": "https://velocitynetwork.foundation/contexts/degree",
