@@ -1,0 +1,90 @@
+ {
+  "display": {
+    "title": {
+      "path": []
+    },
+    "subtitle": {
+      "path": []
+    },
+    "summary_detail": {
+      "path": []
+    },
+    "description": {
+      "text": "Assessment dimension"
+    },
+    "properties": [
+      {
+        "label": "Name",
+        "path": [
+          "$.assessmentDimensions.name"
+        ]
+      },
+      {
+        "label": "Date",
+        "path": [
+          "$.assessmentDimensions.assessmentDate"
+        ]
+      },
+      {
+        "label": "Description",
+        "path": [
+          "$.assessmentDimensions.description"
+        ]
+      },
+      {
+        "label": "Assesses",
+        "path": [
+          "$.assessmentDimensions.assesses"
+        ]
+      },      
+      {
+        "label": "Score",
+        "path": [
+          "$.assessmentDimensions.score.scoreValue"
+        ]
+      },
+      {          
+        "label": "Result",
+        "path": [
+          "$.assessmentDimensions.score.result"
+        ]
+      },
+      {          
+        "label": "Pass or fail",
+        "path": [
+          "$.assessmentDimensions.score.passFai"
+        ]
+      },      
+      {
+        "label": "Assessment level",
+        "path": [
+          "$.assessmentDimensions.assessmentLevel"
+        ]
+      },
+      {
+        "label": "Assessment method",
+        "path": [
+          "$.assessmentDimensions.assessmentMethod"
+        ]
+      },
+      {
+        "label": "Alignment",
+        "path": [
+          "$assessmentDimensions.alignment.targetName"
+        ]
+      },
+      {
+        "label": "Alignment URL",
+        "path": [
+          "$assessmentDimensions.alignment.targetUrl"
+        ]        
+      },
+      {
+        "label": "Alignment framework",
+        "path": [
+          "$assessmentDimensions.alignment.targetFramework"
+        ]      
+      }
+    ]
+  }
+}
