@@ -62,10 +62,10 @@
       "validIn"
     ]
   },
-  "endorsementCodes": {
+  "endorsementCode": {
     "ui.title": "Endorsement codes"
   },
-  "restrictionCodes": {
+  "restrictionCode": {
     "ui.title": "Restriction codes"
   },
   "alignment": {

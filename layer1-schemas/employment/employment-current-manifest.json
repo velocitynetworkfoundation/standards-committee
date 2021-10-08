@@ -3,17 +3,30 @@
     "title": {
       "path": [
         "$.legalEmployer.name"
-      ]
+      ],
+      "schema": {
+        "type": "string"
+      },
+      "fallback": "-"
     },
     "subtitle": {
       "path": [
         "$.role"
-      ]
+      ],
+      "schema": {
+        "type": "string"
+      },
+      "fallback": "-"
     },
     "summary_detail": {
       "path": [
         "$.startDate"
-      ]
+      ],
+      "schema": {
+        "type": "string",
+        "format": "date"
+      },
+      "fallback": "-"
     },
     "description": {
       "text": "Current employment position"
@@ -23,56 +36,84 @@
         "label": "Role description",
         "path": [
           "$.description"
-        ]
+        ],
+        "schema": {
+          "type": "string"
+        }
       },
       {
         "label": "Start date",
         "path": [
           "$.startDate"
-        ]
+        ],
+        "schema": {
+          "type": "string",
+          "format": "date"
+        }
       },
       {
         "label": "Place of work",
         "path": [
           "$.place.addressLocality"
-        ]
+        ],
+        "schema": {
+          "type": "string"
+        }
       },
       {
         "label": "State or region of work",
         "path": [
           "$.place.addressRegion"
-        ]
+        ],
+        "schema": {
+          "type": "string"
+        }
       },
       {
         "label": "Country of work",
         "path": [
           "$.place.country"
-        ]
+        ],
+        "schema": {
+          "type": "string"
+        }
       },
       {
         "label": "Employment type",
         "path": [
           "$.employmentType"
-        ]
+        ],
+        "schema": {
+          "type": "string"
+        }
       },
       {
         "label": "Alignment",
         "path": [
           "$.alignment.targetName"
-        ]
+        ],
+        "schema": {
+          "type": "string"
+        }
       },
       {
         "label": "Alignment URL",
         "path": [
-          "$. alignment.targetUrl"
-        ]
-        
+          "$.alignment.targetUrl"
+        ],
+        "schema": {
+          "type": "string",
+          "format": "uri"
+        }        
       },
       {
         "label": "Alignment framework",
         "path": [
-          "$. alignment.targetFramework"
-        ]      
+          "$.alignment.targetFramework"
+        ],
+        "schema": {
+          "type": "string"
+        }     
       }
     ]
   }

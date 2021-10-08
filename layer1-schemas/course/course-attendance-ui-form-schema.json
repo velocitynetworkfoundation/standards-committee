@@ -37,14 +37,14 @@
   "alignment": {
     "ui.widget": "hidden"
   },
-      "registrationDate": {
-      "ui.title": "Registration date",
-      "ui:widget": "date"
-    },
-      "startDate": {
-      "ui.title": "Start date",
-      "ui:widget": "date"
-    },
+  "registrationDate": {
+    "ui.title": "Registration date",
+    "ui:widget": "date"
+  },
+  "startDate": {
+    "ui.title": "Start date",
+    "ui:widget": "date"
+  },
   "grade": {
     "scoreValue": {
       "ui.title": "Grade"
@@ -59,10 +59,10 @@
       "ui.widget": "hidden"
     },
     "ui:order": [
-    "grade",
-    "result",
-    "passFail"
-  ]
+      "grade",
+      "result",
+      "passFail"
+    ]
   },
   "ui:order": [
     "courseProvider",

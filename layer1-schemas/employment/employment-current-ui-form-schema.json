@@ -16,7 +16,7 @@
   "description": {
     "ui.title": "Role description"
   },
-    "startDate": {
+  "startDate": {
     "ui.title": "Start date",
     "ui:widget": "date"
   },
@@ -46,10 +46,10 @@
   "employmentType": {
     "ui.title": "Employment Type"
   },
-    "alignment": {
+  "alignment": {
     "ui.widget": "hidden"
   },
-    "ui:order": [
+  "ui:order": [
     "legalEmployer",
     "role",
     "description",

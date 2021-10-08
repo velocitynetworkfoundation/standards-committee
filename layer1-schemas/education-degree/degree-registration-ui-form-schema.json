@@ -28,7 +28,7 @@
     }
   },
   "programName": {
-  "ui.title": "Program"
+    "ui.title": "Program"
   },
   "programType": {
     "ui.widget": "hidden"
@@ -45,14 +45,14 @@
   "alignment": {
     "ui.widget": "hidden"
   },
-   "registrationDate": {
+  "registrationDate": {
    "ui.title": "Registration date",
    "ui:widget": "date"
-    },
-   "startDate": {
+  },
+  "startDate": {
    "ui.title": "Start date",
    "ui:widget": "date"
-    },
+  },
   "ui:order": [
     "institution",
     "degreeName",

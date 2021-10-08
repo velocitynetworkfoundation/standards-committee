@@ -32,8 +32,8 @@
       ]  
     },
     "ui:order": [
-    "name",
-    "place"
+      "name",
+      "place"
      ]
   },
   "identifier": {
@@ -56,16 +56,16 @@
      "ui.widget": "hidden"
     },
     "ui:order": [    
-    "firstValidFrom",
-    "validFrom",
-    "validUntil"
+      "firstValidFrom",
+      "validFrom",
+      "validUntil"
     ]
   },
   "description": {
     "ui.widget": "hidden"
   },
   "endorsementCodes": {
-  "ui.widget": "hidden"
+    "ui.widget": "hidden"
   },
   "restrictionCodes": {
     "ui.widget": "hidden"
@@ -120,14 +120,14 @@
      "ui.title": "Gender"
     },
     "ui:order": [
-    "givenName",
-    "additionalName",
-    "familyName",
-    "namePrefix",
-    "nameSuffix",
-    "birthDate",
-    "birthPlace",
-    "gender"
+      "givenName",
+      "additionalName",
+      "familyName",
+      "namePrefix",
+      "nameSuffix",
+      "birthDate",
+      "birthPlace",
+      "gender"
     ]
   },
   "address": {
@@ -135,22 +135,22 @@
         "ui.title": "Address country",
         "ui:enum": "sortedCountries", 
         "ui:widget": "select"
-      },
+    },
     "addressRegion": {
         "ui.title": "Region or state of birth",
         "ui:enum": "sortedRegions", 
         "ui:widget": "select"
-      },  
+    },  
     "addressLocality": {
       "ui.title": "Address locality"
-   },   
-   "streetAddress": {
-      "ui.title": "Street address"
-   }, 
-   "postCode": {
-      "ui.title": "Post code"
-   }, 
-    "ui:order": [    
+    },   
+    "streetAddress": {
+        "ui.title": "Street address"
+    }, 
+    "postCode": {
+        "ui.title": "Post code"
+    }, 
+  "ui:order": [    
     "addressCountry",
     "addressRegion",
     "addressLocality",

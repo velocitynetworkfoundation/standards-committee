@@ -7,7 +7,7 @@
       "ui.widget": "hidden"
     },
     "place": {
-     "name": {
+      "name": {
         "ui.widget": "hidden"
       },
       "addressCountry": {
@@ -23,8 +23,8 @@
       }
     },
     "ui:order": [
-    "name",
-    "place"
+      "name",
+      "place"
      ]
   },
   "identifier": {
@@ -50,12 +50,12 @@
      "ui.widget": "hidden"
     },
     "ui:order": [    
-    "firstValidFrom",
-    "validFrom",
-    "validUntil"
+      "firstValidFrom",
+      "validFrom",
+      "validUntil"
     ]
   },
-    "person": {
+  "person": {
     "givenName": {
       "ui.title": "Given Name"      
     },
@@ -66,17 +66,17 @@
       "ui.title": "Family name"      
     },
     "namePrefix": {
-     "ui.title": "Name prefix"
+      "ui.title": "Name prefix"
     },
     "nameSuffix": {
-    "ui.title": "Name suffix"
+      "ui.title": "Name suffix"
     },
     "birthDate": {
-    "ui.title": "Birth date",
-    "ui:widget": "date"
+      "ui.title": "Birth date",
+      "ui:widget": "date"
     },
     "birthPlace": {
-     "name": {
+      "name": {
         "ui.widget": "hidden"
       },
       "addressCountry": {
@@ -97,9 +97,9 @@
         "addressRegion",
         "addressLocality"
       ]
-     },
+    },
     "gender": {
-     "ui.title": "Gender"
+    "ui.title": "Gender"
     },
     "ui:order": [
     "givenName",
@@ -115,7 +115,7 @@
   "nationality": {
     "ui.title": "Nationality"
   },
-   "ui:order": [
+  "ui:order": [
     "name",
     "authority",
     "identifier",

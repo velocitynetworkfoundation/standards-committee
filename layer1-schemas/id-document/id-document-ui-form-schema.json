@@ -23,8 +23,8 @@
       }
     },
     "ui:order": [
-    "name",
-    "place"
+      "name",
+      "place"
      ]
   },
   "identifier": {
@@ -50,9 +50,9 @@
      "ui.widget": "hidden"
     },
     "ui:order": [    
-    "firstValidFrom",
-    "validFrom",
-    "validUntil"
+      "firstValidFrom",
+      "validFrom",
+      "validUntil"
     ]
   },
   "person": {
@@ -72,8 +72,8 @@
     "ui.title": "Name suffix"
     },
     "birthDate": {
-    "ui.title": "Birth date",
-    "ui:widget": "date"
+      "ui.title": "Birth date",
+      "ui:widget": "date"
     },
     "birthPlace": {
      "name": {
@@ -102,14 +102,14 @@
      "ui.title": "Gender"
     },
     "ui:order": [
-    "givenName",
-    "additionalName",
-    "familyName",
-    "namePrefix",
-    "nameSuffix",
-    "birthDate",
-    "birthPlace",
-    "gender"
+      "givenName",
+      "additionalName",
+      "familyName",
+      "namePrefix",
+      "nameSuffix",
+      "birthDate",
+      "birthPlace",
+      "gender"
     ]
   },
   "nationality": {
@@ -117,30 +117,30 @@
     },
   "address": {
     "addressCountry": {
-        "ui.title": "Address country",
-        "ui:enum": "sortedCountries", 
-        "ui:widget": "select"
-      },
+      "ui.title": "Address country",
+      "ui:enum": "sortedCountries", 
+      "ui:widget": "select"
+    },
     "addressRegion": {
-        "ui.title": "Address region or state",
-        "ui:enum": "sortedRegions", 
-        "ui:widget": "select"
-      },  
+      "ui.title": "Address region or state",
+      "ui:enum": "sortedRegions", 
+      "ui:widget": "select"
+    },  
     "addressLocality": {
       "ui.title": "Address locality"
-   },   
-   "streetAddress": {
+    },   
+    "streetAddress": {
       "ui.title": "Street address"
-   }, 
-   "postCode": {
+    }, 
+    "postCode": {
       "ui.title": "Post code"
-   }, 
+    }, 
     "ui:order": [    
-    "addressCountry",
-    "addressRegion",
-    "addressLocality",
-    "streetAddress",
-    "postCode"
+      "addressCountry",
+      "addressRegion",
+      "addressLocality",
+      "streetAddress",
+      "postCode"
     ]
   },
   "ui:order": [
