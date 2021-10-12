@@ -52,7 +52,18 @@
         "fallback": "-"
       },
       {
-        "label": "Valid from",
+        "label": "Date issued",
+        "path": [
+          "$.firstValidFrom"
+        ],
+        "schema": {
+          "type": "string",
+          "format": "date"
+        },
+        "fallback": "-"
+      },
+      {
+        "label": "Date renewed",
         "path": [
           "$.validFrom"
         ],
