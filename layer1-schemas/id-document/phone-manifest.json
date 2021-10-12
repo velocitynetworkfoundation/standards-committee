@@ -3,11 +3,10 @@
   "display": {
     "title": {
       "path": [
-        "$.email"
+        "$.phone"
       ],
       "schema": {
-        "type": "string",
-        "format": "email"
+        "type": "string"
       },
       "fallback": "-"
     }

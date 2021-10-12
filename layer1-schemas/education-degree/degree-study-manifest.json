@@ -3,17 +3,30 @@
     "title": {
       "path": [
         "$.institution.name"
-      ]
+      ],
+      "schema": {
+        "type": "string"
+      },
+      "fallback": "-"
     },
     "subtitle": {
       "path": [
         "$.degreeName"
-      ]
+      ],
+      "schema": {
+        "type": "string"
+      },
+      "fallback": "-"
     },
     "summary_detail": {
       "path": [
         "$.startDate"
-      ]
+      ],
+      "schema": {
+        "type": "string",
+        "format": "date"
+      },
+      "fallback": "-"
     },
     "description": {
       "text": "Degree study"
@@ -23,80 +36,122 @@
         "label": "School or department",
         "path": [
           "$.school.name"
-        ]
+        ],
+        "schema": {
+          "type": "string"
+        }
       },
       {
         "label": "Description",
         "path": [
           "$.description"
-        ]
+        ],
+        "schema": {
+          "type": "string"
+        }
       },
       {
         "label": "Registration date",
         "path": [
           "$.registrationDate"
-        ]
+        ],
+        "schema": {
+          "type": "string",
+          "format": "date"
+        }
       },
       {
         "label": "Start date",
         "path": [
           "$.startDate"
-        ]
+        ],
+        "schema": {
+          "type": "string",
+          "format": "date"
+        }
       },
        {
         "label": "End date",
         "path": [
           "$.endDate"
-        ]
+        ],
+        "schema": {
+          "type": "string",
+          "format": "date"
+        }
       },
       {
         "label": "Major",
         "path": [
           "$.major"
-        ]
+        ],
+        "schema": {
+          "type": "string"
+        }
       },
       {
         "label": "Minor",
         "path": [
           "$.minor"
-        ]
+        ],
+        "schema": {
+          "type": "string"
+        }
       },
       {
         "label": "Program",
         "path": [
           "$.programName"
-        ]
+        ],
+        "schema": {
+          "type": "string"
+        }
       },
       {
         "label": "Program type",
         "path": [
           "$.programType"
-        ]
+        ],
+        "schema": {
+          "type": "string"
+        }
       },
       {
         "label": "Program mode",
         "path": [
           "$.programMode"
-        ]
+        ],
+        "schema": {
+          "type": "string"
+        }
       },
       {
         "label": "Alignment",
         "path": [
           "$.alignment.targetName"
-        ]
+        ],
+        "schema": {
+          "type": "string"
+        }
       },
       {
         "label": "Alignment URL",
         "path": [
-          "$. alignment.targetUrl"
-        ]
-        
+          "$.alignment.targetUrl"
+        ],
+        "schema": {
+          "type": "string",
+          "format": "uri"
+        }        
       },
       {
         "label": "Alignment framework",
         "path": [
-          "$. alignment.targetFramework"
-        ]      
+          "$.alignment.targetFramework"
+        ] ,
+        "schema": {
+          "type": "string"
+        }     
       }
     ]
   }

@@ -28,7 +28,7 @@
     }
   },
   "programName": {
-  "ui.title": "Program"
+    "ui.title": "Program"
   },
   "programType": {
     "ui.widget": "hidden"
@@ -53,36 +53,36 @@
       "ui.title": "Grade"
     },
     "result": {
-    "ui.title": "Result"
+      "ui.title": "Result"
     },
     "passFail": {
-    "ui.title": "Pass or fail"
+      "ui.title": "Pass or fail"
     },
     "method": {
-      "ui.widget": "hidden"
+        "ui.widget": "hidden"
     },
     "ui:order": [
-    "scoreValue",
-    "result",
-    "passFaile"
+      "scoreValue",
+      "result",
+      "passFaile"
     ]
   },
-   "registrationDate": {
+  "registrationDate": {
    "ui.title": "Registration date",
    "ui:widget": "date"
-    },
-   "startDate": {
+  },
+  "startDate": {
    "ui.title": "Start date",
    "ui:widget": "date"
-    },
-   "endDate": {
+  },
+  "endDate": {
    "ui.title": "End date",
    "ui:widget": "date"
-    },
-   "conferredDate": {
+  },
+  "conferredDate": {
    "ui.title": "Date conferred",
    "ui:widget": "date"
-    },
+  },
   "ui:order": [
     "institution",
     "degreeName",

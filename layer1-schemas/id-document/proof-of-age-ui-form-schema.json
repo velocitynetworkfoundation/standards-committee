@@ -7,7 +7,7 @@
       "ui.widget": "hidden"
     },
     "place": {
-     "name": {
+      "name": {
         "ui.widget": "hidden"
       },
       "addressCountry": {
@@ -23,8 +23,8 @@
       }
     },
     "ui:order": [
-    "name",
-    "place"
+      "name",
+      "place"
      ]
   },
   "identifier": {
@@ -63,14 +63,14 @@
       "ui.title": "Family name"      
     },
     "namePrefix": {
-     "ui.title": "Name prefix"
+      "ui.title": "Name prefix"
     },
     "nameSuffix": {
-    "ui.title": "Name suffix"
+     "ui.title": "Name suffix"
     },
     "birthDate": {
-    "ui.title": "Birth date",
-    "ui:widget": "date"
+      "ui.title": "Birth date",
+      "ui:widget": "date"
     },
     "birthPlace": {
      "name": {
@@ -99,14 +99,14 @@
      "ui.title": "Gender"
     },
     "ui:order": [
-    "givenName",
-    "additionalName",
-    "familyName",
-    "namePrefix",
-    "nameSuffix",
-    "birthDate",
-    "birthPlace",
-    "gender"
+      "givenName",
+      "additionalName",
+      "familyName",
+      "namePrefix",
+      "nameSuffix",
+      "birthDate",
+      "birthPlace",
+      "gender"
     ]
   },
   "nationality": {
@@ -125,19 +125,19 @@
       },  
     "addressLocality": {
       "ui.title": "Address locality"
-   },   
-   "streetAddress": {
-      "ui.title": "Street address"
-   }, 
-   "postCode": {
-      "ui.title": "Post code"
-   }, 
+    },   
+    "streetAddress": {
+        "ui.title": "Street address"
+    }, 
+    "postCode": {
+        "ui.title": "Post code"
+    }, 
     "ui:order": [    
-    "addressCountry",
-    "addressRegion",
-    "addressLocality",
-    "streetAddress",
-    "postCode"
+      "addressCountry",
+      "addressRegion",
+      "addressLocality",
+      "streetAddress",
+      "postCode"
     ]
   },
   "ui:order": [

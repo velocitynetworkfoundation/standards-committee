@@ -3,17 +3,29 @@
     "title": {
       "path": [
         "$.issuer.name"
-      ]
+      ],
+      "schema": {
+        "type": "string"
+      },
+      "fallback": "-"
     },
     "subtitle": {
       "path": [
         "$.type"
-      ]
+      ],
+      "schema": {
+        "type": "string"
+      },
+      "fallback": "-"
     },
     "summary_detail": {
       "path": [
         "$.name"
-      ]
+      ],
+      "schema": {
+        "type": "string"
+      },
+      "fallback": "-"
     },
     "description": {
       "text": "Open badge"
@@ -23,56 +35,88 @@
         "label": "Badge name",
         "path": [
           "$.name"
-        ]
+        ],
+        "schema": {
+          "type": "string"
+        },
+        "fallback": "-"
       },
       {
         "label": "Badge Id",
         "path": [
           "$.id"
-        ]
+        ],
+        "schema": {
+          "type": "string"
+        },
+        "fallback": "-"
       },
-            {
+      {
         "label": "Description",
         "path": [
           "$.description"
-        ]
+        ],
+        "schema": {
+          "type": "string"
+        }
       },
       {
         "label": "Criteria",
         "path": [
           "$.criteria"
-        ]
+        ],
+        "schema": {
+          "type": "string"
+        }
       },
       {
         "label": "Tags",
         "path": [
           "$.tags"
-        ]
+        ],
+        "schema": {
+          "type": "array",
+          "items": {
+            "type": "string"
+          }
+        }
       },
       {
         "label": "",
         "path": [
           "$.image"
-        ]
+        ],
+        "schema": {
+          "type": "string"
+        }
       },
       {
         "label": "Alignment",
         "path": [
           "$.alignment.targetName"
-        ]
+        ],
+        "schema": {
+          "type": "string"
+        }
       },
       {
         "label": "Alignment URL",
         "path": [
-          "$. alignment.targetUrl"
-        ]
-        
+          "$.alignment.targetUrl"
+        ],
+        "schema": {
+          "type": "string",
+          "format": "uri"
+        }        
       },
       {
         "label": "Alignment framework",
         "path": [
-          "$. alignment.targetFramework"
-        ]      
+          "$.alignment.targetFramework"
+        ],
+        "schema": {
+          "type": "string"
+        }  
       }
     ]
   }

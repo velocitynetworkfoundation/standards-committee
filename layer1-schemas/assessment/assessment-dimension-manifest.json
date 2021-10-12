@@ -17,73 +17,111 @@
         "label": "Name",
         "path": [
           "$.assessmentDimensions.name"
-        ]
+        ],
+        "schema": {
+          "type": "string"
+        }
       },
       {
         "label": "Date",
         "path": [
           "$.assessmentDimensions.assessmentDate"
-        ]
+        ],
+        "schema": {
+          "type": "string",
+          "format": "date"
+        }
       },
       {
         "label": "Description",
         "path": [
           "$.assessmentDimensions.description"
-        ]
+        ],
+        "schema": {
+          "type": "string"
+        }
       },
       {
         "label": "Assesses",
         "path": [
           "$.assessmentDimensions.assesses"
-        ]
+        ],
+        "schema": {
+          "type": "string"
+        }
       },      
       {
         "label": "Score",
         "path": [
           "$.assessmentDimensions.score.scoreValue"
-        ]
+        ],
+        "schema": {
+          "type": "string"
+        }
       },
       {          
         "label": "Result",
         "path": [
           "$.assessmentDimensions.score.result"
-        ]
+        ],
+        "schema": {
+          "type": "string"
+        }
       },
       {          
         "label": "Pass or fail",
         "path": [
-          "$.assessmentDimensions.score.passFai"
-        ]
+          "$.assessmentDimensions.score.passFail"
+        ],
+        "schema": {
+          "type": "string"
+        }
       },      
       {
         "label": "Assessment level",
         "path": [
           "$.assessmentDimensions.assessmentLevel"
-        ]
+        ],
+        "schema": {
+          "type": "string"
+        }
       },
       {
         "label": "Assessment method",
         "path": [
           "$.assessmentDimensions.assessmentMethod"
-        ]
+        ],
+        "schema": {
+          "type": "string"
+        }
       },
       {
         "label": "Alignment",
         "path": [
           "$assessmentDimensions.alignment.targetName"
-        ]
+        ],
+        "schema": {
+          "type": "string"
+        }
       },
       {
         "label": "Alignment URL",
         "path": [
           "$assessmentDimensions.alignment.targetUrl"
-        ]        
+        ],
+        "schema": {
+          "type": "string",
+          "format": "uri"
+        }       
       },
       {
         "label": "Alignment framework",
         "path": [
           "$assessmentDimensions.alignment.targetFramework"
-        ]      
+        ],
+        "schema": {
+          "type": "string"
+        }    
       }
     ]
   }
