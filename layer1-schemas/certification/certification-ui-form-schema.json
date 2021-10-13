@@ -38,12 +38,12 @@
       },
       "addressCountry": {
         "ui.title": "Valid in country",
-        "ui:enum": "sortedCountries",
+        "ui:enum": ["TARGET_COUNTRIES_ENUM"],
         "ui:widget": "select"
       },
       "addressRegion": {
         "ui.title": "Valid in state or region",
-        "ui:enum": "sortedRegions",
+        "ui:enum": ["TARGET_REGIONS_ENUM"],
         "ui:widget": "select"
       },
       "addressLocality": {

@@ -26,12 +26,12 @@
       },
       "Country": {
         "ui.title": "Country of work",
-        "ui:enum": "sortedCountries",
+        "ui:enum": ["TARGET_COUNTRIES_ENUM"],
         "ui:widget": "select"
       },
       "addressRegion": {
         "ui.title": "Region or state of work",
-        "ui:enum": "sortedRegions",
+        "ui:enum": ["TARGET_REGIONS_ENUM"],
         "ui:widget": "select"
       },
       "addressLocality": {

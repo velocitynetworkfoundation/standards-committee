@@ -15,12 +15,12 @@
       },
       "addressCountry": {
         "ui.title": "Country",
-        "ui:enum": "sortedCountries", 
+        "ui:enum": ["TARGET_COUNTRIES_ENUM"],
         "ui:widget": "select"
       },
       "addressRegion": {
         "ui.title": "Region or state",
-        "ui:enum": "sortedRegions", 
+        "ui:enum": ["TARGET_REGIONS_ENUM"],
         "ui:widget": "select"
       },
       "addressLocality": {
@@ -99,12 +99,12 @@
       },
       "addressCountry": {
         "ui.title": "Country of birth",
-        "ui:enum": "sortedCountries", 
+        "ui:enum": ["TARGET_COUNTRIES_ENUM"],
         "ui:widget": "select"
       },
       "addressRegion": {
         "ui.title": "Region or state of birth",
-        "ui:enum": "sortedRegions", 
+        "ui:enum": ["TARGET_REGIONS_ENUM"],
         "ui:widget": "select"
       },
       "addressLocality": {
@@ -133,12 +133,12 @@
   "address": {
     "addressCountry": {
         "ui.title": "Address country",
-        "ui:enum": "sortedCountries", 
+        "ui:enum": ["TARGET_COUNTRIES_ENUM"],
         "ui:widget": "select"
     },
     "addressRegion": {
         "ui.title": "Region or state of birth",
-        "ui:enum": "sortedRegions", 
+        "ui:enum": ["TARGET_REGIONS_ENUM"],
         "ui:widget": "select"
     },  
     "addressLocality": {
