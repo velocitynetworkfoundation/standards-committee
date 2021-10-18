@@ -140,8 +140,7 @@
     "postCode"
     ]
   },
-  "ui:order": [
-    "name",
+  "ui:order": [    
     "authority",
     "identifier",
     "validity",

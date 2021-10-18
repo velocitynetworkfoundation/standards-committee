@@ -42,7 +42,7 @@
   "degreeMinor": {
     "ui.title": "Minor"
   },
-  "honoros": {
+  "honors": {
     "ui.title": "Honors"
   },
   "alignment": {
@@ -64,7 +64,7 @@
     "ui:order": [
       "scoreValue",
       "result",
-      "passFaile"
+      "passFail"
     ]
   },
   "registrationDate": {

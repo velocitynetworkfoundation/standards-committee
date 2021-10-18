@@ -64,10 +64,10 @@
   "description": {
     "ui.widget": "hidden"
   },
-  "endorsementCodes": {
+  "endorsementCode": {
     "ui.widget": "hidden"
   },
-  "restrictionCodes": {
+  "restrictionCode": {
     "ui.widget": "hidden"
   },
   "alignment": {

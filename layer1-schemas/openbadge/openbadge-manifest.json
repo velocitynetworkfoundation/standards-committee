@@ -30,6 +30,13 @@
     "description": {
       "text": "Open badge"
     },
+    "logo": {
+      "path": ["$.image"],
+      "schema": {
+      "type": "text",
+      "format": "uri"
+    }
+    },    
     "properties": [
       {
         "label": "Badge name",
@@ -80,16 +87,7 @@
             "type": "string"
           }
         }
-      },
-      {
-        "label": "",
-        "path": [
-          "$.image"
-        ],
-        "schema": {
-          "type": "string"
-        }
-      },
+      },      
       {
         "label": "Alignment",
         "path": [

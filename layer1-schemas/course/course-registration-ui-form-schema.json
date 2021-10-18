@@ -46,7 +46,7 @@
     "ui:widget": "date"
   },
   "ui:order": [
-    "courseProvider",
+    "provider",
     "courseName",
     "Description",
     "registrationDate",
