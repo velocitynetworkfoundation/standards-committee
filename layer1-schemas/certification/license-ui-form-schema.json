@@ -76,7 +76,7 @@
     "name",
     "identifier",
     "validity",
-    "endorsementCodes",
-    "restrictionCodes"
+    "endorsementCode",
+    "restrictionCode"
   ]
 }

@@ -144,7 +144,6 @@
     ]
   },
   "ui:order": [
-    "name",
     "authority",
     "identifier",
     "documentType",
