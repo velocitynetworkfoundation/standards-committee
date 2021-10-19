@@ -33,7 +33,7 @@
     "logo": {
       "path": ["$.image"],
       "schema": {
-      "type": "text",
+      "type": "image",
       "format": "uri"
     }
     },    

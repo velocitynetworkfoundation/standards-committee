@@ -83,7 +83,7 @@
           "description": "A short description of the achievement."
         },
         "image": {
-          "type": "string",
+          "type": "image",
           "format": "uri",
           "description": "IRI or document representing an image of the achievement. This must be a PNG or SVG image."
         },
