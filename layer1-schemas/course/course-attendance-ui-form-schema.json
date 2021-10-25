@@ -59,7 +59,7 @@
       "ui.widget": "hidden"
     },
     "ui:order": [
-      "grade",
+      "scoreValue",
       "result",
       "passFail"
     ]
