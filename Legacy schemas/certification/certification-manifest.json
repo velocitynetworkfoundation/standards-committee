@@ -2,7 +2,7 @@
   "display": {
     "title": {
       "path": [
-        "$.authority.name"
+        "$.authorityName"
       ],
       "schema": {
         "type": "string"

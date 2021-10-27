@@ -1,8 +1,9 @@
+
  {
   "display": {
     "title": {
       "path": [
-        "$.authorityName"
+        "$.schoolName"
       ],
       "schema": {
         "type": "string"
@@ -11,7 +12,7 @@
     },
     "subtitle": {
       "path": [
-        "$.name"
+        "$.degreeName"
       ],
       "schema": {
         "type": "string"
@@ -20,83 +21,50 @@
     },
     "summary_detail": {
       "path": [
-        "$.date"
+        "$.endMonthYear"
       ],
       "schema": {
-        "type": "string"
-      }
+        "type": "string",
+        "format": "date"
+      },
+      "fallback": "-"
     },
     "description": {
-      "text": "Assessment"
+      "text": "Education Degree"
     },
     "properties": [
       {
-        "label": "Description",
+        "label": "Program",
         "path": [
-          "$.description"
+          "$.program"
         ],
         "schema": {
           "type": "string"
+        }
+      },
+      {
+        "label": "Fields of study",
+        "path": [
+          "$.fieldsOFStudy"
+        ],
+        "schema": {
+          "type": "string"
+        }
+      },
+      {
+        "label": "Start date",
+        "path": [
+          "$.startMonthYear"
+        ],
+        "schema": {
+          "type": "string",
+          "format": "date"
         }
       },      
-      {
-        "label": "Score",
+       {
+        "label": "Grade",
         "path": [
-          "$.absoluteScore"
-        ],
-        "schema": {
-          "type": "string"
-        }
-      },
-      {          
-        "label": "Score range",
-        "path": [
-          "$.scoreRange"
-        ],
-        "schema": {
-          "type": "string"
-        }
-      },
-      {          
-        "label": "Pass or fail",
-        "path": [
-          "$.passFail"
-        ],
-        "schema": {
-          "type": "string"
-        }
-      },      
-      {
-        "label": "Norm",
-        "path": [
-          "$.normName"
-        ],
-        "schema": {
-          "type": "string"
-        }
-      },
-      {
-        "label": "Norm description",
-        "path": [
-          "$.normDescription"
-        ],
-        "schema": {
-          "type": "string"
-        }
-      },
-      {
-        "label": "Norm size",
-        "path": [
-          "$.normSize"
-        ],
-        "schema": {
-          "type": "string"
-        }
-      },
-      {
-        "label": "Percentile score",
-        "path": [
-          "$.percentileScore"
+          "$.grade"
         ],
         "schema": {
           "type": "string"
@@ -119,13 +87,13 @@
         "schema": {
           "type": "string",
           "format": "uri"
-        }       
+        }        
       },
       {
         "label": "Alignment framework",
         "path": [
           "$.alignment.targetFramework"
-        ],
+        ] ,
         "schema": {
           "type": "string"
         }     
