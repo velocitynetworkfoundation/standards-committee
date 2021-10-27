@@ -199,7 +199,7 @@
       {
         "label": "Address region or state",
         "path": [
-          "$.ddressRegion"
+          "$.addressRegion"
         ],
         "schema": {
           "type": "string"

@@ -1,0 +1,92 @@
+ {
+  "display": {
+    "title": {
+      "path": [
+        "$.authority.name"
+      ],
+      "schema": {
+        "type": "string"
+      },
+      "fallback": "-"
+    },
+    "subtitle": {
+      "path": [
+        "$.name"
+      ],
+      "schema": {
+        "type": "string"
+      },
+      "fallback": "-"
+    },
+    "summary_detail": {
+      "path": [
+        "$.type"
+      ],
+      "schema": {
+        "type": "string"        
+      }
+    },
+    "description": {
+      "text": "Velocity Network certification credentials"
+    },
+    "properties": [
+      {
+        "label": "Number",
+        "path": [
+          "$.identifier"
+        ],
+        "schema": {
+          "type": "string"
+        }
+      },      
+      {
+        "label": "Date",
+        "path": [
+          "$.certificationDate"
+        ],
+        "schema": {
+          "type": "string",
+          "format": "date"
+        }
+      },
+      {
+        "label": "Renewal date",
+        "path": [
+          "$.datesRenewed"
+        ],
+        "schema": {
+          "type": "string",
+          "format": "date"
+        }
+      },
+      {
+        "label": "Alignment",
+        "path": [
+          "$.alignment.targetName"
+        ],
+        "schema": {
+          "type": "string"
+        }
+      },
+      {
+        "label": "Alignment URL",
+        "path": [
+          "$.alignment.targetUrl"
+        ],
+        "schema": {
+          "type": "string",
+          "format": "uri"
+        }        
+      },
+      {
+        "label": "Alignment framework",
+        "path": [
+          "$.alignment.targetFramework"
+        ],
+        "schema": {
+          "type": "string"
+        }
+      }
+    ]
+  }
+}

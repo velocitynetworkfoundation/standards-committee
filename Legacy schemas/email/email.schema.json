@@ -1,0 +1,16 @@
+{
+  "title": "email",
+  "type": "object",
+  "$id": "email",
+  "version": 1,
+  "description": "email schema",
+  "properties": {
+    "email": {
+      "type": "string",
+      "format": "email"
+    }
+  },
+  "required": [
+    "email"
+  ]
+}

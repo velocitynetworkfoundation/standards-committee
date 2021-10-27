@@ -1,0 +1,129 @@
+ {
+  "display": {
+    "title": {
+      "path": [
+        "$.title"
+      ],
+      "schema": {
+        "type": "string"
+      },
+      "fallback": "-"
+    },
+    "subtitle": {
+      "path": [
+        "$.type"
+      ],
+      "schema": {
+        "type": "string"
+      },
+      "fallback": "-"
+    },
+    "summary_detail": {
+      "path": [
+        "$.completionDate"
+      ],
+      "schema": {
+        "type": "string",
+        "format": "date"
+      },
+      "fallback": {
+      "path": [
+        "$.startDate"
+      ],
+      "schema": {
+        "type": "string",
+        "format": "date"
+      }
+    },
+    "description": {
+      "text": "Course"
+    },
+    "properties": [
+      {
+        "label": "Description",
+        "path": [
+          "$.description"
+        ],
+        "schema": {
+          "type": "string"
+        }
+      },
+      {
+        "label": "Registration Date",
+        "path": [
+          "$.registrationDate"
+        ],
+        "schema": {
+          "type": "string",
+          "format": "date"
+        }
+      },
+      {
+        "label": "Start Date",
+        "path": [
+          "$.startDate"
+        ],
+        "schema": {
+          "type": "string",
+         "format": "date"
+        }
+      },
+      {
+        "label": "Course duration",
+        "path": [
+          "$.duration"
+        ],
+        "schema": {
+          "type": "string"          
+        }
+      },
+      {
+        "label": "Grade",
+        "path": [
+          "$.score"
+        ],
+        "schema": {
+          "type": "string"
+        }
+      },
+      {          
+        "label": "Grade range",
+        "path": [
+          "$.scoreRange"
+        ],
+        "schema": {
+          "type": "string"
+        }
+      },                 
+      {
+        "label": "Alignment",
+        "path": [
+          "$.alignment.targetName"
+        ],
+        "schema": {
+          "type": "string"
+        }
+      },
+      {
+        "label": "Alignment URL",
+        "path": [
+          "$.alignment.targetUrl"
+        ],
+        "schema": {
+          "type": "string",
+          "format": "uri"
+        }        
+      },
+      {
+        "label": "Alignment framework",
+        "path": [
+          "$.alignment.targetFramework"
+        ],
+        "schema": {
+          "type": "string"
+        }      
+      }
+    ]
+  }
+}
+}
