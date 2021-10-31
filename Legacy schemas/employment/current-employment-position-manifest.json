@@ -2,7 +2,7 @@
   "display": {
     "title": {
       "path": [
-        "$.companyName"
+        "$.companyName.localized.en"
       ],
       "schema": {
         "type": "string"
@@ -11,7 +11,7 @@
     },
     "subtitle": {
       "path": [
-        "$.title"
+        "$.title.localized.en"
       ],
       "schema": {
         "type": "string"
@@ -35,7 +35,7 @@
       {
         "label": "Role description",
         "path": [
-          "$.description"
+          "$.description.localized.en"
         ],
         "schema": {
           "type": "string"
@@ -54,7 +54,7 @@
       {
         "label": "State or region of work",
         "path": [
-          "$.location.countryCode"
+          "$.location.regionCode"
         ],
         "schema": {
           "type": "string"
@@ -63,12 +63,21 @@
       {
         "label": "Country of work",
         "path": [
-          "$.location.regionCode"
+          "$.location.countryCode"
         ],
         "schema": {
           "type": "string"
         }
       },      
+      {
+        "label": "Location",
+        "path": [
+          "$.locationName.localized.en"
+        ],
+        "schema": {
+          "type": "string"
+        }
+      },
       {
         "label": "Alignment",
         "path": [

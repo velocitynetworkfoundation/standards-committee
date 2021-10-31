@@ -2,7 +2,7 @@
   "display": {
     "title": {
       "path": [
-        "$.authorityName"
+        "$.authorityName.localized.en"
       ],
       "schema": {
         "type": "string"
@@ -11,7 +11,7 @@
     },
     "subtitle": {
       "path": [
-        "$.name"
+        "$.name.localized.en"
       ],
       "schema": {
         "type": "string"
@@ -33,7 +33,7 @@
       {
         "label": "Description",
         "path": [
-          "$.description"
+          "$.description.localized.en"
         ],
         "schema": {
           "type": "string"
@@ -69,7 +69,7 @@
       {
         "label": "Norm",
         "path": [
-          "$.normName"
+          "$.normName.localized.en"
         ],
         "schema": {
           "type": "string"
@@ -78,7 +78,7 @@
       {
         "label": "Norm description",
         "path": [
-          "$.normDescription"
+          "$.normDescription.localized.en"
         ],
         "schema": {
           "type": "string"

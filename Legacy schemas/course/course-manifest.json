@@ -2,7 +2,7 @@
   "display": {
     "title": {
       "path": [
-        "$.title"
+        "$.title.localized.en"
       ],
       "schema": {
         "type": "string"
@@ -40,9 +40,18 @@
     },
     "properties": [
       {
+        "label": "Content Provider",
+        "path": [
+          "$.contentProviderName.localized.en"
+        ],
+        "schema": {
+          "type": "string"
+        }
+      },
+      {
         "label": "Description",
         "path": [
-          "$.description"
+          "$.description.localized.en"
         ],
         "schema": {
           "type": "string"

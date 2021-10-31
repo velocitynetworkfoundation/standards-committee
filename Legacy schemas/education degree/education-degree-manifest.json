@@ -3,7 +3,7 @@
   "display": {
     "title": {
       "path": [
-        "$.schoolName"
+        "$.schoolName.localized.en"
       ],
       "schema": {
         "type": "string"
@@ -12,7 +12,7 @@
     },
     "subtitle": {
       "path": [
-        "$.degreeName"
+        "$.degreeName.localized.en"
       ],
       "schema": {
         "type": "string"
@@ -36,7 +36,7 @@
       {
         "label": "Program",
         "path": [
-          "$.program"
+          "$.program.localized.en"
         ],
         "schema": {
           "type": "string"
@@ -45,7 +45,7 @@
       {
         "label": "Fields of study",
         "path": [
-          "$.fieldsOFStudy"
+          "$.fieldsOFStudy.localized.en"
         ],
         "schema": {
           "type": "string"
@@ -64,7 +64,7 @@
        {
         "label": "Grade",
         "path": [
-          "$.grade"
+          "$.grade.localized.en"
         ],
         "schema": {
           "type": "string"

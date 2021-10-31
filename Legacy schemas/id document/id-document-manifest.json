@@ -12,7 +12,7 @@
     },
     "subtitle": {
       "path": [
-        "$.authorityName"
+        "$.authority.localized.en"
       ],
       "schema": {
         "type": "string"
@@ -45,7 +45,7 @@
       {
         "label": "First name",
         "path": [
-          "$.firstName"
+          "$.firstName.localized.en"
         ],
         "schema": {
           "type": "string"
@@ -55,7 +55,7 @@
       {
         "label": "Middle names",
         "path": [
-          "$.middleNames"
+          "$.middleNames.localized.en"
         ],
         "schema": {
           "type": "string"
@@ -64,7 +64,7 @@
       {
         "label": "Last name",
         "path": [
-          "$.lastName"
+          "$.lastName.localized.en"
         ],
         "schema": {
           "type": "string"

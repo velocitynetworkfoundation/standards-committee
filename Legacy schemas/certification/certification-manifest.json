@@ -2,7 +2,7 @@
   "display": {
     "title": {
       "path": [
-        "$.authorityName"
+        "$.authorityName.localized.en"
       ],
       "schema": {
         "type": "string"
@@ -11,7 +11,7 @@
     },
     "subtitle": {
       "path": [
-        "$.name"
+        "$.name.localized.en"
       ],
       "schema": {
         "type": "string"
@@ -20,7 +20,7 @@
     },
     "summary_detail": {
       "path": [
-        "$.type"
+        "$.type.localized.en"
       ],
       "schema": {
         "type": "string"        
