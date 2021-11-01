@@ -1,0 +1,103 @@
+
+ {
+  "display": {
+    "title": {
+      "path": [
+        "$.schoolName.localized.en"
+      ],
+      "schema": {
+        "type": "string"
+      },
+      "fallback": "-"
+    },
+    "subtitle": {
+      "path": [
+        "$.degreeName.localized.en"
+      ],
+      "schema": {
+        "type": "string"
+      },
+      "fallback": "-"
+    },
+    "summary_detail": {
+      "path": [
+        "$.endMonthYear"
+      ],
+      "schema": {
+        "type": "string",
+        "format": "date"
+      },
+      "fallback": "-"
+    },
+    "description": {
+      "text": "Education Degree"
+    },
+    "properties": [
+      {
+        "label": "Program",
+        "path": [
+          "$.program.localized.en"
+        ],
+        "schema": {
+          "type": "string"
+        }
+      },
+      {
+        "label": "Fields of study",
+        "path": [
+          "$.fieldsOFStudy.localized.en"
+        ],
+        "schema": {
+          "type": "string"
+        }
+      },
+      {
+        "label": "Start date",
+        "path": [
+          "$.startMonthYear"
+        ],
+        "schema": {
+          "type": "string",
+          "format": "date"
+        }
+      },      
+       {
+        "label": "Grade",
+        "path": [
+          "$.grade.localized.en"
+        ],
+        "schema": {
+          "type": "string"
+        }
+      },
+      {
+        "label": "Alignment",
+        "path": [
+          "$.alignment.targetName"
+        ],
+        "schema": {
+          "type": "string"
+        }
+      },
+      {
+        "label": "Alignment URL",
+        "path": [
+          "$.alignment.targetUrl"
+        ],
+        "schema": {
+          "type": "string",
+          "format": "uri"
+        }        
+      },
+      {
+        "label": "Alignment framework",
+        "path": [
+          "$.alignment.targetFramework"
+        ] ,
+        "schema": {
+          "type": "string"
+        }     
+      }
+    ]
+  }
+}

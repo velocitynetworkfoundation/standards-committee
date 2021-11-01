@@ -1,0 +1,121 @@
+ {
+  "display": {
+    "title": {
+      "path": [
+        "$.companyName.localized.en"
+      ],
+      "schema": {
+        "type": "string"
+      },
+      "fallback": "-"
+    },
+    "subtitle": {
+      "path": [
+        "$.title.localized.en"
+      ],
+      "schema": {
+        "type": "string"
+      },
+      "fallback": "-"
+    },
+    "summary_detail": {
+      "path": [
+        "$.endMonthYear"
+      ],
+      "schema": {
+        "type": "string",
+        "format": "date"
+      },
+      "fallback": "-"
+    },
+    "description": {
+      "text": "Current employment position"
+    },
+    "properties": [
+      {
+        "label": "Role description",
+        "path": [
+          "$.description.localized.en"
+        ],
+        "schema": {
+          "type": "string"
+        }
+      },
+      {
+        "label": "Start date",
+        "path": [
+          "$.startMonthYear"
+        ],
+        "schema": {
+          "type": "string",
+          "format": "date"
+        }
+      },      
+      {
+        "label": "End date",
+        "path": [
+          "$.endMonthYear"
+        ],
+        "schema": {
+          "type": "string",
+          "format": "date"
+        }
+      }, 
+      {
+        "label": "State or region of work",
+        "path": [
+          "$.location.regionCode"
+        ],
+        "schema": {
+          "type": "string"
+        }
+      },
+      {
+        "label": "Country of work",
+        "path": [
+          "$.location.countryCode"
+        ],
+        "schema": {
+          "type": "string"
+        }
+      },      
+      {
+        "label": "Location",
+        "path": [
+          "$.locationName.localized.en"
+        ],
+        "schema": {
+          "type": "string"
+        }
+      },
+      {
+        "label": "Alignment",
+        "path": [
+          "$.alignment.targetName"
+        ],
+        "schema": {
+          "type": "string"
+        }
+      },
+      {
+        "label": "Alignment URL",
+        "path": [
+          "$.alignment.targetUrl"
+        ],
+        "schema": {
+          "type": "string",
+          "format": "uri"
+        }        
+      },
+      {
+        "label": "Alignment framework",
+        "path": [
+          "$.alignment.targetFramework"
+        ],
+        "schema": {
+          "type": "string"
+        }     
+      }
+    ]
+  }
+}
