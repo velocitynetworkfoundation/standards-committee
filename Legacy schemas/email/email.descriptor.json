@@ -1,0 +1,18 @@
+{
+  "title": {
+    "description": {
+      "text": "Email"
+    },
+    "fallback": "-"
+  },
+  "subtitle": {
+    "path": [
+      "$.email"
+    ],
+    "schema": {
+      "type": "string",
+      "format": "email"
+    },
+    "fallback": "-"
+  }
+}

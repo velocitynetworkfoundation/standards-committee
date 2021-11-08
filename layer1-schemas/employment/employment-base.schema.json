@@ -1,0 +1,59 @@
+{
+  "title": "employment-base.schema",
+  "$id": "https://velocitynetwork.foundation/schemas/employment-base",
+  "allOf": [
+    {
+      "$ref": "../json-ld-context.schema.json"
+    },
+    {
+      "type": "object",
+      "properties": {
+        "legalEmployer": {
+          "$ref": "../subtypes/organization.schema.json"
+        },
+        "role": {
+          "type": "string",
+          "description": "The role the person has in the organization."
+        },
+        "description": {
+          "type": "string",
+          "description": "A detailed description of the position."
+        },
+        "employmentType": {
+          "type": "array",
+          "enum": [
+            "contract",
+            "temporary",
+            "permanent",
+            "internship",
+            "full time",
+            "part time"
+          ],
+          "description": "Any of: full-time, part-time, contract, temporary, permanent, internship. ",
+          "items": {
+            "type": "string",
+            "enum": [
+              "full-time",
+              "part-time",
+              "contract",
+              "temporary",
+              "permanent",
+              "internship"
+            ]
+          }
+        },
+        "place": {
+          "$ref": "../subtypes/place.schema.json"
+        },
+        "alignment ": {
+          "type": "array",
+          "description": "A public resource to which the employment position is aligned.",
+          "items": {
+            "$ref": "../subtypes/alignment.schema.json"
+          }
+        }
+      }
+    }
+  ],
+  "x-internal": true
+}

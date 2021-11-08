@@ -1,0 +1,12 @@
+{
+  "title": {
+    "path": [
+      "$.email"
+    ],
+    "schema": {
+      "type": "string",
+      "format": "email"
+    },
+    "fallback": "-"
+  }
+}
