@@ -58,17 +58,17 @@
       "items": [
        {
           "type": "item",
-          "title": "Degree Registration",
+          "title": "Education Degree Registration",
           "uri": "layer1-schemas/education-degree/education-degree-registration-v1.0.schema.json"
         },
         {
           "type": "item",
-          "title": "Degree Attendance",
+          "title": "Education Degree Attendance",
           "uri": "layer1-schemas/education-degree/education-degree-study-v1.0.schema.json"
         },
         {
           "type": "item",
-          "title": "Degree Graduation",
+          "title": "Education Degree Graduation",
           "uri": "layer1-schemas/education-degree/education-degree-graduation-v1.0.schema.json"
         }
       ]
