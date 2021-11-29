@@ -122,12 +122,11 @@
     "ui.title": "Nationality"
   },
   "ui:order": [
-    "name",
     "authority",
     "identifier",
     "documentCode",
     "validity",
     "person",
-    "pationality"
+    "nationality"
   ]
 }

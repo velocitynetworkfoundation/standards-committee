@@ -34,7 +34,7 @@
       "$.holds.image"
     ],
     "schema": {
-      "type": "text",
+      "type": "string",
       "format": "uri"
     }
   },
