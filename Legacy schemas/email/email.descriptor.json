@@ -1,9 +1,6 @@
 {
   "title": {
-    "description": {
-      "text": "Email"
-    },
-    "fallback": "-"
+    "text": "Email",
   },
   "subtitle": {
     "path": [
