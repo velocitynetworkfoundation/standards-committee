@@ -1,13 +1,10 @@
 {
   "title": {
-    "description": {
-      "text": "Phone number"
-    },
-    "fallback": "-"
+    "text": "Phone number"
   },
   "subtitle": {
     "path": [
-      "$.email"
+      "$.phone"
     ],
     "schema": {
       "type": "string"

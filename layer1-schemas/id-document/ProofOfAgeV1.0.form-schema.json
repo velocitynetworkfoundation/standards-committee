@@ -151,7 +151,6 @@
     ]
   },
   "ui:order": [
-    "name",
     "authority",
     "identifier",
     "validity",

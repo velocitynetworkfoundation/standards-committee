@@ -1,5 +1,8 @@
 {
   "title": {
+    "text": "Phone number"
+  },
+  "subtitle": {
     "path": [
       "$.phone"
     ],
