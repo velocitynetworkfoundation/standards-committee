@@ -81,7 +81,7 @@
     {
       "label": "Country of work",
       "path": [
-        "$.place.country"
+        "$.place.addressCountry"
       ],
       "schema": {
         "type": "string"
@@ -99,7 +99,7 @@
     {
       "label": "Alignment",
       "path": [
-        "$.alignment[0].targetName"
+        "$.alignment.targetName"
       ],
       "schema": {
         "type": "string"
@@ -108,7 +108,7 @@
     {
       "label": "Alignment URL",
       "path": [
-        "$.alignment[0].targetUrl"
+        "$.alignment.targetUrl"
       ],
       "schema": {
         "type": "string",
@@ -118,7 +118,7 @@
     {
       "label": "Alignment framework",
       "path": [
-        "$.alignment[0].targetFramework"
+        "$.alignment.targetFramework"
       ],
       "schema": {
         "type": "string"

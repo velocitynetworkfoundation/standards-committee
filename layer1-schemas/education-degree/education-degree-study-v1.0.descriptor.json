@@ -82,7 +82,7 @@
     {
       "label": "Major",
       "path": [
-        "$.major"
+        "$.degreeMajor"
       ],
       "schema": {
         "type": "string"
@@ -91,7 +91,7 @@
     {
       "label": "Minor",
       "path": [
-        "$.minor"
+        "$.degreeMinor"
       ],
       "schema": {
         "type": "string"
