@@ -124,5 +124,31 @@
   },
   "required": [
     "hasCredential"
+  ],
+  "examples": [
+    {
+      "hasCredential": {
+        "id": "http://example.com",
+        "type": "BadgeClass",
+        "name": "string",
+        "description": "string",
+        "image": "http://example.com",
+        "criteria": "string",
+        "issuer": "http://example.com",
+        "tags": [
+          "string"
+        ],
+        "alignment": [
+          {
+            "targetName": "string",
+            "targetUrl": "http://example.com",
+            "targetDescription": "string",
+            "targetCode": "string",
+            "targetFramework": "string",
+            "@context": "string"
+          }
+        ]
+      }
+    }
   ]
 }

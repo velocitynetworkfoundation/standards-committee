@@ -71,7 +71,7 @@
     {
       "label": "Country of work",
       "path": [
-        "$.place.country"
+        "$.place.addressCountry"
       ],
       "schema": {
         "type": "string"
