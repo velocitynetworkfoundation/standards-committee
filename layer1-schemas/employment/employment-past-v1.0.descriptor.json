@@ -99,7 +99,7 @@
     {
       "label": "Alignment",
       "path": [
-        "$.alignment.targetName"
+        "$.alignment[0].targetName"
       ],
       "schema": {
         "type": "string"
@@ -108,7 +108,7 @@
     {
       "label": "Alignment URL",
       "path": [
-        "$.alignment.targetUrl"
+        "$.alignment[0].targetUrl"
       ],
       "schema": {
         "type": "string",
@@ -118,7 +118,7 @@
     {
       "label": "Alignment framework",
       "path": [
-        "$.alignment.targetFramework"
+        "$.alignment[0].targetFramework"
       ],
       "schema": {
         "type": "string"
