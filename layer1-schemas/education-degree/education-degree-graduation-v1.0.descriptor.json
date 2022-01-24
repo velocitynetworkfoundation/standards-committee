@@ -171,6 +171,51 @@
       }
     },
     {
+      "label": "Holder given name",
+      "path": [
+        "$.personName.givenName"
+      ],
+      "schema": {
+        "type": "string"
+      }
+    },
+    {
+      "label": "Holder middle name",
+      "path": [
+        "$.personName.middleName"
+      ],
+      "schema": {
+        "type": "string"
+      }
+    },
+    {
+      "label": "Holder family name",
+      "path": [
+        "$.personName.familyName"
+      ],
+      "schema": {
+        "type": "string"
+      }
+    },
+    {
+      "label": "Holder name prefix",
+      "path": [
+        "$.personName.namePrefix"
+      ],
+      "schema": {
+        "type": "string"
+      }
+    },
+    {
+      "label": "Holder name suffix",
+      "path": [
+        "$.personName.nameSuffix"
+      ],
+      "schema": {
+        "type": "string"
+      }
+    },
+    {
       "label": "Alignment",
       "path": [
         "$.alignment[0].targetName"

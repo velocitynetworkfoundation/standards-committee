@@ -20,7 +20,8 @@
   "required": [
     "institution",
     "degreeName",
-    "registrationDate"
+    "registrationDate",
+    "personName"
   ],
   "examples": [
     {
@@ -56,6 +57,10 @@
         "targetUrl": "https://credentialfinder.org/credential/5769/Bachelor_of_Science_in_Nursing,_RN_to_BSN",
         "targetDescription": "The RN to BSN completion program has been developed to address the specific needs of working registered nurses who return to the university to earn the BSN.",
         "targetFramework": "Credential Engine's Credential Registry"
+      },
+      "personName": {
+        "givenName": "Olivia",
+        "familyName": "Hafez"          
       },
       "registrationDate": "2011-05",
       "startDate": "2011-10"
@@ -96,6 +101,10 @@
         "targetDescription": "A general program that focuses on the scientific study of individual and collective behavior, the physical and environmental bases of behavior, and the analysis and treatment of behavior problems and disorders. Includes instruction in the principles of the various subfields of psychology, research methods, and psychological assessment and testing methods.",
         "targetCode": "42.0101",
         "targetFramework": "CIP - Classification of Instructional Programs"
+      },
+      "personName": {
+        "givenName": "Olivia",
+        "familyName": "Hafez"          
       },
       "registrationDate": "2021-05-15"
     }

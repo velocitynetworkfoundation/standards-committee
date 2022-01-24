@@ -36,11 +36,15 @@
         "image": {
           "type": "string",
           "format": "uri"
+        },
+        "personName": {
+          "$ref": "../subtypes/personName.schema.json"
         }
       },
       "required": [
         "id",
-        "type"
+        "type",
+        "personName"
       ],
       "additionalProperties": false
     }

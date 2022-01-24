@@ -20,7 +20,8 @@
   "required": [
     "provider",
     "courseName",
-    "registrationDate"
+    "registrationDate",
+    "personName"
   ],
   "examples": [
     {
@@ -39,7 +40,11 @@
       "description": "The concept of education had a key role in philosophy since Ancient Greece . Moreover, pholosophical method is used by maky thinkers to clarify the concept of education and related concepts. The course will serve as an introduction to key writings in the philosophy of education from Plato to Ranciere.",
       "courseMode": "Lecture",
       "courseDuration": "PT56H",
-      "registrationDate": "2020-05-01"
+      "registrationDate": "2020-05-01",
+      "personName": {
+        "givenName": "Olivia",
+        "familyName": "Hafez"          
+      }
     },
     {
       "@context": "https://velocitynetwork.foundation/contexts/course",
@@ -60,6 +65,10 @@
       "startDate": "2022-10-01",
       "courseType": "License examination preparation",
       "courseLevel": "Advanced",
+      "personName": {
+        "givenName": "Olivia",
+        "familyName": "Hafez"          
+      },
       "alignment": [
         {
           "targetName": "Live Online Skin and Wound Management Course",
@@ -95,7 +104,11 @@
       "courseType": "Workshop",
       "courseMode": "Instructor led",
       "courseDuration": "PT4H",
-      "registrationDate": "2021-05-01"
+      "registrationDate": "2021-05-01",
+      "personName": {
+        "givenName": "Olivia",
+        "familyName": "Hafez"          
+      }
     }
   ]
 }

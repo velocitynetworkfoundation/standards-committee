@@ -23,7 +23,8 @@
   "required": [
     "provider",
     "courseName",
-    "startDate"
+    "startDate",
+    "personName"
   ],
   "examples": [
     {
@@ -43,7 +44,11 @@
       "courseMode": "Lecture",
       "courseDuration": "PT56H",
       "registrationDate": "2020-05-01",
-      "startDate": "2020-10-01"
+      "startDate": "2020-10-01",
+      "personName": {
+        "givenName": "Olivia",
+        "familyName": "Hafez"          
+      }
     },
     {
       "@context": "https://velocitynetwork.foundation/contexts/course",
@@ -71,7 +76,11 @@
       "courseType": "Workshop",
       "courseMode": "Instructor led",
       "courseDuration": "PT4H",
-      "startDate": "2021-05-01"
+      "startDate": "2021-05-01",
+      "personName": {
+        "givenName": "Olivia",
+        "familyName": "Hafez"          
+      }
     },
     {
       "@context": "https://velocitynetwork.foundation/contexts/course",
@@ -92,6 +101,10 @@
       "startDate": "2018-07-01",
       "courseType": "License examination preparation",
       "courseLevel": "Advanced",
+      "personName": {
+        "givenName": "Olivia",
+        "familyName": "Hafez"          
+      },
       "alignment": [
         {
           "targetName": "Live Online Skin and Wound Management Course",

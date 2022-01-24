@@ -25,7 +25,10 @@
           "description": "A public resource to which the certification or license is aligned.",
           "items": {
             "$ref": "../subtypes/alignment.schema.json"
-          }
+          },
+        "personName": {
+          "$ref": "../subtypes/personName.schema.json"
+          }        
         }
       }
     }

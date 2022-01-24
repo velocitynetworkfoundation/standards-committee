@@ -21,7 +21,8 @@
   ],
   "required": [
     "authority",
-    "name"
+    "name",
+    "personName"
   ],
   "examples": [
     {
@@ -46,6 +47,10 @@
           "addressCountry": "US"
         }
       },
+        "personName": {
+          "givenName": "Olivia",
+          "familyName": "Hafez"          
+        },
       "alignment": {
         "targetName": "Certified Nursing Assistant",
         "targetUrl": "https://sandbox.credentialengine.org/finder/credential/8723/Certified_Nursing_Assistant",
@@ -73,6 +78,10 @@
         "validFrom": "2015-01-18",
         "validUntil": "2025-01-01"
       },
+        "personName": {
+          "givenName": "Olivia",
+          "familyName": "Hafez"          
+        },
       "alignment": [
         {
           "targetName": "Azure Solutions Architect Expert Certification",

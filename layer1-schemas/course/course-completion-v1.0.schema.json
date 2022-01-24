@@ -26,7 +26,8 @@
   "required": [
     "provider",
     "courseName",
-    "completionDate"
+    "completionDate",
+    "personName"
   ],
   "examples": [
     {
@@ -55,7 +56,11 @@
         },
         "scoreValue": "3.8",
         "passFail": "Pass"
-      }
+      },
+      "personName": {
+        "givenName": "Olivia",
+        "familyName": "Hafez"          
+      }      
     },
     {
       "@context": "https://velocitynetwork.foundation/contexts/course",
@@ -90,6 +95,10 @@
         },
         "result": "partly attended",
         "passFail": "fail"
+      },
+      "personName": {
+        "givenName": "Olivia",
+        "familyName": "Hafez"          
       }
     },
     {
@@ -112,6 +121,10 @@
       "completionDate": "2018-10-01",
       "courseType": "License examination preparation",
       "courseLevel": "Advanced",
+      "personName": {
+        "givenName": "Olivia",
+        "familyName": "Hafez"          
+      },
       "alignment": [
         {
           "targetName": "Live Online Skin and Wound Management Course",

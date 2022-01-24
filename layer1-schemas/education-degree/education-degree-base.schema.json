@@ -48,6 +48,9 @@
           "type": "string",
           "description": "A detailed description of the degree. "
         },
+        "personName": {
+          "$ref": "../subtypes/personName.schema.json"
+        },
         "alignment": {
           "type": "array",
           "description": "A public resource to which the degree is aligned.",

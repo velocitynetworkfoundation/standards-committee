@@ -17,7 +17,8 @@
   "required": [
     "legalEmployer",
     "role",
-    "startDate"
+    "startDate",
+    "personName"
   ],
   "examples": [
     {
@@ -43,7 +44,11 @@
         "addressRegion": "GB-ENG",
         "addressCountry": "GB"
       },
-      "startDate": "2017-01"
+      "startDate": "2017-01",
+      "personName": {
+        "givenName": "Olivia",
+        "familyName": "Hafez"          
+      }
     },
     {
       "@context": "https://velocitynetwork.foundation/contexts/employment",
@@ -68,7 +73,11 @@
         "addressRegion": "US-NY",
         "addressCountry": "US"
       },
-      "startDate": "2013-10"
+      "startDate": "2013-10",
+      "personName": {
+        "givenName": "Olivia",
+        "familyName": "Hafez"          
+      }
     }
   ]
 }

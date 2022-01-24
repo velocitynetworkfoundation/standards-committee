@@ -18,13 +18,17 @@
           "items": {
             "$ref": "./assessment-dimension.schema.json"
           }
+        },
+        "personName": {
+          "$ref": "../subtypes/personName.schema.json"
         }
       }
     }
   ],
   "required": [
     "authority",
-    "name"
+    "name",
+    "personName"
   ],
   "examples": [
     {
@@ -36,6 +40,10 @@
           "addressLocality": "Los Angeles",
           "addressRegion": "US-CA",
           "addressCountry": "US"
+        },
+        "personName": {
+          "givenName": "Olivia",
+          "familyName": "Hafez"          
         }
       },
       "name": "Leadership",
@@ -112,6 +120,10 @@
           "addressCountry": "US"
         }
       },
+        "personName": {
+          "givenName": "Olivia",
+          "familyName": "Hafez"          
+        },
       "name": "Algebraic geometry - Final Exam",
       "assesses": "Algebraic curves and surfaces",
       "score": {

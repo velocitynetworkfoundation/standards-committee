@@ -23,7 +23,8 @@
   "required": [
     "institution",
     "degreeName",
-    "startDate"
+    "startDate",
+    "personName"
   ],
   "examples": [
     {
@@ -54,6 +55,10 @@
         "Nursing"
       ],
       "description": "Starfield College’s RN to BSN Online Option allows working nurses to advance your degree in as few as 3 semesters.\n If you are a registered nurse with an active RN license looking to earn your BSN, Chamberlain's online RN to BSN option can help prepare you for the next step in your career.\n Our RN to BSN online option allows you to earn your degree while you work.",
+      "personName": {
+        "givenName": "Olivia",
+        "familyName": "Hafez"          
+      },
       "alignment": {
         "targetName": "Bachelor of Science in Nursing, RN to BSN",
         "targetUrl": "https://credentialfinder.org/credential/5769/Bachelor_of_Science_in_Nursing,_RN_to_BSN",
@@ -100,7 +105,11 @@
         "targetFramework": "CIP - Classification of Instructional Programs"
       },
       "registrationDate": "2021-05-15",
-      "startDate": "2021-10-01"
+      "startDate": "2021-10-01",
+      "personName": {
+        "givenName": "Olivia",
+        "familyName": "Hafez"          
+      }
     }
   ]
 }

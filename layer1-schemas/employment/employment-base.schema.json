@@ -45,6 +45,9 @@
         "place": {
           "$ref": "../subtypes/place.schema.json"
         },
+        "personName": {
+         "$ref": "../subtypes/personName.schema.json"
+        },
         "alignment ": {
           "type": "array",
           "description": "A public resource to which the employment position is aligned.",

@@ -21,7 +21,8 @@
     "legalEmployer",
     "role",
     "startDate",
-    "endDate"
+    "endDate",
+    "personName"
   ],
   "examples": [
     {
@@ -45,7 +46,11 @@
         "addressCountry": "GB"
       },
       "startDate": "2017-01",
-      "endDate": "2020-09"
+      "endDate": "2020-09",
+      "personName": {
+        "givenName": "Olivia",
+        "familyName": "Hafez"          
+      }
     },
     {
       "@context": "https://velocitynetwork.foundation/contexts/employment",
@@ -71,7 +76,11 @@
         "addressCountry": "US"
       },
       "startDate": "2013-10",
-      "endDate": "2017-01"
-    }
+      "endDate": "2017-01",
+      "personName": {
+        "givenName": "Olivia",
+        "familyName": "Hafez"          
+      }
+   }
   ]
 }
