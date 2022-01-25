@@ -66,6 +66,30 @@
       "validIn"
     ]
   },
+  "personName": {
+    "givenName": {
+      "ui.title": "Holder given name"
+    },
+    "middleName": {
+      "ui.title": "Holder middle name"
+    },
+    "familyName": {
+      "ui.title": "Holder family name"
+    },
+    "namePrefix": {
+      "ui.title": "Holder name prefix"
+    },
+    "nameSuffixe": {
+      "ui.title": "Holder name suffix"
+    },
+    "ui:order": [
+      "givenName",
+      "middleName",
+      "familyName",
+      "namePrefix",
+      "nameSuffix"
+    ]
+  },
   "alignment": {
     "ui.widget": "hidden"
   },
@@ -73,6 +97,7 @@
     "authority",
     "name",
     "identifier",
-    "validity"
+    "validity",
+    "personName"
   ]
 }
