@@ -6,193 +6,395 @@
     },
     {
       "type": "group",
-      "title": "Assessments",
+      "title": "V1.1",
       "items": [
         {
-          "type": "item",
-          "title": "Assessment",
-          "uri": "v1.0/assessment/assessment-v1.0.schema.json"
-        }
-      ]
-    },
-    {
-      "type": "group",
-      "title": "Certifications and Licenses",
-      "items": [
-        {
-          "type": "item",
-          "title": "Certification",
-          "uri": "v1.0/certification/certification-v1.0.schema.json"
+          "type": "group",
+          "title": "Assessments",
+          "items": [
+            {
+              "type": "item",
+              "title": "Assessment",
+              "uri": "v1.1/assessment/assessment-v1.1.schema.json"
+            }
+          ]
         },
         {
-          "type": "item",
-          "title": "License",
-          "uri": "v1.0/certification/license-v1.0.schema.json"
-        }
-      ]
-    },
-    {
-      "type": "group",
-      "title": "Courses",
-      "items": [
-        {
-          "type": "item",
-          "title": "Course Registration",
-          "uri": "v1.0/course/course-registration-v1.0.schema.json"
+          "type": "group",
+          "title": "Certifications and Licenses",
+          "items": [
+            {
+              "type": "item",
+              "title": "Certification",
+              "uri": "v1.1/certification/certification-v1.1.schema.json"
+            },
+            {
+              "type": "item",
+              "title": "License",
+              "uri": "v1.1/certification/license-v1.1.schema.json"
+            }
+          ]
         },
         {
-          "type": "item",
-          "title": "Course Attendance",
-          "uri": "v1.0/course/course-attendance-v1.0.schema.json"
+          "type": "group",
+          "title": "Courses",
+          "items": [
+            {
+              "type": "item",
+              "title": "Course Registration",
+              "uri": "v1.1/course/course-registration-v1.1.schema.json"
+            },
+            {
+              "type": "item",
+              "title": "Course Attendance",
+              "uri": "v1.1/course/course-attendance-v1.1.schema.json"
+            },
+            {
+              "type": "item",
+              "title": "Course Completion",
+              "uri": "v1.1/course/course-completion-v1.1.schema.json"
+            }
+          ]
         },
         {
-          "type": "item",
-          "title": "Course Completion",
-          "uri": "v1.0/course/course-completion-v1.0.schema.json"
-        }
-      ]
-    },
-    {
-      "type": "group",
-      "title": "Education Degrees",
-      "items": [
-       {
-          "type": "item",
-          "title": "Education Degree Registration",
-          "uri": "v1.0/education-degree/education-degree-registration-v1.0.schema.json"
+          "type": "group",
+          "title": "Education Degrees",
+          "items": [
+            {
+              "type": "item",
+              "title": "Education Degree Registration",
+              "uri": "v1.1/education-degree/education-degree-registration-v1.1.schema.json"
+            },
+            {
+              "type": "item",
+              "title": "Education Degree Attendance",
+              "uri": "v1.1/education-degree/education-degree-study-v1.1.schema.json"
+            },
+            {
+              "type": "item",
+              "title": "Education Degree Graduation",
+              "uri": "v1.1/education-degree/education-degree-graduation-v1.1.schema.json"
+            }
+          ]
         },
         {
-          "type": "item",
-          "title": "Education Degree Attendance",
-          "uri": "v1.0/education-degree/education-degree-study-v1.0.schema.json"
+          "type": "group",
+          "title": "Employment Roles",
+          "items": [
+            {
+              "type": "item",
+              "title": "Employment - Current",
+              "uri": "v1.1/employment/employment-current-v1.1.schema.json"
+            },
+            {
+              "type": "item",
+              "title": "Employment - Past",
+              "uri": "v1.1/employment/employment-past-v1.1.schema.json"
+            }
+          ]
         },
         {
-          "type": "item",
-          "title": "Education Degree Graduation",
-          "uri": "v1.0/education-degree/education-degree-graduation-v1.0.schema.json"
-        }
-      ]
-    },
-    {
-      "type": "group",
-      "title": "Employment Roles",
-      "items": [
-        {
-          "type": "item",
-          "title": "Employment - Current",
-          "uri": "v1.0/employment/employment-current-v1.0.schema.json"
+          "type": "group",
+          "title": "Id Documents",
+          "items": [
+            {
+              "type": "item",
+              "title": "Id Document",
+              "uri": "v1.1/id-document/id-document-v1.1.schema.json"
+            },
+            {
+              "type": "item",
+              "title": "Driver's License",
+              "uri": "v1.1/id-document/drivers-license-v1.1.schema.json"
+            },
+            {
+              "type": "item",
+              "title": "National ID Card",
+              "uri": "v1.1/id-document/national-id-card-v1.1.schema.json"
+            },
+            {
+              "type": "item",
+              "title": "Passport",
+              "uri": "v1.1/id-document/passport-v1.1.schema.json"
+            },
+            {
+              "type": "item",
+              "title": "Proof of Age",
+              "uri": "v1.1/id-document/proof-of-age-v1.1.schema.json"
+            },
+            {
+              "type": "item",
+              "title": "Resident Permit",
+              "uri": "v1.1/id-document/resident-permit-v1.1.schema.json"
+            },
+            {
+              "type": "item",
+              "title": "Email",
+              "uri": "v1.1/id-document/email-v1.1.schema.json"
+            },
+            {
+              "type": "item",
+              "title": "Phone",
+              "uri": "v1.1/id-document/phone-v1.1.schema.json"
+            }
+          ]
         },
         {
-          "type": "item",
-          "title": "Employment - Past",
-          "uri": "v1.0/employment/employment-past-v1.0.schema.json"
-        }
-      ]
-    },
-    {
-      "type": "group",
-      "title": "Id Documents",
-      "items": [
-        {
-          "type": "item",
-          "title": "Id Document",
-          "uri": "v1.0/id-document/id-document-v1.0.schema.json"
-        },
-        {
-          "type": "item",
-          "title": "Driver's License",
-          "uri": "v1.0/id-document/drivers-license-v1.0.schema.json"
-        },
-        {
-          "type": "item",
-          "title": "National ID Card",
-          "uri": "v1.0/id-document/national-id-card-v1.0.schema.json"
-        },
-        {
-          "type": "item",
-          "title": "Passport",
-          "uri": "v1.0/id-document/passport-v1.0.schema.json"
-        },
-        {
-          "type": "item",
-          "title": "Proof of Age",
-          "uri": "v1.0/id-document/proof-of-age-v1.0.schema.json"
-        },      
-        {
-          "type": "item",
-          "title": "Resident Permit",
-          "uri": "v1.0/id-document/resident-permit-v1.0.schema.json"
-        },
-        {
-          "type": "item",
-          "title": "Email",
-          "uri": "v1.0/id-document/email-v1.0.schema.json"
-        },
-        {
-          "type": "item",
-          "title": "Phone",
-          "uri": "v1.0/id-document/phone-v1.0.schema.json"
-        }
-      ]
-    },
-    {
-      "type": "group",
-      "title": "Open Badge",
-      "items": [
-        {
-          "type": "item",
+          "type": "group",
           "title": "Open Badge",
-          "uri": "v1.0/open-badge/open-badge-v1.0.schema.json"
+          "items": [
+            {
+              "type": "item",
+              "title": "Open Badge",
+              "uri": "v1.1/open-badge/open-badge-v1.1.schema.json"
+            }
+          ]
+        },
+        {
+          "type": "divider",
+          "title": "Sub Types"
+        },
+        {
+          "type": "item",
+          "title": "Address",
+          "uri": "v1.1/subtypes/address.schema.json"
+        },
+        {
+          "type": "item",
+          "title": "Alignment",
+          "uri": "v1.1/subtypes/alignment.schema.json"
+        },
+        {
+          "type": "item",
+          "title": "Organization",
+          "uri": "v1.1/subtypes/organization.schema.json"
+        },
+        {
+          "type": "item",
+          "title": "Person",
+          "uri": "v1.1/subtypes/person.schema.json"
+        },
+        {
+          "type": "item",
+          "title": "Place",
+          "uri": "v1.1/subtypes/place.schema.json"
+        },
+        {
+          "type": "item",
+          "title": "Score",
+          "uri": "v1.1/subtypes/score.schema.json"
+        },
+        {
+          "type": "item",
+          "title": "Validity",
+          "uri": "v1.1/subtypes/validity.schema.json"
+        },
+        {
+          "type": "divider",
+          "title": "JSON-LD Context"
+        },
+        {
+          "type": "item",
+          "title": "Level 1 Json-LD Context",
+          "uri": "https://github.com/velocitynetworkfoundation/standards-committee/blob/main/v1.1/layer1.jsonld.json"
         }
       ]
     },
     {
-      "type": "divider",
-      "title": "Sub Types"
-    },
-    {
-      "type": "item",
-      "title": "Address",
-      "uri": "v1.0/subtypes/address.schema.json"
-    },
-    {
-      "type": "item",
-      "title": "Alignment",
-      "uri": "v1.0/subtypes/alignment.schema.json"
-    },
-    {
-      "type": "item",
-      "title": "Organization",
-      "uri": "v1.0/subtypes/organization.schema.json"
-    },
-    {
-      "type": "item",
-      "title": "Person",
-      "uri": "v1.0/subtypes/person.schema.json"
-    },
-    {
-      "type": "item",
-      "title": "Place",
-      "uri": "v1.0/subtypes/place.schema.json"
-    },
-    {
-      "type": "item",
-      "title": "Score",
-      "uri": "v1.0/subtypes/score.schema.json"
-    },
-    {
-      "type": "item",
-      "title": "Validity",
-      "uri": "v1.0/subtypes/validity.schema.json"
-    },
-    {
-      "type": "divider",
-      "title": "JSON-LD Context"
-    },
-    {
-      "type": "item",
-      "title": "Level 1 Json-LD Context",
-      "uri": "https://github.com/velocitynetworkfoundation/standards-committee/blob/main/v1.0/layer1.jsonld.json"
+      "type": "group",
+      "title": "V1.0",
+      "items": [
+        {
+          "type": "group",
+          "title": "Assessments",
+          "items": [
+            {
+              "type": "item",
+              "title": "Assessment",
+              "uri": "v1.0/assessment/assessment-v1.0.schema.json"
+            }
+          ]
+        },
+        {
+          "type": "group",
+          "title": "Certifications and Licenses",
+          "items": [
+            {
+              "type": "item",
+              "title": "Certification",
+              "uri": "v1.0/certification/certification-v1.0.schema.json"
+            },
+            {
+              "type": "item",
+              "title": "License",
+              "uri": "v1.0/certification/license-v1.0.schema.json"
+            }
+          ]
+        },
+        {
+          "type": "group",
+          "title": "Courses",
+          "items": [
+            {
+              "type": "item",
+              "title": "Course Registration",
+              "uri": "v1.0/course/course-registration-v1.0.schema.json"
+            },
+            {
+              "type": "item",
+              "title": "Course Attendance",
+              "uri": "v1.0/course/course-attendance-v1.0.schema.json"
+            },
+            {
+              "type": "item",
+              "title": "Course Completion",
+              "uri": "v1.0/course/course-completion-v1.0.schema.json"
+            }
+          ]
+        },
+        {
+          "type": "group",
+          "title": "Education Degrees",
+          "items": [
+            {
+              "type": "item",
+              "title": "Education Degree Registration",
+              "uri": "v1.0/education-degree/education-degree-registration-v1.0.schema.json"
+            },
+            {
+              "type": "item",
+              "title": "Education Degree Attendance",
+              "uri": "v1.0/education-degree/education-degree-study-v1.0.schema.json"
+            },
+            {
+              "type": "item",
+              "title": "Education Degree Graduation",
+              "uri": "v1.0/education-degree/education-degree-graduation-v1.0.schema.json"
+            }
+          ]
+        },
+        {
+          "type": "group",
+          "title": "Employment Roles",
+          "items": [
+            {
+              "type": "item",
+              "title": "Employment - Current",
+              "uri": "v1.0/employment/employment-current-v1.0.schema.json"
+            },
+            {
+              "type": "item",
+              "title": "Employment - Past",
+              "uri": "v1.0/employment/employment-past-v1.0.schema.json"
+            }
+          ]
+        },
+        {
+          "type": "group",
+          "title": "Id Documents",
+          "items": [
+            {
+              "type": "item",
+              "title": "Id Document",
+              "uri": "v1.0/id-document/id-document-v1.0.schema.json"
+            },
+            {
+              "type": "item",
+              "title": "Driver's License",
+              "uri": "v1.0/id-document/drivers-license-v1.0.schema.json"
+            },
+            {
+              "type": "item",
+              "title": "National ID Card",
+              "uri": "v1.0/id-document/national-id-card-v1.0.schema.json"
+            },
+            {
+              "type": "item",
+              "title": "Passport",
+              "uri": "v1.0/id-document/passport-v1.0.schema.json"
+            },
+            {
+              "type": "item",
+              "title": "Proof of Age",
+              "uri": "v1.0/id-document/proof-of-age-v1.0.schema.json"
+            },
+            {
+              "type": "item",
+              "title": "Resident Permit",
+              "uri": "v1.0/id-document/resident-permit-v1.0.schema.json"
+            },
+            {
+              "type": "item",
+              "title": "Email",
+              "uri": "v1.0/id-document/email-v1.0.schema.json"
+            },
+            {
+              "type": "item",
+              "title": "Phone",
+              "uri": "v1.0/id-document/phone-v1.0.schema.json"
+            }
+          ]
+        },
+        {
+          "type": "group",
+          "title": "Open Badge",
+          "items": [
+            {
+              "type": "item",
+              "title": "Open Badge",
+              "uri": "v1.0/open-badge/open-badge-v1.0.schema.json"
+            }
+          ]
+        },
+        {
+          "type": "divider",
+          "title": "Sub Types"
+        },
+        {
+          "type": "item",
+          "title": "Address",
+          "uri": "v1.0/subtypes/address.schema.json"
+        },
+        {
+          "type": "item",
+          "title": "Alignment",
+          "uri": "v1.0/subtypes/alignment.schema.json"
+        },
+        {
+          "type": "item",
+          "title": "Organization",
+          "uri": "v1.0/subtypes/organization.schema.json"
+        },
+        {
+          "type": "item",
+          "title": "Person",
+          "uri": "v1.0/subtypes/person.schema.json"
+        },
+        {
+          "type": "item",
+          "title": "Place",
+          "uri": "v1.0/subtypes/place.schema.json"
+        },
+        {
+          "type": "item",
+          "title": "Score",
+          "uri": "v1.0/subtypes/score.schema.json"
+        },
+        {
+          "type": "item",
+          "title": "Validity",
+          "uri": "v1.0/subtypes/validity.schema.json"
+        },
+        {
+          "type": "divider",
+          "title": "JSON-LD Context"
+        },
+        {
+          "type": "item",
+          "title": "Level 1 Json-LD Context",
+          "uri": "https://github.com/velocitynetworkfoundation/standards-committee/blob/main/v1.0/layer1.jsonld.json"
+        }
+      ]
     }
   ]
 }
