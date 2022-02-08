@@ -1,0 +1,127 @@
+{
+  "title": "license.schema",
+  "$schema": "http://json-schema.org/draft-07/schema#",
+  "$id": "https://velocitynetwork.foundation/schemas/license",
+  "allOf": [
+    {
+      "$ref": "./certification-license-base.json"
+    },
+    {
+      "type": "object",
+      "properties": {
+        "identifier": {
+          "type": "string",
+          "description": "The number or other unique identifier of the license held by the person. "
+        },
+        "validity": {
+          "$ref": "../subtypes/validity.schema.json"
+        },
+        "endorsementCode": {
+          "type": "array",
+          "description": "Endorsements to the license such as vehicle class A1, B, in driver's license, or specialties in nursing license.",
+          "items": {
+            "type": "string"
+          }
+        },
+        "restrictionCode": {
+          "type": "array",
+          "description": "Restrictions to the license such as need to wear glasses in driver's license.",
+          "items": {
+            "type": "string"
+          }
+        }
+      }
+    }
+  ],
+    "required": [
+    "authority",
+    "name",
+    "identifier",
+    "personName"
+  ],
+  "examples": [
+    {
+      "@context": "https://velocitynetwork.foundation/contexts/certification-license",
+      "authority": {
+        "name": "New Jersey Board of Nursing",
+        "did": "did:velocity:0xc257274276a4e539741ca11b590b9447b26a8052",
+        "place": {
+          "addressLocality": "Newark",
+          "addressRegion": "US-NJ",
+          "addressCountry": "US"
+        }
+      },
+      "name": "Licensed Practical Nurse",
+      "description": "As an assistant to physicians and registered nurses (RNs), a licensed practical nurse (LPN) takes care of basic nursing duties in settings such as hospitals, nursing homes, and long-term care facilities.  To acquiire the license the applicant must sit for the NCLEX-LPN exam.",
+      "identifier": "7765430",
+      "validity": {
+        "firstValidFrom": "2018-07-01",
+        "validFrom": "2020-07-01",
+        "validUntil": "2022-07-01",
+        "validIn": {
+          "addressRegion": "US-NJ",
+          "addressCountry": "US"
+        }
+      },
+        "personName": {
+          "givenName": "Olivia",
+          "familyName": "Hafez"          
+        }
+    },
+    {
+      "@context": "https://velocitynetwork.foundation/contexts/certification-license",
+      "authority": {
+        "name": "California State Board of Accountancy",
+        "did": "did:velocity:0xc257274276a4e539741ca11b590b9447b26a8052",
+        "place": {
+          "addressLocality": "Sacramento",
+          "addressRegion": "US-CA",
+          "addressCountry": "US"
+        }
+      },
+      "name": "CPA",
+      "description": "The CPA designation distinguishes licensed accounting professionals committed to protecting the public interest.These professionals offer financial statement audits and other attestation services to help inform investors about the financial health of organizations. They provide individuals and families with valuable knowledge and advice on taxes and financial planning.",
+      "identifier": "82532887",
+      "validity": {
+        "firstValidFrom": "2014-05-10",
+        "validFrom": "2014-05-10",
+        "validIn": {
+          "addressRegion": "US-CA",
+          "addressCountry": "US"
+        }
+      },
+        "personName": {
+          "givenName": "Olivia",
+          "familyName": "Hafez"          
+        }
+    },
+    {
+      "@context": "https://velocitynetwork.foundation/contexts/certification-license",
+      "authority": {
+        "name": "DMV State of California",
+        "did": "did:velocity:0xc257274276a4e539741ca11b590b9447b26a8052",
+        "place": {
+          "addressLocality": "Sacramento",
+          "addressRegion": "US-CA",
+          "addressCountry": "US"
+        },
+        "identifier": "string"
+      },
+      "name": "California Driver's License",
+      "identifier": "G1234568",
+      "validity": {
+        "validFrom": "2009-08-21",
+        "validUntil": "2014-08-21"
+      },
+        "personName": {
+          "givenName": "Olivia",
+          "familyName": "Hafez"          
+        },
+      "endorsementCode": 
+        "A-H Hazardous materials"
+      ,
+      "restrictionCode": 
+        "Spectscles or contact lenses required"      
+    }
+  ]
+}

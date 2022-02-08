@@ -1,0 +1,69 @@
+{
+  "issuer": {
+    "name": {
+      "ui.title": "Awarded by"
+    },
+    "identifer": {
+      "ui.widget": "hidden"
+    },
+    "place": {
+      "ui.widget": "hidden"
+    }
+  },
+  "id": {
+    "ui.widget": "hidden"
+  },
+  "type": {
+    "ui.widget": "hidden"
+  },
+  "name": {
+    "ui.title": "Badge name"
+  },
+  "description": {
+    "ui.title": "Description"
+  },
+  "criteria": {
+    "ui.widget": "hidden"
+  },
+  "tags": {
+    "ui.widget": "hidden"
+  },
+  "alignment": {
+    "ui.widget": "hidden"
+  },
+  "image": {
+    "ui.title": "Image",
+    "ui.widget": "file"
+  },
+  "personName": {
+    "givenName": {
+      "ui.title": "Holder given name"
+    },
+    "middleName": {
+      "ui.title": "Holder middle name"
+    },
+    "familyName": {
+      "ui.title": "Holder family name"
+    },
+    "namePrefix": {
+      "ui.title": "Holder name prefix"
+    },
+    "nameSuffix": {
+      "ui.title": "Holder name suffix"
+    },
+    "ui:order": [
+      "givenName",
+      "middleName",
+      "familyName",
+      "namePrefix",
+      "nameSuffix"
+    ]
+  },
+  "ui:order": [
+    "issuer",
+    "name",
+    "description",
+    "personName",
+    "image"
+  ]
+}

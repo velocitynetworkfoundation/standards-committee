@@ -1,0 +1,166 @@
+{
+  "title": {
+    "path": [
+      "$.holds.issuer.name"
+    ],
+    "schema": {
+      "type": "string"
+    },
+    "fallback": "-"
+  },
+  "subtitle": {
+    "path": [
+      "$.holds.type"
+    ],
+    "schema": {
+      "type": "string"
+    },
+    "fallback": "-"
+  },
+  "summary_detail": {
+    "path": [
+      "$.holds.name"
+    ],
+    "schema": {
+      "type": "string"
+    },
+    "fallback": "-"
+  },
+  "description": {
+    "text": "Open badge"
+  },
+  "logo": {
+    "path": [
+      "$.holds.image"
+    ],
+    "schema": {
+      "type": "string",
+      "format": "uri"
+    }
+  },
+  "properties": [
+    {
+      "label": "Badge name",
+      "path": [
+        "$.holds.name"
+      ],
+      "schema": {
+        "type": "string"
+      },
+      "fallback": "-"
+    },
+    {
+      "label": "Badge Id",
+      "path": [
+        "$.holds.id"
+      ],
+      "schema": {
+        "type": "string"
+      },
+      "fallback": "-"
+    },
+    {
+      "label": "Description",
+      "path": [
+        "$.holds.description"
+      ],
+      "schema": {
+        "type": "string"
+      }
+    },
+    {
+      "label": "Criteria",
+      "path": [
+        "$.holds.criteria"
+      ],
+      "schema": {
+        "type": "string"
+      }
+    },
+    {
+      "label": "Tags",
+      "path": [
+        "$.holds.tags"
+      ],
+      "schema": {
+        "type": "array",
+        "items": {
+          "type": "string"
+        }
+      }
+    },
+    {
+      "label": "Holder given name",
+      "path": [
+        "$.personName.givenName"
+      ],
+      "schema": {
+        "type": "string"
+      }
+    },
+    {
+      "label": "Holder middle name",
+      "path": [
+        "$.personName.middleName"
+      ],
+      "schema": {
+        "type": "string"
+      }
+    },
+    {
+      "label": "Holder family name",
+      "path": [
+        "$.personName.familyName"
+      ],
+      "schema": {
+        "type": "string"
+      }
+    },
+    {
+      "label": "Holder name prefix",
+      "path": [
+        "$.personName.namePrefix"
+      ],
+      "schema": {
+        "type": "string"
+      }
+    },
+    {
+      "label": "Holder name suffix",
+      "path": [
+        "$.personName.nameSuffix"
+      ],
+      "schema": {
+        "type": "string"
+      }
+    },
+    {
+      "label": "Alignment",
+      "path": [
+        "$.holds.alignment[0].targetName"
+      ],
+      "schema": {
+        "type": "string"
+      }
+    },
+    {
+      "label": "Alignment URL",
+      "path": [
+        "$.holds.alignment[0].targetUrl"
+      ],
+      "schema": {
+        "type": "string",
+        "format": "uri"
+      }
+    },
+    {
+      "label": "Alignment framework",
+      "path": [
+        "$.holds.alignment[0].targetFramework"
+      ],
+      "schema": {
+        "type": "string"
+      }
+    }
+  ]
+}

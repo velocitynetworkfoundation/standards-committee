@@ -1,0 +1,65 @@
+{
+  "title": "degree-base",
+  "$id": "https://velocitynetwork.foundation/schemas/education-degree-base",
+  "allOf": [
+    {
+      "$ref": "../json-ld-context.schema.json"
+    },
+    {
+      "type": "object",
+      "properties": {
+        "institution": {
+          "$ref": "../subtypes/organization.schema.json"
+        },
+        "school": {
+          "$ref": "../subtypes/organization.schema.json"
+        },
+        "programName": {
+          "type": "string",
+          "description": "The program in which the person holding the degree studied for the degree. "
+        },
+        "programType": {
+          "type": "string",
+          "description": "The type of program, e.g., full. "
+        },
+        "programMode": {
+          "type": "string",
+          "description": "The program mode or method of teaching, e.g., online. "
+        },
+        "degreeName": {
+          "type": "string",
+          "description": "The name of the degree. "
+        },
+        "degreeMajor": {
+          "type": "array",
+          "description": "The major field or fields of study of the degree. ",
+          "items": {
+            "type": "string"
+          }
+        },
+        "degreeMinor": {
+          "type": "array",
+          "description": "The minor field or fields of study of the degree. ",
+          "items": {
+            "type": "string"
+          }
+        },
+        "description": {
+          "type": "string",
+          "description": "A detailed description of the degree. "
+        },
+        "personName": {
+          "$ref": "../subtypes/personName.schema.json"
+        },
+        "alignment": {
+          "type": "array",
+          "description": "A public resource to which the degree is aligned.",
+          "items": {
+            "$ref": "../subtypes/alignment.schema.json"
+          }
+        }
+      }
+    }
+  ],
+  "x-internal": true
+}

@@ -1,0 +1,88 @@
+{
+  "authority": {
+    "name": {
+      "ui.title": "Authority"
+    },
+    "identifer": {
+      "ui.widget": "hidden"
+    },
+    "place": {
+      "ui.widget": "hidden"
+    }
+  },
+  "name": {
+    "ui.widget": "Assessment name"
+  },
+  "assesses": {
+    "ui.widget": "hidden"
+  },
+  "description": {
+    "ui.title": "Description"
+  },
+  "assessmentDate": {
+    "ui.title": "Date"
+  },
+  "alignment": {
+    "ui.widget": "hidden"
+  },
+  "grade": {
+    "scoreValue": {
+      "ui.title": "Score"
+    },
+    "result": {
+      "ui.title": "Result"
+    },
+    "passFail": {
+      "ui.title": "Pass or fail"
+    },
+    "method": {
+      "ui.widget": "hidden"
+    },
+    "ui:order": [
+      "scoreValue",
+      "result",
+      "passFail"
+    ]
+  },
+  "assessmentLevel": {
+    "ui.widget": "hidden"
+  },
+  "assessmentMethod": {
+    "ui.widget": "hidden"
+  },
+  "assessmentDimensions": {
+    "ui.widget": "hidden"
+  },
+    "personName": {
+    "givenName": {
+      "ui.title": "Holder given name"
+    },
+    "middleName": {
+      "ui.title": "Holder middle name"
+    },
+    "familyName": {
+      "ui.title": "Holder family name"
+    },
+    "namePrefix": {
+      "ui.title": "Holder name prefix"
+    },
+    "nameSuffix": {
+      "ui.title": "Holder name suffix"
+    },
+    "ui:order": [
+      "givenName",
+      "middleName",
+      "familyName",
+      "namePrefix",
+      "nameSuffix"
+    ]
+  },
+  "ui:order": [
+    "authority",
+    "name",
+    "description",
+    "assessmentDate",
+    "grade",
+    "personName"
+  ]
+}
