@@ -6,7 +6,7 @@
     "schema": {
       "type": "string"
     },
-    "fallback": "-"
+    "fallback": "Resident Permit"
   },
   "subtitle": {
     "path": [
@@ -27,11 +27,11 @@
     "fallback": "-"
   },
   "description": {
-    "text": "Proof of age"
+    "text": "Resident permit"
   },
   "properties": [
     {
-      "label": "Document number",
+      "label": "Permit number",
       "path": [
         "$.identifier"
       ],

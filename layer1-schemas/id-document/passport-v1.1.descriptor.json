@@ -6,7 +6,7 @@
     "schema": {
       "type": "string"
     },
-    "fallback": "-"
+    "fallback": "Passport"
   },
   "subtitle": {
     "path": [
@@ -27,13 +27,23 @@
     "fallback": "-"
   },
   "description": {
-    "text": "National ID card"
+    "text": "Passport"
   },
   "properties": [
     {
-      "label": "Id number",
+      "label": "Passport number",
       "path": [
         "$.identifier"
+      ],
+      "schema": {
+        "type": "string"
+      },
+      "fallback": "-"
+    },
+    {
+      "label": "Passport type",
+      "path": [
+        "$.documentCode"
       ],
       "schema": {
         "type": "string"
@@ -170,15 +180,6 @@
     {
       "label": "Nationality",
       "path": [
-        "$.nationality"
-      ],
-      "schema": {
-        "type": "string"
-      }
-    },
-    {
-      "label": "Street address",
-      "path": [
         "$.streetAddress"
       ],
       "schema": {
@@ -188,34 +189,7 @@
     {
       "label": "Address locality",
       "path": [
-        "$.addressLocality"
-      ],
-      "schema": {
-        "type": "string"
-      }
-    },
-    {
-      "label": "Address region or state",
-      "path": [
-        "$.addressRegion"
-      ],
-      "schema": {
-        "type": "string"
-      }
-    },
-    {
-      "label": "Address post code",
-      "path": [
-        "$.postCode"
-      ],
-      "schema": {
-        "type": "string"
-      }
-    },
-    {
-      "label": "Address Country",
-      "path": [
-        "$.addressCountry"
+        "$.nationality"
       ],
       "schema": {
         "type": "string"
