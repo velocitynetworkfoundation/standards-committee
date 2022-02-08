@@ -58,7 +58,7 @@
     "namePrefix": {
       "ui.title": "Holder name prefix"
     },
-    "nameSuffixe": {
+    "nameSuffix": {
       "ui.title": "Holder name suffix"
     },
     "ui:order": [
