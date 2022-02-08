@@ -1,0 +1,58 @@
+{
+  "title": "organization.schema",
+  "$id": "https://velocitynetwork.foundation/schemas/organization",
+  "allOf": [
+    {
+      "$ref": "../json-ld-context.schema.json"
+    },
+    {
+      "type": "object",
+      "properties": {
+        "name": {
+          "type": "string",
+          "description": "The name of the organization."
+        },
+        "identifier": {
+          "$ref": "./did.schema.json"
+        },
+        "place": {
+          "$ref": "./place.schema.json"
+        }
+      }
+    }
+  ],
+  "required": [
+    "name",
+    "place"
+  ],
+  "examples": [
+    {
+      "name": "New Jersey Motor Vehicle Commission",
+      "identifier": "did:velocity:0xc30b69405238038080c641cc20a63715ca97d706",
+      "place": {
+        "addressLocality": "Trenton",
+        "addressRegion": "US-NJ",
+        "addressCountry": "US"
+      }
+    },
+    {
+      "name": "Microsoft Corporation",
+      "identifier": "did:velocity:0xc30b69405238038080c641cc20a63715ca97d706",
+      "place": {
+        "addressLocality": "Portland",
+        "addressRegion": "US-OR",
+        "addressCountry": "US",
+        "name": "Microsoft Experience Center"
+      }
+    },
+    {
+      "name": "Harvard University",
+      "identifier": "did:velocity:0xc30b69405238038080c641cc20a63715ca97d706",
+      "place": {
+        "addressLocality": "Cambridge",
+        "addressRegion": "US-MA",
+        "addressCountry": "US"
+      }
+    }
+  ]
+}

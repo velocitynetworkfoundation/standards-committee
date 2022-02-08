@@ -1,0 +1,94 @@
+{
+  "title": "score.schema",
+  "$id": "https://velocitynetwork.foundation/schemas/score",
+  "allOf": [
+    {
+      "$ref": "../json-ld-context.schema.json"
+    },
+    {
+      "type": "object",
+      "properties": {
+        "scoreMethod": {
+          "type": "object",
+          "description": "The method acording to which the score is given. ",
+          "properties": {
+            "scoreMethodType": {
+              "type": "string",
+              "enum": [
+                "NormReferenced",
+                "CriterionReferenced"
+              ],
+              "description": "One of: NormReferenced, CriterionReferenced."
+            },
+            "scoreMethodDescription": {
+              "type": "string",
+              "description": "A description of the scoring method used."
+            },
+            "alignment": {
+              "type": "array",
+              "description": "A public resource to which the scoring method is aligned.",
+              "items": {
+                "$ref": "./alignment.schema.json"
+              }
+            },
+            "passingScore": {
+              "type": "string",
+              "description": "The minimum passing score"
+            }
+          }
+        },
+        "scoreValue": {
+          "type": "string",
+          "description": "The score achieved by the person."
+        },
+        "result": {
+          "type": "string",
+          "description": "The result achieved by the person, e.g. acceptable, excellent, poor. Applicable when results are not stated as scores. "
+        },
+        "passFail": {
+          "type": "string",
+          "enum": [
+            "Pass",
+            "Fail"
+          ],
+          "description": "One of: Pass, Fail"
+        }
+      }
+    }
+  ],
+  "examples": [
+    {
+      "scoreMethod": {
+        "scoreMethodDescription": "GPA",
+        "passingScore": "0.7"
+      },
+      "scoreValue": "3.9",
+      "result": "Distinction",
+      "passFail": "Pass"
+    },
+    {
+      "scoreMethod": {
+        "scoreMethodDescription": "0-100 range",
+        "passingScore": "60"
+      },
+      "scoreValue": "55",
+      "result": "Poor",
+      "passFail": "Fail"
+    },
+    {
+      "scoreMethod": {
+        "scoreMethodDescription": "Korn Ferry global norm 2018. Norm size: 25,000. Score range 1-10. ",
+        "scoreMethodType": "NormReferenced"
+      },
+      "scoreValue": "7.2"
+    },
+    {
+      "scoreMethod": {
+        "scoreMethodDescription": "All answers should be correct.",
+        "scoreMethodType": "CriterionReferenced"
+      },
+      "result": "Normal color vision",
+      "passFail": "Pass"
+    }
+  ]
+}

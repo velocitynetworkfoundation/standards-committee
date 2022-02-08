@@ -1,0 +1,344 @@
+{
+  "@context": [
+    "https://www.w3.org/2018/credentials/v1",
+    "http://www.legreq.com/t3/learner-record/v1"
+  ],
+  "id": "did:example:ebfeb1f712ebc6f1c276e12ec21",
+  "type": [
+    "VerifiableCredential",
+    "LERWrapper"
+  ],
+  "issuer": {
+    "id": "did:example:ebfeb1f712ebc6f1c276e12ec22"
+  },
+  "issuerId": "did:example:ebfeb1f712ebc6f1c276e12ec22",
+  "issued": "2010-01-01T19:73:24Z",
+  "date": "2010-01-01T19:73:24Z",
+  "description": "This record authenticates that EdX MITx has conferred the MicroMasters Certificate to Matthew Tracker.",
+  "linkedCredentials": [{ "linkType": "LAYER1", "linkCode": "def456" }, { "linkType": "LAYER1", "linkCode": "abc123" }],
+  "learnerRecord": [{
+    "pocId": "did:example:ebfeb1f712ebc6f1c276e12ec23",
+    "payloadType": "ComprehensiveLearnerRecord",
+    "payloadFormat": "application/ld+json",
+    "payloadEncoding": "Native",
+    "payloadRecord": {
+      "id": "urn:uuid:99999de2-4a49-4e26-ade8-27946620964f",
+      "type": "Clr",
+      "assertions": [
+          {
+              "id": "urn:uuid:127933-4093-4dd1-b4de-d8a799893q22",
+              "type": "Assertion",
+              "achievement": {
+                  "id": "urn:uuid:3ff0dbd7-9fc6-49eb-bfd6-d2eb084d85c5",
+                  "type": "Achievement",
+                  "achievementType": "Degree",
+                  "alignments": [],
+                  "associations": [
+                      {
+                          "associationType": "isParentOf",
+                          "targetId": "urn:uuid:822e5edf-3b14-47a4-b80c-02a849fd22f4",
+                          "title": "Introduction to IT"
+                      }
+                  ],
+                  "description": "To meet an increasing demand for cybersecurity professionals, the Bachelor of Science in Cybersecurity and Information Assurance (BSCSIA degree program prepares IT professionals to apply knowledge and experience in risk management anddigital forensics to safeguard infrastructure and secure data through continuity planning and disaster recovery operations. Courses deliver proven methods for information security using\nsoftware analysis techniques, web engineering, cloud management, and networking strategies to prevent, detect, and mitigate cyberattacks. This\nprogram features nationally recognized, high demand certifications in the field of cybersecurity.",
+                  "humanCode": "BSCSIA",
+                  "name": "Bachelor Information Assurance part X2",
+                  "fieldOfStudy": "Cybersecurity Padt III",
+                  "image": "https://media.badgr.com/uploads/badges/assertion-F_ta7_9YQEaPuQzkbs8kRA.png",
+                  "issuer": {
+                      "id": "urn:uuid:5e5449b8-12e0-425d-8514-34e3329e8e1d",
+                      "type": "Profile",
+                      "address": {
+                          "type": "Address",
+                          "addressCountry": "USA",
+                          "addressLocality": "Salt Lake City",
+                          "addressRegion": "UT",
+                          "postalCode": "84107",
+                          "streetAddress": "4001 S 700 E #300"
+                      },
+                      "email": "registrar@wgu.edu",
+                      "image": "https://www.wgu.edu/logo",
+                      "name": "WGU",
+                      "url": "https://www.wgu.edu"
+                  },
+                  "level": "Bachelors",
+                  "requirement": {
+                      "id": "https://www.wgu.edu/content/dam/western-governors/documents/programguides/2017-guides/it/BSCSIA.pdf",
+                      "type": "Criteria",
+                      "narrative": "Introduction to IT"
+                  },
+                  "resultDescriptions": [
+                      {
+                          "id": "urn:uuid:ee5319a4-78d1-4d2b-9512-23139d83003a",
+                          "type": "ResultDescription",
+                          "name": "Passed or Not Passed",
+                          "resultType": "RubricScore"
+                      }
+                  ],
+                  "tags": [
+                      "Basic Networking"
+                  ]
+              },
+              "issuedOn": "2020-06-29T17:40:12.746974-06:00",
+              "narrative": "Student has successfully passed the requirements for this achievement.",
+              "recipient": {
+                  "type": "id",
+                  "identity": "urn:uuid:6c7bb80f-fe12-4aa8-bd39-7d3d596c5065",
+                  "hashed": false
+              },
+              "results": [
+                  {
+                      "type": "Result",
+                      "resultDescription": "urn:uuid:ee5319a4-78d1-4d2b-9512-23139d83003a",
+                      "value": "Passed"
+                  }
+              ]
+          },
+          {
+              "id": "urn:uuid:6e2c-e037-4d8c-9a2c-a23b52749q22",
+              "type": "Assertion",
+              "achievement": {
+                  "id": "urn:uuid:8ac7e1b8-0701-4d0a-ab4e-31380580b6b1",
+                  "type": "Achievement",
+                  "achievementType": "ext:Micro-credential",
+                  "alignments": [],
+                  "associations": [
+                      {
+                          "associationType": "isParentOf",
+                          "targetId": "urn:uuid:822e5edf-3b14-47a4-b80c-02a849fd22f4",
+                          "title": "Introduction to IT"
+                      }
+                  ],
+                  "description": "Placeholder description for Micro-credential, Information Security Fundamentals",
+                  "humanCode": "MC6",
+                  "name": "Micro-credential, Information Security Assurance part X2",
+                  "fieldOfStudy": "Cybersecurity Assurance part I",
+                  "image": "https://media.badgr.com/uploads/badges/assertion-F_ta7_9YQEaPuQzkbs8kRA.png",
+                  "issuer": {
+                      "id": "urn:uuid:5e5449b8-12e0-425d-8514-34e3329e8e1d",
+                      "type": "Profile",
+                      "address": {
+                          "type": "Address",
+                          "addressCountry": "USA",
+                          "addressLocality": "Salt Lake City",
+                          "addressRegion": "UT",
+                          "postalCode": "84107",
+                          "streetAddress": "4001 S 700 E #300"
+                      },
+                      "email": "registrar@wgu.edu",
+                      "image": "https://www.wgu.edu/logo",
+                      "name": "WGU",
+                      "url": "https://www.wgu.edu"
+                  },
+                  "level": "Bachelors",
+                  "requirement": {
+                      "id": "https://www.wgu.edu/content/dam/western-governors/documents/programguides/2017-guides/it/BSCSIA.pdf",
+                      "type": "Criteria",
+                      "narrative": "Introduction to IT"
+                  },
+                  "resultDescriptions": [
+                      {
+                          "id": "urn:uuid:ee5319a4-78d1-4d2b-9512-23139d83003a",
+                          "type": "ResultDescription",
+                          "name": "Passed or Not Passed",
+                          "resultType": "RubricScore"
+                      }
+                  ],
+                  "tags": [
+                      "Basic Networking"
+                  ]
+              },
+              "issuedOn": "2020-06-29T17:40:12.746974-06:00",
+              "narrative": "Student has successfully passed the requirements for this achievement.",
+              "recipient": {
+                  "type": "id",
+                  "identity": "urn:uuid:6c7bb80f-fe12-4aa8-bd39-7d3d596c5065",
+                  "hashed": false
+              },
+              "results": [
+                  {
+                      "type": "Result",
+                      "resultDescription": "urn:uuid:ee5319a4-78d1-4d2b-9512-23139d83003a",
+                      "value": "Passed"
+                  }
+              ]
+          },
+          {
+              "id": "urn:uuid:95a4-08ca-4aa0-b191-cfeea7aa03q22",
+              "type": "Assertion",
+        "creditsEarned": 1,
+              "achievement": {
+                  "id": "urn:uuid:822e5edf-3b14-47a4-b80c-02a849fd22f4",
+                  "type": "Achievement",
+                  "achievementType": "Course",
+                  "alignments": [],
+                  "associations": [
+                      {
+                          "associationType": "isParentOf",
+                          "targetId": "urn:uuid:3d0d34fb-55a5-4a11-bc34-f986d235489f",
+                          "title": "Describe the Basics and History of Computing"
+                      }
+                  ],
+                  "creditsAvailable": 4,
+                          "description": "Introduction to IT examines information technology as a discipline and the various roles and functions of the IT department as business support. Students are presented with various IT disciplines including systems and services, network and security, scripting and programming, data management, and business of IT, with a survey of technologies in every area and how they relate to each other and to the business.",
+                  "humanCode": "C182",
+                  "name": "Introduction to Assurance part X2",
+                  "fieldOfStudy": "Information Assurance part I",
+                  "image": "https://media.badgr.com/uploads/badges/assertion-F_ta7_9YQEaPuQzkbs8kRA.png",
+                  "issuer": {
+                      "id": "urn:uuid:5e5449b8-12e0-425d-8514-34e3329e8e1d",
+                      "type": "Profile",
+                      "address": {
+                          "type": "Address",
+                          "addressCountry": "USA",
+                          "addressLocality": "Salt Lake City",
+                          "addressRegion": "UT",
+                          "postalCode": "84107",
+                          "streetAddress": "4001 S 700 E #300"
+                      },
+                      "email": "registrar@wgu.edu",
+                      "image": "https://www.wgu.edu/logo",
+                      "name": "WGU",
+                      "url": "https://www.wgu.edu"
+                  },
+                  "level": "Bachelors",
+                  "requirement": {
+                      "id": "https://www.wgu.edu/content/dam/western-governors/documents/programguides/2017-guides/it/BSCSIA.pdf",
+                      "type": "Criteria",
+                      "narrative": "Describe the Basics and History of Computing"
+                  },
+                  "resultDescriptions": [
+                      {
+                          "id": "urn:uuid:ee5319a4-78d1-4d2b-9512-23139d83003a",
+                          "type": "ResultDescription",
+                          "name": "Passed or Not Passed",
+                          "resultType": "RubricScore"
+                      }
+                  ],
+                  "tags": [
+                      "Basic Networking"
+                  ]
+              },
+              "issuedOn": "2020-06-29T17:40:12.746974-06:00",
+              "narrative": "Student has successfully passed the requirements for this achievement.",
+              "recipient": {
+                  "type": "id",
+                  "identity": "urn:uuid:6c7bb80f-fe12-4aa8-bd39-7d3d596c5065",
+                  "hashed": false
+              },
+              "results": [
+                  {
+                      "type": "Result",
+                      "resultDescription": "urn:uuid:ee5319a4-78d1-4d2b-9512-23139d8300Q2",
+                      "value": "Passed"
+                  }
+              ]
+          },
+          {
+              "id": "urn:uuid:bf97-d723-4adb-ba7f-299c00f831q22",
+              "type": "Assertion",
+              "achievement": {
+                  "id": "urn:uuid:3d0d34fb-55a5-4a11-bc34-f986d235489f",
+                  "type": "Achievement",
+                  "achievementType": "Competency",
+                  "alignments": [
+                      {
+                          "type": "Alignment",
+                          "targetDescription": "The learner articulates the fundamentals of networking and database concepts as they relate to storing and interacting with data.",
+                          "targetName": "Basic Networking",
+                          "targetType": "ext:Skill",
+                          "targetUrl": "https://skills.wgu.edu/5c04e7c7-9c50-4d2e-a49e-d44b3e5db544"
+                      }
+                  ],
+                  "associations": [],
+                  "description": "The graduate describes IT as a discipline and discusses the history and future of computing as well as the currently used infrastructure.",
+                  "humanCode": "4011.1.1",
+                  "name": "Describe the Basics and History of Assurance part X2",
+                  "fieldOfStudy": "Information Assurance part I",
+                  "image": "https://media.badgr.com/uploads/badges/assertion-F_ta7_9YQEaPuQzkbs8kRA.png",
+                  "issuer": {
+                      "id": "urn:uuid:5e5449b8-12e0-425d-8514-34e3329e8e1d",
+                      "type": "Profile",
+                      "address": {
+                          "type": "Address",
+                          "addressCountry": "USA",
+                          "addressLocality": "Salt Lake City",
+                          "addressRegion": "UT",
+                          "postalCode": "84107",
+                          "streetAddress": "4001 S 700 E #300"
+                      },
+                      "email": "registrar@wgu.edu",
+                      "image": "https://www.wgu.edu/logo",
+                      "name": "WGU",
+                      "url": "https://www.wgu.edu"
+                  },
+                  "level": "Bachelors",
+                  "requirement": {
+                      "id": "https://www.wgu.edu/content/dam/western-governors/documents/programguides/2017-guides/it/BSCSIA.pdf",
+                      "type": "Criteria",
+                      "narrative": "Student must pass the assessment requirements for this competency."
+                  },
+                  "resultDescriptions": [
+                      {
+                          "id": "urn:uuid:ee5319a4-78d1-4d2b-9512-23139d83003a",
+                          "type": "ResultDescription",
+                          "name": "Passed or Not Passed",
+                          "resultType": "RubricScore"
+                      }
+                  ],
+                  "tags": [
+                      "Basic Networking"
+                  ]
+              },
+              "issuedOn": "2020-06-29T17:40:12.746974-06:00",
+              "narrative": "Student has successfully passed the requirements for this achievement.",
+              "recipient": {
+                  "type": "id",
+                  "identity": "urn:uuid:6c7bb80f-fe12-4aa8-bd39-7d3d596c5065",
+                  "hashed": false
+              },
+              "results": [
+                  {
+                      "type": "Result",
+                      "resultDescription": "urn:uuid:ee5319a4-78d1-4d2b-9512-23139d83003a",
+                      "value": "Passed"
+                  }
+              ]
+          }
+      ],
+      "issuedOn": "2020-06-29T17:40:12.746974-06:00",
+      "learner": {
+          "id": "urn:uuid:6c7bb80f-fe12-4aa8-bd39-7d3d596c5065",
+          "type": "Profile",
+          "address": {
+              "type": "Address",
+              "addressCountry": "USA",
+              "addressLocality": "Anywhere",
+              "addressRegion": "CO",
+              "postalCode": "12345",
+              "streetAddress": "123 Main St"
+          },
+          "email": "Robert.Huffman@wgu.edu",
+          "name": "Robert Huffman",
+          "studentId": "1"
+      },
+      "name": "Richard1 CLR",
+      "publisher": {
+          "id": "urn:uuid:5e5449b8-12e0-425d-8514-34e3329e8e1d",
+          "type": "Profile",
+          "address": {
+              "type": "Address",
+              "addressCountry": "USA",
+              "addressLocality": "Salt Lake City",
+              "addressRegion": "UT",
+              "postalCode": "84107",
+              "streetAddress": "4001 S 700 E #300"
+          },
+          "email": "registrar@wgu.edu",
+          "image": "https://www.wgu.edu/logo",
+          "name": "WGU",
+          "url": "https://www.wgu.edu"
+      }
+    }  
+  }]
+}

@@ -1,0 +1,36 @@
+{
+  "@context": [
+    "https://www.w3.org/2018/credentials/v1",
+    "https://velocitynetwork.foundation/contexts/course"
+  ],
+	"id": "did:velocity:0xc357274276a4e539741ca11b590b9447b26a8052",
+	"type": ["VerifiableCredential", "EducationDegree-1.0"],
+	"issued": "2020-06-29T17:40:12.746974-06:00",
+	"issuer": {
+		"id": "0xc257274276a4e539741ca11b590b9447b26a8051"
+	},
+  "credentialStatus": {
+    "linkCodeCommit": "47DEQpj8HBSa+/TImW+5JCeuQeRkm5NMpJWZG3hSuFU="
+  },
+	"credentialSubject": {
+		"institution": {
+			"name": "WGU",
+      "identifier": "did:velocity:0xEiClkZMDxPKqC9c-umQfTkR8vvZ9JPhl_xLDI9Nfk38w5w",
+			"place": {
+				"addressLocality": "Salt Lake City",
+				"addressRegion": "UT",
+				"addressCountry": "USA"
+			}
+		},
+		"programName": "Bachelor Information Assurance part X2",
+		"degreeName": "Bachelor of Science",
+		"description": "To meet an increasing demand for cybersecurity professionals, the Bachelor of Science in Cybersecurity and Information Assurance (BSCSIA degree program prepares IT professionals to apply knowledge and experience in risk management anddigital forensics to safeguard infrastructure and secure data through continuity planning and disaster recovery operations. Courses deliver proven methods for information security using\nsoftware analysis techniques, web engineering, cloud management, and networking strategies to prevent, detect, and mitigate cyberattacks. This\nprogram features nationally recognized, high demand certifications in the field of cybersecurity.",
+		"conferredDate": "2020-06",
+		"score": {
+      "method": { 
+        "description": "Passed or Not Passed" 
+      },
+			"passFail": "Pass"
+		}
+	}
+}

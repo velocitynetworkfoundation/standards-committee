@@ -1,0 +1,146 @@
+{
+  "title": "assessment.schema",
+  "$schema": "http://json-schema.org/draft-07/schema#",
+  "$id": "https://velocitynetwork.foundation/schemas/assessment",
+  "allOf": [
+    {
+      "$ref": "./assessment-dimension.schema.json"
+    },
+    {
+      "type": "object",
+      "properties": {
+        "authority": {
+          "$ref": "../subtypes/organization.schema.json"
+        },
+        "assessmentDimensions": {
+          "type": "array",
+          "description": "Dimensions are sub-assessments within the parent assessment. Each dimension refers to a different aspect of what is being assessed.",
+          "items": {
+            "$ref": "./assessment-dimension.schema.json"
+          }
+        },
+        "personName": {
+          "$ref": "../subtypes/personName.schema.json"
+        }
+      }
+    }
+  ],
+  "required": [
+    "authority",
+    "name",
+    "personName"
+  ],
+  "examples": [
+    {
+      "@context": "https://velocitynetwork.foundation/contexts/assessment",
+      "authority": {
+        "name": "Korn Ferry",
+        "identifier": "did:velocity:0xc30b69405238038080c641cc20a63715ca97d706",
+        "place": {
+          "addressLocality": "Los Angeles",
+          "addressRegion": "US-CA",
+          "addressCountry": "US"
+        },
+        "personName": {
+          "givenName": "Olivia",
+          "familyName": "Hafez"          
+        }
+      },
+      "name": "Leadership",
+      "assesses": "Leadership capabilities",
+      "description": "Korn Ferry's leadership assessment takes a contemporary, whole-person view of behavior. It values indidivdual qualities that impact and govern leaders' job performance in areasof Competencies, Exepriences, Traits, and Drivers. ",
+      "score": {
+        "scoreMethod": {
+          "scoreMethodType": "NormReferenced",
+          "scoreMethodDescription": "Korn Ferry global norm 2018. Norm size: 25,000.  score range 1-10."
+        },
+        "scoreValue": "8.9"
+      },
+      "assessmentDate": "2018-09-01",
+      "assessmentMethod": "Written",
+      "assessmentDimensions": [
+        {
+          "name": "Credibility",
+          "description": "The degree of consistency between a person's words and actions.",
+          "score": {
+            "scoreMethod": {
+              "scoreMethodType": "NormReferenced",
+              "scoreMethodDescription": "Korn Ferry global norm 2018. Norm size: 25,000.  score range 1-10."
+            },
+            "scoreValue": "7.2"
+          },
+          "assessmentDate": "2018-09-01",
+          "assessmentMethod": "Written"
+        },
+        {
+          "name": "Assertiveness",
+          "description": "The assertiveness of a person",
+          "score": {
+            "scoreMethod": {
+              "scoreMethodType": "NormReferenced",
+              "scoreMethodDescription": "Korn Ferry global norm 2018. Norm size: 25,000.  score range 1-10."
+            },
+            "scoreValue": "9.1"
+          },
+          "assessmentDate": "2018-08-31"
+        }
+      ]
+    },
+    {
+      "@context": "https://velocitynetwork.foundation/contexts/assessment",
+      "authority": {
+        "name": "The institute for occupational health ",
+        "place": {
+          "addressLocality": "New Rochelle ",
+          "addressRegion": "US-NY",
+          "addressCountry": "US"
+        }
+      },
+      "name": "Color blindness test",
+      "assesses": "Color blindness",
+      "score": {
+        "scoreMethod": {
+          "scoreMethodType": "CriterionReferenced",
+          "scoreMethodDescription": "Standard Ishihara color plate test"
+        },
+        "result": "Normal color vision",
+        "passFail": "pass"
+      },
+      "assessmentDate": "2021-05-29",
+      "assessmentLevel": "Standard",
+      "assessmentMethod": "Online"
+    },
+    {
+      "@context": "https://velocitynetwork.foundation/contexts/assessment",
+      "authority": {
+        "name": "XYZ University ",
+        "place": {
+          "addressLocality": "Chicago ",
+          "addressRegion": "US-IL",
+          "addressCountry": "US"
+        }
+      },
+        "personName": {
+          "givenName": "Olivia",
+          "familyName": "Hafez"          
+        },
+      "name": "Algebraic geometry - Final Exam",
+      "assesses": "Algebraic curves and surfaces",
+      "score": {
+        "scoreMethod": {
+          "scoreMethodtype": "criterionReferenced",
+          "scoreMethoddescription": "1-100 scale",
+          "passingScore": "60"
+        },
+        "scoreValue": "92",
+        "passFail": "pass"
+      },
+      "assessmentDate": "2019-06-20",
+      "assessmentLevel": "Intermediate",
+      "assessmentMethod": "Multiple choice"
+    }
+  ],
+  "x-tags": [
+    "assessment"
+  ]
+}

@@ -1,0 +1,130 @@
+{
+  "@context": {
+    "ceterms": "https://credreg.net/ctdl/terms/",
+    "schema": "http://schema.org/",
+    "vnf": "https://velocitynetwork.foundation/contexts/",
+    "obi": "https://w3id.org/openbadges/v2",
+
+    "Address": "schema:PostalAddress",
+    "streetAddress": "schema:streetAddress",
+    "addressLocality": "schema:addressLocality",
+    "addressRegion": "schema:addressRegion",
+    "postCode": "schema:postalCode",
+    "addressCountry": "schema:addressCountry",
+
+    "Place": "schema:PostalAddress",
+    "name": "schema:name",
+    
+    "Validity-1.0": "vnf:Validity-1.0",
+    "firstValidFrom": { "@id": "vnf:firstValidFrom", "@type": "schema:Date" },
+    "validFrom": "schema:validFrom",
+    "validUntil": "schema:validUntil",
+    "validIn": "vnf:validIn",
+
+    "Person": "schema:Person",
+    "givenName": "schema:givenName",
+    "familyName": "schema:familyName",
+    "middleName": "schema:additionalName",
+    "namePrefix": "schema:honorificPrefix",
+    "nameSuffix": "schema:honorificSuffix",
+    "birthDate": "schema:birthDate",
+    "birthPlace": {
+      "@id":"vnf:birthPlace", 
+      "@type": "@id"
+    },
+    "gender": "schema:gender",
+
+    "Organization": "schema:Organization",
+    "identifier": {
+      "@id": "schema:identifier", 
+      "@type": "@id"
+    },
+    "place": {
+      "@id":"vnf:place", 
+      "@type": "@id"
+    },
+
+    "AlignmentObject": "schema:AlignmentObject",
+    "targetName": "schema:targetName",
+    "targetUrl": "schema:targetUrl",
+    "targetDescription": "schema:targetDescription",
+    "targetFramework": "schema:educationalFramework",
+    "targetCode": "obi:targetCode",
+
+    "Score-1.0": "vnf:Score-1.0",
+    "scoreMethod": { "@id": "vnf:scoringMethod", "@type": "@id" },
+    "scoreMethodType": "ceterms:scoringMethodType",
+    "scoreMethodDescription": "ceterms:scoringMethodDescription",
+    "alignment": { "@id": "vnf:alignment", "@type": "@id" },
+    "passingScore": "ceterms:requires",
+    "scoreValue": "vnf:scoreValue",
+    "result": "vnf:result",
+    "passFail": "vnf:passFail",
+    
+    "Email-1.0": "vnf:Email-1.0",
+    "email": "schema:email",
+    
+    "Phone-1.0": "vnf:Phone-1.0",
+    "phone": "schema:telephone",
+
+    "IdDocument-1.0": "vnf:IdDocument-1.0",
+    "documentType": "schema:additionalType",
+    "authority": { "@id": "vnf:authority", "@type": "@id" },
+    "validity": { "@id": "vnf:validity", "@type": "@id" },
+    "person": { "@id": "vnf:person", "@type": "@id" },
+    "nationality": "schema:addressCountry",
+    "postalAddress": { "@id": "vnf:postalAddress", "@type": "@id" },
+
+    "Passport-1.0": "vnf:Passport-1.0",
+    "documentCode": "schema:additionalType",
+
+    "driversLicense": "vnf:DriversLicense-1.0",
+    "address": { "@id": "vnf:postalAddress", "@type": "@id" },
+
+    "Employment-1.0": "vnf:Employment-1.0",
+    "description": "schema:description",
+    "legalEmployer": { "@id": "vnf:legalEmployer", "@type": "@id" },
+    "role": "schema:roleName",
+    "employmentType": "schema:employmentType",
+    "startDate": { "@id": "vnf:startDate", "@type": "schema:Date"},
+    "endDate": { "@id": "vnf:endDate", "@type": "schema:Date"},
+
+    "Degree-1.0": "vnf:EducationDegree-1.0",
+    "institution": { "@id": "vnf:institution", "@type": "@id" },
+    "school": { "@id": "vnf:school", "@type": "@id" },
+    "programName": "schema:name",
+    "programType": "schema:programType",
+    "programMode": "schema:educationalProgramMode",
+    "degreeName": "schema:educationalCredentialAwarded",
+    "degreeMajor": "ceterms:degreeMajor",
+    "degreeMinor": "ceterms:degreeMinor",
+    "honors": "vnf:honors",
+    "grade": { "@id": "vnf:score", "@type": "@id" },
+    "registrationDate": { "@id": "vnf:registrationDate", "@type": "schema:Date"},
+    "conferredDate": { "@id": "vnf:conferredDate", "@type": "schema:Date"},
+
+    "Course-1.0": "vnf:Course-1.0",
+    "provider": { "@id": "vnf:provider", "@type": "@id" },
+    "contentProvider": { "@id": "vnf:contentProvider", "@type": "@id" },
+    "courseName": "schema:educationalCredentialAwarded",
+    "courseCode": "schema:courseCode",
+    "courseType": "schema:programType",
+    "courseMode": "schema:educationalProgramMode",
+    "courseLevel": "schema:educationalLevel",
+    "courseDuration": "schema:timeToComplete",
+    "completionDate": { "@id": "vnf:completionDate", "@type": "schema:Date"},
+
+    "Assessment-1.0": "vnf:Assessment-1.0",
+    "assesses": "schema:assesses",
+    "assessmentLevel": "schema:educationalLevel",
+    "assessmentMethod": "ceterms:assessmentMethodDescription",
+    "assessmentDate": { "@id": "vnf:assessmentDate", "@type": "schema:Date"},  
+    "assessmentDimensions": { "@id": "vnf:assessmentDimensions", "@container": "@list" },  
+    "score": { "@id": "vnf:score", "@type": "@id" },
+
+    "Certifcation-1.0": "vnf:Certification-1.0",
+    "endorsementCode": "vnf:endorsementCode",
+    "restrictionCode": "vnf:restrictionsCode",
+    "License-1.0": "vnf:License-1.0"
+  }
+}

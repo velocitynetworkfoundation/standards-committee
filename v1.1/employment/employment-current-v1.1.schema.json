@@ -1,0 +1,83 @@
+{
+  "title": "employment-current.schema",
+  "$id": "https://velocitynetwork.foundation/schemas/employment-current",
+  "allOf": [
+    {
+      "$ref": "./employment-base.schema.json"
+    },
+    {
+      "type": "object",
+      "properties": {
+        "startDate": {
+          "$ref": "../subtypes/date.schema.json"
+        }
+      }
+    }
+  ],
+  "required": [
+    "legalEmployer",
+    "role",
+    "startDate",
+    "personName"
+  ],
+  "examples": [
+    {
+      "@context": "https://velocitynetwork.foundation/contexts/employment",
+      "legalEmployer": {
+        "name": "Ocatgon Bank",
+        "identifier": "did:velocity:0xc257274276a4e539741ca11b590b9447b26a8051",
+        "place": {
+          "addressLocality": "London",
+          "addressRegion": "GB-ENG",
+          "addressCountry": "GB"
+        }
+      },
+      "role": "Accountant",
+      "description": "Junior accountant in the mortgage department",
+      "employmentType": [
+        "internship",
+        "contract"
+      ],
+      "place": {
+        "name": "Branch 4644",
+        "addressLocality": "Birmingham",
+        "addressRegion": "GB-ENG",
+        "addressCountry": "GB"
+      },
+      "startDate": "2017-01",
+      "personName": {
+        "givenName": "Olivia",
+        "familyName": "Hafez"          
+      }
+    },
+    {
+      "@context": "https://velocitynetwork.foundation/contexts/employment",
+      "legalEmployer": {
+        "name": "Microsoft Corporation",
+        "identifier": "did:velocity:0xc257274276a4e539741ca11b590b9447b26a8051",
+        "place": {
+          "addressLocality": "Bellevue",
+          "addressRegion": "US-WA",
+          "addressCountry": "US"
+        }
+      },
+      "role": "Project Manager",
+      "description": "Backend development project management",
+      "employmentType": [
+        "full-time",
+        "permanent"
+      ],
+      "place": {
+        "name": "Media Lab",
+        "addressLocality": "Buffalo",
+        "addressRegion": "US-NY",
+        "addressCountry": "US"
+      },
+      "startDate": "2013-10",
+      "personName": {
+        "givenName": "Olivia",
+        "familyName": "Hafez"          
+      }
+    }
+  ]
+}
