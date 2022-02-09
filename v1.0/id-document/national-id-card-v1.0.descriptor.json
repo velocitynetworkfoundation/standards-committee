@@ -15,7 +15,7 @@
     "schema": {
       "type": "string"
     },
-    "fallback": "-"
+    "fallback": "National ID Card"
   },
   "summary_detail": {
     "path": [

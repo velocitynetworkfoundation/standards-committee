@@ -15,7 +15,7 @@
     "schema": {
       "type": "string"
     },
-    "fallback": "-"
+    "fallback": "Resident Permit"
   },
   "summary_detail": {
     "path": [

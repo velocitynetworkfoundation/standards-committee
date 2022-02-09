@@ -15,7 +15,7 @@
     "schema": {
       "type": "string"
     },
-    "fallback": "-"
+    "fallback": "Passport"
   },
   "summary_detail": {
     "path": [

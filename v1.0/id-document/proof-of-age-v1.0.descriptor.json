@@ -15,7 +15,7 @@
     "schema": {
       "type": "string"
     },
-    "fallback": "-"
+    "fallback": "Proof of Age"
   },
   "summary_detail": {
     "path": [
