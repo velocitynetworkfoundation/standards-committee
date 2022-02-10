@@ -93,6 +93,60 @@
       }
     },
     {
+      "label": "Dimension Name",
+      "path": [
+        "$.assessmentDimensions[0].name"
+      ],
+      "schema": {
+        "type": "string"
+      }
+    },
+    {
+      "label": "Dimension description",
+      "path": [
+        "$.assessmentDimensions[0].description"
+      ],
+      "schema": {
+        "type": "string"
+      }
+    },
+    {
+      "label": "Dimension - assesses",
+      "path": [
+        "$.assessmentDimensions[0].assesses"
+      ],
+      "schema": {
+        "type": "string"
+      }
+    },
+    {
+      "label": "Dimension score",
+      "path": [
+        "$.assessmentDimensions[0].score.scoreValue"
+      ],
+      "schema": {
+        "type": "string"
+      }
+    },
+    {
+      "label": "Dimension result",
+      "path": [
+        "$.assessmentDimensions[0].score.result"
+      ],
+      "schema": {
+        "type": "string"
+      }
+    },
+    {
+      "label": "Dimension - Pass or fail",
+      "path": [
+        "$.assessmentDimensions[0].score.passFail"
+      ],
+      "schema": {
+        "type": "string"
+      }
+    },
+    {
       "label": "Alignment",
       "path": [
         "$.alignment[0].targetName"
@@ -101,7 +155,7 @@
         "type": "string"
       }
     },
-    {
+        {
       "label": "Alignment URL",
       "path": [
         "$.alignment[0].targetUrl"
