@@ -1,6 +1,6 @@
 {
-  "title": "education-degree-registation",
-  "$id": "https://velocitynetwork.foundation/schemas/education-degree-registration",
+  "title": "education-degree-registation-v.1.1",
+  "$id": "https://velocitynetwork.foundation/schemas/education-degree-registration-v.1.1",
   "allOf": [
     {
       "$ref": "./education-degree-base.schema.json"
@@ -9,10 +9,10 @@
       "type": "object",
       "properties": {
         "registrationDate": {
-          "$ref": "../subtypes/date.schema.json"
+          "$ref": "../subtypes/date-v.1.1.schema.json"
         },
         "startDate": {
-          "$ref": "../subtypes/date.schema.json"
+          "$ref": "../subtypes/date-v.1.1.schema.json"
         }
       }
     }
@@ -21,7 +21,7 @@
     "institution",
     "degreeName",
     "registrationDate",
-    "personName"
+    "recepientName"
   ],
   "examples": [
     {
@@ -58,7 +58,7 @@
         "targetDescription": "The RN to BSN completion program has been developed to address the specific needs of working registered nurses who return to the university to earn the BSN.",
         "targetFramework": "Credential Engine's Credential Registry"
       },
-      "personName": {
+      "recepientName": {
         "givenName": "Olivia",
         "familyName": "Hafez"          
       },
@@ -102,7 +102,7 @@
         "targetCode": "42.0101",
         "targetFramework": "CIP - Classification of Instructional Programs"
       },
-      "personName": {
+      "recepientName": {
         "givenName": "Olivia",
         "familyName": "Hafez"          
       },

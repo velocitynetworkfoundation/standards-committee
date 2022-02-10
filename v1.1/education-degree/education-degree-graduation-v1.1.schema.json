@@ -1,6 +1,6 @@
 {
-  "title": "education-degree-graduation",
-  "$id": "https://velocitynetwork.foundation/schemas/education-degree-graduation",
+  "title": "education-degree-graduation-v.1.1",
+  "$id": "https://velocitynetwork.foundation/schemas/education-degree-graduation-v.1.1",
   "allOf": [
     {
       "$ref": "./education-degree-base.schema.json"
@@ -9,19 +9,19 @@
       "type": "object",
       "properties": {
         "registrationDate": {
-          "$ref": "../subtypes/date.schema.json"
+          "$ref": "../subtypes/date-v.1.1.schema.json"
         },
         "startDate": {
-          "$ref": "../subtypes/date.schema.json"
+          "$ref": "../subtypes/date-v.1.1.schema.json"
         },
         "endDate": {
-          "$ref": "../subtypes/date.schema.json"
+          "$ref": "../subtypes/date-v.1.1.schema.json"
         },
         "conferredDate": {
-          "$ref": "../subtypes/date.schema.json"
+          "$ref": "../subtypes/date-v.1.1.schema.json"
         },
         "grade": {
-          "$ref": "../subtypes/score.schema.json"
+          "$ref": "../subtypes/score-v.1.1.schema.json"
         },
         "honors": {
           "type": "string",
@@ -34,7 +34,7 @@
     "institution",
     "conferredDate",
     "degreeName",
-    "personName"
+    "recepientName"
   ],
   "examples": [
     {
@@ -75,7 +75,7 @@
       "endDate": "2013-06",
       "conferredDate": "2014-01",
       "honors": "cum laude",
-      "personName": {
+      "recepientName": {
         "givenName": "Olivia",
         "familyName": "Hafez"          
       }
@@ -129,7 +129,7 @@
         },
         "scoreValue": "95"
       },
-      "personName": {
+      "recepientName": {
         "givenName": "Olivia",
         "familyName": "Hafez"          
       }

@@ -9,10 +9,10 @@
       "type": "object",
       "properties": {
         "institution": {
-          "$ref": "../subtypes/organization.schema.json"
+          "$ref": "../subtypes/organization-v.1.1.schema.json"
         },
         "school": {
-          "$ref": "../subtypes/organization.schema.json"
+          "$ref": "../subtypes/organization-v.1.1.schema.json"
         },
         "programName": {
           "type": "string",
@@ -48,14 +48,14 @@
           "type": "string",
           "description": "A detailed description of the degree. "
         },
-        "personName": {
-          "$ref": "../subtypes/personName.schema.json"
+        "recepientName": {
+          "$ref": "../subtypes/personName-v.1.1.schema.json"
         },
         "alignment": {
           "type": "array",
           "description": "A public resource to which the degree is aligned.",
           "items": {
-            "$ref": "../subtypes/alignment.schema.json"
+            "$ref": "../subtypes/alignment-v.1.1.schema.json"
           }
         }
       }

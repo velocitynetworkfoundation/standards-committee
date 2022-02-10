@@ -1,7 +1,7 @@
 {
   "$schema": "http://json-schema.org/draft-07/schema#",
   "description": "Badge",
-  "$id": "badge",
+  "$id": "badge-v.1.1",
   "type": "object",
   "definitions": {
     "obiProfile": {
@@ -37,14 +37,14 @@
           "type": "string",
           "format": "uri"
         },
-        "personName": {
-          "$ref": "../subtypes/personName.schema.json"
+        "recepientName": {
+          "$ref": "../subtypes/personName-v.1.1.schema.json"
         }
       },
       "required": [
         "id",
         "type",
-        "personName"
+        "recepientName"
       ],
       "additionalProperties": false
     }
@@ -120,7 +120,7 @@
           "type": "array",
           "description": "An object describing which objectives or educational standards this badge aligns to, if any.",
           "items": {
-            "$ref": "../subtypes/alignment.schema.json"
+            "$ref": "../subtypes/alignment-v.1.1.schema.json"
           }
         }
       }

@@ -1,6 +1,6 @@
 {
-  "title": "employment-past.schema",
-  "$id": "https://velocitynetwork.foundation/schemas/employment-past",
+  "title": "employment-past-v.1.1.schema",
+  "$id": "https://velocitynetwork.foundation/schemas/employment-past-v.1.1",
   "allOf": [
     {
       "$ref": "./employment-base.schema.json"
@@ -9,10 +9,10 @@
       "type": "object",
       "properties": {
         "startDate": {
-          "$ref": "../subtypes/date.schema.json"
+          "$ref": "../subtypes/date-v.1.1.schema.json"
         },
         "endDate": {
-          "$ref": "../subtypes/date.schema.json"
+          "$ref": "../subtypes/date-v.1.1.schema.json"
         }
       }
     }
@@ -22,7 +22,7 @@
     "role",
     "startDate",
     "endDate",
-    "personName"
+    "recepientName"
   ],
   "examples": [
     {
@@ -47,7 +47,7 @@
       },
       "startDate": "2017-01",
       "endDate": "2020-09",
-      "personName": {
+      "recepientName": {
         "givenName": "Olivia",
         "familyName": "Hafez"          
       }
@@ -77,7 +77,7 @@
       },
       "startDate": "2013-10",
       "endDate": "2017-01",
-      "personName": {
+      "recepientName": {
         "givenName": "Olivia",
         "familyName": "Hafez"          
       }

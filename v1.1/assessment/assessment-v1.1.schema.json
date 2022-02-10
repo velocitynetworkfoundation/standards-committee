@@ -1,26 +1,26 @@
 {
-  "title": "assessment.schema",
+  "title": "assessment-v.1.1.schema",
   "$schema": "http://json-schema.org/draft-07/schema#",
-  "$id": "https://velocitynetwork.foundation/schemas/assessment",
+  "$id": "https://velocitynetwork.foundation/schemas/assessment-v.1.1",
   "allOf": [
     {
-      "$ref": "./assessment-dimension.schema.json"
+      "$ref": "./assessment-dimension-v.1.1.schema.json"
     },
     {
       "type": "object",
       "properties": {
         "authority": {
-          "$ref": "../subtypes/organization.schema.json"
+          "$ref": "../subtypes/organization-v.1.1.schema.json"
         },
         "assessmentDimensions": {
           "type": "array",
           "description": "Dimensions are sub-assessments within the parent assessment. Each dimension refers to a different aspect of what is being assessed.",
           "items": {
-            "$ref": "./assessment-dimension.schema.json"
+            "$ref": "./assessment-dimension-v.1.1.schema.json"
           }
         },
-        "personName": {
-          "$ref": "../subtypes/personName.schema.json"
+        "recepientName": {
+          "$ref": "../subtypes/personName-v.1.1.schema.json"
         }
       }
     }
@@ -28,7 +28,7 @@
   "required": [
     "authority",
     "name",
-    "personName"
+    "recepientName"
   ],
   "examples": [
     {
@@ -41,7 +41,7 @@
           "addressRegion": "US-CA",
           "addressCountry": "US"
         },
-        "personName": {
+        "recepientName": {
           "givenName": "Olivia",
           "familyName": "Hafez"          
         }
@@ -120,7 +120,7 @@
           "addressCountry": "US"
         }
       },
-        "personName": {
+        "recepientName": {
           "givenName": "Olivia",
           "familyName": "Hafez"          
         },

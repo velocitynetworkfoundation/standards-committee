@@ -53,21 +53,21 @@
   "alignment": {
     "ui.widget": "hidden"
   },
-  "personName": {
+  "recepientName": {
     "givenName": {
-      "ui.title": "Holder given name"
+      "ui.title": "Recepient given name"
     },
     "middleName": {
-      "ui.title": "Holder middle name"
+      "ui.title": "Recepient middle name"
     },
     "familyName": {
-      "ui.title": "Holder family name"
+      "ui.title": "Recepient family name"
     },
     "namePrefix": {
-      "ui.title": "Holder name prefix"
+      "ui.title": "Recepient name prefix"
     },
     "nameSuffix": {
-      "ui.title": "Holder name suffix"
+      "ui.title": "Recepient name suffix"
     },
     "ui:order": [
       "givenName",
@@ -84,6 +84,6 @@
     "startDate",
     "place",
     "employmentType",
-    "personName"
+    "recepientName"
   ]
 }

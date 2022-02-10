@@ -1,5 +1,5 @@
 {
-  "title": "passport.schema",
+  "title": "passport-v.1.1.schema",
   "$schema": "http://json-schema.org/draft-07/schema#",
   "$id": "https://velocitynetwork.foundation/schemas/passport",
   "allOf": [
@@ -14,13 +14,13 @@
           "description": "The type of passport. The letter P + an optional additional letter to indicate type, e.g. diplomatic. \nOne additional capital letter may be used, in the\ncharacter position after the letter P and at the discretion of the issuing State or organization."
         },
         "authority": {
-          "$ref": "../subtypes/organization.schema.json"
+          "$ref": "../subtypes/organization-v.1.1.schema.json"
         },
         "validity": {
-          "$ref": "../subtypes/validity.schema.json"
+          "$ref": "../subtypes/validity-v.1.1.schema.json"
         },
         "person": {
-          "$ref": "../subtypes/person.schema.json"
+          "$ref": "../subtypes/person-v.1.1.schema.json"
         },
         "identifier": {
           "type": "string",

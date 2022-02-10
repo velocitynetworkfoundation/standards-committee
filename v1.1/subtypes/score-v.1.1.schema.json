@@ -1,6 +1,6 @@
 {
-  "title": "score.schema",
-  "$id": "https://velocitynetwork.foundation/schemas/score",
+  "title": "score-v.1.1.schema",
+  "$id": "https://velocitynetwork.foundation/schemas/score-v.1.1",
   "allOf": [
     {
       "$ref": "../json-ld-context.schema.json"
@@ -28,7 +28,7 @@
               "type": "array",
               "description": "A public resource to which the scoring method is aligned.",
               "items": {
-                "$ref": "./alignment.schema.json"
+                "$ref": "./alignment-v.1.1.schema.json"
               }
             },
             "passingScore": {

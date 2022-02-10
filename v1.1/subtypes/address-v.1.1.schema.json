@@ -1,6 +1,6 @@
 {
-  "title": "address.schema",
-  "$id": "https://velocitynetwork.foundation/schemas/address.schema",
+  "title": "address-v.1.1.schema",
+  "$id": "https://velocitynetwork.foundation/schemas/address.schema-v.1.1",
   "allOf": [
     {
       "$ref": "../json-ld-context.schema.json"

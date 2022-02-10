@@ -1,5 +1,5 @@
 {
-  "title": "phone.schema",
+  "title": "phone-v.1.1.schema",
   "$id": "https://velocitynetwork.foundation/schemas/phone",
   "allOf": [
     {

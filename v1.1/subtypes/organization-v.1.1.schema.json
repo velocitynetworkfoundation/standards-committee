@@ -1,6 +1,6 @@
 {
-  "title": "organization.schema",
-  "$id": "https://velocitynetwork.foundation/schemas/organization",
+  "title": "organization-v.1.1.schema",
+  "$id": "https://velocitynetwork.foundation/schemas/organization-v.1.1",
   "allOf": [
     {
       "$ref": "../json-ld-context.schema.json"
@@ -13,10 +13,10 @@
           "description": "The name of the organization."
         },
         "identifier": {
-          "$ref": "./did.schema.json"
+          "$ref": "./did-v.1.1.schema.json"
         },
         "place": {
-          "$ref": "./place.schema.json"
+          "$ref": "./place-v.1.1.schema.json"
         }
       }
     }

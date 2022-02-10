@@ -1,6 +1,6 @@
 {
-  "title": "course-registration",
-  "$id": "https://velocitynetwork.foundation/schemas/course-registration",
+  "title": "course-registration-v.1.1",
+  "$id": "https://velocitynetwork.foundation/schemas/course-registration-v.1.1",
   "allOf": [
     {
       "$ref": "./course-base.schema.json"
@@ -9,10 +9,10 @@
       "type": "object",
       "properties": {
         "registrationDate": {
-          "$ref": "../subtypes/date.schema.json"
+          "$ref": "../subtypes/date-v.1.1.schema.json"
         },
         "startDate": {
-          "$ref": "../subtypes/date.schema.json"
+          "$ref": "../subtypes/date-v.1.1.schema.json"
         }
       }
     }
@@ -21,7 +21,7 @@
     "provider",
     "courseName",
     "registrationDate",
-    "personName"
+    "recepientName"
   ],
   "examples": [
     {
@@ -41,7 +41,7 @@
       "courseMode": "Lecture",
       "courseDuration": "PT56H",
       "registrationDate": "2020-05-01",
-      "personName": {
+      "recepientName": {
         "givenName": "Olivia",
         "familyName": "Hafez"          
       }
@@ -65,7 +65,7 @@
       "startDate": "2022-10-01",
       "courseType": "License examination preparation",
       "courseLevel": "Advanced",
-      "personName": {
+      "recepientName": {
         "givenName": "Olivia",
         "familyName": "Hafez"          
       },
@@ -105,7 +105,7 @@
       "courseMode": "Instructor led",
       "courseDuration": "PT4H",
       "registrationDate": "2021-05-01",
-      "personName": {
+      "recepientName": {
         "givenName": "Olivia",
         "familyName": "Hafez"          
       }
