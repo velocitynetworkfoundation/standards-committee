@@ -1,7 +1,7 @@
 {
-  "title": "certification.schema",
+  "title": "certification-v.1.1.schema",
   "$schema": "http://json-schema.org/draft-07/schema#",
-  "$id": "https://velocitynetwork.foundation/schemas/certification",
+  "$id": "https://velocitynetwork.foundation/schemas/certification-v.1.1",
   "allOf": [
     {
       "$ref": "./certification-license-base.json"
@@ -14,7 +14,7 @@
           "description": "The number or other unique identifier of the certification held by the person. "
         },
         "validity": {
-          "$ref": "../subtypes/validity.schema.json"
+          "$ref": "../subtypes/validity-v.1.1.schema.json"
         }
       }
     }
@@ -22,7 +22,7 @@
   "required": [
     "authority",
     "name",
-    "personName"
+    "recepientName"
   ],
   "examples": [
     {
@@ -47,7 +47,7 @@
           "addressCountry": "US"
         }
       },
-        "personName": {
+        "recepientName": {
           "givenName": "Olivia",
           "familyName": "Hafez"          
         },
@@ -78,7 +78,7 @@
         "validFrom": "2015-01-18",
         "validUntil": "2025-01-01"
       },
-        "personName": {
+        "recepientName": {
           "givenName": "Olivia",
           "familyName": "Hafez"          
         },

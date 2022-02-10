@@ -115,7 +115,7 @@
       }
     },
     {
-      "label": "Holder given name",
+      "label": "Recepient given name",
       "path": [
         "$.personName.givenName"
       ],
@@ -124,7 +124,7 @@
       }
     },
     {
-      "label": "Holder middle name",
+      "label": "Recepient middle name",
       "path": [
         "$.personName.middleName"
       ],
@@ -133,7 +133,7 @@
       }
     },
     {
-      "label": "Holder family name",
+      "label": "Recepient family name",
       "path": [
         "$.personName.familyName"
       ],
@@ -142,7 +142,7 @@
       }
     },
     {
-      "label": "Holder name prefix",
+      "label": "Recepient name prefix",
       "path": [
         "$.personName.namePrefix"
       ],

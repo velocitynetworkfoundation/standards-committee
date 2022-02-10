@@ -33,14 +33,14 @@
           "type": "array",
           "description": "A public resource to which the assessment is aligned. ",
           "items": {
-            "$ref": "../subtypes/alignment.schema.json"
+            "$ref": "../subtypes/alignment-v.1.1.schema.json"
           }
         },
         "score": {
-          "$ref": "../subtypes/score.schema.json"
+          "$ref": "../subtypes/score-v.1.1.schema.json"
         },
         "assessmentDate": {
-          "$ref": "../subtypes/date.schema.json"
+          "$ref": "../subtypes/date-v.1.1.schema.json"
         }
       }
     }

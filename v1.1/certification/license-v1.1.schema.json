@@ -1,7 +1,7 @@
 {
-  "title": "license.schema",
+  "title": "license-v.1.1.schema",
   "$schema": "http://json-schema.org/draft-07/schema#",
-  "$id": "https://velocitynetwork.foundation/schemas/license",
+  "$id": "https://velocitynetwork.foundation/schemas/license-v.1.1",
   "allOf": [
     {
       "$ref": "./certification-license-base.json"
@@ -14,7 +14,7 @@
           "description": "The number or other unique identifier of the license held by the person. "
         },
         "validity": {
-          "$ref": "../subtypes/validity.schema.json"
+          "$ref": "../subtypes/validity-v.1.1.schema.json"
         },
         "endorsementCode": {
           "type": "array",
@@ -37,7 +37,7 @@
     "authority",
     "name",
     "identifier",
-    "personName"
+    "recepientName"
   ],
   "examples": [
     {
@@ -63,7 +63,7 @@
           "addressCountry": "US"
         }
       },
-        "personName": {
+        "recepientName": {
           "givenName": "Olivia",
           "familyName": "Hafez"          
         }

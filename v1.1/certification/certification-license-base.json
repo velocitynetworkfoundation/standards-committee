@@ -10,7 +10,7 @@
       "type": "object",
       "properties": {
         "authority": {
-          "$ref": "../subtypes/organization.schema.json"
+          "$ref": "../subtypes/organization-v.1.1.schema.json"
         },
         "name": {
           "type": "string",
@@ -24,10 +24,10 @@
           "type": "array",
           "description": "A public resource to which the certification or license is aligned.",
           "items": {
-            "$ref": "../subtypes/alignment.schema.json"
+            "$ref": "../subtypes/alignment-v.1.1.schema.json"
           },
         "personName": {
-          "$ref": "../subtypes/personName.schema.json"
+          "$ref": "../subtypes/personName-v.1.1.schema.json"
           }        
         }
       }

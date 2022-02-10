@@ -25,7 +25,7 @@
   "alignment": {
     "ui.widget": "hidden"
   },
-  "grade": {
+  "score": {
     "scoreValue": {
       "ui.title": "Score"
     },
@@ -58,6 +58,6 @@
     "name",
     "description",
     "assessmentDate",
-    "grade"
+    "score"
   ]
 }

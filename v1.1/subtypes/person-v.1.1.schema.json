@@ -1,6 +1,6 @@
 {
-  "title": "person.schema",
-  "$id": "https://velocitynetwork.foundation/schemas/person",
+  "title": "person-v.1.1.schema",
+  "$id": "https://velocitynetwork.foundation/schemas/person-v.1.1",
   "allOf": [
     {
       "$ref": "../json-ld-context.schema.json"
@@ -34,7 +34,7 @@
           "description": "The date of birth of the person. "
         },
         "birthPlace": {
-          "$ref": "./place.schema.json"
+          "$ref": "./place-v.1.1.schema.json"
         },
         "gender": {
           "type": "string",

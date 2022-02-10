@@ -1,5 +1,5 @@
 {
-  "title": "course-completion",
+  "title": "course-completion-v.1.1",
   "$id": "https://velocitynetwork.foundation/schemas/course-completion",
   "allOf": [
     {
@@ -9,16 +9,16 @@
       "type": "object",
       "properties": {
         "grade": {
-          "$ref": "../subtypes/score.schema.json"
+          "$ref": "../subtypes/score-v.1.1.schema.json"
         },
         "registrationDate": {
-          "$ref": "../subtypes/date.schema.json"
+          "$ref": "../subtypes/date-v.1.1.schema.json"
         },
         "startDate": {
-          "$ref": "../subtypes/date.schema.json"
+          "$ref": "../subtypes/date-v.1.1.schema.json"
         },
         "completionDate": {
-          "$ref": "../subtypes/date.schema.json"
+          "$ref": "../subtypes/date-v.1.1.schema.json"
         }
       }
     }
@@ -27,7 +27,7 @@
     "provider",
     "courseName",
     "completionDate",
-    "personName"
+    "recepientName"
   ],
   "examples": [
     {
@@ -57,7 +57,7 @@
         "scoreValue": "3.8",
         "passFail": "Pass"
       },
-      "personName": {
+      "recepientName": {
         "givenName": "Olivia",
         "familyName": "Hafez"          
       }      
@@ -96,7 +96,7 @@
         "result": "partly attended",
         "passFail": "fail"
       },
-      "personName": {
+      "recepientName": {
         "givenName": "Olivia",
         "familyName": "Hafez"          
       }
@@ -121,7 +121,7 @@
       "completionDate": "2018-10-01",
       "courseType": "License examination preparation",
       "courseLevel": "Advanced",
-      "personName": {
+      "recepientName": {
         "givenName": "Olivia",
         "familyName": "Hafez"          
       },

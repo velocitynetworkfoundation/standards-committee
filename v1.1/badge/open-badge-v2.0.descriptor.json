@@ -1,7 +1,7 @@
 {
   "title": {
     "path": [
-      "$.authority.name"
+      "$.holds.issuer.name"
     ],
     "schema": {
       "type": "string"
@@ -10,7 +10,7 @@
   },
   "subtitle": {
     "path": [
-      "$.name"
+      "$.holds.type"
     ],
     "schema": {
       "type": "string"
@@ -19,83 +19,80 @@
   },
   "summary_detail": {
     "path": [
-      "$.assessmentDate"
+      "$.holds.name"
     ],
     "schema": {
       "type": "string"
-    }
+    },
+    "fallback": "-"
   },
   "description": {
-    "text": "Assessment"
+    "text": "Open badge"
+  },
+  "logo": {
+    "path": [
+      "$.holds.image"
+    ],
+    "schema": {
+      "type": "string",
+      "format": "uri"
+    }
   },
   "properties": [
     {
+      "label": "Badge name",
+      "path": [
+        "$.holds.name"
+      ],
+      "schema": {
+        "type": "string"
+      },
+      "fallback": "-"
+    },
+    {
+      "label": "Badge Id",
+      "path": [
+        "$.holds.id"
+      ],
+      "schema": {
+        "type": "string"
+      },
+      "fallback": "-"
+    },
+    {
       "label": "Description",
       "path": [
-        "$.description"
+        "$.holds.description"
       ],
       "schema": {
         "type": "string"
       }
     },
     {
-      "label": "Assesses",
+      "label": "Criteria",
       "path": [
-        "$.assesses"
+        "$.holds.criteria"
       ],
       "schema": {
         "type": "string"
       }
     },
     {
-      "label": "Score",
+      "label": "Tags",
       "path": [
-        "$.score.scoreValue"
+        "$.holds.tags"
       ],
       "schema": {
-        "type": "string"
-      }
-    },
-    {
-      "label": "Result",
-      "path": [
-        "$.score.result"
-      ],
-      "schema": {
-        "type": "string"
-      }
-    },
-    {
-      "label": "Pass or fail",
-      "path": [
-        "$.score.passFail"
-      ],
-      "schema": {
-        "type": "string"
-      }
-    },
-    {
-      "label": "Assessment level",
-      "path": [
-        "$.assessmentLevel"
-      ],
-      "schema": {
-        "type": "string"
-      }
-    },
-    {
-      "label": "Assessment method",
-      "path": [
-        "$.assessmentMethod"
-      ],
-      "schema": {
-        "type": "string"
+        "type": "array",
+        "items": {
+          "type": "string"
+        }
       }
     },
     {
       "label": "Alignment",
       "path": [
-        "$.alignment[0].targetName"
+        "$.holds.alignment[0].targetName"
       ],
       "schema": {
         "type": "string"
@@ -104,7 +101,7 @@
     {
       "label": "Alignment URL",
       "path": [
-        "$.alignment[0].targetUrl"
+        "$.holds.alignment[0].targetUrl"
       ],
       "schema": {
         "type": "string",
@@ -114,7 +111,7 @@
     {
       "label": "Alignment framework",
       "path": [
-        "$.alignment[0].targetFramework"
+        "$.holds.alignment[0].targetFramework"
       ],
       "schema": {
         "type": "string"
