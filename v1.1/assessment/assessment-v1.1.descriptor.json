@@ -50,7 +50,7 @@
     {
       "label": "Score",
       "path": [
-        "$.grade.scoreValue"
+        "$.score.scoreValue"
       ],
       "schema": {
         "type": "string"
@@ -59,7 +59,7 @@
     {
       "label": "Result",
       "path": [
-        "$.grade.result"
+        "$.score.result"
       ],
       "schema": {
         "type": "string"
@@ -68,7 +68,7 @@
     {
       "label": "Pass or fail",
       "path": [
-        "$.grade.passFail"
+        "$.score.passFail"
       ],
       "schema": {
         "type": "string"
