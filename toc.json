@@ -423,7 +423,7 @@
             {
               "type": "item",
               "title": "Certification",
-              "uri": "v0/assessment-dec2020/assessment-dec2020.schema.json"
+              "uri": "v0/certification/certification.schema.json"
             }            
           ]
         },
