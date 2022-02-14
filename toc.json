@@ -2,7 +2,7 @@
   "items": [
     {
       "type": "divider",
-      "title": "Credential Models"
+      "title": "Credential Types"
     },
     {
       "type": "group",
@@ -95,7 +95,7 @@
         },
         {
           "type": "group",
-          "title": "Id Documents",
+          "title": "Id Documents and identifiers",
           "items": [
             {
               "type": "item",
@@ -141,12 +141,17 @@
         },
         {
           "type": "group",
-          "title": "Open Badge",
+          "title": "Badges",
           "items": [
             {
               "type": "item",
               "title": "Open Badge",
-              "uri": "v1.1/open-badge/open-badge-v1.1.schema.json"
+              "uri": "v1.1/badge/open-badge-v2.0.schema.json"
+            },
+            {
+              "type": "item",
+              "title": "Badge",
+              "uri": "v1.1/badge/badge-v1.1.schema.json"
             }
           ]
         },
@@ -157,37 +162,37 @@
         {
           "type": "item",
           "title": "Address",
-          "uri": "v1.1/subtypes/address.schema.json"
+          "uri": "v1.1/subtypes/address-v.1.1.schema.json"
         },
         {
           "type": "item",
           "title": "Alignment",
-          "uri": "v1.1/subtypes/alignment.schema.json"
+          "uri": "v1.1/subtypes/alignment-v.1.1.schema.json"
         },
         {
           "type": "item",
           "title": "Organization",
-          "uri": "v1.1/subtypes/organization.schema.json"
+          "uri": "v1.1/subtypes/organization-v.1.1.schema.json"
         },
         {
           "type": "item",
           "title": "Person",
-          "uri": "v1.1/subtypes/person.schema.json"
+          "uri": "v1.1/subtypes/person-v.1.1.schema.json"
         },
         {
           "type": "item",
           "title": "Place",
-          "uri": "v1.1/subtypes/place.schema.json"
+          "uri": "v1.1/subtypes/place-v.1.1.schema.json"
         },
         {
           "type": "item",
           "title": "Score",
-          "uri": "v1.1/subtypes/score.schema.json"
+          "uri": "v1.1/subtypes/score-v.1.1.schema.json"
         },
         {
           "type": "item",
           "title": "Validity",
-          "uri": "v1.1/subtypes/validity.schema.json"
+          "uri": "v1.1/subtypes/validity-v.1.1.schema.json"
         },
         {
           "type": "divider",
@@ -291,7 +296,7 @@
         },
         {
           "type": "group",
-          "title": "Id Documents",
+          "title": "Id Documents and Identifiers",
           "items": [
             {
               "type": "item",
@@ -395,6 +400,103 @@
           "uri": "https://github.com/velocitynetworkfoundation/standards-committee/blob/main/v1.0/layer1.jsonld.json"
         }
       ]
+    },
+  {
+      "type": "group",
+      "title": "V0",
+      "items": [
+        {
+          "type": "group",
+          "title": "Assessment",
+          "items": [
+            {
+              "type": "item",
+              "title": "Assessment",
+              "uri": "v0/assessment-dec2020/assessment-dec2020.schema.json"
+            }
+          ]
+        },
+        {
+          "type": "group",
+          "title": "Certification",
+          "items": [
+            {
+              "type": "item",
+              "title": "Certification",
+              "uri": "v0/assessment-dec2020/assessment-dec2020.schema.json"
+            }            
+          ]
+        },
+        {
+          "type": "group",
+          "title": "Course",
+          "items": [
+            {
+              "type": "item",
+              "title": "Course",
+              "uri": "v0/course/course.schema.json"
+            }            
+          ]
+        },
+        {
+          "type": "group",
+          "title": "Education Degree",
+          "items": [
+            {
+              "type": "item",
+              "title": "Education Degree",
+              "uri": "v0/education-degree/education-degree.schema.json"
+            }                      
+          ]
+        },
+        {
+          "type": "group",
+          "title": "Employment Roles",
+          "items": [
+            {
+              "type": "item",
+              "title": "Employment - Current",
+              "uri": "v0/employment/current-employment-position.schema.json"
+            },
+            {
+              "type": "item",
+              "title": "Employment - Past",
+              "uri": "v0/employment/past-employment-position.schema.json"
+            }
+          ]
+        },
+        {
+          "type": "group",
+          "title": "Id Documents and identifiers",
+          "items": [
+            {
+              "type": "item",
+              "title": "Id Document",
+              "uri": "v0/id-document/id-document.schema.json"
+            },    
+            {
+              "type": "item",
+              "title": "Email",
+              "uri": "v0/id-document/email.schema.json"
+            },
+            {
+              "type": "item",
+              "title": "Phone",
+              "uri": "v0/id-document/phone.schema.json"
+            }
+          ]
+        },
+        {
+          "type": "group",
+          "title": "Open Badge",
+          "items": [
+            {
+              "type": "item",
+              "title": "Open Badge",
+              "uri": "v0/open-badge/badge.schema.json"
+            }
+          ]
+        }              ]
     }
   ]
 }
