@@ -1,5 +1,5 @@
 {
-  "title": "course-registration-v.1.1",
+  "title": "course-registration-v.1.1.schema",
   "$id": "https://velocitynetwork.foundation/schemas/course-registration-v.1.1",
   "allOf": [
     {
