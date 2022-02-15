@@ -1,5 +1,5 @@
 {
-  "title": "course-attendance-v.1.1",
+  "title": "course-attendance-v.1.1.schema",
   "$id": "https://velocitynetwork.foundation/schemas/course-attendance-v.1.1",
   "allOf": [
     {
