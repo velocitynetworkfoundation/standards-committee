@@ -58,8 +58,10 @@
         "validUntil": "2020-07-12"
       },
       "person": {
-        "givenName": "Adi",
-        "familyName": "Gordon",
+        "personName": {
+          "givenName": "Adi",
+          "familyName": "Gordon"
+          },
         "birthDate": "1966-03-04",
         "birthPlace": {
           "addressLocality": "Binyamina",
@@ -89,8 +91,10 @@
         "validUntil": "2021-11-6"
       },
       "person": {
-        "givenName": "Andrew",
-        "familyName": "Hall",
+        "personName": {
+          "givenName": "Andrew",
+          "familyName": "Hall"
+          },
         "birthDate": "1988-08-24",
         "birthPlace": {
           "addressLocality": "Dorset",

@@ -56,20 +56,29 @@
   },
   "person": {
     "givenName": {
-      "ui.title": "Given Name"
-    },
-    "additionalName": {
-      "ui.title": "Middle name"
-    },
-    "familyName": {
-      "ui.title": "Family name"
-    },
-    "namePrefix": {
-      "ui.title": "Name prefix"
-    },
-    "nameSuffix": {
-      "ui.title": "Name suffix"
-    },
+      "givenName": {
+        "ui.title": "Given Name"
+      },
+      "additionalName": {
+        "ui.title": "Middle name"
+      },
+      "familyName": {
+        "ui.title": "Family name"
+      },
+      "namePrefix": {
+        "ui.title": "Name prefix"
+      },
+      "nameSuffix": {
+        "ui.title": "Name suffix"
+      },
+    "ui:order": [
+      "givenName",
+      "additionalName",
+      "familyName",
+      "namePrefix",
+      "nameSuffix"
+    ]
+      },
     "birthDate": {
       "ui.title": "Birth date",
       "ui:widget": "date"
@@ -105,11 +114,7 @@
       "ui.title": "Gender"
     },
     "ui:order": [
-      "givenName",
-      "additionalName",
-      "familyName",
-      "namePrefix",
-      "nameSuffix",
+      "personName",
       "birthDate",
       "birthPlace",
       "gender"

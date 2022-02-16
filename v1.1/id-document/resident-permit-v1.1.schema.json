@@ -54,8 +54,10 @@
         "validFrom": "2009-12-15"
       },
       "person": {
-        "givenName": "Hila",
-        "familyName": "Harlap",
+        "personName": {
+          "givenName": "Hila",
+          "familyName": "Harlap"
+          },
         "birthDate": "1976-10-17",
         "birthPlace": {
           "addressLocality": "Portland",
@@ -88,8 +90,10 @@
         "validuntil": "2019-01-15"
       },
       "person": {
-        "givenName": "Juana",
-        "familyName": "Villareal",
+        "personName": {
+          "givenName": "Juana",
+          "familyName": "Villareal"
+          },
         "birthDate": "2001-06-20",
         "birthPlace": {
           "addressLocality": "Buenos Aires",

@@ -54,9 +54,11 @@
         "validUntil": "2019-07-15"
       },
       "person": {
-        "givenName": "Heurelho",
-        "familyName": "Gomes",
-        "middleName": "da Silva",
+        "personName": {
+          "givenName": "Heurelho",
+          "familyName": "Gomes",
+          "middleName": "da Silva"
+          },
         "birthDate": "1985-01-22",
         "gender": "Male",
         "birthPlace": {
@@ -84,8 +86,10 @@
         "validUntil": "2019-07-15"
       },
       "person": {
-        "givenName": "Ida",
-        "familyName": "Perlmuter",
+        "personName": {
+          "givenName": "Ida",
+          "familyName": "Perlmuter"
+        },
         "birthDate": "1986-06-24",
         "gender": "Female",
         "birthPlace": {

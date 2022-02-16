@@ -8,25 +8,8 @@
     {
       "type": "object",
       "properties": {
-        "givenName": {
-          "type": "string",
-          "description": "The given name or first name of the person. "
-        },
-        "familyName": {
-          "type": "string",
-          "description": "The family name or surname of the person. "
-        },
-        "middleName": {
-          "type": "string",
-          "description": "The middle name of the person. "
-        },
-        "namePrefix": {
-          "type": "string",
-          "description": "A prefix to the name such as Dr or Sir. "
-        },
-        "nameSuffix": {
-          "type": "string",
-          "description": "A suffix to the name such as Jr. or Sr. "
+        "personName": {
+          "$ref": "./personName-v.1.1.schema.json"
         },
         "birthDate": {
           "type": "string",
@@ -48,16 +31,18 @@
     }
   ],
   "required": [
-    "givenName",
+    "personName",
     "birthDate",
     "familyName"
   ],
   "examples": [
     {
-      "givenName": "Olivia",
-      "familyName": "Hafez",
-      "middleName": "Melanie",
-      "namePrefix": "Dr",
+      "personName": {
+       "givenName": "Olivia",
+       "familyName": "Hafez",
+       "middleName": "Melanie",
+       "namePrefix": "Dr"
+      },
       "birthDate": "1994-06-20",
       "birthPlace": {
         "addressLocality": "Baltimore",
@@ -67,21 +52,25 @@
       "gender": "Female"
     },
     {
-      "givenName": "Oliver",
-      "familyName": "Barrett ",
-      "namePrefix": "string",
+      "personName": {
+       "givenName": "Oliver",
+       "familyName": "Barrett ",
+       "namePrefix": "string"
+      },
       "birthDate": "1960-02-11",
       "birthPlace": {
-        "addressLocality": "Lowell",
-        "addressRegion": "US-MA",
-        "addressCountry": "US"
+       "addressLocality": "Lowell",
+       "addressRegion": "US-MA",
+       "addressCountry": "US"
       },
       "gender": "Male",
       "nameSuffix": "Jr"
     },
     {
-      "givenName": "Joan Manuel ",
-      "familyName": "Serrat Teresa",
+      "personName": {
+       "givenName": "Joan Manuel ",
+       "familyName": "Serrat Teresa"
+      },
       "birthDate": "1943-12-27",
       "birthPlace": {
         "addressLocality": "Barcelona",

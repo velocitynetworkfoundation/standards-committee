@@ -76,7 +76,7 @@
     {
       "label": "Given name",
       "path": [
-        "$.person.givenName"
+        "$.person.personName.givenName"
       ],
       "schema": {
         "type": "string"
@@ -86,7 +86,7 @@
     {
       "label": "Middle name",
       "path": [
-        "$.person.additionalName"
+        "$.person.personName.additionalName"
       ],
       "schema": {
         "type": "string"
@@ -95,7 +95,7 @@
     {
       "label": "Family name",
       "path": [
-        "$.person.familyName"
+        "$.person.personName.familyName"
       ],
       "schema": {
         "type": "string"
@@ -114,7 +114,7 @@
     {
       "label": "Name suffix",
       "path": [
-        "$.person.nameSuffix"
+        "$.person.personName.nameSuffix"
       ],
       "schema": {
         "type": "string"

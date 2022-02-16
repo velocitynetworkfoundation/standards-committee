@@ -70,8 +70,10 @@
         "validUntil": "2014-08-21"
       },
       "person": {
-        "givenName": "Noah",
-        "familyName": "Brown",
+        "personName": {
+         "givenName": "Noah",
+         "familyName": "Brown"
+         },
         "birthDate": "1990-08-21",
         "gender": "Male"
       },
@@ -107,8 +109,10 @@
         "validUntil": "2026-04-20"
       },
       "person": {
-        "givenName": "Zoahr",
-        "familyName": "Argov",
+        "personName": {
+         "givenName": "Zoahr",
+         "familyName": "Argov"
+         },
         "birthDate": "1955-7-16"
       },
       "identifier": "7198054",

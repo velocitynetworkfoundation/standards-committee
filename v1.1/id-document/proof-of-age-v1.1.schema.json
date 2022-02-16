@@ -55,9 +55,11 @@
         "validFrom": "2019-05-09"
       },
       "person": {
-        "givenName": "Ken",
-        "familyName": "Williams",
-        "middleName": "Robert",
+        "personName": {
+          "givenName": "Ken",
+          "familyName": "Williams",
+          "middleName": "Robert"
+          },
         "birthDate": "2000-03-15"
       },
       "identifier": "123456",
