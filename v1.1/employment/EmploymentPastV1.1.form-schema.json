@@ -57,7 +57,7 @@
   "alignment": {
     "ui.widget": "hidden"
   },
-  "RecepientName": {
+  "recepient": {
     "givenName": {
       "ui.title": "Recepient given name"
     },
@@ -89,6 +89,6 @@
     "endDate",
     "place",
     "employmentType",
-    "recepientName"
+    "recepient"
   ]
 }

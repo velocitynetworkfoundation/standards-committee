@@ -22,7 +22,7 @@
   "required": [
     "authority",
     "name",
-    "recepientName"
+    "recepient"
   ],
   "examples": [
     {
@@ -47,7 +47,7 @@
           "addressCountry": "US"
         }
       },
-        "recepientName": {
+        "recepient": {
           "givenName": "Olivia",
           "familyName": "Hafez"          
         },
@@ -78,7 +78,7 @@
         "validFrom": "2015-01-18",
         "validUntil": "2025-01-01"
       },
-        "recepientName": {
+        "recepient": {
           "givenName": "Olivia",
           "familyName": "Hafez"          
         },

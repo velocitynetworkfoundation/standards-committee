@@ -19,7 +19,7 @@
             "$ref": "./assessment-dimension-v.1.1.schema.json"
           }
         },
-        "recepientName": {
+        "recepient": {
           "$ref": "../subtypes/personName-v.1.1.schema.json"
         }
       }
@@ -28,7 +28,7 @@
   "required": [
     "authority",
     "name",
-    "recepientName"
+    "recepient"
   ],
   "examples": [
     {
@@ -41,7 +41,7 @@
           "addressRegion": "US-CA",
           "addressCountry": "US"
         },
-        "recepientName": {
+        "recepient": {
           "givenName": "Olivia",
           "familyName": "Hafez"          
         }
@@ -120,7 +120,7 @@
           "addressCountry": "US"
         }
       },
-        "recepientName": {
+        "recepient": {
           "givenName": "Olivia",
           "familyName": "Hafez"          
         },

@@ -181,6 +181,11 @@
         },
         {
           "type": "item",
+          "title": "Person name",
+          "uri": "v1.1/subtypes/personName-v.1.1.schema.json"
+        },
+        {
+          "type": "item",
           "title": "Place",
           "uri": "v1.1/subtypes/place-v.1.1.schema.json"
         },

@@ -53,7 +53,7 @@
     "ui.title": "Start date",
     "ui:widget": "date"
   },
-  "recepientName": {
+  "recepient": {
     "givenName": {
       "ui.title": "Holder given name"
     },
@@ -87,6 +87,6 @@
     "degreeMajor",
     "degreeMinor",
     "programName",
-    "recepientName"
+    "recepient"
   ]
 }

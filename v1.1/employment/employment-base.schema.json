@@ -45,7 +45,7 @@
         "place": {
           "$ref": "../subtypes/place-v.1.1.schema.json"
         },
-        "recepientName": {
+        "recepient": {
          "$ref": "../subtypes/personName-v.1.1.schema.json"
         },
         "alignment ": {

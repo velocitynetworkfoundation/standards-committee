@@ -43,7 +43,7 @@
           "format": "duration",
           "description": "The duration of the course in hours. "
         },
-        "recepientName": {
+        "recepient": {
           "$ref": "../subtypes/personName-v.1.1.schema.json"
           },
         "alignment": {
