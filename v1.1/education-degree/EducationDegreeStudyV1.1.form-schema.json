@@ -57,7 +57,7 @@
     "ui.title": "End date",
     "ui:widget": "date"
   },
-  "recepientName": {
+  "recepient": {
     "givenName": {
       "ui.title": "Recepient given name"
     },
@@ -92,6 +92,6 @@
     "degreeMajor",
     "degreeMinor",
     "programName",
-    "recepientName"
+    "recepient"
   ]
 }

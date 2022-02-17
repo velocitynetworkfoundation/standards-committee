@@ -35,7 +35,7 @@
     "ui.title": "Image",
     "ui.widget": "file"
   },
-  "recepientName": {
+  "recepient": {
     "givenName": {
       "ui.title": "Recepient given name"
     },
@@ -63,7 +63,7 @@
     "issuer",
     "name",
     "description",
-    "recepientName",
+    "recepient",
     "image"
   ]
 }

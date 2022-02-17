@@ -151,7 +151,7 @@
       }
     },
     {
-      "label": "Holder name suffix",
+      "label": "Recepient name suffix",
       "path": [
         "$.personName.nameSuffix"
       ],

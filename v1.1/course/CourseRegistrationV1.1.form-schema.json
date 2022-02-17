@@ -45,7 +45,7 @@
     "ui.title": "Start date",
     "ui:widget": "date"
   },
-  "recepientName": {
+  "recepient": {
     "givenName": {
       "ui.title": "Recepient given name"
     },
@@ -76,6 +76,6 @@
     "registrationDate",
     "startDate",
     "courseDuration",
-    "recepientName"
+    "recepient"
   ]
 }

@@ -64,7 +64,7 @@
       "passFail"
     ]
   },
-  "recepientName": {
+  "recepient": {
     "givenName": {
       "ui.title": "Recepient given name"
     },
@@ -96,6 +96,6 @@
     "startDate",
     "grade",
     "courseDuration",
-    "recepientName"
+    "recepient"
   ]
 }
