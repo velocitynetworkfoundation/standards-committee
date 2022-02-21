@@ -21,7 +21,7 @@
     "institution",
     "degreeName",
     "registrationDate",
-    "recepient"
+    "recipient"
   ],
   "examples": [
     {
@@ -58,7 +58,7 @@
         "targetDescription": "The RN to BSN completion program has been developed to address the specific needs of working registered nurses who return to the university to earn the BSN.",
         "targetFramework": "Credential Engine's Credential Registry"
       },
-      "recepient": {
+      "recipient": {
         "givenName": "Olivia",
         "familyName": "Hafez"          
       },
@@ -102,7 +102,7 @@
         "targetCode": "42.0101",
         "targetFramework": "CIP - Classification of Instructional Programs"
       },
-      "recepient": {
+      "recipient": {
         "givenName": "Olivia",
         "familyName": "Hafez"          
       },

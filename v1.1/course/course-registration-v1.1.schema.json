@@ -21,7 +21,7 @@
     "provider",
     "courseName",
     "registrationDate",
-    "recepient"
+    "recipient"
   ],
   "examples": [
     {
@@ -41,7 +41,7 @@
       "courseMode": "Lecture",
       "courseDuration": "PT56H",
       "registrationDate": "2020-05-01",
-      "recepient": {
+      "recipient": {
         "givenName": "Olivia",
         "familyName": "Hafez"          
       }
@@ -65,7 +65,7 @@
       "startDate": "2022-10-01",
       "courseType": "License examination preparation",
       "courseLevel": "Advanced",
-      "recepient": {
+      "recipient": {
         "givenName": "Olivia",
         "familyName": "Hafez"          
       },
@@ -105,7 +105,7 @@
       "courseMode": "Instructor led",
       "courseDuration": "PT4H",
       "registrationDate": "2021-05-01",
-      "recepient": {
+      "recipient": {
         "givenName": "Olivia",
         "familyName": "Hafez"          
       }

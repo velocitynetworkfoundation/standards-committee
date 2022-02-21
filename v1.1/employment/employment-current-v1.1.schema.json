@@ -18,7 +18,7 @@
     "legalEmployer",
     "role",
     "startDate",
-    "recepient"
+    "recipient"
   ],
   "examples": [
     {
@@ -45,7 +45,7 @@
         "addressCountry": "GB"
       },
       "startDate": "2017-01",
-      "recepient": {
+      "recipient": {
         "givenName": "Olivia",
         "familyName": "Hafez"          
       }
@@ -74,7 +74,7 @@
         "addressCountry": "US"
       },
       "startDate": "2013-10",
-      "recepient": {
+      "recipient": {
         "givenName": "Olivia",
         "familyName": "Hafez"          
       }

@@ -37,7 +37,7 @@
     "authority",
     "name",
     "identifier",
-    "recepient"
+    "recipient"
   ],
   "examples": [
     {
@@ -63,7 +63,7 @@
           "addressCountry": "US"
         }
       },
-        "recepient": {
+        "recipient": {
           "givenName": "Olivia",
           "familyName": "Hafez"          
         }
