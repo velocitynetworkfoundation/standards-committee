@@ -6,7 +6,7 @@
     "schema": {
       "type": "string"
     },
-    "fallback": "-"
+    "fallback": "Drivers License"
   },
   "subtitle": {
     "path": [
@@ -60,7 +60,7 @@
     {
       "label": "Date issued",
       "path": [
-        "$.firstValidFrom"
+        "$.validity.firstValidFrom"
       ],
       "schema": {
         "type": "string",
@@ -70,7 +70,7 @@
     {
       "label": "Date renewed",
       "path": [
-        "$.validFrom"
+        "$.validity.validFrom"
       ],
       "schema": {
         "type": "string",
@@ -138,7 +138,8 @@
         "$.person.birthDate"
       ],
       "schema": {
-        "type": "string"
+        "type": "string",
+        "format": "date"
       }
     },
     {

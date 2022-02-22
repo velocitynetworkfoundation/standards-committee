@@ -43,7 +43,7 @@
     {
       "label": "Date issued",
       "path": [
-        "$.firstValidFrom"
+        "$.validity.firstValidFrom"
       ],
       "schema": {
         "type": "string",
@@ -54,7 +54,7 @@
     {
       "label": "Date renewed",
       "path": [
-        "$.validFrom"
+        "$.validity.validFrom"
       ],
       "schema": {
         "type": "string",
