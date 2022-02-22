@@ -1,5 +1,5 @@
 {
-  "title": "Employment-base.schema",
+  "title": "Employment-base",
   "$id": "https://velocitynetwork.foundation/schemas/employment-base-v1.0",
   "allOf": [
     {
