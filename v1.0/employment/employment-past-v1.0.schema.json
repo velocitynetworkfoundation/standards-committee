@@ -1,6 +1,6 @@
 {
-  "title": "employment-past.schema",
-  "$id": "https://velocitynetwork.foundation/schemas/employment-past",
+  "title": "Past employment position",
+  "$id": "https://velocitynetwork.foundation/schemas/employment-past-v1.0",
   "allOf": [
     {
       "$ref": "./employment-base.schema.json"

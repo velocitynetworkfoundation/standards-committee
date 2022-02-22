@@ -1,6 +1,6 @@
 {
   "type": "string",
-  "title": "did.schema",
+  "title": "DID",
   "pattern": "^did:[a-z]+:[a-zA-Z0-9_#:;?&=\\.-]+$",
   "x-internal": true
 }

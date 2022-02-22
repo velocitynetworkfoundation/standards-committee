@@ -1,7 +1,7 @@
 {
-  "title": "resident-permit.schema",
+  "title": "Resident permit",
   "$schema": "http://json-schema.org/draft-07/schema#",
-  "$id": "https://velocitynetwork.foundation/schemas/resident-permit",
+  "$id": "https://velocitynetwork.foundation/schemas/resident-permit-v1.0",
   "allOf": [
     {
       "$ref": "../json-ld-context.schema.json"

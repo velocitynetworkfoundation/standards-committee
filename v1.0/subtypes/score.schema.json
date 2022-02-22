@@ -1,6 +1,6 @@
 {
-  "title": "score.schema",
-  "$id": "https://velocitynetwork.foundation/schemas/score",
+  "title": "Score",
+  "$id": "https://velocitynetwork.foundation/schemas/score-v1.0",
   "allOf": [
     {
       "$ref": "../json-ld-context.schema.json"

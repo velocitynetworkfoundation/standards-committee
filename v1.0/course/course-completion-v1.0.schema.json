@@ -1,6 +1,6 @@
 {
-  "title": "course-completion",
-  "$id": "https://velocitynetwork.foundation/schemas/course-completion",
+  "title": "Course completion",
+  "$id": "https://velocitynetwork.foundation/schemas/course-completion-v1.0",
   "allOf": [
     {
       "$ref": "./course-base.schema.json"

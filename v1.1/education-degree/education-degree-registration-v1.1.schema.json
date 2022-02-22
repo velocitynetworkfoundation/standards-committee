@@ -1,6 +1,6 @@
 {
-  "title": "education-degree-registration-v.1.1.schema",
-  "$id": "https://velocitynetwork.foundation/schemas/education-degree-registration-v.1.1",
+  "title": "Education degree registration",
+  "$id": "https://velocitynetwork.foundation/schemas/education-degree-registration-v1.1",
   "allOf": [
     {
       "$ref": "./education-degree-base.schema.json"

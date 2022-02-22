@@ -1,5 +1,5 @@
 {
-  "title": "course-base",
+  "title": "Course-base",
   "$id": "https://velocitynetwork.foundation/schemas/course-base",
   "allOf": [
     {

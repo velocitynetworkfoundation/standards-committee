@@ -55,16 +55,16 @@
   },
   "recipient": {
     "givenName": {
-      "ui.title": "Holder given name"
+      "ui.title": "Recipient given name"
     },
     "middleName": {
-      "ui.title": "Holder middle name"
+      "ui.title": "Recipient middle name"
     },
     "familyName": {
-      "ui.title": "Holder family name"
+      "ui.title": "Recipient family name"
     },
     "namePrefix": {
-      "ui.title": "Holder name prefix"
+      "ui.title": "Recipient name prefix"
     },
     "nameSuffix": {
       "ui.title": "Holder name suffix"

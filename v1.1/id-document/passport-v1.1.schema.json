@@ -1,7 +1,7 @@
 {
-  "title": "passport-v.1.1.schema",
+  "title": "Passport",
   "$schema": "http://json-schema.org/draft-07/schema#",
-  "$id": "https://velocitynetwork.foundation/schemas/passport",
+  "$id": "https://velocitynetwork.foundation/schemas/passport-v1.1",
   "allOf": [
     {
       "$ref": "../json-ld-context.schema.json"

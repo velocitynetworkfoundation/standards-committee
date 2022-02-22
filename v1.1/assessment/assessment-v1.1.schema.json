@@ -1,7 +1,7 @@
 {
-  "title": "assessment-v.1.1.schema",
+  "title": "Assessment",
   "$schema": "http://json-schema.org/draft-07/schema#",
-  "$id": "https://velocitynetwork.foundation/schemas/assessment-v.1.1",
+  "$id": "https://velocitynetwork.foundation/schemas/assessment-v1.1",
   "allOf": [
     {
       "$ref": "./assessment-dimension-v.1.1.schema.json"

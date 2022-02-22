@@ -1,7 +1,7 @@
 {
-  "title": "national-id-v.1.1.schema",
+  "title": "National Id card",
   "$schema": "http://json-schema.org/draft-07/schema#",
-  "$id": "https://velocitynetwork.foundation/schemas/national-id",
+  "$id": "https://velocitynetwork.foundation/schemas/national-id-v1.1",
   "allOf": [
     {
       "$ref": "../json-ld-context.schema.json"

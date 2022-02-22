@@ -1,6 +1,6 @@
 {
-  "title": "employment-current.schema",
-  "$id": "https://velocitynetwork.foundation/schemas/employment-current",
+  "title": "Current employment position",
+  "$id": "https://velocitynetwork.foundation/schemas/employment-current-v1.0",
   "allOf": [
     {
       "$ref": "./employment-base.schema.json"

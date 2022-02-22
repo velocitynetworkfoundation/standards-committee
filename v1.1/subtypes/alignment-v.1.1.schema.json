@@ -1,6 +1,6 @@
 {
-  "title": "alignment-v.1.1.schema",
-  "$id": "https://velocitynetwork.foundation/schemas/alignment-v.1.1",
+  "title": "Alignment",
+  "$id": "https://velocitynetwork.foundation/schemas/alignment-v1.1",
   "allOf": [
     {
       "$ref": "../json-ld-context.schema.json"

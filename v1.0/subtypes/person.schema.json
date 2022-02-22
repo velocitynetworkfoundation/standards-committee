@@ -1,6 +1,6 @@
 {
-  "title": "person.schema",
-  "$id": "https://velocitynetwork.foundation/schemas/person",
+  "title": "Person",
+  "$id": "https://velocitynetwork.foundation/schemas/person-v1.0",
   "allOf": [
     {
       "$ref": "../json-ld-context.schema.json"

@@ -1,6 +1,6 @@
 {
-  "title": "course-attendance-v.1.1.schema",
-  "$id": "https://velocitynetwork.foundation/schemas/course-attendance-v.1.1",
+  "title": "Course attendance",
+  "$id": "https://velocitynetwork.foundation/schemas/course-attendance-v1.1",
   "allOf": [
     {
       "$ref": "./course-base.schema.json"

@@ -1,5 +1,5 @@
 {
-  "title": "date-v.1.1.schema",
+  "title": "Date",
   "type": "string",
   "pattern": "^\\d\\d\\d\\d(-\\d\\d)?(-\\d\\d)?$",
   "x-internal": true

@@ -1,7 +1,7 @@
 {
-  "title": "certification-license-base",
+  "title": "Certification-license-base",
   "$schema": "http://json-schema.org/draft-07/schema#",
-  "$id": "https://velocitynetwork.foundation/schemas/certification-license-base",
+  "$id": "https://velocitynetwork.foundation/schemas/certification-license-base-v1.1",
   "allOf": [
     {
       "$ref": "../json-ld-context.schema.json"
