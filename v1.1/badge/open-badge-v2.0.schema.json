@@ -116,7 +116,7 @@
           "type": "array",
           "description": "An object describing which objectives or educational standards this badge aligns to, if any.",
           "items": {
-            "$ref": "../subtypes/alignment.schema.json"
+            "$ref": "../subtypes/alignment-v.1.1.schema.json"
           }
         }
       }
