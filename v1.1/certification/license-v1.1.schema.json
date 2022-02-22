@@ -14,7 +14,7 @@
           "description": "The number or other unique identifier of the license held by the person. "
         },
         "validity": {
-          "$ref": "../subtypes/validity-v.1.1.schema.json"
+          "$ref": "../subtypes/validity-v1.1.schema.json"
         },
         "endorsementCode": {
           "type": "array",

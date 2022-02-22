@@ -13,10 +13,10 @@
           "description": "The name of the organization."
         },
         "identifier": {
-          "$ref": "./did-v.1.1.schema.json"
+          "$ref": "./did-v1.1.schema.json"
         },
         "place": {
-          "$ref": "./place-v.1.1.schema.json"
+          "$ref": "./place-v1.1.schema.json"
         }
       }
     }

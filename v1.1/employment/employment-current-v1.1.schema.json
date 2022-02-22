@@ -9,7 +9,7 @@
       "type": "object",
       "properties": {
         "startDate": {
-          "$ref": "../subtypes/date-v.1.1.schema.json"
+          "$ref": "../subtypes/date-v1.1.schema.json"
         }
       }
     }
