@@ -10,13 +10,13 @@
       "type": "object",
       "properties": {
         "authority": {
-          "$ref": "../subtypes/organization-v.1.1.schema.json"
+          "$ref": "../subtypes/organization-v1.1.schema.json"
         },
         "validity": {
-          "$ref": "../subtypes/validity-v.1.1.schema.json"
+          "$ref": "../subtypes/validity-v1.1.schema.json"
         },
         "person": {
-          "$ref": "../subtypes/person-v.1.1.schema.json"
+          "$ref": "../subtypes/person-v1.1.schema.json"
         },
         "identifier": {
           "type": "string",
@@ -28,7 +28,7 @@
           "description": "The nationality of the person holding the permit."
         },
         "postalAddress": {
-          "$ref": "../subtypes/address-v.1.1.schema.json"
+          "$ref": "../subtypes/address-v1.1.schema.json"
         }
       }
     }

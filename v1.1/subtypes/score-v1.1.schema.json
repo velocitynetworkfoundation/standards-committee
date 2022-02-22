@@ -28,7 +28,7 @@
               "type": "array",
               "description": "A public resource to which the scoring method is aligned.",
               "items": {
-                "$ref": "./alignment-v.1.1.schema.json"
+                "$ref": "./alignment-v1.1.schema.json"
               }
             },
             "passingScore": {

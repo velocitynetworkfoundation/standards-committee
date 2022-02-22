@@ -162,42 +162,42 @@
         {
           "type": "item",
           "title": "Address",
-          "uri": "v1.1/subtypes/address-v.1.1.schema.json"
+          "uri": "v1.1/subtypes/address-v1.1.schema.json"
         },
         {
           "type": "item",
           "title": "Alignment",
-          "uri": "v1.1/subtypes/alignment-v.1.1.schema.json"
+          "uri": "v1.1/subtypes/alignment-v1.1.schema.json"
         },
         {
           "type": "item",
           "title": "Organization",
-          "uri": "v1.1/subtypes/organization-v.1.1.schema.json"
+          "uri": "v1.1/subtypes/organization-v1.1.schema.json"
         },
         {
           "type": "item",
           "title": "Person",
-          "uri": "v1.1/subtypes/person-v.1.1.schema.json"
+          "uri": "v1.1/subtypes/person-v1.1.schema.json"
         },
         {
           "type": "item",
           "title": "Person name",
-          "uri": "v1.1/subtypes/personName-v.1.1.schema.json"
+          "uri": "v1.1/subtypes/personName-v1.1.schema.json"
         },
         {
           "type": "item",
           "title": "Place",
-          "uri": "v1.1/subtypes/place-v.1.1.schema.json"
+          "uri": "v1.1/subtypes/place-v1.1.schema.json"
         },
         {
           "type": "item",
           "title": "Score",
-          "uri": "v1.1/subtypes/score-v.1.1.schema.json"
+          "uri": "v1.1/subtypes/score-v1.1.schema.json"
         },
         {
           "type": "item",
           "title": "Validity",
-          "uri": "v1.1/subtypes/validity-v.1.1.schema.json"
+          "uri": "v1.1/subtypes/validity-v1.1.schema.json"
         },
         {
           "type": "divider",

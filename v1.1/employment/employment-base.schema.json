@@ -9,7 +9,7 @@
       "type": "object",
       "properties": {
         "legalEmployer": {
-          "$ref": "../subtypes/organization-v.1.1.schema.json"
+          "$ref": "../subtypes/organization-v1.1.schema.json"
         },
         "role": {
           "type": "string",
@@ -43,16 +43,16 @@
           }
         },
         "place": {
-          "$ref": "../subtypes/place-v.1.1.schema.json"
+          "$ref": "../subtypes/place-v1.1.schema.json"
         },
         "recipient": {
-         "$ref": "../subtypes/personName-v.1.1.schema.json"
+         "$ref": "../subtypes/personName-v1.1.schema.json"
         },
         "alignment ": {
           "type": "array",
           "description": "A public resource to which the employment position is aligned.",
           "items": {
-            "$ref": "../subtypes/alignment-v.1.1.schema.json"
+            "$ref": "../subtypes/alignment-v1.1.schema.json"
           }
         }
       }

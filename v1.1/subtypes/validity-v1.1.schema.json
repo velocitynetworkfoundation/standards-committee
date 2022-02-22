@@ -38,7 +38,7 @@
           "type": "string"
         },
         "validIn": {
-          "$ref": "./place-v.1.1.schema.json"
+          "$ref": "./place-v1.1.schema.json"
         }
       }
     }
