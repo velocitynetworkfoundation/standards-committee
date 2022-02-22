@@ -7,7 +7,7 @@
       "$.email"
     ],
   "description": {
-    "text": "Dmail"
+    "text": "Email"
   },
     "schema": {
       "type": "string",
