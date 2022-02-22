@@ -22,7 +22,7 @@
         "recipient": {
           "$ref": "../subtypes/personName-v1.1.schema.json"
         }
-      }F
+      }
     }
   ],
   "required": [

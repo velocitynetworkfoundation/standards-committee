@@ -15,7 +15,7 @@
             {
               "type": "item",
               "title": "Assessment",
-              "uri": "./v1.1/assessment/assessment-v1.1.schema.json"
+              "uri": "v1.1/assessment/assessment-v1.1.schema.json"
             }
           ]
         },
