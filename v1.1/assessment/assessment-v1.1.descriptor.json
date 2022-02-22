@@ -149,7 +149,7 @@
     {
       "label": "Recipient given name",
       "path": [
-        "$.personName.givenName"
+        "$.recipient.givenName"
       ],
       "schema": {
         "type": "string"
@@ -158,7 +158,7 @@
     {
       "label": "Recipient middle name",
       "path": [
-        "$.personName.middleName"
+        "$.recipient.middleName"
       ],
       "schema": {
         "type": "string"
@@ -167,7 +167,7 @@
     {
       "label": "Recipient family name",
       "path": [
-        "$.personName.familyName"
+        "$.recipient.familyName"
       ],
       "schema": {
         "type": "string"
@@ -176,7 +176,7 @@
     {
       "label": "Recipient name prefix",
       "path": [
-        "$.personName.namePrefix"
+        "$.recipient.namePrefix"
       ],
       "schema": {
         "type": "string"
@@ -185,7 +185,7 @@
     {
       "label": "Recipient name suffix",
       "path": [
-        "$.personName.nameSuffix"
+        "$.recipient.nameSuffix"
       ],
       "schema": {
         "type": "string"

@@ -1,7 +1,7 @@
 {
   "title": {
     "path": [
-      "$.holds.issuer.name"
+      "$.hasCredential.issuer.name"
     ],
     "schema": {
       "type": "string"
@@ -10,7 +10,7 @@
   },
   "subtitle": {
     "path": [
-      "$.holds.type"
+      "$.hasCredential.type"
     ],
     "schema": {
       "type": "string"
@@ -19,7 +19,7 @@
   },
   "summary_detail": {
     "path": [
-      "$.holds.name"
+      "$.hasCredential.name"
     ],
     "schema": {
       "type": "string"
@@ -31,7 +31,7 @@
   },
   "logo": {
     "path": [
-      "$.holds.image"
+      "$.hasCredential.image"
     ],
     "schema": {
       "type": "string",
@@ -42,7 +42,7 @@
     {
       "label": "Badge name",
       "path": [
-        "$.holds.name"
+        "$.hasCredential.name"
       ],
       "schema": {
         "type": "string"
@@ -52,7 +52,7 @@
     {
       "label": "Badge Id",
       "path": [
-        "$.holds.id"
+        "$.hasCredential.id"
       ],
       "schema": {
         "type": "string"
@@ -62,7 +62,7 @@
     {
       "label": "Description",
       "path": [
-        "$.holds.description"
+        "$.hasCredential.description"
       ],
       "schema": {
         "type": "string"
@@ -71,7 +71,7 @@
     {
       "label": "Criteria",
       "path": [
-        "$.holds.criteria"
+        "$.hasCredential.criteria"
       ],
       "schema": {
         "type": "string"
@@ -80,7 +80,7 @@
     {
       "label": "Tags",
       "path": [
-        "$.holds.tags"
+        "$.hasCredential.tags"
       ],
       "schema": {
         "type": "array",
@@ -92,7 +92,7 @@
     {
       "label": "Recipient given name",
       "path": [
-        "$.personName.givenName"
+        "$.recipient.givenName"
       ],
       "schema": {
         "type": "string"
@@ -101,7 +101,7 @@
     {
       "label": "Recipient middle name",
       "path": [
-        "$.personName.middleName"
+        "$.recipient.middleName"
       ],
       "schema": {
         "type": "string"
@@ -110,7 +110,7 @@
     {
       "label": "Recipient family name",
       "path": [
-        "$.personName.familyName"
+        "$.recipient.familyName"
       ],
       "schema": {
         "type": "string"
@@ -119,7 +119,7 @@
     {
       "label": "Recipient name prefix",
       "path": [
-        "$.personName.namePrefix"
+        "$.recipient.namePrefix"
       ],
       "schema": {
         "type": "string"
@@ -128,7 +128,7 @@
     {
       "label": "Recipient name suffix",
       "path": [
-        "$.personName.nameSuffix"
+        "$.recipient.nameSuffix"
       ],
       "schema": {
         "type": "string"
@@ -137,7 +137,7 @@
     {
       "label": "Alignment",
       "path": [
-        "$.holds.alignment[0].targetName"
+        "$.hasCredential.alignment[0].targetName"
       ],
       "schema": {
         "type": "string"
@@ -146,7 +146,7 @@
     {
       "label": "Alignment URL",
       "path": [
-        "$.holds.alignment[0].targetUrl"
+        "$.hasCredential.alignment[0].targetUrl"
       ],
       "schema": {
         "type": "string",
@@ -156,7 +156,7 @@
     {
       "label": "Alignment framework",
       "path": [
-        "$.holds.alignment[0].targetFramework"
+        "$.hasCredential.alignment[0].targetFramework"
       ],
       "schema": {
         "type": "string"

@@ -2,13 +2,13 @@
   "title": {
     "text": "Phone number"
   },
+  "description": {
+    "text": "Phone"
+  },
   "subtitle": {
     "path": [
       "$.phone"
     ],
-  "description": {
-    "text": "Phone"
-  },
     "schema": {
       "type": "string"
     },
