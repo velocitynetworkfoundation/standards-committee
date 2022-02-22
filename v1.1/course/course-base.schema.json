@@ -1,5 +1,5 @@
 {
-  "title": "course-base",
+  "title": "Course-base",
   "$id": "https://velocitynetwork.foundation/schemas/course-base",
   "allOf": [
     {
@@ -43,7 +43,7 @@
           "format": "duration",
           "description": "The duration of the course in hours. "
         },
-        "recepient": {
+        "recipient": {
           "$ref": "../subtypes/personName-v.1.1.schema.json"
           },
         "alignment": {

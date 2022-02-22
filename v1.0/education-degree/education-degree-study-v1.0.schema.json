@@ -1,6 +1,6 @@
 {
-  "title": "education-degree-study",
-  "$id": "https://velocitynetwork.foundation/schemas/education-degree-study",
+  "title": "Education degree study",
+  "$id": "https://velocitynetwork.foundation/schemas/education-degree-study-v1.0",
   "allOf": [
     {
       "$ref": "./education-degree-base.schema.json"

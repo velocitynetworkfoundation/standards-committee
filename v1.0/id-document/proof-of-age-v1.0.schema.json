@@ -1,7 +1,7 @@
 {
-  "title": "proof-of-age.schema",
+  "title": "Proof of age",
   "$schema": "http://json-schema.org/draft-07/schema#",
-  "$id": "https://velocitynetwork.foundation/schemas/id-document",
+  "$id": "https://velocitynetwork.foundation/schemas/proof-of-age-v1.0",
   "allOf": [
     {
       "$ref": "../json-ld-context.schema.json"

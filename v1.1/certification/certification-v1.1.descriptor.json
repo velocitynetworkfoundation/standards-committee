@@ -27,7 +27,7 @@
     }
   },
   "description": {
-    "text": "Velocity Network certification credentials"
+    "text": "Certification"
   },
   "properties": [
     {
@@ -87,7 +87,7 @@
       }
     },
     {
-      "label": "Recepient given name",
+      "label": "Recipient given name",
       "path": [
         "$.personName.givenName"
       ],
@@ -96,7 +96,7 @@
       }
     },
     {
-      "label": "Recepient middle name",
+      "label": "Recipient middle name",
       "path": [
         "$.personName.middleName"
       ],
@@ -105,7 +105,7 @@
       }
     },
     {
-      "label": "Recepient family name",
+      "label": "Recipient family name",
       "path": [
         "$.personName.familyName"
       ],
@@ -114,7 +114,7 @@
       }
     },
     {
-      "label": "Recepient name prefix",
+      "label": "Recipient name prefix",
       "path": [
         "$.personName.namePrefix"
       ],
@@ -123,7 +123,7 @@
       }
     },
     {
-      "label": "Recepient name suffix",
+      "label": "Recipient name suffix",
       "path": [
         "$.personName.nameSuffix"
       ],

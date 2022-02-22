@@ -1,7 +1,7 @@
 {
-  "title": "drivers-license-v.1.1.schema",
+  "title": "Driver's license",
   "$schema": "http://json-schema.org/draft-07/schema#",
-  "$id": "https://velocitynetwork.foundation/schemas/drivers-license",
+  "$id": "https://velocitynetwork.foundation/schemas/drivers-license-v1.1",
   "allOf": [
     {
       "$ref": "../json-ld-context.schema.json"

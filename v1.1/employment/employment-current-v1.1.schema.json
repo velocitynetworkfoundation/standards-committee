@@ -1,6 +1,6 @@
 {
-  "title": "employment-current-v.1.1.schema",
-  "$id": "https://velocitynetwork.foundation/schemas/employment-current-v.1.1",
+  "title": "Current employment position",
+  "$id": "https://velocitynetwork.foundation/schemas/employment-current-v1.1",
   "allOf": [
     {
       "$ref": "./employment-base.schema.json"
@@ -18,7 +18,7 @@
     "legalEmployer",
     "role",
     "startDate",
-    "recepient"
+    "recipient"
   ],
   "examples": [
     {
@@ -45,7 +45,7 @@
         "addressCountry": "GB"
       },
       "startDate": "2017-01",
-      "recepient": {
+      "recipient": {
         "givenName": "Olivia",
         "familyName": "Hafez"          
       }
@@ -74,7 +74,7 @@
         "addressCountry": "US"
       },
       "startDate": "2013-10",
-      "recepient": {
+      "recipient": {
         "givenName": "Olivia",
         "familyName": "Hafez"          
       }

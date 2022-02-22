@@ -1,6 +1,6 @@
 {
-  "title": "email.schema",
-  "$id": "https://velocitynetwork.foundation/schemas/email",
+  "title": "Email",
+  "$id": "https://velocitynetwork.foundation/schemas/email-v1.0",
   "allOf": [
     {
       "$ref": "../json-ld-context.schema.json"

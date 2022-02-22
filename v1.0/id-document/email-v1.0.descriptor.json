@@ -6,6 +6,9 @@
     "path": [
       "$.email"
     ],
+  "description": {
+    "text": "Dmail"
+  },
     "schema": {
       "type": "string",
       "format": "email"

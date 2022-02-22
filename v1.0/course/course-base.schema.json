@@ -1,6 +1,6 @@
 {
-  "title": "course-base",
-  "$id": "https://velocitynetwork.foundation/schemas/course-base",
+  "title": "Course-base",
+  "$id": "https://velocitynetwork.foundation/schemas/course-base-v1.0",
   "allOf": [
     {
       "$ref": "../json-ld-context.schema.json"

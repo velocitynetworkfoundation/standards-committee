@@ -1,6 +1,6 @@
 {
-  "title": "course-registration",
-  "$id": "https://velocitynetwork.foundation/schemas/course-registration",
+  "title": "Course registration",
+  "$id": "https://velocitynetwork.foundation/schemas/course-registration-v1.0",
   "allOf": [
     {
       "$ref": "./course-base.schema.json"

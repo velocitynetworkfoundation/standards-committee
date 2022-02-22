@@ -1,6 +1,6 @@
 {
-  "title": "organization.schema",
-  "$id": "https://velocitynetwork.foundation/schemas/organization",
+  "title": "Organization",
+  "$id": "https://velocitynetwork.foundation/schemas/organization-v1.0",
   "allOf": [
     {
       "$ref": "../json-ld-context.schema.json"

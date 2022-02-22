@@ -1,6 +1,6 @@
 {
-  "title": "employment-base.schema",
-  "$id": "https://velocitynetwork.foundation/schemas/employment-base",
+  "title": "Employment-base",
+  "$id": "https://velocitynetwork.foundation/schemas/employment-base-v1.1",
   "allOf": [
     {
       "$ref": "../json-ld-context.schema.json"
@@ -45,7 +45,7 @@
         "place": {
           "$ref": "../subtypes/place-v.1.1.schema.json"
         },
-        "recepient": {
+        "recipient": {
          "$ref": "../subtypes/personName-v.1.1.schema.json"
         },
         "alignment ": {

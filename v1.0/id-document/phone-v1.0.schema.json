@@ -1,6 +1,6 @@
 {
-  "title": "phone.schema",
-  "$id": "https://velocitynetwork.foundation/schemas/phone",
+  "title": "Phone",
+  "$id": "https://velocitynetwork.foundation/schemas/phone-v1.0",
   "allOf": [
     {
       "$ref": "../json-ld-context.schema.json"

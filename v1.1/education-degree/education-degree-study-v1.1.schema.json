@@ -1,6 +1,6 @@
 {
-  "title": "education-degree-study-v.1.1.schema",
-  "$id": "https://velocitynetwork.foundation/schemas/education-degree-study-v.1.1",
+  "title": "Education degree study",
+  "$id": "https://velocitynetwork.foundation/schemas/education-degree-study-v1.1",
   "allOf": [
     {
       "$ref": "./education-degree-base.schema.json"
@@ -24,7 +24,7 @@
     "institution",
     "degreeName",
     "startDate",
-    "recepient"
+    "recipient"
   ],
   "examples": [
     {
@@ -55,7 +55,7 @@
         "Nursing"
       ],
       "description": "Starfield College’s RN to BSN Online Option allows working nurses to advance your degree in as few as 3 semesters.\n If you are a registered nurse with an active RN license looking to earn your BSN, Chamberlain's online RN to BSN option can help prepare you for the next step in your career.\n Our RN to BSN online option allows you to earn your degree while you work.",
-      "recepient": {
+      "recipient": {
         "givenName": "Olivia",
         "familyName": "Hafez"          
       },

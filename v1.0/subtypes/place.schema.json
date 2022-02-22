@@ -1,6 +1,6 @@
 {
-  "title": "place.schema",
-  "$id": "https://velocitynetwork.foundation/schemas/place",
+  "title": "Place",
+  "$id": "https://velocitynetwork.foundation/schemas/place-v1.0",
   "allOf": [
     {
       "$ref": "../json-ld-context.schema.json"

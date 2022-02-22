@@ -1,6 +1,6 @@
 {
-  "title": "degree-base",
-  "$id": "https://velocitynetwork.foundation/schemas/education-degree-base",
+  "title": "Degree-base",
+  "$id": "https://velocitynetwork.foundation/schemas/education-degree-base-v1.1",
   "allOf": [
     {
       "$ref": "../json-ld-context.schema.json"
@@ -48,7 +48,7 @@
           "type": "string",
           "description": "A detailed description of the degree. "
         },
-        "recepient": {
+        "recipient": {
           "$ref": "../subtypes/personName-v.1.1.schema.json"
         },
         "alignment": {

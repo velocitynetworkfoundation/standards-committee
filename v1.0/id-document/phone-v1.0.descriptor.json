@@ -6,6 +6,9 @@
     "path": [
       "$.phone"
     ],
+  "description": {
+    "text": "Phone"
+  },
     "schema": {
       "type": "string"
     },

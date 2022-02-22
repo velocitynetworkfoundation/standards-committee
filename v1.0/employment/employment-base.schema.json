@@ -1,6 +1,6 @@
 {
-  "title": "employment-base.schema",
-  "$id": "https://velocitynetwork.foundation/schemas/employment-base",
+  "title": "Employment-base.schema",
+  "$id": "https://velocitynetwork.foundation/schemas/employment-base-v1.0",
   "allOf": [
     {
       "$ref": "../json-ld-context.schema.json"

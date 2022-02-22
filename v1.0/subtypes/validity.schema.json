@@ -1,6 +1,6 @@
 {
-  "title": "validity.schema",
-  "$id": "https://velocitynetwork.foundation/schemas/validity",
+  "title": "Validity",
+  "$id": "https://velocitynetwork.foundation/schemas/validity-v1.0",
   "allOf": [
     {
       "$ref": "../json-ld-context.schema.json"
