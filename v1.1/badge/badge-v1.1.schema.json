@@ -37,14 +37,14 @@
           "type": "string",
           "format": "uri"
         },
-        "recepient": {
+        "recipient": {
           "$ref": "../subtypes/personName-v.1.1.schema.json"
         }
       },
       "required": [
         "id",
         "type",
-        "recepient"
+        "recipient"
       ],
       "additionalProperties": false
     }

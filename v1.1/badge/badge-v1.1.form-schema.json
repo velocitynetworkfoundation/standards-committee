@@ -35,21 +35,21 @@
     "ui.title": "Image",
     "ui.widget": "file"
   },
-  "recepient": {
+  "recipient": {
     "givenName": {
-      "ui.title": "Recepient given name"
+      "ui.title": "Recipient given name"
     },
     "middleName": {
-      "ui.title": "Recepient middle name"
+      "ui.title": "Recipient middle name"
     },
     "familyName": {
-      "ui.title": "Recepient family name"
+      "ui.title": "Recipient family name"
     },
     "namePrefix": {
-      "ui.title": "Recepient name prefix"
+      "ui.title": "Recipient name prefix"
     },
     "nameSuffix": {
-      "ui.title": "Recepient name suffix"
+      "ui.title": "Recipient name suffix"
     },
     "ui:order": [
       "givenName",
@@ -63,7 +63,7 @@
     "issuer",
     "name",
     "description",
-    "recepient",
+    "recipient",
     "image"
   ]
 }

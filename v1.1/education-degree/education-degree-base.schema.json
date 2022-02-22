@@ -48,7 +48,7 @@
           "type": "string",
           "description": "A detailed description of the degree. "
         },
-        "recepient": {
+        "recipient": {
           "$ref": "../subtypes/personName-v.1.1.schema.json"
         },
         "alignment": {

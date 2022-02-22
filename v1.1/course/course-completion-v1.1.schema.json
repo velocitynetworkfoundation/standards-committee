@@ -27,7 +27,7 @@
     "provider",
     "courseName",
     "completionDate",
-    "recepient"
+    "recipient"
   ],
   "examples": [
     {
@@ -57,7 +57,7 @@
         "scoreValue": "3.8",
         "passFail": "Pass"
       },
-      "recepient": {
+      "recipient": {
         "givenName": "Olivia",
         "familyName": "Hafez"          
       }      
@@ -96,7 +96,7 @@
         "result": "partly attended",
         "passFail": "fail"
       },
-      "recepient": {
+      "recipient": {
         "givenName": "Olivia",
         "familyName": "Hafez"          
       }
@@ -121,7 +121,7 @@
       "completionDate": "2018-10-01",
       "courseType": "License examination preparation",
       "courseLevel": "Advanced",
-      "recepient": {
+      "recipient": {
         "givenName": "Olivia",
         "familyName": "Hafez"          
       },

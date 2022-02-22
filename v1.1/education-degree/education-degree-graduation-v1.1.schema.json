@@ -34,7 +34,7 @@
     "institution",
     "conferredDate",
     "degreeName",
-    "recepient"
+    "recipient"
   ],
   "examples": [
     {
@@ -75,7 +75,7 @@
       "endDate": "2013-06",
       "conferredDate": "2014-01",
       "honors": "cum laude",
-      "recepient": {
+      "recipient": {
         "givenName": "Olivia",
         "familyName": "Hafez"          
       }
@@ -129,7 +129,7 @@
         },
         "scoreValue": "95"
       },
-      "recepient": {
+      "recipient": {
         "givenName": "Olivia",
         "familyName": "Hafez"          
       }
