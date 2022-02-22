@@ -71,7 +71,7 @@
       "ui.title": "Recipient name prefix"
     },
     "nameSuffix": {
-      "ui.title": "Recepient name suffix"
+      "ui.title": "Recipient name suffix"
     },
     "ui:order": [
       "givenName",
