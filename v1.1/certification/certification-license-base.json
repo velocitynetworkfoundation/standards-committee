@@ -20,15 +20,15 @@
           "type": "string",
           "description": "Detailed description of the certification or license. "
         },
+        "recipient": {
+          "$ref": "../subtypes/personName-v1.1.schema.json"
+        },
         "alignment": {
           "type": "array",
           "description": "A public resource to which the certification or license is aligned.",
           "items": {
             "$ref": "../subtypes/alignment-v1.1.schema.json"
-          },
-        "personName": {
-          "$ref": "../subtypes/personName-v1.1.schema.json"
-          }        
+          }
         }
       }
     }

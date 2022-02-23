@@ -45,7 +45,7 @@
         },
         "recipient": {
           "$ref": "../subtypes/personName-v1.1.schema.json"
-          },
+        },
         "alignment": {
           "type": "array",
           "description": "A public resource to which the course is aligned.",
