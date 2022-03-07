@@ -95,52 +95,6 @@
         },
         {
           "type": "group",
-          "title": "Id Documents and identifiers",
-          "items": [
-            {
-              "type": "item",
-              "title": "Id Document",
-              "uri": "v1.1/id-document/id-document-v1.1.schema.json"
-            },
-            {
-              "type": "item",
-              "title": "Driver's License",
-              "uri": "v1.1/id-document/drivers-license-v1.1.schema.json"
-            },
-            {
-              "type": "item",
-              "title": "National ID Card",
-              "uri": "v1.1/id-document/national-id-card-v1.1.schema.json"
-            },
-            {
-              "type": "item",
-              "title": "Passport",
-              "uri": "v1.1/id-document/passport-v1.1.schema.json"
-            },
-            {
-              "type": "item",
-              "title": "Proof of Age",
-              "uri": "v1.1/id-document/proof-of-age-v1.1.schema.json"
-            },
-            {
-              "type": "item",
-              "title": "Resident Permit",
-              "uri": "v1.1/id-document/resident-permit-v1.1.schema.json"
-            },
-            {
-              "type": "item",
-              "title": "Email",
-              "uri": "v1.1/id-document/email-v1.1.schema.json"
-            },
-            {
-              "type": "item",
-              "title": "Phone",
-              "uri": "v1.1/id-document/phone-v1.1.schema.json"
-            }
-          ]
-        },
-        {
-          "type": "group",
           "title": "Badges",
           "items": [
             {
