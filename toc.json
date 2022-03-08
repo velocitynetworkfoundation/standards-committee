@@ -115,11 +115,6 @@
         },
         {
           "type": "item",
-          "title": "Address",
-          "uri": "v1.1/subtypes/address-v1.1.schema.json"
-        },
-        {
-          "type": "item",
           "title": "Alignment",
           "uri": "v1.1/subtypes/alignment-v1.1.schema.json"
         },
@@ -127,11 +122,6 @@
           "type": "item",
           "title": "Organization",
           "uri": "v1.1/subtypes/organization-v1.1.schema.json"
-        },
-        {
-          "type": "item",
-          "title": "Person",
-          "uri": "v1.1/subtypes/person-v1.1.schema.json"
         },
         {
           "type": "item",
