@@ -49,6 +49,15 @@
       },
       "fallback": "-"
     },
+         {
+      "label": "",
+      "path": [
+        "$.hasCredential.image"
+      ],
+      "schema": {
+        "type": "string"
+      }
+    },
     {
       "label": "Badge Id",
       "path": [
