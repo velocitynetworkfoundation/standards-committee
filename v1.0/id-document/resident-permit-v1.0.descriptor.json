@@ -6,7 +6,7 @@
     "schema": {
       "type": "string"
     },
-    "fallback": "Resident permit"
+    "fallback": "Resident Permit"
   },
   "subtitle": {
     "path": [
