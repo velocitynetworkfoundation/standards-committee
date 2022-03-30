@@ -6,7 +6,7 @@
     "schema": {
       "type": "string"
     },
-    "fallback": "Proof of age"
+    "fallback": "Proof of Age"
   },
   "subtitle": {
     "path": [

@@ -6,7 +6,7 @@
     "schema": {
       "type": "string"
     },
-    "fallback": "ID document"
+    "fallback": "ID Document"
   },
   "subtitle": {
     "path": [
