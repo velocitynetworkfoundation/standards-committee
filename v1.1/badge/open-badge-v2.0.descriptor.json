@@ -101,7 +101,7 @@
     {
       "label": "Alignment",
       "path": [
-        "$.hasCredential.alignment[0].targetName"
+        "$.alignment[0].targetName"
       ],
       "schema": {
         "type": "string"
@@ -110,7 +110,7 @@
     {
       "label": "Alignment URL",
       "path": [
-        "$.hasCredential.alignment[0].targetUrl"
+        "$.alignment[0].targetUrl"
       ],
       "schema": {
         "type": "string",
@@ -120,7 +120,7 @@
     {
       "label": "Alignment framework",
       "path": [
-        "$.hasCredential.alignment[0].targetFramework"
+        "$.alignment[0].targetFramework"
       ],
       "schema": {
         "type": "string"
