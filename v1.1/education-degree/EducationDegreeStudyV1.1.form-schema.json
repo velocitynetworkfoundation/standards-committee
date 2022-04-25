@@ -1,77 +1,77 @@
 {
   "degreeName": {
-    "ui.title": "Degree"
+    "ui:title": "Degree"
   },
   "description": {
-    "ui.title": "description"
+    "ui:title": "description"
   },
   "institution": {
     "name": {
-      "ui.title": "Institution"
+      "ui:title": "Institution"
     },
     "identifer": {
-      "ui.widget": "hidden"
+      "ui:widget": "hidden"
     },
     "place": {
-      "ui.widget": "hidden"
+      "ui:widget": "hidden"
     }
   },
   "school": {
     "name": {
-      "ui.title": "School or department"
+      "ui:title": "School or department"
     },
     "identifer": {
-      "ui.widget": "hidden"
+      "ui:widget": "hidden"
     },
     "place": {
-      "ui.widget": "hidden"
+      "ui:widget": "hidden"
     }
   },
   "programName": {
-    "ui.title": "Program"
+    "ui:title": "Program"
   },
   "programType": {
-    "ui.widget": "hidden"
+    "ui:widget": "hidden"
   },
   "programMode": {
-    "ui.widget": "hidden"
+    "ui:widget": "hidden"
   },
   "degreeMajor": {
-    "ui.title": "Major"
+    "ui:title": "Major"
   },
   "degreeMinor": {
-    "ui.title": "Minor"
+    "ui:title": "Minor"
   },
   "alignment": {
-    "ui.widget": "hidden"
+    "ui:widget": "hidden"
   },
   "registrationDate": {
-    "ui.title": "Registration date",
+    "ui:title": "Registration date",
     "ui:widget": "date"
   },
   "startDate": {
-    "ui.title": "Start date",
+    "ui:title": "Start date",
     "ui:widget": "date"
   },
   "endDate": {
-    "ui.title": "End date",
+    "ui:title": "End date",
     "ui:widget": "date"
   },
   "recipient": {
     "givenName": {
-      "ui.title": "Recipient given name"
+      "ui:title": "Recipient given name"
     },
     "middleName": {
-      "ui.title": "Recipient middle name"
+      "ui:title": "Recipient middle name"
     },
     "familyName": {
-      "ui.title": "Recipient family name"
+      "ui:title": "Recipient family name"
     },
     "namePrefix": {
-      "ui.title": "Recipient name prefix"
+      "ui:title": "Recipient name prefix"
     },
     "nameSuffix": {
-      "ui.title": "Recipient name suffix"
+      "ui:title": "Recipient name suffix"
     },
     "ui:order": [
       "givenName",

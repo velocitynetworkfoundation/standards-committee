@@ -1,5 +1,5 @@
 {
   "phone": {
-    "ui.title": "Phone number"
+    "ui:title": "Phone number"
   }
 }

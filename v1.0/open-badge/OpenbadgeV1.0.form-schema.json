@@ -1,39 +1,39 @@
 {
   "issuer": {
     "name": {
-      "ui.title": "Awarded by"
+      "ui:title": "Awarded by"
     },
     "identifer": {
-      "ui.widget": "hidden"
+      "ui:widget": "hidden"
     },
     "place": {
-      "ui.widget": "hidden"
+      "ui:widget": "hidden"
     }
   },
   "id": {
-    "ui.widget": "hidden"
+    "ui:widget": "hidden"
   },
   "type": {
-    "ui.widget": "hidden"
+    "ui:widget": "hidden"
   },
   "name": {
-    "ui.title": "Badge name"
+    "ui:title": "Badge name"
   },
   "description": {
-    "ui.title": "Description"
+    "ui:title": "Description"
   },
   "criteria": {
-    "ui.widget": "hidden"
+    "ui:widget": "hidden"
   },
   "tags": {
-    "ui.widget": "hidden"
+    "ui:widget": "hidden"
   },
   "alignment": {
-    "ui.widget": "hidden"
+    "ui:widget": "hidden"
   },
   "image": {
-    "ui.title": "Image",
-    "ui.widget": "file"
+    "ui:title": "Image",
+    "ui:widget": "file"
   },
   "ui:order": [
     "issuer",

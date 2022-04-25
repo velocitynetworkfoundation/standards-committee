@@ -1,42 +1,42 @@
 {
   "authority": {
     "name": {
-      "ui.title": "Authority"
+      "ui:title": "Authority"
     },
     "identifer": {
-      "ui.widget": "hidden"
+      "ui:widget": "hidden"
     },
     "place": {
-      "ui.widget": "hidden"
+      "ui:widget": "hidden"
     }
   },
   "name": {
-    "ui.widget": "Assessment name"
+    "ui:widget": "Assessment name"
   },
   "assesses": {
-    "ui.widget": "hidden"
+    "ui:widget": "hidden"
   },
   "description": {
-    "ui.title": "Description"
+    "ui:title": "Description"
   },
   "assessmentDate": {
-    "ui.title": "Date"
+    "ui:title": "Date"
   },
   "alignment": {
-    "ui.widget": "hidden"
+    "ui:widget": "hidden"
   },
   "score": {
     "scoreValue": {
-      "ui.title": "Score"
+      "ui:title": "Score"
     },
     "result": {
-      "ui.title": "Result"
+      "ui:title": "Result"
     },
     "passFail": {
-      "ui.title": "Pass or fail"
+      "ui:title": "Pass or fail"
     },
     "method": {
-      "ui.widget": "hidden"
+      "ui:widget": "hidden"
     },
     "ui:order": [
       "scoreValue",
@@ -45,29 +45,29 @@
     ]
   },
   "assessmentLevel": {
-    "ui.widget": "hidden"
+    "ui:widget": "hidden"
   },
   "assessmentMethod": {
-    "ui.widget": "hidden"
+    "ui:widget": "hidden"
   },
   "assessmentDimensions": {
-    "ui.widget": "hidden"
+    "ui:widget": "hidden"
   },
     "recipient": {
     "givenName": {
-      "ui.title": "Recipient given name"
+      "ui:title": "Recipient given name"
     },
     "middleName": {
-      "ui.title": "Recipient middle name"
+      "ui:title": "Recipient middle name"
     },
     "familyName": {
-      "ui.title": "Recipient family name"
+      "ui:title": "Recipient family name"
     },
     "namePrefix": {
-      "ui.title": "Recipient name prefix"
+      "ui:title": "Recipient name prefix"
     },
     "nameSuffix": {
-      "ui.title": "Recipient name suffix"
+      "ui:title": "Recipient name suffix"
     },
     "ui:order": [
       "givenName",
