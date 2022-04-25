@@ -1,57 +1,57 @@
 {
   "authority": {
     "name": {
-      "ui.title": "Authority"
+      "ui:title": "Authority"
     },
     "identifer": {
-      "ui.widget": "hidden"
+      "ui:widget": "hidden"
     },
     "place": {
-      "ui.widget": "hidden"
+      "ui:widget": "hidden"
     }
   },
   "name": {
-    "ui.title": "Certification name"
+    "ui:title": "Certification name"
   },
   "description": {
-    "ui.widget": "hidden"
+    "ui:widget": "hidden"
   },
   "identifier": {
-    "ui.title": "Certification number"
+    "ui:title": "Certification number"
   },
   "validity": {
     "firstValidFrom": {
-      "ui.title": "Date issued",
+      "ui:title": "Date issued",
       "ui:widget": "date"
     },
     "validFrom": {
-      "ui.title": "Date renewed",
+      "ui:title": "Date renewed",
       "ui:widget": "date"
     },
     "validUntil": {
-      "ui.title": "Valid until",
+      "ui:title": "Valid until",
       "ui:widget": "date"
     },
     "validIn": {
       "name": {
-        "ui.widget": "hidden"
+        "ui:widget": "hidden"
       },
       "addressCountry": {
-        "ui.title": "Valid in country",
+        "ui:title": "Valid in country",
         "ui:enum": [
           "TARGET_COUNTRIES_ENUM"
         ],
         "ui:widget": "select"
       },
       "addressRegion": {
-        "ui.title": "Valid in state or region",
+        "ui:title": "Valid in state or region",
         "ui:enum": [
           "TARGET_REGIONS_ENUM"
         ],
         "ui:widget": "select"
       },
       "addressLocality": {
-        "ui.title": "Valid in locality"
+        "ui:title": "Valid in locality"
       },
       "ui:order": [
         "addressLocality",
@@ -68,19 +68,19 @@
   },
   "recipient": {
     "givenName": {
-      "ui.title": "Recipient given name"
+      "ui:title": "Recipient given name"
     },
     "middleName": {
-      "ui.title": "Recipient middle name"
+      "ui:title": "Recipient middle name"
     },
     "familyName": {
-      "ui.title": "Recipient family name"
+      "ui:title": "Recipient family name"
     },
     "namePrefix": {
-      "ui.title": "Recipient name prefix"
+      "ui:title": "Recipient name prefix"
     },
     "nameSuffix": {
-      "ui.title": "Recipient name suffix"
+      "ui:title": "Recipient name suffix"
     },
     "ui:order": [
       "givenName",
@@ -91,7 +91,7 @@
     ]
   },
   "alignment": {
-    "ui.widget": "hidden"
+    "ui:widget": "hidden"
   },
   "ui:order": [
     "authority",

@@ -1,17 +1,17 @@
 {
   "authority": {
     "name": {
-      "ui.title": "Issued by"
+      "ui:title": "Issued by"
     },
     "identifer": {
-      "ui.widget": "hidden"
+      "ui:widget": "hidden"
     },
     "place": {
       "name": {
-        "ui.widget": "hidden"
+        "ui:widget": "hidden"
       },
       "addressCountry": {
-        "ui.title": "Country",
+        "ui:title": "Country",
         "ui:enum": [
           "TARGET_COUNTRIES_ENUM"
         ],
@@ -21,7 +21,7 @@
         "ui:widget": "hidden"
       },
       "addressLocality": {
-        "ui.widget": "hidden"
+        "ui:widget": "hidden"
       }
     },
     "ui:order": [
@@ -30,26 +30,26 @@
     ]
   },
   "identifier": {
-    "ui.title": "Passport number"
+    "ui:title": "Passport number"
   },
   "documentCode": {
-    "ui.title": "Passport type"
+    "ui:title": "Passport type"
   },
   "validity": {
     "firstValidFrom": {
-      "ui.title": "Date issued",
+      "ui:title": "Date issued",
       "ui:widget": "date"
     },
     "validFrom": {
-      "ui.title": "Date renewed",
+      "ui:title": "Date renewed",
       "ui:widget": "date"
     },
     "validUntil": {
-      "ui.title": "Valid until",
+      "ui:title": "Valid until",
       "ui:widget": "date"
     },
     "validIn": {
-      "ui.widget": "hidden"
+      "ui:widget": "hidden"
     },
     "ui:order": [
       "firstValidFrom",
@@ -59,44 +59,44 @@
   },
   "person": {
     "givenName": {
-      "ui.title": "Given Name"
+      "ui:title": "Given Name"
     },
     "additionalName": {
-      "ui.title": "Middle name"
+      "ui:title": "Middle name"
     },
     "familyName": {
-      "ui.title": "Family name"
+      "ui:title": "Family name"
     },
     "namePrefix": {
-      "ui.title": "Name prefix"
+      "ui:title": "Name prefix"
     },
     "nameSuffix": {
-      "ui.title": "Name suffix"
+      "ui:title": "Name suffix"
     },
     "birthDate": {
-      "ui.title": "Birth date",
+      "ui:title": "Birth date",
       "ui:widget": "date"
     },
     "birthPlace": {
       "name": {
-        "ui.widget": "hidden"
+        "ui:widget": "hidden"
       },
       "addressCountry": {
-        "ui.title": "Country of birth",
+        "ui:title": "Country of birth",
         "ui:enum": [
           "TARGET_COUNTRIES_ENUM"
         ],
         "ui:widget": "select"
       },
       "addressRegion": {
-        "ui.title": "Region or state of birth",
+        "ui:title": "Region or state of birth",
         "ui:enum": [
           "TARGET_REGIONS_ENUM"
         ],
         "ui:widget": "select"
       },
       "addressLocality": {
-        "ui.title": "Place of birth"
+        "ui:title": "Place of birth"
       },
       "ui:order": [
         "addressCountry",
@@ -105,7 +105,7 @@
       ]
     },
     "gender": {
-      "ui.title": "Gender"
+      "ui:title": "Gender"
     },
     "ui:order": [
       "givenName",
@@ -119,7 +119,7 @@
     ]
   },
   "nationality": {
-    "ui.title": "Nationality"
+    "ui:title": "Nationality"
   },
   "ui:order": [
     "authority",

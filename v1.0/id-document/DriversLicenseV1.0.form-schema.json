@@ -1,34 +1,34 @@
 {
   "name": {
-    "ui.title": "License name"
+    "ui:title": "License name"
   },
   "authority": {
     "name": {
-      "ui.title": "Issued by"
+      "ui:title": "Issued by"
     },
     "identifer": {
-      "ui.widget": "hidden"
+      "ui:widget": "hidden"
     },
     "place": {
       "name": {
-        "ui.widget": "hidden"
+        "ui:widget": "hidden"
       },
       "addressCountry": {
-        "ui.title": "Country",
+        "ui:title": "Country",
         "ui:enum": [
           "TARGET_COUNTRIES_ENUM"
         ],
         "ui:widget": "select"
       },
       "addressRegion": {
-        "ui.title": "Region or state",
+        "ui:title": "Region or state",
         "ui:enum": [
           "TARGET_REGIONS_ENUM"
         ],
         "ui:widget": "select"
       },
       "addressLocality": {
-        "ui.widget": "hidden"
+        "ui:widget": "hidden"
       },
       "ui:order": [
         "addressCountry",
@@ -41,23 +41,23 @@
     ]
   },
   "identifier": {
-    "ui.title": "License number"
+    "ui:title": "License number"
   },
   "validity": {
     "firstValidFrom": {
-      "ui.title": "Date issued",
+      "ui:title": "Date issued",
       "ui:widget": "date"
     },
     "validFrom": {
-      "ui.title": "Date renewed",
+      "ui:title": "Date renewed",
       "ui:widget": "date"
     },
     "validUntil": {
-      "ui.title": "Valid until",
+      "ui:title": "Valid until",
       "ui:widget": "date"
     },
     "validIn": {
-      "ui.widget": "hidden"
+      "ui:widget": "hidden"
     },
     "ui:order": [
       "firstValidFrom",
@@ -66,57 +66,57 @@
     ]
   },
   "description": {
-    "ui.widget": "hidden"
+    "ui:widget": "hidden"
   },
   "endorsementCode": {
-    "ui.widget": "hidden"
+    "ui:widget": "hidden"
   },
   "restrictionCode": {
-    "ui.widget": "hidden"
+    "ui:widget": "hidden"
   },
   "alignment": {
-    "ui.widget": "hidden"
+    "ui:widget": "hidden"
   },
   "person": {
     "givenName": {
-      "ui.title": "Given Name"
+      "ui:title": "Given Name"
     },
     "additionalName": {
-      "ui.title": "Middle name"
+      "ui:title": "Middle name"
     },
     "familyName": {
-      "ui.title": "Family name"
+      "ui:title": "Family name"
     },
     "namePrefix": {
-      "ui.title": "Name prefix"
+      "ui:title": "Name prefix"
     },
     "nameSuffix": {
-      "ui.title": "Name suffix"
+      "ui:title": "Name suffix"
     },
     "birthDate": {
-      "ui.title": "Birth date",
+      "ui:title": "Birth date",
       "ui:widget": "date"
     },
     "birthPlace": {
       "name": {
-        "ui.widget": "hidden"
+        "ui:widget": "hidden"
       },
       "addressCountry": {
-        "ui.title": "Country of birth",
+        "ui:title": "Country of birth",
         "ui:enum": [
           "TARGET_COUNTRIES_ENUM"
         ],
         "ui:widget": "select"
       },
       "addressRegion": {
-        "ui.title": "Region or state of birth",
+        "ui:title": "Region or state of birth",
         "ui:enum": [
           "TARGET_REGIONS_ENUM"
         ],
         "ui:widget": "select"
       },
       "addressLocality": {
-        "ui.title": "Place of birth"
+        "ui:title": "Place of birth"
       },
       "ui:order": [
         "addressCountry",
@@ -125,7 +125,7 @@
       ]
     },
     "gender": {
-      "ui.title": "Gender"
+      "ui:title": "Gender"
     },
     "ui:order": [
       "givenName",
@@ -140,27 +140,27 @@
   },
   "address": {
     "addressCountry": {
-      "ui.title": "Address country",
+      "ui:title": "Address country",
       "ui:enum": [
         "TARGET_COUNTRIES_ENUM"
       ],
       "ui:widget": "select"
     },
     "addressRegion": {
-      "ui.title": "Region or state of birth",
+      "ui:title": "Region or state of birth",
       "ui:enum": [
         "TARGET_REGIONS_ENUM"
       ],
       "ui:widget": "select"
     },
     "addressLocality": {
-      "ui.title": "Address locality"
+      "ui:title": "Address locality"
     },
     "streetAddress": {
-      "ui.title": "Street address"
+      "ui:title": "Street address"
     },
     "postCode": {
-      "ui.title": "Post code"
+      "ui:title": "Post code"
     },
     "ui:order": [
       "addressCountry",

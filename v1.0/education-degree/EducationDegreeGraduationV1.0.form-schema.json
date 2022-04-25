@@ -1,65 +1,65 @@
 {
   "degreeName": {
-    "ui.title": "Degree"
+    "ui:title": "Degree"
   },
   "description": {
-    "ui.title": "description"
+    "ui:title": "description"
   },
   "institution": {
     "name": {
-      "ui.title": "Institution"
+      "ui:title": "Institution"
     },
     "identifer": {
-      "ui.widget": "hidden"
+      "ui:widget": "hidden"
     },
     "place": {
-      "ui.widget": "hidden"
+      "ui:widget": "hidden"
     }
   },
   "school": {
     "name": {
-      "ui.title": "School or department"
+      "ui:title": "School or department"
     },
     "identifer": {
-      "ui.widget": "hidden"
+      "ui:widget": "hidden"
     },
     "place": {
-      "ui.widget": "hidden"
+      "ui:widget": "hidden"
     }
   },
   "programName": {
-    "ui.title": "Program"
+    "ui:title": "Program"
   },
   "programType": {
-    "ui.widget": "hidden"
+    "ui:widget": "hidden"
   },
   "programMode": {
-    "ui.widget": "hidden"
+    "ui:widget": "hidden"
   },
   "degreeMajor": {
-    "ui.title": "Major"
+    "ui:title": "Major"
   },
   "degreeMinor": {
-    "ui.title": "Minor"
+    "ui:title": "Minor"
   },
   "honors": {
-    "ui.title": "Honors"
+    "ui:title": "Honors"
   },
   "alignment": {
-    "ui.widget": "hidden"
+    "ui:widget": "hidden"
   },
   "grade": {
     "scoreValue": {
-      "ui.title": "Grade"
+      "ui:title": "Grade"
     },
     "result": {
-      "ui.title": "Result"
+      "ui:title": "Result"
     },
     "passFail": {
-      "ui.title": "Pass or fail"
+      "ui:title": "Pass or fail"
     },
     "method": {
-      "ui.widget": "hidden"
+      "ui:widget": "hidden"
     },
     "ui:order": [
       "scoreValue",
@@ -68,19 +68,19 @@
     ]
   },
   "registrationDate": {
-    "ui.title": "Registration date",
+    "ui:title": "Registration date",
     "ui:widget": "date"
   },
   "startDate": {
-    "ui.title": "Start date",
+    "ui:title": "Start date",
     "ui:widget": "date"
   },
   "endDate": {
-    "ui.title": "End date",
+    "ui:title": "End date",
     "ui:widget": "date"
   },
   "conferredDate": {
-    "ui.title": "Date conferred",
+    "ui:title": "Date conferred",
     "ui:widget": "date"
   },
   "ui:order": [
