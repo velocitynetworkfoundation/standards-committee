@@ -6,7 +6,7 @@
     "name": {
       "ui:title": "Issued by"
     },
-    "identifer": {
+    "identifier": {
       "ui:widget": "hidden"
     },
     "place": {
