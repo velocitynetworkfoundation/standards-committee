@@ -3,7 +3,7 @@
     "name": {
       "ui:title": "Awarded by"
     },
-    "identifer": {
+    "identifier": {
       "ui:widget": "hidden"
     },
     "place": {

@@ -3,7 +3,7 @@
     "name": {
       "ui:title": "Authority"
     },
-    "identifer": {
+    "identifier": {
       "ui:widget": "hidden"
     },
     "place": {

@@ -12,7 +12,7 @@
     "name": {
       "ui:title": "Course provider"
     },
-    "identifer": {
+    "identifier": {
       "ui:widget": "hidden"
     },
     "place": {

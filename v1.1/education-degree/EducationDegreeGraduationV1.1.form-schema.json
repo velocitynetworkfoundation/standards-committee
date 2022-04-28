@@ -9,7 +9,7 @@
     "name": {
       "ui:title": "Institution"
     },
-    "identifer": {
+    "identifier": {
       "ui:widget": "hidden"
     },
     "place": {
@@ -20,7 +20,7 @@
     "name": {
       "ui:title": "School or department"
     },
-    "identifer": {
+    "identifier": {
       "ui:widget": "hidden"
     },
     "place": {

@@ -3,7 +3,7 @@
     "name": {
       "ui:title": "Employer"
     },
-    "identifer": {
+    "identifier": {
       "ui:widget": "hidden"
     },
     "place": {
