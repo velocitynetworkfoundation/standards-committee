@@ -59,7 +59,7 @@
     "passFail": {
       "ui:title": "Pass or fail"
     },
-    "method": {
+    "scoreMethod": {
       "ui:widget": "hidden"
     },
     "ui:order": [
