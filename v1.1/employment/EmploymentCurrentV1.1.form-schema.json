@@ -44,7 +44,7 @@
     "ui:order": [
       "addressLocality",
       "addressRegion",
-      "Country"
+      "addressCountry"
     ]
   },
   "employmentType": {
