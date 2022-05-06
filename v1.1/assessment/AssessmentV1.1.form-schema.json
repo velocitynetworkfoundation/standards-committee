@@ -11,7 +11,7 @@
     }
   },
   "name": {
-    "ui:widget": "Assessment name"
+    "ui:title": "Assessment name"
   },
   "assesses": {
     "ui:widget": "hidden"
