@@ -20,7 +20,8 @@
     "ui:title": "Description"
   },
   "assessmentDate": {
-    "ui:title": "Date"
+    "ui:title": "Date",
+    "ui:widget": "date"
   },
   "alignment": {
     "ui:widget": "hidden"
