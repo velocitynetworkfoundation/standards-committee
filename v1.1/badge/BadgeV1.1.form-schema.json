@@ -1,69 +1,71 @@
 {
-  "issuer": {
+  "hasCredential": {
+    "issuer": {
+      "name": {
+        "ui:title": "Awarded by"
+      },
+      "identifier": {
+        "ui:widget": "hidden"
+      },
+      "place": {
+        "ui:widget": "hidden"
+      }
+    },
+    "id": {
+      "ui:widget": "hidden"
+    },
+    "type": {
+      "ui:widget": "hidden"
+    },
     "name": {
-      "ui:title": "Awarded by"
+      "ui:title": "Badge name"
     },
-    "identifier": {
+    "description": {
+      "ui:title": "Description"
+    },
+    "criteria": {
       "ui:widget": "hidden"
     },
-    "place": {
+    "tags": {
       "ui:widget": "hidden"
-    }
-  },
-  "id": {
-    "ui:widget": "hidden"
-  },
-  "type": {
-    "ui:widget": "hidden"
-  },
-  "name": {
-    "ui:title": "Badge name"
-  },
-  "description": {
-    "ui:title": "Description"
-  },
-  "criteria": {
-    "ui:widget": "hidden"
-  },
-  "tags": {
-    "ui:widget": "hidden"
-  },
-  "alignment": {
-    "ui:widget": "hidden"
-  },
-  "image": {
-    "ui:title": "Image",
-    "ui:widget": "file"
-  },
-  "recipient": {
-    "givenName": {
-      "ui:title": "Recipient given name"
     },
-    "middleName": {
-      "ui:title": "Recipient middle name"
+    "alignment": {
+      "ui:widget": "hidden"
     },
-    "familyName": {
-      "ui:title": "Recipient family name"
+    "image": {
+      "ui:title": "Image",
+      "ui:widget": "file"
     },
-    "namePrefix": {
-      "ui:title": "Recipient name prefix"
-    },
-    "nameSuffix": {
-      "ui:title": "Recipient name suffix"
+    "recipient": {
+      "givenName": {
+        "ui:title": "Recipient given name"
+      },
+      "middleName": {
+        "ui:title": "Recipient middle name"
+      },
+      "familyName": {
+        "ui:title": "Recipient family name"
+      },
+      "namePrefix": {
+        "ui:title": "Recipient name prefix"
+      },
+      "nameSuffix": {
+        "ui:title": "Recipient name suffix"
+      },
+      "ui:order": [
+        "givenName",
+        "middleName",
+        "familyName",
+        "namePrefix",
+        "nameSuffix"
+      ]
     },
     "ui:order": [
-      "givenName",
-      "middleName",
-      "familyName",
-      "namePrefix",
-      "nameSuffix"
+        "issuer", 
+        "name", 
+        "description", 
+        "recipient", 
+        "image"
     ]
-  },
-  "ui:order": [
-    "issuer",
-    "name",
-    "description",
-    "recipient",
-    "image"
-  ]
+  }
 }
