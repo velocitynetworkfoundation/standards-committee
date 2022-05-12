@@ -28,7 +28,7 @@
     "name": {
       "ui:widget": "hidden"
     },
-    "Country": {
+    "addressCountry": {
       "ui:title": "Country of work",
       "ui:enum": [
         "TARGET_COUNTRIES_ENUM"
@@ -48,7 +48,7 @@
     "ui:order": [
       "addressLocality",
       "addressRegion",
-      "Country"
+      "addressCountry"
     ]
   },
   "employmentType": {
