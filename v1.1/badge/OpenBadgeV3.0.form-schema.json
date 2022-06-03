@@ -1,0 +1,35 @@
+{
+  "type": {
+    "ui:widget": "hidden"
+  },
+  "achievemnt": {
+    "type": {
+      "ui:title": "Achievement type"
+    },
+    "name": {
+      "ui:title": "Achievement name"
+    },
+    "description": {
+      "ui:title": "Achievement description"
+    },
+    "criteria": {
+    "type": {
+      "ui:widget": "hidden"
+    },
+    "narrative": {
+      "ui:title": "Criteria"
+    } 
+   },
+    "image": {
+      "ui:title": "Image",
+      "ui:widget": "file"
+    },
+    "ui:order": [
+    "type",
+    "name",
+    "description",
+    "criteria",
+    "image"
+  ]
+ }
+}

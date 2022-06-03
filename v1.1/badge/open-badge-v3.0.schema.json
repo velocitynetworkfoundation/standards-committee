@@ -1,0 +1,63 @@
+{
+  "title": "Open badge",
+  "$id": "https://velocitynetwork.foundation/schemas/open-badge-v3.0",
+  "examples": [
+    {
+      "type": "AchievementSubject",
+      "achievement": {
+        "type": "Achievement",
+        "name": "Our Wallet Passed JFF Plugfest #1 2022",
+        "description": "This wallet can display this Open Badge 3.0",
+        "criteria": {
+          "type": "Criteria",
+          "narrative": "The first cohort of the JFF Plugfest 1 in May/June of 2021 collaborated to push interoperability of VCs in education forward."
+        },
+        "image": "https://w3c-ccg.github.io/vc-ed/plugfest-1-2022/images/plugfest-1-badge-image.png"
+      }
+    }
+  ],
+  "type": "object",
+  "description": "Open badge v3.0",
+  "properties": {
+    "type": {
+      "type": "string"
+    },
+    "achievement": {
+      "type": "object",
+      "required": [
+        "name"
+      ],
+      "properties": {
+        "type": {
+          "type": "string"
+        },
+        "name": {
+          "type": "string"
+        },
+        "description": {
+          "type": "string"
+        },
+        "criteria": {
+          "type": [
+            "string",
+            "object"
+          ],
+          "properties": {
+            "type": {
+              "type": "string"
+            },
+            "narrative": {
+              "type": "string"
+            }
+          }
+        },
+        "image": {
+          "type": "string"
+        }
+      }
+    }
+  },
+  "required": [
+    "achievement"
+  ]
+}
