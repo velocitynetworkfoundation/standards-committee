@@ -1,0 +1,81 @@
+{
+  "title": {
+    "path": [
+      "$.achievement.type"
+      ],
+    "schema": {
+      "type": "string"
+    },
+    "fallback": "Badge"
+  },
+  "subtitle": {
+    "path": [
+      "$.achievement.name"
+    ],
+    "schema": {
+      "type": "string"
+    },
+    "fallback": "-"
+  },
+  "summary_detail": {
+    "path": [
+      "$.type"
+    ],
+    "schema": {
+      "type": "string"
+    },
+    "fallback": "-"
+  },
+  "description": {
+    "text": "Open badge"
+  },
+  "logo": {
+    "path": [
+      "$.achievement.image"
+    ],
+    "schema": {
+      "type": "string",
+      "format": "uri"
+    }
+  },
+  "properties": [
+    {
+      "label": "Achievement type",
+      "path": [
+        "$.achievement.type"
+      ],
+      "schema": {
+        "type": "string"
+      },
+      "fallback": "-"
+    },
+    {
+      "label": "Description",
+      "path": [
+        "$.achievement.description"
+      ],
+      "schema": {
+        "type": "string"
+      },
+      "fallback": "-"
+    },
+    {
+      "label": "Criteria",
+      "path": [
+        "$.achievement.criteria.narrative"
+      ],
+      "schema": {
+        "type": "string"
+      }
+    },
+    {
+      "label": "Criteria type",
+      "path": [
+        "$.achievement.criteria.type"
+      ],
+      "schema": {
+        "type": "string"
+      }
+    }
+  ]
+}
