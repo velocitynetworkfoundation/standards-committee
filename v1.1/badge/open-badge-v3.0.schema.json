@@ -39,7 +39,6 @@
         },
         "criteria": {
           "type": [
-            "string",
             "object"
           ],
           "properties": {
