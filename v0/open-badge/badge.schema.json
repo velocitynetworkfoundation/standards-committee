@@ -89,10 +89,7 @@
           "format": "uri"
         },
         "type": {
-          "type": "string",
-          "enum": [
-            "BadgeClass"
-          ]
+          "type": "string"
         },
         "name": {
           "type": "string",
