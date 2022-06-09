@@ -65,9 +65,6 @@
         },
         "type": {
           "type": "string",
-          "enum": [
-            "BadgeClass"
-          ],
           "description": "valid JSON-LD representation of the BadgeClass type. In most cases, this will simply be the string BadgeClass. An array including BadgeClass and other string elements that are either URLs or compact IRIs within the current context are allowed."
         },
         "name": {

@@ -67,7 +67,7 @@
   "ui:order": [
     "provider",
     "courseName",
-    "Description",
+    "description",
     "registrationDate",
     "startDate",
     "grade",
