@@ -74,7 +74,7 @@
     {
       "label": "Type",
       "path": [
-        "$.hasCredential.criteria"
+        "$.hasCredential.type"
       ],
       "schema": {
         "type": "string"

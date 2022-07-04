@@ -78,6 +78,15 @@
       }
     },
     {
+      "label": "Type",
+      "path": [
+        "$.hasCredential.type"
+      ],
+      "schema": {
+        "type": "string"
+      }
+    },
+    {
       "label": "Criteria",
       "path": [
         "$.hasCredential.criteria"
