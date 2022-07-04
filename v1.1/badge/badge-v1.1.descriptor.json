@@ -9,13 +9,7 @@
     "fallback": "-"
   },
   "subtitle": {
-    "path": [
-      "$.hasCredential.type"
-    ],
-    "schema": {
-      "type": "string"
-    },
-    "fallback": "-"
+    "text": "Badge"
   },
   "summary_detail": {
     "path": [
@@ -49,7 +43,7 @@
       },
       "fallback": "-"
     },
-         {
+     {
       "label": "",
       "path": [
         "$.hasCredential.image"
