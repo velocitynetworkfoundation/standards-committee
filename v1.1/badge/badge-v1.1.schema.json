@@ -37,21 +37,20 @@
         "image": {
           "type": "string",
           "format": "uri"
-        },
-        "recipient": {
-          "$ref": "../subtypes/personName-v1.1.schema.json"
         }
       },
       "required": [
         "id",
-        "type",
-        "recipient"
+        "type"
       ],
       "additionalProperties": false
     }
   },
   "additionalProperties": false,
   "properties": {
+    "recipient": {
+      "$ref": "../subtypes/personName-v1.1.schema.json"
+    },
     "hasCredential": {
       "type": "object",
       "required": [
@@ -125,10 +124,15 @@
     }
   },
   "required": [
-    "hasCredential"
+    "hasCredential",
+    "recipient"
   ],
   "examples": [
     {
+      "recipient": {
+        "givenName": "Olivia",
+        "familyName": "Hafez"
+      },
       "hasCredential": {
         "id": "http://example.com",
         "type": "BadgeClass",
