@@ -37,21 +37,20 @@
         "image": {
           "type": "string",
           "format": "uri"
-        },
-        "recipient": {
-          "$ref": "../subtypes/personName-v1.1.schema.json"
         }
       },
       "required": [
         "id",
-        "type",
-        "recipient"
+        "type"
       ],
       "additionalProperties": false
     }
   },
   "additionalProperties": false,
   "properties": {
+    "recipient": {
+      "$ref": "../subtypes/personName-v1.1.schema.json"
+    },
     "hasCredential": {
       "type": "object",
       "required": [
@@ -70,6 +69,7 @@
         },
         "type": {
           "type": "string",
+          "default": "BadgeClass",
           "description": "valid JSON-LD representation of the BadgeClass type. In most cases, this will simply be the string BadgeClass. An array including BadgeClass and other string elements that are either URLs or compact IRIs within the current context are allowed."
         },
         "name": {
@@ -125,10 +125,15 @@
     }
   },
   "required": [
-    "hasCredential"
+    "hasCredential",
+    "recipient"
   ],
   "examples": [
     {
+      "recipient": {
+        "givenName": "Olivia",
+        "familyName": "Hafez"
+      },
       "hasCredential": {
         "id": "http://example.com",
         "type": "BadgeClass",

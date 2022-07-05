@@ -78,10 +78,10 @@
         "validFrom": "2015-01-18",
         "validUntil": "2025-01-01"
       },
-        "recipient": {
-          "givenName": "Olivia",
-          "familyName": "Hafez"          
-        },
+      "recipient": {
+        "givenName": "Olivia",
+        "familyName": "Hafez"
+      },
       "alignment": [
         {
           "targetName": "Azure Solutions Architect Expert Certification",
