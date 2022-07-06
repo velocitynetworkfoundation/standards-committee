@@ -9,13 +9,7 @@
     "fallback": "-"
   },
   "subtitle": {
-    "path": [
-      "$.hasCredential.type"
-    ],
-    "schema": {
-      "type": "string"
-    },
-    "fallback": "-"
+    "text": "Open Badge"
   },
   "summary_detail": {
     "path": [
