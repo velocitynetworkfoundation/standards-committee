@@ -33,7 +33,7 @@
       }
     }
   ],
-    "required": [
+  "required": [
     "authority",
     "name",
     "identifier",
@@ -63,10 +63,10 @@
           "addressCountry": "US"
         }
       },
-        "recipient": {
-          "givenName": "Olivia",
-          "familyName": "Hafez"          
-        }
+      "recipient": {
+        "givenName": "Olivia",
+        "familyName": "Hafez"
+      }
     },
     {
       "@context": "https://velocitynetwork.foundation/contexts/certification-license",
@@ -90,10 +90,10 @@
           "addressCountry": "US"
         }
       },
-        "personName": {
-          "givenName": "Olivia",
-          "familyName": "Hafez"          
-        }
+      "personName": {
+        "givenName": "Olivia",
+        "familyName": "Hafez"
+      }
     },
     {
       "@context": "https://velocitynetwork.foundation/contexts/certification-license",
@@ -113,15 +113,12 @@
         "validFrom": "2009-08-21",
         "validUntil": "2014-08-21"
       },
-        "personName": {
-          "givenName": "Olivia",
-          "familyName": "Hafez"          
-        },
-      "endorsementCode": 
-        "A-H Hazardous materials"
-      ,
-      "restrictionCode": 
-        "Spectscles or contact lenses required"      
+      "recipient": {
+        "givenName": "Olivia",
+        "familyName": "Hafez"
+      },
+      "endorsementCode": "A-H Hazardous materials",
+      "restrictionCode": "Spectacles or contact lenses required"
     }
   ]
 }
