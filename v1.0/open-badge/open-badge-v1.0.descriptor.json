@@ -43,7 +43,7 @@
       },
       "fallback": "-"
     },
-     {
+    {
       "label": "",
       "path": [
         "$.hasCredential.image"
@@ -66,6 +66,15 @@
       "label": "Description",
       "path": [
         "$.hasCredential.description"
+      ],
+      "schema": {
+        "type": "string"
+      }
+    },
+    {
+      "label": "Type",
+      "path": [
+        "$.hasCredential.type"
       ],
       "schema": {
         "type": "string"
@@ -95,7 +104,7 @@
     {
       "label": "Alignment",
       "path": [
-        "$.alignment[0].targetName"
+        "$.hasCredential.alignment[0].targetName"
       ],
       "schema": {
         "type": "string"
@@ -104,7 +113,7 @@
     {
       "label": "Alignment URL",
       "path": [
-        "$.alignment[0].targetUrl"
+        "$.hasCredential.alignment[0].targetUrl"
       ],
       "schema": {
         "type": "string",
@@ -114,7 +123,7 @@
     {
       "label": "Alignment framework",
       "path": [
-        "$.alignment[0].targetFramework"
+        "$.hasCredential.alignment[0].targetFramework"
       ],
       "schema": {
         "type": "string"
