@@ -33,8 +33,7 @@
       "ui:widget": "hidden"
     },
     "image": {
-      "ui:title": "Image",
-      "ui:widget": "file"
+      "ui:widget": "hidden"
     },
     "recipient": {
       "givenName": {
@@ -64,8 +63,7 @@
       "issuer",
       "name",
       "description",
-      "recipient",
-      "image"
+      "recipient"
     ]
   }
 }
