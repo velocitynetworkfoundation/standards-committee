@@ -33,14 +33,12 @@
       "ui:widget": "hidden"
     },
     "image": {
-      "ui:title": "Image",
-      "ui:widget": "file"
+      "ui:widget": "hidden"
     },
     "ui:order": [
       "issuer",
       "name",
-      "description",
-      "image"
+      "description"
     ]
   }
 }
