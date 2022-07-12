@@ -46,7 +46,7 @@
           "$ref": "../subtypes/place-v1.1.schema.json"
         },
         "recipient": {
-         "$ref": "../subtypes/personName-v1.1.schema.json"
+          "$ref": "../subtypes/personName-v1.1.schema.json"
         },
         "alignment": {
           "type": "array",
@@ -58,5 +58,5 @@
       }
     }
   ],
-  "x-internal": true
+  "x-internal": false
 }
