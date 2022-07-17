@@ -15,6 +15,9 @@
         "ui:enum": [
           "TARGET_COUNTRIES_ENUM"
         ],
+        "ui:enumNames": [
+          "TARGET_COUNTRIES_ENUM_NAMES"
+        ],
         "ui:widget": "select"
       },
       "addressRegion": {
@@ -83,12 +86,18 @@
         "ui:enum": [
           "TARGET_COUNTRIES_ENUM"
         ],
+        "ui:enumNames": [
+          "TARGET_COUNTRIES_ENUM_NAMES"
+        ],
         "ui:widget": "select"
       },
       "addressRegion": {
         "ui:title": "Region or state of birth",
         "ui:enum": [
           "TARGET_REGIONS_ENUM"
+        ],
+        "ui:enumNames": [
+          "TARGET_REGIONS_ENUM_NAMES"
         ],
         "ui:widget": "select"
       },
@@ -124,12 +133,18 @@
       "ui:enum": [
         "TARGET_COUNTRIES_ENUM"
       ],
+      "ui:enumNames": [
+        "TARGET_COUNTRIES_ENUM_NAMES"
+      ],
       "ui:widget": "select"
     },
     "addressRegion": {
       "ui:title": "Address region or state",
       "ui:enum": [
         "TARGET_REGIONS_ENUM"
+      ],
+      "ui:enumNames": [
+        "TARGET_REGIONS_ENUM_NAMES"
       ],
       "ui:widget": "select"
     },
