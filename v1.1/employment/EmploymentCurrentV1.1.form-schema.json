@@ -29,6 +29,9 @@
       "ui:enum": [
         "TARGET_COUNTRIES_ENUM"
       ],
+      "ui:enumNames": [
+        "TARGET_COUNTRIES_ENUM_NAMES"
+      ],
       "ui:widget": "select"
     },
     "addressRegion": {
