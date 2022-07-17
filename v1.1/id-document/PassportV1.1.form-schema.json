@@ -99,6 +99,9 @@
         "ui:enum": [
           "TARGET_REGIONS_ENUM"
         ],
+        "ui:enumNames": [
+          "TARGET_REGIONS_ENUM_NAMES"
+        ],
         "ui:widget": "select"
       },
       "addressLocality": {

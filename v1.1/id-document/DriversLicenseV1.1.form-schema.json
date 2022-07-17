@@ -28,6 +28,9 @@
         "ui:enum": [
           "TARGET_REGIONS_ENUM"
         ],
+        "ui:enumNames": [
+          "TARGET_REGIONS_ENUM_NAMES"
+        ],
         "ui:widget": "select"
       },
       "addressLocality": {
@@ -119,6 +122,9 @@
         "ui:enum": [
           "TARGET_REGIONS_ENUM"
         ],
+        "ui:enumNames": [
+          "TARGET_REGIONS_ENUM_NAMES"
+        ],
         "ui:widget": "select"
       },
       "addressLocality": {
@@ -159,6 +165,9 @@
       "ui:title": "Region or state of birth",
       "ui:enum": [
         "TARGET_REGIONS_ENUM"
+      ],
+      "ui:enumNames": [
+        "TARGET_REGIONS_ENUM_NAMES"
       ],
       "ui:widget": "select"
     },
