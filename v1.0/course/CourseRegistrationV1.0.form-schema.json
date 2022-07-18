@@ -12,7 +12,7 @@
     "name": {
       "ui:title": "Course provider"
     },
-    "identifer": {
+    "identifier": {
       "ui:widget": "hidden"
     },
     "place": {
@@ -48,7 +48,7 @@
   "ui:order": [
     "provider",
     "courseName",
-    "Description",
+    "description",
     "registrationDate",
     "startDate",
     "courseDuration"

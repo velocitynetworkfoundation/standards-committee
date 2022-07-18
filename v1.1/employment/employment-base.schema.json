@@ -46,9 +46,9 @@
           "$ref": "../subtypes/place-v1.1.schema.json"
         },
         "recipient": {
-         "$ref": "../subtypes/personName-v1.1.schema.json"
+          "$ref": "../subtypes/personName-v1.1.schema.json"
         },
-        "alignment ": {
+        "alignment": {
           "type": "array",
           "description": "A public resource to which the employment position is aligned.",
           "items": {
@@ -58,5 +58,5 @@
       }
     }
   ],
-  "x-internal": true
+  "x-internal": false
 }

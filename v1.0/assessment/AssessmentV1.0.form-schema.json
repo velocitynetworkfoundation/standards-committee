@@ -3,7 +3,7 @@
     "name": {
       "ui:title": "Authority"
     },
-    "identifer": {
+    "identifier": {
       "ui:widget": "hidden"
     },
     "place": {
@@ -11,7 +11,7 @@
     }
   },
   "name": {
-    "ui:widget": "Assessment name"
+    "ui:title": "Assessment name"
   },
   "assesses": {
     "ui:widget": "hidden"
@@ -20,7 +20,8 @@
     "ui:title": "Description"
   },
   "assessmentDate": {
-    "ui:title": "Date"
+    "ui:title": "Date",
+    "ui:widget": "date"
   },
   "alignment": {
     "ui:widget": "hidden"
@@ -35,7 +36,7 @@
     "passFail": {
       "ui:title": "Pass or fail"
     },
-    "method": {
+    "scoreMethod": {
       "ui:widget": "hidden"
     },
     "ui:order": [

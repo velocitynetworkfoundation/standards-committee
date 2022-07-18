@@ -2,5 +2,5 @@
   "title": "Calendar date",
   "type": "string",
   "pattern": "^\\d\\d\\d\\d(-\\d\\d)?(-\\d\\d)?$",
-  "x-internal": true
+  "x-internal": false
 }

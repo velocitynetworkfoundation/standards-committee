@@ -9,13 +9,7 @@
     "fallback": "-"
   },
   "subtitle": {
-    "path": [
-      "$.hasCredential.type"
-    ],
-    "schema": {
-      "type": "string"
-    },
-    "fallback": "-"
+    "text": "Open Badge"
   },
   "summary_detail": {
     "path": [
@@ -78,6 +72,15 @@
       }
     },
     {
+      "label": "Type",
+      "path": [
+        "$.hasCredential.type"
+      ],
+      "schema": {
+        "type": "string"
+      }
+    },
+    {
       "label": "Criteria",
       "path": [
         "$.hasCredential.criteria"
@@ -101,7 +104,7 @@
     {
       "label": "Alignment",
       "path": [
-        "$.alignment[0].targetName"
+        "$.hasCredential.alignment[0].targetName"
       ],
       "schema": {
         "type": "string"
@@ -110,7 +113,7 @@
     {
       "label": "Alignment URL",
       "path": [
-        "$.alignment[0].targetUrl"
+        "$.hasCredential.alignment[0].targetUrl"
       ],
       "schema": {
         "type": "string",
@@ -120,7 +123,7 @@
     {
       "label": "Alignment framework",
       "path": [
-        "$.alignment[0].targetFramework"
+        "$.hasCredential.alignment[0].targetFramework"
       ],
       "schema": {
         "type": "string"

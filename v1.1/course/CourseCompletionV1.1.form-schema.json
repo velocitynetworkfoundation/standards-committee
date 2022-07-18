@@ -12,7 +12,7 @@
     "name": {
       "ui:title": "Course provider"
     },
-    "identifer": {
+    "identifier": {
       "ui:widget": "hidden"
     },
     "place": {
@@ -59,7 +59,7 @@
     "passFail": {
       "ui:title": "Pass or fail"
     },
-    "method": {
+    "scoreMethod": {
       "ui:widget": "hidden"
     },
     "ui:order": [
@@ -95,7 +95,7 @@
   "ui:order": [
     "provider",
     "courseName",
-    "Description",
+    "description",
     "registrationDate",
     "startDate",
     "completionDate",

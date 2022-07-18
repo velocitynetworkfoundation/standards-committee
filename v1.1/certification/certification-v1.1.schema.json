@@ -47,17 +47,19 @@
           "addressCountry": "US"
         }
       },
-        "recipient": {
-          "givenName": "Olivia",
-          "familyName": "Hafez"          
-        },
-      "alignment": {
-        "targetName": "Certified Nursing Assistant",
-        "targetUrl": "https://sandbox.credentialengine.org/finder/credential/8723/Certified_Nursing_Assistant",
-        "targetDescription": "Certified Nursing Assistant by the New Jersey Department of Health",
-        "targetCode": "ce-8570f9a5-e59e-48df-a7cd-00ffcc5fef56",
-        "targetFramework": "Credential Engine's Credential Registry"
-      }
+      "recipient": {
+        "givenName": "Olivia",
+        "familyName": "Hafez"
+      },
+      "alignment": [
+        {
+          "targetName": "Certified Nursing Assistant",
+          "targetUrl": "https://sandbox.credentialengine.org/finder/credential/8723/Certified_Nursing_Assistant",
+          "targetDescription": "Certified Nursing Assistant by the New Jersey Department of Health",
+          "targetCode": "ce-8570f9a5-e59e-48df-a7cd-00ffcc5fef56",
+          "targetFramework": "Credential Engine's Credential Registry"
+        }
+      ]
     },
     {
       "@context": "https://velocitynetwork.foundation/contexts/certification-license",
@@ -78,10 +80,10 @@
         "validFrom": "2015-01-18",
         "validUntil": "2025-01-01"
       },
-        "recipient": {
-          "givenName": "Olivia",
-          "familyName": "Hafez"          
-        },
+      "recipient": {
+        "givenName": "Olivia",
+        "familyName": "Hafez"
+      },
       "alignment": [
         {
           "targetName": "Azure Solutions Architect Expert Certification",
