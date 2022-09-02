@@ -18,11 +18,11 @@
         },
         "addressRegion": {
           "type": "string",
-          "description": "The region where the place is. For the US regions are states. "
+          "description": "The region where the place is. For the US regions are states. Must be an [ISO 3166-2 subdivision code](https://en.wikipedia.org/wiki/ISO_3166-2)"
         },
         "addressCountry": {
           "type": "string",
-          "description": "The country where the place is. "
+          "description": "The country where the place is. Must be an [ISO 3166 2 letter country code](https://en.wikipedia.org/wiki/List_of_ISO_3166_country_codes)"
         }
       }
     }
