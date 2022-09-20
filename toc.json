@@ -97,9 +97,14 @@
           "type": "group",
           "title": "Badges",
           "items": [
+             {
+              "type": "item",
+              "title": "Open Badge V3.0",
+              "uri": "v1.1/badge/open-badge-credential.schema.json"
+            },
             {
               "type": "item",
-              "title": "Open Badge",
+              "title": "Open Badge V2.0",
               "uri": "v1.1/badge/open-badge-v2.0.schema.json"
             },
             {
