@@ -35,35 +35,35 @@
     "image": {
       "ui:widget": "hidden"
     },
-    "recipient": {
-      "givenName": {
-        "ui:title": "Recipient given name"
-      },
-      "middleName": {
-        "ui:title": "Recipient middle name"
-      },
-      "familyName": {
-        "ui:title": "Recipient family name"
-      },
-      "namePrefix": {
-        "ui:title": "Recipient name prefix"
-      },
-      "nameSuffix": {
-        "ui:title": "Recipient name suffix"
-      },
-      "ui:order": [
-        "givenName",
-        "middleName",
-        "familyName",
-        "namePrefix",
-        "nameSuffix"
-      ]
-    },
     "ui:order": [
       "issuer",
       "name",
       "description",
       "recipient"
+    ]
+  },
+  "recipient": {
+    "givenName": {
+      "ui:title": "Recipient given name"
+    },
+    "middleName": {
+      "ui:title": "Recipient middle name"
+    },
+    "familyName": {
+      "ui:title": "Recipient family name"
+    },
+    "namePrefix": {
+      "ui:title": "Recipient name prefix"
+    },
+    "nameSuffix": {
+      "ui:title": "Recipient name suffix"
+    },
+    "ui:order": [
+      "givenName",
+      "middleName",
+      "familyName",
+      "namePrefix",
+      "nameSuffix"
     ]
   }
 }
