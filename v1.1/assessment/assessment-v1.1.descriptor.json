@@ -95,7 +95,7 @@
     {
       "label": "Dimension Name",
       "path": [
-        "$.assessmentDimensions[0].name"
+        "$.assessmentDimensions[*].name"
       ],
       "schema": {
         "type": "string"
@@ -104,7 +104,7 @@
     {
       "label": "Dimension description",
       "path": [
-        "$.assessmentDimensions[0].description"
+        "$.assessmentDimensions[*].description"
       ],
       "schema": {
         "type": "string"
@@ -113,7 +113,7 @@
     {
       "label": "Dimension - assesses",
       "path": [
-        "$.assessmentDimensions[0].assesses"
+        "$.assessmentDimensions[*].assesses"
       ],
       "schema": {
         "type": "string"
@@ -122,7 +122,7 @@
     {
       "label": "Dimension score",
       "path": [
-        "$.assessmentDimensions[0].score.scoreValue"
+        "$.assessmentDimensions[*].score.scoreValue"
       ],
       "schema": {
         "type": "string"
@@ -131,7 +131,7 @@
     {
       "label": "Dimension result",
       "path": [
-        "$.assessmentDimensions[0].score.result"
+        "$.assessmentDimensions[*].score.result"
       ],
       "schema": {
         "type": "string"
@@ -140,7 +140,7 @@
     {
       "label": "Dimension - Pass or fail",
       "path": [
-        "$.assessmentDimensions[0].score.passFail"
+        "$.assessmentDimensions[*].score.passFail"
       ],
       "schema": {
         "type": "string"
