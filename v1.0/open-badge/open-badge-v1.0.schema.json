@@ -70,13 +70,13 @@
         "name": {
           "type": "string",
           "pattern": "^[a-zA-Z0-9\\s]*$",
-          "maxLength": 64,
+          "maxLength": 128,
           "description": "The name of the achievement."
         },
         "description": {
           "type": "string",
           "pattern": "^[a-zA-Z0-9\\s]*$",
-          "maxLength": 64,
+          "maxLength": 640,
           "description": "A short description of the achievement."
         },
         "image": {
@@ -88,7 +88,7 @@
           "type": "string",
           "description": "https://example.org/robotics-badge.html",
           "pattern": "^[a-zA-Z0-9\\s]*$",
-          "maxLength": 64
+          "maxLength": 640
         },
         "issuer": {
           "oneOf": [
