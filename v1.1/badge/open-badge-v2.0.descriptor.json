@@ -1,4 +1,4 @@
-{
+  {
   "title": {
     "path": [
       "$.hasCredential.issuer.name", "$.hasCredential.issuer.id", "$.hasCredential.issuer"
