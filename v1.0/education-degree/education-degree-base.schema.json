@@ -16,37 +16,47 @@
         },
         "programName": {
           "type": "string",
-          "description": "The program in which the person holding the degree studied for the degree. "
+          "description": "The program in which the person holding the degree studied for the degree.",
+          "maxLength": 256
         },
         "programType": {
           "type": "string",
-          "description": "The type of program, e.g., full. "
+          "description": "The type of program, e.g., full.",
+          "maxLength": 256
         },
         "programMode": {
           "type": "string",
-          "description": "The program mode or method of teaching, e.g., online. "
+          "description": "The program mode or method of teaching, e.g., online.",
+          "maxLength": 256
         },
         "degreeName": {
           "type": "string",
-          "description": "The name of the degree. "
+          "description": "The name of the degree.",
+          "maxLength": 256
         },
         "degreeMajor": {
           "type": "array",
-          "description": "The major field or fields of study of the degree. ",
+          "description": "The major field or fields of study of the degree.",
           "items": {
-            "type": "string"
+            "type": "string",
+            "maxLength": 128
           }
         },
         "degreeMinor": {
           "type": "array",
-          "description": "The minor field or fields of study of the degree. ",
+          "description": "The minor field or fields of study of the degree.",
           "items": {
-            "type": "string"
+            "type": "string",
+            "maxLength": 128
           }
         },
         "description": {
           "type": "string",
-          "description": "A detailed description of the degree. "
+          "description": "A detailed description of the degree.",
+          "maxLength": 2048
+        },
+        "recipient": {
+          "$ref": "../subtypes/personName-v1.1.schema.json"
         },
         "alignment": {
           "type": "array",

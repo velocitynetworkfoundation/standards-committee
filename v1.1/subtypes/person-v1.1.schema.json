@@ -10,23 +10,28 @@
       "properties": {
         "givenName": {
           "type": "string",
-          "description": "The given name or first name of the person. "
+          "description": "The given name or first name of the person.",
+          "maxLength": 64
         },
         "familyName": {
           "type": "string",
-          "description": "The family name or surname of the person. "
+          "description": "The family name or surname of the person.",
+          "maxLength": 64
         },
         "middleName": {
           "type": "string",
-          "description": "The middle name of the person. "
+          "description": "The middle name of the person.",
+          "maxLength": 256
         },
         "namePrefix": {
           "type": "string",
-          "description": "A prefix to the name such as Dr or Sir. "
+          "description": "A prefix to the name such as Dr or Sir.",
+          "maxLength": 8
         },
         "nameSuffix": {
           "type": "string",
-          "description": "A suffix to the name such as Jr. or Sr. "
+          "description": "A suffix to the name such as Jr. or Sr.",
+          "maxLength": 16
         },
         "birthDate": {
           "type": "string",
@@ -40,7 +45,8 @@
           "type": "string",
           "enum": [
             "Male",
-            "Female"
+            "Female",
+            "Other"
           ],
           "description": "The gender of the person. "
         }
@@ -76,7 +82,7 @@
         "addressRegion": "US-MA",
         "addressCountry": "US"
       },
-      "gender": "Male",
+      "gender": "Other",
       "nameSuffix": "Jr"
     },
     {

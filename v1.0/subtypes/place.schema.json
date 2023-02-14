@@ -10,19 +10,25 @@
       "properties": {
         "name": {
           "type": "string",
-          "description": "The name of the place, e.g., building name, branch name, etc."
+          "description": "The name of the place, e.g., building name, branch name, etc.",
+          "maxLength": 256
         },
         "addressLocality": {
           "type": "string",
-          "description": "The locality where the place is, e.g., town or city name. "
+          "description": "The locality where the place is, e.g., town or city name.",
+          "maxLength": 256
         },
         "addressRegion": {
           "type": "string",
-          "description": "The region where the place is. For the US regions are states. Must be an [ISO 3166-2 subdivision code](https://en.wikipedia.org/wiki/ISO_3166-2)"
+          "pattern": "^[A-Z]{2}(-[A-Z0-9]{1,3})?$",
+          "description": "The region where the place is. These are states, provinces, etc. Must be an [ISO 3166-2 subdivision code](https://en.wikipedia.org/wiki/ISO_3166-2)",
+          "maxLength": 6
         },
         "addressCountry": {
           "type": "string",
-          "description": "The country where the place is. Must be an [ISO 3166 2 letter country code](https://en.wikipedia.org/wiki/List_of_ISO_3166_country_codes)"
+          "description": "The country where the place is. Must be an [ISO 3166 2 letter country code](https://en.wikipedia.org/wiki/List_of_ISO_3166_country_codes)",
+          "pattern": "^[A-Z]{2}$",
+          "maxLength": 2
         }
       }
     }

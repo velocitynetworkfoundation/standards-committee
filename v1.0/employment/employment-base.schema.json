@@ -13,34 +13,29 @@
         },
         "role": {
           "type": "string",
-          "description": "The role the person has in the organization."
+          "description": "The role the person has in the organization.",
+          "maxLength": 64
         },
         "description": {
           "type": "string",
-          "description": "A detailed description of the position."
+          "description": "A detailed description of the position.",
+          "maxLength": 2048
         },
         "employmentType": {
           "type": "array",
-          "enum": [
-            "contract",
-            "temporary",
-            "permanent",
-            "internship",
-            "full time",
-            "part time"
-          ],
-          "description": "Any of: full-time, part-time, contract, temporary, permanent, internship. ",
           "items": {
             "type": "string",
             "enum": [
-              "full-time",
-              "part-time",
               "contract",
               "temporary",
               "permanent",
-              "internship"
+              "internship",
+              "full-time",
+              "part-time",
+              "other"
             ]
-          }
+          },
+          "description": "Any of: full-time, part-time, contract, temporary, permanent, internship. "
         },
         "place": {
           "$ref": "../subtypes/place.schema.json"
