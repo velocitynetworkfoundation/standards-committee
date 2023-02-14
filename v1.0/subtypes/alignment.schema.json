@@ -10,24 +10,29 @@
       "properties": {
         "targetName": {
           "type": "string",
-          "description": "Name of the target alignment."
+          "description": "Name of the target alignment.",
+          "maxLength": 256
         },
         "targetUrl": {
           "type": "string",
           "format": "uri",
-          "description": "URL of the target alignment. "
+          "description": "URL of the target alignment. ",
+          "maxLength": 512
         },
         "targetDescription": {
           "type": "string",
-          "description": "Detailed description of the target alignment. "
+          "description": "Detailed description of the target alignment. ",
+          "maxLength": 1024
         },
         "targetCode": {
           "type": "string",
-          "description": "Code of the target alignment. "
+          "description": "Code of the target alignment. ",
+          "maxLength": 256
         },
         "targetFramework": {
           "type": "string",
-          "description": "The framework to which the target belongs. "
+          "description": "The framework to which the target belongs. ",
+          "maxLength": 256
         }
       }
     }
