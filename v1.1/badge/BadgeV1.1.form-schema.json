@@ -38,8 +38,7 @@
     "ui:order": [
       "issuer",
       "name",
-      "description",
-      "recipient"
+      "description"
     ]
   },
   "recipient": {
@@ -65,5 +64,9 @@
       "namePrefix",
       "nameSuffix"
     ]
-  }
+  },
+  "ui:order":[
+    "hasCredential",
+    "recipient"
+  ]
 }
