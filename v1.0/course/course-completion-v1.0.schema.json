@@ -124,7 +124,7 @@
         "scoreMethod": {
           "scoreMethodDescription": "Poor, Fair, Good, Very Good",
           "passingScore": "Good",
-          "scoreMethodtype": "CriterionReferenced"
+          "scoreMethodType": "CriterionReferenced"
         },
         "result": "Poor",
         "passFail": "Fail"
