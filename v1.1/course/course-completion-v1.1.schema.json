@@ -94,7 +94,7 @@
           "scoreMethodType": "CriterionReferenced"
         },
         "result": "partly attended",
-        "passFail": "fail"
+        "passFail": "Fail"
       },
       "recipient": {
         "givenName": "Olivia",
@@ -140,7 +140,7 @@
           "scoreMethodtype": "CriterionReferenced"
         },
         "result": "Poor",
-        "passFail": "fail"
+        "passFail": "Fail"
       }
     }
   ]
