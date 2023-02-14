@@ -114,10 +114,10 @@
         }
       ],
       "grade": {
-        "method": {
-          "description": "Poor, Fair, Good, Very Good",
-          "passingScore": "Good",
-          "type": "CriterionReferenced"
+        "scoreMethod": {
+          "scoreMethodType": "CriterionReferenced",
+          "scoreMethodDescription": "Poor, Fair, Good, Very Good",
+          "passingScore": "Good"
         },
         "result": "Did not complete"
       }

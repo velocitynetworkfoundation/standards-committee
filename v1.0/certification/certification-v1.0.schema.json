@@ -85,6 +85,5 @@
       ],
       "description": "Responsibilities for this role include advising stakeholders and translating business requirements into secure, scalable, and reliable cloud solutions. An Azure Solution Architect partners with cloud administrators, cloud DBAs, and clients to implement solutions."
     }
-  ],
-  "x-internal": false
+  ]
 }
