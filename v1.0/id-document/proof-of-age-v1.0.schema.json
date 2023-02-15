@@ -20,12 +20,14 @@
         },
         "identifier": {
           "type": "string",
-          "description": "The id number. "
+          "description": "The id number.",
+          "maxLength": 64
         },
         "nationality": {
           "type": "string",
           "pattern": "^[A-Z]{2}$",
-          "description": "The nationality of the person holding the document."
+          "description": "The nationality of the person holding the document.",
+          "maxLength": 2
         },
         "postalAddress": {
           "$ref": "../subtypes/address.schema.json"

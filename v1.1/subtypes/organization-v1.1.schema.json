@@ -1,26 +1,21 @@
 {
   "title": "Organization",
   "$id": "https://velocitynetwork.foundation/schemas/organization-v1.1",
-  "allOf": [
-    {
-      "$ref": "../json-ld-context.schema.json"
+  "type": "object",
+  "additionalProperties": false,
+  "properties": {
+    "name": {
+      "type": "string",
+      "description": "The name of the organization.",
+      "maxLength": 256
     },
-    {
-      "type": "object",
-      "properties": {
-        "name": {
-          "type": "string",
-          "description": "The name of the organization."
-        },
-        "identifier": {
-          "$ref": "./did-v1.1.schema.json"
-        },
-        "place": {
-          "$ref": "./place-v1.1.schema.json"
-        }
-      }
+    "identifier": {
+      "$ref": "./did-v1.1.schema.json"
+    },
+    "place": {
+      "$ref": "./place-v1.1.schema.json"
     }
-  ],
+  },
   "required": [
     "name",
     "place"
