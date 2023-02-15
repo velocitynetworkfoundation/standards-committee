@@ -19,15 +19,11 @@
           "$ref": "../subtypes/person.schema.json"
         },
         "identifier": {
-          "type": "string",
-          "description": "The id number.",
-          "maxLength": 64
+          "type": "string"
         },
         "nationality": {
           "type": "string",
-          "pattern": "^[A-Z]{2}$",
-          "description": "The nationality of the person holding the document.",
-          "maxLength": 2
+          "pattern": "^[A-Z]{2}$"
         },
         "postalAddress": {
           "$ref": "../subtypes/address.schema.json"

@@ -90,7 +90,7 @@
           "addressCountry": "US"
         }
       },
-      "recipient": {
+      "personName": {
         "givenName": "Olivia",
         "familyName": "Hafez"
       }
@@ -105,7 +105,7 @@
           "addressRegion": "US-CA",
           "addressCountry": "US"
         },
-        "identifier": "12200224"
+        "identifier": "string"
       },
       "name": "California Driver's License",
       "identifier": "G1234568",
@@ -113,16 +113,12 @@
         "validFrom": "2009-08-21",
         "validUntil": "2014-08-21"
       },
-      "endorsementCode": [
-        "A-H Hazardous materials"
-      ],
-      "restrictionCode": [
-        "Spectacles or contact lenses required"
-      ],
       "recipient": {
         "givenName": "Olivia",
         "familyName": "Hafez"
-      }
+      },
+      "endorsementCode": "A-H Hazardous materials",
+      "restrictionCode": "Spectacles or contact lenses required"
     }
   ]
 }
