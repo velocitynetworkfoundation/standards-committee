@@ -16,32 +16,38 @@
         },
         "courseName": {
           "type": "string",
-          "description": "The name of the course."
+          "description": "The name of the course.",
+          "maxLength": 256
         },
         "description": {
           "type": "string",
-          "description": "A detailed description of the course. "
+          "description": "A detailed description of the course. ",
+          "maxLength": 2048
         },
         "courseCode": {
           "type": "string",
-          "description": "The code of the course as it appears in the provider's records."
+          "description": "The code of the course as it appears in the provider's records.",
+          "maxLength": 256
         },
         "courseType": {
           "type": "string",
-          "description": "The type of course, e.g., professional training, preparation for a license exam, academic course, etc."
+          "description": "The type of course, e.g., professional training, preparation for a license exam, academic course, etc.",
+          "maxLength": 256
         },
         "courseMode": {
           "type": "string",
-          "description": "The course mode or method of teaching, e.g. online, instructor led, lecture, workshop, etc. "
+          "description": "The course mode or method of teaching, e.g. online, instructor led, lecture, workshop, etc. ",
+          "maxLength": 256
         },
         "courseLevel": {
           "type": "string",
-          "description": "The level of the course, e.g., standard, basic, advanced, etc. "
+          "description": "The level of the course, e.g., standard, basic, advanced, etc. ",
+          "maxLength": 64
         },
         "courseDuration": {
           "type": "string",
           "format": "duration",
-          "description": "The duration of the course in hours. "
+          "description": "The duration of the course in ISO 8601 Duration format. See https://en.wikipedia.org/wiki/ISO_8601#Durations"
         },
         "alignment": {
           "type": "array",
