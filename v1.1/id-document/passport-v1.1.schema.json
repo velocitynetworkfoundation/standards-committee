@@ -82,12 +82,11 @@
           "addressLocality": "London",
           "addressRegion": "GB-ENG",
           "addressCountry": "GB"
-        },
-        "@context": "string"
+        }
       },
       "validity": {
-        "validFrom": "2011-11-6",
-        "validUntil": "2021-11-6"
+        "validFrom": "2011-11-06",
+        "validUntil": "2021-11-06"
       },
       "person": {
         "givenName": "Andrew",

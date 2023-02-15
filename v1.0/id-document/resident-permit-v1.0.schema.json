@@ -41,7 +41,7 @@
     {
       "@context": "https://velocitynetwork.foundation/contexts/resident-permit",
       "authority": {
-        "name": "State of Israel Minsitry of Transport",
+        "name": "State of Israel Ministry of Transport",
         "identifier": "did:velocity:0xc257274276a4e539741ca11b590b9447b26a8051",
         "place": {
           "addressLocality": "Jerusalem",
@@ -84,7 +84,7 @@
       },
       "validity": {
         "validFrom": "2018-01-15",
-        "validuntil": "2019-01-15"
+        "validUntil": "2019-01-15"
       },
       "person": {
         "givenName": "Juana",
