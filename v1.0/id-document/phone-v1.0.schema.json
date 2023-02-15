@@ -1,20 +1,23 @@
 {
   "title": "Phone",
   "$id": "https://velocitynetwork.foundation/schemas/phone-v1.0",
-  "type": "object",
-  "additionalProperties": false,
-  "properties": {
-    "@context": {
+  "allOf": [
+    {
       "$ref": "../json-ld-context.schema.json"
     },
-    "phone": {
-      "type": "string",
-      "pattern": "^\\+[1-9]\\d{1,14}$",
-      "minLength": 8,
-      "maxLength": 15,
-      "description": "The phone number including prefix."
+    {
+      "type": "object",
+      "properties": {
+        "phone": {
+          "type": "string",
+          "pattern": "^\\+[1-9]\\d{1,14}$",
+          "minLength": 8,
+          "maxLength": 15,
+          "description": "The phone number including prefix."
+        }
+      }
     }
-  },
+  ],
   "required": [
     "phone"
   ],

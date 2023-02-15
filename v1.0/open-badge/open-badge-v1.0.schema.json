@@ -5,9 +5,6 @@
   "type": "object",
   "additionalProperties": false,
   "properties": {
-    "@context": {
-      "$ref": "../json-ld-context.schema.json"
-    },
     "hasCredential": {
       "type": "object",
       "required": [
@@ -93,7 +90,6 @@
   ],
   "examples": [
     {
-      "@context": "https://example.org/badge.html",
       "hasCredential": {
         "id": "http://example.com",
         "type": "BadgeClass",

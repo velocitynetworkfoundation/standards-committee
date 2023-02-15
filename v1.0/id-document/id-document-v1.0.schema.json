@@ -2,42 +2,45 @@
   "title": "ID document",
   "$schema": "http://json-schema.org/draft-07/schema#",
   "$id": "https://velocitynetwork.foundation/schemas/id-document-v1.0",
-  "type": "object",
-  "additionalProperties": false,
-  "properties": {
-    "@context": {
+  "allOf": [
+    {
       "$ref": "../json-ld-context.schema.json"
     },
-    "documentType": {
-      "type": "string",
-      "description": "The type of document.",
-      "maxLength": 32
-    },
-    "authority": {
-      "$ref": "../subtypes/organization.schema.json"
-    },
-    "validity": {
-      "$ref": "../subtypes/validity.schema.json"
-    },
-    "person": {
-      "$ref": "../subtypes/person.schema.json"
-    },
-    "identifier": {
-      "type": "string",
-      "description": "The id number.",
-      "maxLength": 64
-    },
-    "nationality": {
-      "type": "string",
-      "pattern": "^[A-Z]{2}$",
-      "description": "The nationality of the person holding the document.",
-      "maxLength": 2
-    },
-    "postalAddress": {
-      "$ref": "../subtypes/address.schema.json"
+    {
+      "type": "object",
+      "properties": {
+        "documentType": {
+          "type": "string",
+          "description": "The type of document.",
+          "maxLength": 32
+        },
+        "authority": {
+          "$ref": "../subtypes/organization.schema.json"
+        },
+        "validity": {
+          "$ref": "../subtypes/validity.schema.json"
+        },
+        "person": {
+          "$ref": "../subtypes/person.schema.json"
+        },
+        "identifier": {
+          "type": "string",
+          "description": "The id number.",
+          "maxLength": 64
+        },
+        "nationality": {
+          "type": "string",
+          "pattern": "^[A-Z]{2}$",
+          "description": "The nationality of the person holding the document.",
+          "maxLength": 2
+        },
+        "postalAddress": {
+          "$ref": "../subtypes/address.schema.json"
+        }
+      }
     }
-  },
-  "required": [
+  ],
+    "required": [
     "documentType",
     "authority",
     "identifier",
