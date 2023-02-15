@@ -1,62 +1,52 @@
 {
   "title": "Employment-base",
-  "$id": "https://velocitynetwork.foundation/schemas/employment-base-v1.1",
-  "allOf": [
-    {
+  "type": "object",
+  "properties": {
+    "@context": {
       "$ref": "../json-ld-context.schema.json"
     },
-    {
-      "type": "object",
-      "properties": {
-        "legalEmployer": {
-          "$ref": "../subtypes/organization-v1.1.schema.json"
-        },
-        "role": {
-          "type": "string",
-          "description": "The role the person has in the organization."
-        },
-        "description": {
-          "type": "string",
-          "description": "A detailed description of the position."
-        },
-        "employmentType": {
-          "type": "array",
-          "enum": [
-            "contract",
-            "temporary",
-            "permanent",
-            "internship",
-            "full time",
-            "part time"
-          ],
-          "description": "Any of: full-time, part-time, contract, temporary, permanent, internship. ",
-          "items": {
-            "type": "string",
-            "enum": [
-              "full-time",
-              "part-time",
-              "contract",
-              "temporary",
-              "permanent",
-              "internship"
-            ]
-          }
-        },
-        "place": {
-          "$ref": "../subtypes/place-v1.1.schema.json"
-        },
-        "recipient": {
-          "$ref": "../subtypes/personName-v1.1.schema.json"
-        },
-        "alignment": {
-          "type": "array",
-          "description": "A public resource to which the employment position is aligned.",
-          "items": {
-            "$ref": "../subtypes/alignment-v1.1.schema.json"
-          }
-        }
+    "legalEmployer": {
+      "$ref": "../subtypes/organization.schema.json"
+    },
+    "role": {
+      "type": "string",
+      "description": "The role the person has in the organization.",
+      "maxLength": 64
+    },
+    "description": {
+      "type": "string",
+      "description": "A detailed description of the position.",
+      "maxLength": 2048
+    },
+    "employmentType": {
+      "type": "array",
+      "items": {
+        "type": "string",
+        "enum": [
+          "contract",
+          "temporary",
+          "permanent",
+          "internship",
+          "full-time",
+          "part-time",
+          "other"
+        ]
+      },
+      "description": "Any of: full-time, part-time, contract, temporary, permanent, internship. "
+    },
+    "place": {
+      "$ref": "../subtypes/place.schema.json"
+    },
+    "recipient": {
+      "$ref": "../subtypes/personName.schema.json"
+    },
+    "alignment": {
+      "type": "array",
+      "description": "A public resource to which the employment position is aligned.",
+      "items": {
+        "$ref": "../subtypes/alignment.schema.json"
       }
     }
-  ],
+  },
   "x-internal": false
 }

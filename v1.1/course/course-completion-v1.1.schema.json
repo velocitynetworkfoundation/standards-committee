@@ -9,16 +9,16 @@
       "type": "object",
       "properties": {
         "grade": {
-          "$ref": "../subtypes/score-v1.1.schema.json"
+          "$ref": "../subtypes/score.schema.json"
         },
         "registrationDate": {
-          "$ref": "../subtypes/date-v1.1.schema.json"
+          "$ref": "../subtypes/date.schema.json"
         },
         "startDate": {
-          "$ref": "../subtypes/date-v1.1.schema.json"
+          "$ref": "../subtypes/date.schema.json"
         },
         "completionDate": {
-          "$ref": "../subtypes/date-v1.1.schema.json"
+          "$ref": "../subtypes/date.schema.json"
         }
       }
     }
@@ -94,7 +94,7 @@
           "scoreMethodType": "CriterionReferenced"
         },
         "result": "partly attended",
-        "passFail": "fail"
+        "passFail": "Fail"
       },
       "recipient": {
         "givenName": "Olivia",
@@ -115,7 +115,7 @@
       "courseName": "Online skin and sound management",
       "description": "Prepares the student for best practice gidelines for wound treatment and management, to facilitate optimal wound healing.",
       "courseMode": "Online",
-      "courseDuration": "60H",
+      "courseDuration": "PT60H",
       "registrationDate": "2018-06-01",
       "startDate": "2018-07-01",
       "completionDate": "2018-10-01",
@@ -137,10 +137,10 @@
         "scoreMethod": {
           "scoreMethodDescription": "Poor, Fair, Good, Very Good",
           "passingScore": "Good",
-          "scoreMethodtype": "CriterionReferenced"
+          "scoreMethodType": "CriterionReferenced"
         },
         "result": "Poor",
-        "passFail": "fail"
+        "passFail": "Fail"
       }
     }
   ]
