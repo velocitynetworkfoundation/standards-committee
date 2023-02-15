@@ -89,7 +89,7 @@
           "scoreMethodType": "CriterionReferenced"
         },
         "result": "partly attended",
-        "passFail": "fail"
+        "passFail": "Fail"
       }
     },
     {
@@ -106,7 +106,7 @@
       "courseName": "Online skin and sound management",
       "description": "Prepares the student for best practice gidelines for wound treatment and management, to facilitate optimal wound healing.",
       "courseMode": "Online",
-      "courseDuration": "60H",
+      "courseDuration": "PT60H",
       "registrationDate": "2018-06-01",
       "startDate": "2018-07-01",
       "completionDate": "2018-10-01",
@@ -124,10 +124,10 @@
         "scoreMethod": {
           "scoreMethodDescription": "Poor, Fair, Good, Very Good",
           "passingScore": "Good",
-          "scoreMethodtype": "CriterionReferenced"
+          "scoreMethodType": "CriterionReferenced"
         },
         "result": "Poor",
-        "passFail": "fail"
+        "passFail": "Fail"
       }
     }
   ]

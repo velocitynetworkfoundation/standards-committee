@@ -1,36 +1,35 @@
 {
   "title": "Person name",
   "$id": "https://velocitynetwork.foundation/schemas/personName-v1.1",
-  "allOf": [
-    {
-      "$ref": "../json-ld-context.schema.json"
+  "type": "object",
+  "additionalProperties": false,
+  "properties": {
+    "givenName": {
+      "type": "string",
+      "description": "The given name or first name of the person.",
+      "maxLength": 64
     },
-    {
-      "type": "object",
-      "properties": {
-        "givenName": {
-          "type": "string",
-          "description": "The given name or first name of the person."
-        },
-        "familyName": {
-          "type": "string",
-          "description": "The family name or surname of the person."
-        },
-        "middleName": {
-          "type": "string",
-          "description": "The middle name of the person."
-        },
-        "namePrefix": {
-          "type": "string",
-          "description": "A prefix to the name such as Dr or Sir."
-        },
-        "nameSuffix": {
-          "type": "string",
-          "description": "A suffix to the name such as Jr. or Sr."
-        }                    
-      }
+    "familyName": {
+      "type": "string",
+      "description": "The family name or surname of the person.",
+      "maxLength": 64
+    },
+    "middleName": {
+      "type": "string",
+      "description": "The middle name of the person.",
+      "maxLength": 256
+    },
+    "namePrefix": {
+      "type": "string",
+      "description": "A prefix to the name such as Dr or Sir.",
+      "maxLength": 8
+    },
+    "nameSuffix": {
+      "type": "string",
+      "description": "A suffix to the name such as Jr. or Sr.",
+      "maxLength": 16
     }
-  ],
+  },
   "required": [
     "givenName",
     "familyName"
