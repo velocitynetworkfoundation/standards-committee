@@ -1,19 +1,22 @@
 {
   "title": "Email",
   "$id": "https://velocitynetwork.foundation/schemas/email-v1.0",
-  "type": "object",
-  "additionalProperties": false,
-  "properties": {
-    "@context": {
+  "allOf": [
+    {
       "$ref": "../json-ld-context.schema.json"
     },
-    "email": {
-      "type": "string",
-      "format": "email",
-      "description": "The email address.",
-      "maxLength": 256
+    {
+      "type": "object",
+      "properties": {
+        "email": {
+          "type": "string",
+          "format": "email",
+          "description": "The email address.",
+          "maxLength": 256
+        }
+      }
     }
-  },
+  ],
   "required": [
     "email"
   ],

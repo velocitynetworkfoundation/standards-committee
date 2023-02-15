@@ -2,36 +2,39 @@
   "title": "Resident permit",
   "$schema": "http://json-schema.org/draft-07/schema#",
   "$id": "https://velocitynetwork.foundation/schemas/resident-permit-v1.0",
-  "type": "object",
-  "additionalProperties": false,
-  "properties": {
-    "@context": {
+  "allOf": [
+    {
       "$ref": "../json-ld-context.schema.json"
     },
-    "authority": {
-      "$ref": "../subtypes/organization.schema.json"
-    },
-    "validity": {
-      "$ref": "../subtypes/validity.schema.json"
-    },
-    "person": {
-      "$ref": "../subtypes/person.schema.json"
-    },
-    "identifier": {
-      "type": "string",
-      "description": "The permit number.",
-      "maxLength": 64
-    },
-    "nationality": {
-      "type": "string",
-      "pattern": "^[A-Z]{2}$",
-      "description": "The nationality of the person holding the document.",
-      "maxLength": 2
-    },
-    "postalAddress": {
-      "$ref": "../subtypes/address.schema.json"
+    {
+      "type": "object",
+      "properties": {
+        "authority": {
+          "$ref": "../subtypes/organization.schema.json"
+        },
+        "validity": {
+          "$ref": "../subtypes/validity.schema.json"
+        },
+        "person": {
+          "$ref": "../subtypes/person.schema.json"
+        },
+        "identifier": {
+          "type": "string",
+          "description": "The permit number.",
+          "maxLength": 64
+        },
+        "nationality": {
+          "type": "string",
+          "pattern": "^[A-Z]{2}$",
+          "description": "The nationality of the person holding the document.",
+          "maxLength": 2
+        },
+        "postalAddress": {
+          "$ref": "../subtypes/address.schema.json"
+        }
+      }
     }
-  },
+  ],
   "required": [
     "authority",
     "person",

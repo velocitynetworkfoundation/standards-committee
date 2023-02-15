@@ -85,7 +85,6 @@
   "additionalProperties": false,
   "examples": [
     {
-      "@context": "https://example.org/badge.html",
       "hasCredential": {
         "type": "BadgeClass",
         "name": "Influenza Vaccine Immunization Education (IVIE)",
@@ -108,9 +107,6 @@
     }
   ],
   "properties": {
-    "@context": {
-      "$ref": "../json-ld-context.schema.json"
-    },
     "hasCredential": {
       "type": "object",
       "required": [
@@ -258,7 +254,7 @@
           "type": "array",
           "description": "An array of objects describing which objectives or educational standards this badge aligns to, if any. Unlike Open Badge v2.1 must ALWAYS be defined in an array",
           "items": {
-            "$ref": "../subtypes/alignment.schema.json"
+            "$ref": "../subtypes/alignment-v1.1.schema.json"
           }
         },
         "tags": {

@@ -35,7 +35,7 @@
       "description": "The date of birth of the person."
     },
     "birthPlace": {
-      "$ref": "./place.schema.json"
+      "$ref": "./place-v1.1.schema.json"
     },
     "gender": {
       "type": "string",

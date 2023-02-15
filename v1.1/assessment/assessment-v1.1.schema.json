@@ -4,23 +4,23 @@
   "$id": "https://velocitynetwork.foundation/schemas/assessment-v1.1",
   "allOf": [
     {
-      "$ref": "./assessment-dimension-base.schema.json"
+      "$ref": "./assessment-dimension-v1.1.schema.json"
     },
     {
       "type": "object",
       "properties": {
         "authority": {
-          "$ref": "../subtypes/organization.schema.json"
+          "$ref": "../subtypes/organization-v1.1.schema.json"
         },
         "assessmentDimensions": {
           "type": "array",
           "description": "Dimensions are sub-assessments within the parent assessment. Each dimension refers to a different aspect of what is being assessed.",
           "items": {
-            "$ref": "./assessment-dimension.schema.json"
+            "$ref": "./assessment-dimension-v1.1.schema.json"
           }
         },
         "recipient": {
-          "$ref": "../subtypes/personName.schema.json"
+          "$ref": "../subtypes/personName-v1.1.schema.json"
         }
       }
     }

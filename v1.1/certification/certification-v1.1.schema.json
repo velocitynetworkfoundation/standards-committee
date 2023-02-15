@@ -15,7 +15,7 @@
           "maxLength": 512
         },
         "validity": {
-          "$ref": "../subtypes/validity.schema.json"
+          "$ref": "../subtypes/validity-v1.1.schema.json"
         }
       }
     }

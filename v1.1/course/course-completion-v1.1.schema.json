@@ -9,16 +9,16 @@
       "type": "object",
       "properties": {
         "grade": {
-          "$ref": "../subtypes/score.schema.json"
+          "$ref": "../subtypes/score-v1.1.schema.json"
         },
         "registrationDate": {
-          "$ref": "../subtypes/date.schema.json"
+          "$ref": "../subtypes/date-v1.1.schema.json"
         },
         "startDate": {
-          "$ref": "../subtypes/date.schema.json"
+          "$ref": "../subtypes/date-v1.1.schema.json"
         },
         "completionDate": {
-          "$ref": "../subtypes/date.schema.json"
+          "$ref": "../subtypes/date-v1.1.schema.json"
         }
       }
     }
