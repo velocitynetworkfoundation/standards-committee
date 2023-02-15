@@ -1,60 +1,65 @@
 {
   "title": "Score",
   "$id": "https://velocitynetwork.foundation/schemas/score-v1.1",
-  "type": "object",
-  "additionalProperties": false,
-  "properties": {
-    "scoreMethod": {
+  "allOf": [
+    {
+      "$ref": "../json-ld-context.schema.json"
+    },
+    {
       "type": "object",
-      "description": "The method according to which the score is given. ",
-      "additionalProperties": false,
       "properties": {
-        "scoreMethodType": {
-          "type": "string",
-          "enum": [
-            "NormReferenced",
-            "CriterionReferenced"
-          ],
-          "description": "One of: NormReferenced, CriterionReferenced."
-        },
-        "scoreMethodDescription": {
-          "type": "string",
-          "description": "A description of the scoring method used.",
-          "maxLength": 1024
-        },
-        "alignment": {
-          "type": "array",
-          "description": "A public resource to which the scoring method is aligned.",
-          "items": {
-            "$ref": "./alignment-v1.1.schema.json"
+        "scoreMethod": {
+          "type": "object",
+          "description": "The method according to which the score is given. ",
+          "properties": {
+            "scoreMethodType": {
+              "type": "string",
+              "enum": [
+                "NormReferenced",
+                "CriterionReferenced"
+              ],
+              "description": "One of: NormReferenced, CriterionReferenced."
+            },
+            "scoreMethodDescription": {
+              "type": "string",
+              "description": "A description of the scoring method used.",
+              "maxLength": 1024
+            },
+            "alignment": {
+              "type": "array",
+              "description": "A public resource to which the scoring method is aligned.",
+              "items": {
+                "$ref": "./alignment-v1.1.schema.json"
+              }
+            },
+            "passingScore": {
+              "type": "string",
+              "description": "The minimum passing score",
+              "maxLength": 16
+            }
           }
         },
-        "passingScore": {
+        "scoreValue": {
           "type": "string",
-          "description": "The minimum passing score",
+          "description": "The score achieved by the person.",
           "maxLength": 16
+        },
+        "result": {
+          "type": "string",
+          "description": "The result achieved by the person, e.g. acceptable, excellent, poor. Applicable when results are not stated as scores. ",
+          "maxLength": 32
+        },
+        "passFail": {
+          "type": "string",
+          "enum": [
+            "Pass",
+            "Fail"
+          ],
+          "description": "One of: Pass, Fail"
         }
       }
-    },
-    "scoreValue": {
-      "type": "string",
-      "description": "The score achieved by the person.",
-      "maxLength": 16
-    },
-    "result": {
-      "type": "string",
-      "description": "The result achieved by the person, e.g. acceptable, excellent, poor. Applicable when results are not stated as scores. ",
-      "maxLength": 32
-    },
-    "passFail": {
-      "type": "string",
-      "enum": [
-        "Pass",
-        "Fail"
-      ],
-      "description": "One of: Pass, Fail"
     }
-  },
+  ],
   "examples": [
     {
       "scoreMethod": {

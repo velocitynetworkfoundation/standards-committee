@@ -94,7 +94,7 @@
           "scoreMethodType": "CriterionReferenced"
         },
         "result": "partly attended",
-        "passFail": "Fail"
+        "passFail": "fail"
       },
       "recipient": {
         "givenName": "Olivia",
@@ -137,10 +137,10 @@
         "scoreMethod": {
           "scoreMethodDescription": "Poor, Fair, Good, Very Good",
           "passingScore": "Good",
-          "scoreMethodType": "CriterionReferenced"
+          "scoreMethodtype": "CriterionReferenced"
         },
         "result": "Poor",
-        "passFail": "Fail"
+        "passFail": "fail"
       }
     }
   ]

@@ -1,5 +1,6 @@
 {
-  "title": "Calendar date",
+  "title": "Date",
   "type": "string",
-  "pattern": "^\\d\\d\\d\\d(-\\d\\d)?(-\\d\\d)?$"
+  "pattern": "^\\d\\d\\d\\d(-\\d\\d)?(-\\d\\d)?$",
+  "x-internal": false
 }
