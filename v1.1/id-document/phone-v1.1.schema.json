@@ -1,0 +1,28 @@
+{
+  "title": "Phone",
+  "$id": "https://velocitynetwork.foundation/schemas/phone-v1.1",
+  "allOf": [
+    {
+      "$ref": "../json-ld-context.schema.json"
+    },
+    {
+      "type": "object",
+      "properties": {
+        "phone": {
+          "type": "string",
+          "pattern": "^\\+[1-9]\\d{1,14}$",
+          "description": "The phone number including prefix."
+        }
+      }
+    }
+  ],
+  "required": [
+    "phone"
+  ],
+  "examples": [
+    {
+      "@context": "https://velocitynetwork.foundation/contexts/phone",
+      "phone": "+19177777777"
+    }
+  ]
+}
