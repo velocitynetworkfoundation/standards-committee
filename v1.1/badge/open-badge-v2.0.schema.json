@@ -12,7 +12,7 @@
           "type": "string",
           "format": "uri",
           "description": "Unique IRI for the Issuer/Profile file. Most platforms to date can only handle HTTP-based IRIs such as https://example.com/profiles/alice",
-          "maxLength": 512
+          "maxLength": 2000
         },
         "type": {
           "oneOf": [
@@ -53,13 +53,13 @@
           "type": "string",
           "format": "uri",
           "description": "IRI or document representing an image of the issuer. This must be a PNG or SVG image",
-          "maxLength": 512
+          "maxLength": 2000
         },
         "url": {
           "type": "string",
           "description": "The homepage or social media profile of the entity, whether individual or institutional. Should be a URL/URI Accessible via HTTP. ",
           "format": "uri",
-          "maxLength": 512
+          "maxLength": 2000
         },
         "telephone": {
           "type": "string",
@@ -139,7 +139,7 @@
           "type": "string",
           "format": "uri",
           "description": "Unique IRI for the BadgeClass. Most platforms to date can only handle HTTP-based IRIs. Issuers using signed assertions are encouraged to publish BadgeClasses using HTTP IRIs but may instead use ephemeral BadgeClasses that use an id in another scheme such as urn:uuid.",
-          "maxLength": 512
+          "maxLength": 2000
         },
         "name": {
           "type": "string",
@@ -157,7 +157,7 @@
               "type": "string",
               "format": "uri",
               "description": "IRI or document representing an image of the achievement. This must be a PNG or SVG image.",
-              "maxLength": 512
+              "maxLength": 2000
             }, {
               "type": "object",
               "required": ["id"],
@@ -183,7 +183,7 @@
                   "type": "string",
                   "format": "uri",
                   "description": "The URI or Data URI of the image.",
-                  "maxLength": 512
+                  "maxLength": 2000
                 },
                 "caption": {
                   "type": "string",
@@ -195,7 +195,7 @@
                     {
                       "type": "string",
                       "format": "uri",
-                      "maxLength": 512
+                      "maxLength": 2000
                     },
                     {
                       "$ref": "#/definitions/obiProfile"
@@ -212,7 +212,7 @@
               "type": "string",
               "description": "Unique URI for a webpage that describes in a human-readable format the criteria for the BadgeClass such as https://example.org/robotics-badge.html",
               "format": "uri",
-              "maxLength": 512
+              "maxLength": 2000
             },
             {
               "type": "object",
@@ -221,7 +221,7 @@
                   "type": "string",
                   "format": "uri",
                   "description": "Unique URI for a webpage that describes in a human-readable format the criteria for the BadgeClass.",
-                  "maxLength": 512
+                  "maxLength": 2000
                 },
                 "type": {
                   "type": "string",
@@ -242,7 +242,7 @@
             {
               "type": "string",
               "format": "uri",
-              "maxLength": 512
+              "maxLength": 2000
             },
             {
               "$ref": "#/definitions/obiProfile"

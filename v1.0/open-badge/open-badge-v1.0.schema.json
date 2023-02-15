@@ -37,7 +37,7 @@
           "type": "string",
           "format": "uri",
           "description": "Unique IRI for the BadgeClass. Most platforms to date can only handle HTTP-based IRIs. Issuers using signed assertions are encouraged to publish BadgeClasses using HTTP IRIs but may instead use ephemeral BadgeClasses that use an id in another scheme such as urn:uuid.",
-          "maxLength": 512
+          "maxLength": 2000
         },
         "name": {
           "type": "string",
@@ -53,19 +53,19 @@
           "type": "string",
           "format": "uri",
           "description": "IRI or document representing an image of the achievement. This must be a PNG or SVG image.",
-          "maxLength": 512
+          "maxLength": 2000
         },
         "criteria": {
           "type": "string",
           "description": "https://example.org/robotics-badge.html",
           "format": "uri",
-          "maxLength": 512
+          "maxLength": 2000
         },
         "issuer": {
           "type": "string",
           "format": "uri",
           "description": "The organization that issued the badge. On Velocity Network this should be DID",
-          "maxLength": 512
+          "maxLength": 2000
         },
         "alignment": {
           "type": "array",
@@ -79,7 +79,6 @@
           "description": "Tags that describes the type of achievement.",
           "items": {
             "type": "string",
-            "minLength": 1,
             "maxLength": 64
           }
         }

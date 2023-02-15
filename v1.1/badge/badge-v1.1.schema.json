@@ -11,7 +11,8 @@
         "id": {
           "type": "string",
           "format": "uri",
-          "description": "https://example.com/profiles/alice"
+          "description": "https://example.com/profiles/alice",
+          "maxLength": 2000
         },
         "type": {
           "type": "string",
@@ -22,21 +23,25 @@
         },
         "name": {
           "type": "string",
-          "description": "Example Issuer"
+          "description": "Example Issuer",
+          "maxLength": 128
         },
         "url": {
           "type": "string",
           "format": "uri",
-          "description": "http://example.com"
+          "description": "http://example.com",
+          "maxLength": 2000
         },
         "email": {
           "type": "string",
           "format": "email",
-          "description": "test@example.com"
+          "description": "test@example.com",
+          "maxLength": 256
         },
         "image": {
           "type": "string",
-          "format": "uri"
+          "format": "uri",
+          "maxLength": 2000
         }
       },
       "required": [
@@ -72,7 +77,7 @@
           "type": "string",
           "format": "uri",
           "description": "Unique IRI for the BadgeClass. Most platforms to date can only handle HTTP-based IRIs. Issuers using signed assertions are encouraged to publish BadgeClasses using HTTP IRIs but may instead use ephemeral BadgeClasses that use an id in another scheme such as urn:uuid.",
-          "maxLength": 512
+          "maxLength": 2000
         },
         "name": {
           "type": "string",
@@ -81,26 +86,26 @@
         },
         "description": {
           "type": "string",
-          "maxLength": 1024,
+          "maxLength": 2048,
           "description": "A short description of the achievement."
         },
         "image": {
           "type": "string",
           "format": "uri",
           "description": "IRI or document representing an image of the achievement. This must be a PNG or SVG image.",
-          "maxLength": 512
+          "maxLength": 2000
         },
         "criteria": {
           "type": "string",
           "description": "https://example.org/robotics-badge.html",
           "format": "uri",
-          "maxLength": 512
+          "maxLength": 2000
         },
         "issuer": {
           "type": "string",
           "format": "uri",
           "description": "The organization that issued the badge. On Velocity Network this must be DID",
-          "maxLength": 512
+          "maxLength": 2000
         },
         "alignment": {
           "type": "array",

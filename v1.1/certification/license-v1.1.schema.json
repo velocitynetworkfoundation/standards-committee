@@ -11,7 +11,8 @@
       "properties": {
         "identifier": {
           "type": "string",
-          "description": "The number or other unique identifier of the license held by the person. "
+          "description": "The number or other unique identifier of the license held by the person. ",
+          "maxLength": 512
         },
         "validity": {
           "$ref": "../subtypes/validity-v1.1.schema.json"
@@ -20,14 +21,16 @@
           "type": "array",
           "description": "Endorsements to the license such as vehicle class A1, B, in driver's license, or specialties in nursing license.",
           "items": {
-            "type": "string"
+            "type": "string",
+            "maxLength": 128
           }
         },
         "restrictionCode": {
           "type": "array",
           "description": "Restrictions to the license such as need to wear glasses in driver's license.",
           "items": {
-            "type": "string"
+            "type": "string",
+            "maxLength": 128
           }
         }
       }
@@ -44,7 +47,7 @@
       "@context": "https://velocitynetwork.foundation/contexts/certification-license",
       "authority": {
         "name": "New Jersey Board of Nursing",
-        "did": "did:velocity:0xc257274276a4e539741ca11b590b9447b26a8052",
+        "identifier": "did:velocity:0xc257274276a4e539741ca11b590b9447b26a8052",
         "place": {
           "addressLocality": "Newark",
           "addressRegion": "US-NJ",
@@ -72,7 +75,7 @@
       "@context": "https://velocitynetwork.foundation/contexts/certification-license",
       "authority": {
         "name": "California State Board of Accountancy",
-        "did": "did:velocity:0xc257274276a4e539741ca11b590b9447b26a8052",
+        "identifier": "did:velocity:0xc257274276a4e539741ca11b590b9447b26a8052",
         "place": {
           "addressLocality": "Sacramento",
           "addressRegion": "US-CA",
@@ -99,13 +102,12 @@
       "@context": "https://velocitynetwork.foundation/contexts/certification-license",
       "authority": {
         "name": "DMV State of California",
-        "did": "did:velocity:0xc257274276a4e539741ca11b590b9447b26a8052",
+        "identifier": "did:velocity:0xc257274276a4e539741ca11b590b9447b26a8052",
         "place": {
           "addressLocality": "Sacramento",
           "addressRegion": "US-CA",
           "addressCountry": "US"
-        },
-        "identifier": "12200224"
+        }
       },
       "name": "California Driver's License",
       "identifier": "G1234568",
