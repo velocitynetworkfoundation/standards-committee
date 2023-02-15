@@ -4,23 +4,23 @@
   "$id": "https://velocitynetwork.foundation/schemas/assessment-v1.1",
   "allOf": [
     {
-      "$ref": "./assessment-dimension-v1.1.schema.json"
+      "$ref": "./assessment-dimension-base.schema.json"
     },
     {
       "type": "object",
       "properties": {
         "authority": {
-          "$ref": "../subtypes/organization-v1.1.schema.json"
+          "$ref": "../subtypes/organization.schema.json"
         },
         "assessmentDimensions": {
           "type": "array",
           "description": "Dimensions are sub-assessments within the parent assessment. Each dimension refers to a different aspect of what is being assessed.",
           "items": {
-            "$ref": "./assessment-dimension-v1.1.schema.json"
+            "$ref": "./assessment-dimension.schema.json"
           }
         },
         "recipient": {
-          "$ref": "../subtypes/personName-v1.1.schema.json"
+          "$ref": "../subtypes/personName.schema.json"
         }
       }
     }
@@ -40,10 +40,6 @@
           "addressLocality": "Los Angeles",
           "addressRegion": "US-CA",
           "addressCountry": "US"
-        },
-        "recipient": {
-          "givenName": "Olivia",
-          "familyName": "Hafez"          
         }
       },
       "name": "Leadership",
@@ -84,7 +80,11 @@
           },
           "assessmentDate": "2018-08-31"
         }
-      ]
+      ],
+      "recipient": {
+        "givenName": "Olivia",
+        "familyName": "Hafez"
+      }
     },
     {
       "@context": "https://velocitynetwork.foundation/contexts/assessment",
@@ -104,11 +104,15 @@
           "scoreMethodDescription": "Standard Ishihara color plate test"
         },
         "result": "Normal color vision",
-        "passFail": "pass"
+        "passFail": "Pass"
       },
       "assessmentDate": "2021-05-29",
       "assessmentLevel": "Standard",
-      "assessmentMethod": "Online"
+      "assessmentMethod": "Online",
+      "recipient": {
+        "givenName": "Olivia",
+        "familyName": "Hafez"
+      }
     },
     {
       "@context": "https://velocitynetwork.foundation/contexts/assessment",
@@ -120,20 +124,20 @@
           "addressCountry": "US"
         }
       },
-        "recipient": {
-          "givenName": "Olivia",
-          "familyName": "Hafez"          
-        },
+      "recipient": {
+        "givenName": "Olivia",
+        "familyName": "Hafez"
+      },
       "name": "Algebraic geometry - Final Exam",
       "assesses": "Algebraic curves and surfaces",
       "score": {
         "scoreMethod": {
-          "scoreMethodtype": "criterionReferenced",
-          "scoreMethoddescription": "1-100 scale",
+          "scoreMethodType": "CriterionReferenced",
+          "scoreMethodDescription": "1-100 scale",
           "passingScore": "60"
         },
         "scoreValue": "92",
-        "passFail": "pass"
+        "passFail": "Pass"
       },
       "assessmentDate": "2019-06-20",
       "assessmentLevel": "Intermediate",

@@ -1,35 +1,32 @@
 {
   "title": "Certification-license-base",
   "$schema": "http://json-schema.org/draft-07/schema#",
-  "$id": "https://velocitynetwork.foundation/schemas/certification-license-base-v1.0",
-  "allOf": [
-    {
+  "type": "object",
+  "properties": {
+    "@context": {
       "$ref": "../json-ld-context.schema.json"
     },
-    {
-      "type": "object",
-      "properties": {
-        "authority": {
-          "$ref": "../subtypes/organization.schema.json"
-        },
-        "name": {
-          "type": "string",
-          "description": "The name of the certification or license. "
-        },
-        "description": {
-          "type": "string",
-          "description": "Detailed description of the certification or license. "
-        },
-        "alignment": {
-          "type": "array",
-          "description": "A public resource to which the certification or license is aligned.",
-          "items": {
-            "$ref": "../subtypes/alignment.schema.json"
-          }
-        }
+    "authority": {
+      "$ref": "../subtypes/organization.schema.json"
+    },
+    "name": {
+      "type": "string",
+      "description": "The name of the certification or license.",
+      "maxLength": 256
+    },
+    "description": {
+      "type": "string",
+      "description": "Detailed description of the certification or license.",
+      "maxLength": 2048
+    },
+    "alignment": {
+      "type": "array",
+      "description": "A public resource to which the certification or license is aligned.",
+      "items": {
+        "$ref": "../subtypes/alignment.schema.json"
       }
     }
-  ],
+  },
   "x-internal": false,
   "examples": []
 }

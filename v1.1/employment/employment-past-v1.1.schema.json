@@ -9,10 +9,10 @@
       "type": "object",
       "properties": {
         "startDate": {
-          "$ref": "../subtypes/date-v1.1.schema.json"
+          "$ref": "../subtypes/date.schema.json"
         },
         "endDate": {
-          "$ref": "../subtypes/date-v1.1.schema.json"
+          "$ref": "../subtypes/date.schema.json"
         }
       }
     }
@@ -38,7 +38,7 @@
       },
       "role": "Accountant",
       "description": "Junior accountant in the mortgage department",
-      "employmentType": "Internship",
+      "employmentType": ["internship"],
       "place": {
         "name": "Branch 4644",
         "addressLocality": "Birmingham",
