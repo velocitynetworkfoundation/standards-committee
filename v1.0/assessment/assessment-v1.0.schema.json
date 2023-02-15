@@ -96,7 +96,7 @@
           "scoreMethodDescription": "Standard Ishihara color plate test"
         },
         "result": "Normal color vision",
-        "passFail": "pass"
+        "passFail": "Pass"
       },
       "assessmentDate": "2021-05-29",
       "assessmentLevel": "Standard",
@@ -116,12 +116,12 @@
       "assesses": "Algebraic curves and surfaces",
       "score": {
         "scoreMethod": {
-          "scoreMethodtype": "criterionReferenced",
-          "scoreMethoddescription": "1-100 scale",
+          "scoreMethodType": "CriterionReferenced",
+          "scoreMethodDescription": "1-100 scale",
           "passingScore": "60"
         },
         "scoreValue": "92",
-        "passFail": "pass"
+        "passFail": "Pass"
       },
       "assessmentDate": "2019-06-20",
       "assessmentLevel": "Intermediate",
@@ -130,6 +130,5 @@
   ],
   "x-tags": [
     "assessment"
-  ],
-  "x-internal": true
+  ]
 }
