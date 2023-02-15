@@ -11,8 +11,7 @@
       "properties": {
         "identifier": {
           "type": "string",
-          "description": "The number or other unique identifier of the license held by the person. ",
-          "maxLength": 512
+          "description": "The number or other unique identifier of the license held by the person. "
         },
         "validity": {
           "$ref": "../subtypes/validity.schema.json"
@@ -21,32 +20,25 @@
           "type": "array",
           "description": "Endorsements to the license such as vehicle class A1, B, in driver's license, or specialties in nursing license.",
           "items": {
-            "type": "string",
-            "maxLength": 128
+            "type": "string"
           }
         },
         "restrictionCode": {
           "type": "array",
           "description": "Restrictions to the license such as need to wear glasses in driver's license.",
           "items": {
-            "type": "string",
-            "maxLength": 128
+            "type": "string"
           }
         }
       }
     }
-  ],
-  "required": [
-    "authority",
-    "name",
-    "identifier"
   ],
   "examples": [
     {
       "@context": "https://velocitynetwork.foundation/contexts/certification-license",
       "authority": {
         "name": "New Jersey Board of Nursing",
-        "identifier": "did:velocity:0xc257274276a4e539741ca11b590b9447b26a8052",
+        "did": "did:velocity:0xc257274276a4e539741ca11b590b9447b26a8052",
         "place": {
           "addressLocality": "Newark",
           "addressRegion": "US-NJ",
@@ -70,7 +62,7 @@
       "@context": "https://velocitynetwork.foundation/contexts/certification-license",
       "authority": {
         "name": "California State Board of Accountancy",
-        "identifier": "did:velocity:0xc257274276a4e539741ca11b590b9447b26a8052",
+        "did": "did:velocity:0xc257274276a4e539741ca11b590b9447b26a8052",
         "place": {
           "addressLocality": "Sacramento",
           "addressRegion": "US-CA",
@@ -93,12 +85,13 @@
       "@context": "https://velocitynetwork.foundation/contexts/certification-license",
       "authority": {
         "name": "DMV State of California",
-        "identifier": "did:velocity:0xc257274276a4e539741ca11b590b9447b26a8052",
+        "did": "did:velocity:0xc257274276a4e539741ca11b590b9447b26a8052",
         "place": {
           "addressLocality": "Sacramento",
           "addressRegion": "US-CA",
           "addressCountry": "US"
-        }
+        },
+        "identifier": "string"
       },
       "name": "California Driver's License",
       "identifier": "G1234568",
@@ -110,7 +103,7 @@
         "A-H Hazardous materials"
       ],
       "restrictionCode": [
-        "Spectacles or contact lenses required"
+        "Spectscles or contact lenses required"
       ]
     }
   ]

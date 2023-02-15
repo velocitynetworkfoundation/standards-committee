@@ -11,8 +11,7 @@
       "properties": {
         "documentType": {
           "type": "string",
-          "description": "The type of document.",
-          "maxLength": 32
+          "description": "The type of document."
         },
         "authority": {
           "$ref": "../subtypes/organization.schema.json"
@@ -25,14 +24,12 @@
         },
         "identifier": {
           "type": "string",
-          "description": "The id number.",
-          "maxLength": 64
+          "description": "The id number. "
         },
         "nationality": {
           "type": "string",
           "pattern": "^[A-Z]{2}$",
-          "description": "The nationality of the person holding the document.",
-          "maxLength": 2
+          "description": "The nationality of the person holding the document."
         },
         "postalAddress": {
           "$ref": "../subtypes/address.schema.json"

@@ -1,42 +1,48 @@
 {
   "title": "Validity",
   "$id": "https://velocitynetwork.foundation/schemas/validity-v1.0",
-  "type": "object",
-  "additionalProperties": false,
-  "properties": {
-    "firstValidFrom": {
-      "type": "string",
-      "format": "date",
-      "description": "The original date from which a certification, document or license is valid. "
+  "allOf": [
+    {
+      "$ref": "../json-ld-context.schema.json"
     },
-    "validFrom": {
-      "oneOf": [
-        {
-          "format": "date"
+    {
+      "type": "object",
+      "properties": {
+        "firstValidFrom": {
+          "type": "string",
+          "format": "date",
+          "description": "The original date from which a certification, document or license is valid. "
         },
-        {
-          "format": "date-time"
-        }
-      ],
-      "description": "The date from which a certification, document or license is valid. In case of renewal, validFrom date will state the date or renewal. ",
-      "type": "string"
-    },
-    "validUntil": {
-      "oneOf": [
-        {
-          "format": "date"
+        "validFrom": {
+          "oneOf": [
+            {
+              "format": "date"
+            },
+            {
+              "format": "date-time"
+            }
+          ],
+          "description": "The date from which a certification, document or license is valid. In case of renewal, validFrom date will state the date or renewal. ",
+          "type": "string"
         },
-        {
-          "format": "date-time"
+        "validUntil": {
+          "oneOf": [
+            {
+              "format": "date"
+            },
+            {
+              "format": "date-time"
+            }
+          ],
+          "description": "The date until which a certification, document or license is valid. ",
+          "type": "string"
+        },
+        "validIn": {
+          "$ref": "./place.schema.json"
         }
-      ],
-      "description": "The date until which a certification, document or license is valid. ",
-      "type": "string"
-    },
-    "validIn": {
-      "$ref": "./place-v1.1.schema.json"
+      }
     }
-  },
+  ],
   "examples": [
     {
       "@context": "https://velocitynetwork.foundation/contexts/Validity",

@@ -11,8 +11,7 @@
       "properties": {
         "identifier": {
           "type": "string",
-          "description": "The number or other unique identifier of the certification held by the person.",
-          "maxLength": 512
+          "description": "The number or other unique identifier of the certification held by the person. "
         },
         "validity": {
           "$ref": "../subtypes/validity-v1.1.schema.json"
@@ -30,7 +29,7 @@
       "@context": "https://velocitynetwork.foundation/contexts/certification-license",
       "authority": {
         "name": "New Jersey Department of Health",
-        "identifier": "did:velocity:0xc257274276a4e539741ca11b590b9447b26a8051",
+        "did": "did:velocity:0xc257274276a4e539741ca11b590b9447b26a8051",
         "place": {
           "addressLocality": "Trenton",
           "addressRegion": "US-NJ",
@@ -66,7 +65,7 @@
       "@context": "https://velocitynetwork.foundation/contexts/certification-license",
       "authority": {
         "name": "Microsoft",
-        "identifier": "did:velocity:0xc257274276a4e539741ca11b590b9447b26a8051",
+        "did": "did:velocity:0xc257274276a4e539741ca11b590b9447b26a8051",
         "place": {
           "addressLocality": "Redmond",
           "addressRegion": "WA",

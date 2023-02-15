@@ -20,14 +20,12 @@
         },
         "identifier": {
           "type": "string",
-          "description": "The permit number.",
-          "maxLength": 64
+          "description": "The permit number. "
         },
         "nationality": {
           "type": "string",
           "pattern": "^[A-Z]{2}$",
-          "description": "The nationality of the person holding the document.",
-          "maxLength": 2
+          "description": "The nationality of the person holding the permit."
         },
         "postalAddress": {
           "$ref": "../subtypes/address.schema.json"
