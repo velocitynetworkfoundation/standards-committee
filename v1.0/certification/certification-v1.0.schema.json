@@ -11,8 +11,7 @@
       "properties": {
         "identifier": {
           "type": "string",
-          "description": "The number or other unique identifier of the certification held by the person.",
-          "maxLength": 512
+          "description": "The number or other unique identifier of the certification held by the person. "
         },
         "validity": {
           "$ref": "../subtypes/validity.schema.json"
@@ -29,7 +28,7 @@
       "@context": "https://velocitynetwork.foundation/contexts/certification-license",
       "authority": {
         "name": "New Jersey Department of Health",
-        "identifier": "did:velocity:0xc257274276a4e539741ca11b590b9447b26a8051",
+        "did": "did:velocity:0xc257274276a4e539741ca11b590b9447b26a8051",
         "place": {
           "addressLocality": "Trenton",
           "addressRegion": "US-NJ",
@@ -47,21 +46,19 @@
           "addressCountry": "US"
         }
       },
-      "alignment": [
-        {
-          "targetName": "Certified Nursing Assistant",
-          "targetUrl": "https://sandbox.credentialengine.org/finder/credential/8723/Certified_Nursing_Assistant",
-          "targetDescription": "Certified Nursing Assistant by the New Jersey Department of Health",
-          "targetCode": "ce-8570f9a5-e59e-48df-a7cd-00ffcc5fef56",
-          "targetFramework": "Credential Engine's Credential Registry"
-        }
-      ]
+      "alignment": {
+        "targetName": "Certified Nursing Assistant",
+        "targetUrl": "https://sandbox.credentialengine.org/finder/credential/8723/Certified_Nursing_Assistant",
+        "targetDescription": "Certified Nursing Assistant by the New Jersey Department of Health",
+        "targetCode": "ce-8570f9a5-e59e-48df-a7cd-00ffcc5fef56",
+        "targetFramework": "Credential Engine's Credential Registry"
+      }
     },
     {
       "@context": "https://velocitynetwork.foundation/contexts/certification-license",
       "authority": {
         "name": "Microsoft",
-        "identifier": "did:velocity:0xc257274276a4e539741ca11b590b9447b26a8051",
+        "did": "did:velocity:0xc257274276a4e539741ca11b590b9447b26a8051",
         "place": {
           "addressLocality": "Redmond",
           "addressRegion": "WA",
@@ -86,5 +83,6 @@
       ],
       "description": "Responsibilities for this role include advising stakeholders and translating business requirements into secure, scalable, and reliable cloud solutions. An Azure Solution Architect partners with cloud administrators, cloud DBAs, and clients to implement solutions."
     }
-  ]
+  ],
+  "x-internal": false
 }

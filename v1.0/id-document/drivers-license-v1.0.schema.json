@@ -11,8 +11,7 @@
       "properties": {
         "name": {
           "type": "string",
-          "description": "The name of the license.",
-          "maxLength": 256
+          "description": "The name of the license."
         },
         "authority": {
           "$ref": "../subtypes/organization.schema.json"
@@ -25,31 +24,27 @@
         },
         "identifier": {
           "type": "string",
-          "description": "The license number.",
-          "maxLength": 64
+          "description": "The license number."
         },
         "address": {
           "$ref": "../subtypes/address.schema.json"
         },
         "description": {
           "type": "string",
-          "description": "Detailed description of the license, including, for example, the coding system used for endorsements and restrictions.",
-          "maxLength": 2048
+          "description": "Detailed description of the license, including, for example, the coding system used for endorsements and restrictions."
         },
         "endorsementCode": {
           "type": "array",
           "description": "Endorsements to the license such as vehicle class A1, B.",
           "items": {
-            "type": "string",
-            "maxLength": 128
+            "type": "string"
           }
         },
         "restrictionCode": {
           "type": "array",
           "description": "Restrictions to the license such as need to wear glasses.",
           "items": {
-            "type": "string",
-            "maxLength": 128
+            "type": "string"
           }
         },
         "alignment": {
