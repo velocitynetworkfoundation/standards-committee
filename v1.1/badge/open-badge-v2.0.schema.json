@@ -2,7 +2,7 @@
   "title": "Open Badge",
   "$schema": "http://json-schema.org/draft-07/schema#",
   "description": "Badge",
-  "$id": "badge",
+  "$id": "https://velocitynetwork.foundation/schemas/open-badge-v2.0",
   "type": "object",
   "definitions": {
     "obiProfile": {

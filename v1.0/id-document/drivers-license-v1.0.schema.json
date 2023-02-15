@@ -63,7 +63,7 @@
         "identifier": "did:velocity:0xc257274276a4e539741ca11b590b9447b26a8051",
         "place": {
           "addressLocality": "Sacramento",
-          "addressRegion": "CA",
+          "addressRegion": "US-CA",
           "addressCountry": "US"
         }
       },
@@ -77,13 +77,13 @@
         "birthDate": "1990-08-21",
         "gender": "Male"
       },
-      "identifier": "string",
+      "identifier": "12200244",
       "address": {
-        "streetAddress": "string",
-        "addressLocality": "string",
-        "addressRegion": "string",
-        "postCode": "string",
-        "addressCountry": "string"
+        "streetAddress": "3390 Fairway Drive",
+        "addressLocality": "San Jose",
+        "postCode": "95113",
+        "addressRegion": "US-CA",
+        "addressCountry": "US"
       },
       "name": "California Driver License",
       "endorsementCode": [
@@ -111,7 +111,7 @@
       "person": {
         "givenName": "Zoahr",
         "familyName": "Argov",
-        "birthDate": "1955-7-16"
+        "birthDate": "1955-07-16"
       },
       "identifier": "7198054",
       "address": {
@@ -119,7 +119,7 @@
         "addressLocality": "Tel Aviv",
         "addressRegion": "IL-TA",
         "postCode": "655332",
-        "addressCountry": "IL-TA"
+        "addressCountry": "IL"
       },
       "name": "State of Israel Driving License",
       "endorsementCode": [
