@@ -1,0 +1,47 @@
+{
+  "title": "ID document",
+  "$schema": "http://json-schema.org/draft-07/schema#",
+  "$id": "https://velocitynetwork.foundation/schemas/id-document-v1.1",
+  "allOf": [
+    {
+      "$ref": "../json-ld-context.schema.json"
+    },
+    {
+      "type": "object",
+      "properties": {
+        "documentType": {
+          "type": "string",
+          "description": "The type of document."
+        },
+        "authority": {
+          "$ref": "../subtypes/organization-v1.1.schema.json"
+        },
+        "validity": {
+          "$ref": "../subtypes/validity-v1.1.schema.json"
+        },
+        "person": {
+          "$ref": "../subtypes/person-v1.1.schema.json"
+        },
+        "identifier": {
+          "type": "string",
+          "description": "The id number. "
+        },
+        "nationality": {
+          "type": "string",
+          "pattern": "^[A-Z]{2}$",
+          "description": "The nationality of the person holding the document."
+        },
+        "postalAddress": {
+          "$ref": "../subtypes/address-v1.1.schema.json"
+        }
+      }
+    }
+  ],
+    "required": [
+    "documentType",
+    "authority",
+    "identifier",
+    "person"
+  ],
+  "examples": []
+}

@@ -10,7 +10,7 @@
       "properties": {
         "scoreMethod": {
           "type": "object",
-          "description": "The method according to which the score is given. ",
+          "description": "The method acording to which the score is given. ",
           "properties": {
             "scoreMethodType": {
               "type": "string",
@@ -22,8 +22,7 @@
             },
             "scoreMethodDescription": {
               "type": "string",
-              "description": "A description of the scoring method used.",
-              "maxLength": 1024
+              "description": "A description of the scoring method used."
             },
             "alignment": {
               "type": "array",
@@ -34,20 +33,17 @@
             },
             "passingScore": {
               "type": "string",
-              "description": "The minimum passing score",
-              "maxLength": 16
+              "description": "The minimum passing score"
             }
           }
         },
         "scoreValue": {
           "type": "string",
-          "description": "The score achieved by the person.",
-          "maxLength": 16
+          "description": "The score achieved by the person."
         },
         "result": {
           "type": "string",
-          "description": "The result achieved by the person, e.g. acceptable, excellent, poor. Applicable when results are not stated as scores. ",
-          "maxLength": 32
+          "description": "The result achieved by the person, e.g. acceptable, excellent, poor. Applicable when results are not stated as scores. "
         },
         "passFail": {
           "type": "string",

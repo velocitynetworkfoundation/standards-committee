@@ -11,28 +11,23 @@
       "properties": {
         "name": {
           "type": "string",
-          "description": "The name of the assessment.",
-          "maxLength": 64
+          "description": "The name of the assessment."
         },
         "assesses": {
           "type": "string",
-          "description": "The competency or learning outcome that is being assessed by the assessment.",
-          "maxLength": 128
+          "description": "The competency or learning outcome that is being assessed by the assessment. "
         },
         "description": {
           "type": "string",
-          "description": "A detailed description of the assessment.",
-          "maxLength": 1024
+          "description": "A detailed description of the assessment. "
         },
         "assessmentLevel": {
           "type": "string",
-          "description": "The level of the assessment, e.g., standard, basic, advanced, etc. ",
-          "maxLength": 32
+          "description": "The level of the assessment, e.g., standard, basic, advanced, etc. "
         },
         "assessmentMethod": {
           "type": "string",
-          "description": "The method for assessing, such as written exam, oral exam, role play, multiple choice, etc. ",
-          "maxLength": 32
+          "description": "The method for assessing, such as written exam, oral exam, role play, multiple choice, etc. "
         },
         "alignment": {
           "type": "array",
