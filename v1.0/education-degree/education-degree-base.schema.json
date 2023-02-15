@@ -55,6 +55,9 @@
           "description": "A detailed description of the degree.",
           "maxLength": 2048
         },
+        "recipient": {
+          "$ref": "../subtypes/personName-v1.1.schema.json"
+        },
         "alignment": {
           "type": "array",
           "description": "A public resource to which the degree is aligned.",

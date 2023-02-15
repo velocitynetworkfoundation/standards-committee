@@ -20,7 +20,7 @@
         "description": {
           "type": "string",
           "description": "Detailed description of the certification or license.",
-          "maxLength": 2048
+          "maxLength": 1024
         },
         "alignment": {
           "type": "array",

@@ -46,15 +46,13 @@
           "addressCountry": "US"
         }
       },
-      "alignment": [
-        {
-          "targetName": "Certified Nursing Assistant",
-          "targetUrl": "https://sandbox.credentialengine.org/finder/credential/8723/Certified_Nursing_Assistant",
-          "targetDescription": "Certified Nursing Assistant by the New Jersey Department of Health",
-          "targetCode": "ce-8570f9a5-e59e-48df-a7cd-00ffcc5fef56",
-          "targetFramework": "Credential Engine's Credential Registry"
-        }
-      ]
+      "alignment": {
+        "targetName": "Certified Nursing Assistant",
+        "targetUrl": "https://sandbox.credentialengine.org/finder/credential/8723/Certified_Nursing_Assistant",
+        "targetDescription": "Certified Nursing Assistant by the New Jersey Department of Health",
+        "targetCode": "ce-8570f9a5-e59e-48df-a7cd-00ffcc5fef56",
+        "targetFramework": "Credential Engine's Credential Registry"
+      }
     },
     {
       "@context": "https://velocitynetwork.foundation/contexts/certification-license",

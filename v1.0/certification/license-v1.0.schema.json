@@ -33,11 +33,6 @@
       }
     }
   ],
-  "required": [
-    "authority",
-    "name",
-    "identifier"
-  ],
   "examples": [
     {
       "@context": "https://velocitynetwork.foundation/contexts/certification-license",
@@ -96,7 +91,7 @@
           "addressRegion": "US-CA",
           "addressCountry": "US"
         },
-        "identifier": "12200224"
+        "identifier": "string"
       },
       "name": "California Driver's License",
       "identifier": "G1234568",
@@ -108,7 +103,7 @@
         "A-H Hazardous materials"
       ],
       "restrictionCode": [
-        "Spectacles or contact lenses required"
+        "Spectscles or contact lenses required"
       ]
     }
   ]
