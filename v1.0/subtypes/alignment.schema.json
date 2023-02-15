@@ -1,36 +1,42 @@
 {
   "title": "Alignment",
   "$id": "https://velocitynetwork.foundation/schemas/alignment-v1.0",
-  "type": "object",
-  "additionalProperties": false,
-  "properties": {
-    "targetName": {
-      "type": "string",
-      "description": "Name of the target alignment.",
-      "maxLength": 256
+  "allOf": [
+    {
+      "$ref": "../json-ld-context.schema.json"
     },
-    "targetUrl": {
-      "type": "string",
-      "format": "uri",
-      "description": "URL of the target alignment. ",
-      "maxLength": 512
-    },
-    "targetDescription": {
-      "type": "string",
-      "description": "Detailed description of the target alignment. ",
-      "maxLength": 1024
-    },
-    "targetCode": {
-      "type": "string",
-      "description": "Code of the target alignment. ",
-      "maxLength": 256
-    },
-    "targetFramework": {
-      "type": "string",
-      "description": "The framework to which the target belongs. ",
-      "maxLength": 256
+    {
+      "type": "object",
+      "properties": {
+        "targetName": {
+          "type": "string",
+          "description": "Name of the target alignment.",
+          "maxLength": 256
+        },
+        "targetUrl": {
+          "type": "string",
+          "format": "uri",
+          "description": "URL of the target alignment. ",
+          "maxLength": 512
+        },
+        "targetDescription": {
+          "type": "string",
+          "description": "Detailed description of the target alignment. ",
+          "maxLength": 1024
+        },
+        "targetCode": {
+          "type": "string",
+          "description": "Code of the target alignment. ",
+          "maxLength": 256
+        },
+        "targetFramework": {
+          "type": "string",
+          "description": "The framework to which the target belongs. ",
+          "maxLength": 256
+        }
+      }
     }
-  },
+  ],
   "required": ["targetName", "targetUrl"],
   "examples": [
     {

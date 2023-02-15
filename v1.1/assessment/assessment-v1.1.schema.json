@@ -132,8 +132,8 @@
       "assesses": "Algebraic curves and surfaces",
       "score": {
         "scoreMethod": {
-          "scoreMethodType": "CriterionReferenced",
-          "scoreMethodDescription": "1-100 scale",
+          "scoreMethodType": "criterionReferenced",
+          "scoreMethoddescription": "1-100 scale",
           "passingScore": "60"
         },
         "scoreValue": "92",

@@ -89,7 +89,7 @@
           "scoreMethodType": "CriterionReferenced"
         },
         "result": "partly attended",
-        "passFail": "Fail"
+        "passFail": "fail"
       }
     },
     {
@@ -124,10 +124,10 @@
         "scoreMethod": {
           "scoreMethodDescription": "Poor, Fair, Good, Very Good",
           "passingScore": "Good",
-          "scoreMethodType": "CriterionReferenced"
+          "scoreMethodtype": "CriterionReferenced"
         },
         "result": "Poor",
-        "passFail": "Fail"
+        "passFail": "fail"
       }
     }
   ]
