@@ -22,7 +22,7 @@
         "description": {
           "type": "string",
           "description": "A detailed description of the course. ",
-          "maxLength": 1024
+          "maxLength": 2048
         },
         "courseCode": {
           "type": "string",

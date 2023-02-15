@@ -13,12 +13,12 @@
       "type": "string",
       "format": "uri",
       "description": "URL of the target alignment. ",
-      "maxLength": 2000
+      "maxLength": 2048
     },
     "targetDescription": {
       "type": "string",
       "description": "Detailed description of the target alignment. ",
-      "maxLength": 1024
+      "maxLength": 2048
     },
     "targetCode": {
       "type": "string",

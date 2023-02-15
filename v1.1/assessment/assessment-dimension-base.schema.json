@@ -22,7 +22,7 @@
         "description": {
           "type": "string",
           "description": "A detailed description of the assessment.",
-          "maxLength": 1024
+          "maxLength": 2048
         },
         "assessmentLevel": {
           "type": "string",
