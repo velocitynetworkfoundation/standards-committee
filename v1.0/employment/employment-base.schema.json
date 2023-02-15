@@ -1,6 +1,5 @@
 {
   "title": "Employment-base",
-  "$id": "https://velocitynetwork.foundation/schemas/employment-base-v1.0",
   "type": "object",
   "properties": {
     "@context": {
