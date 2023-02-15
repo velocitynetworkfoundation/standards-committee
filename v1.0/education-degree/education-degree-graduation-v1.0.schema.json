@@ -25,8 +25,7 @@
         },
         "honors": {
           "type": "string",
-          "description": "The type of honors degree given, such as cum laude, merit, etc.",
-          "maxLength": 64
+          "description": "The type of honors degree given, such as cum laude, merit, etc."
         }
       }
     }
