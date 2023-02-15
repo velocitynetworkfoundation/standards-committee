@@ -1,66 +1,62 @@
 {
   "title": "Course-base",
-  "$id": "https://velocitynetwork.foundation/schemas/course-base",
-  "allOf": [
-    {
+  "$id": "https://velocitynetwork.foundation/schemas/course-base-v1.1",
+  "type": "object",
+  "properties": {
+    "@context": {
       "$ref": "../json-ld-context.schema.json"
     },
-    {
-      "type": "object",
-      "properties": {
-        "provider": {
-          "$ref": "../subtypes/organization-v1.1.schema.json"
-        },
-        "contentProvider": {
-          "$ref": "../subtypes/organization-v1.1.schema.json"
-        },
-        "courseName": {
-          "type": "string",
-          "description": "The name of the course.",
-          "maxLength": 256
-        },
-        "description": {
-          "type": "string",
-          "description": "A detailed description of the course. ",
-          "maxLength": 2048
-        },
-        "courseCode": {
-          "type": "string",
-          "description": "The code of the course as it appears in the provider's records.",
-          "maxLength": 256
-        },
-        "courseType": {
-          "type": "string",
-          "description": "The type of course, e.g., professional training, preparation for a license exam, academic course, etc.",
-          "maxLength": 256
-        },
-        "courseMode": {
-          "type": "string",
-          "description": "The course mode or method of teaching, e.g. online, instructor led, lecture, workshop, etc. ",
-          "maxLength": 256
-        },
-        "courseLevel": {
-          "type": "string",
-          "description": "The level of the course, e.g., standard, basic, advanced, etc. ",
-          "maxLength": 64
-        },
-        "courseDuration": {
-          "type": "string",
-          "format": "duration",
-          "description": "The duration of the course in ISO 8601 Duration format. See https://en.wikipedia.org/wiki/ISO_8601#Durations"
-        },
-        "recipient": {
-          "$ref": "../subtypes/personName-v1.1.schema.json"
-        },
-        "alignment": {
-          "type": "array",
-          "description": "A public resource to which the course is aligned.",
-          "items": {
-            "$ref": "../subtypes/alignment-v1.1.schema.json"
-          }
-        }
+    "provider": {
+      "$ref": "../subtypes/organization.schema.json"
+    },
+    "contentProvider": {
+      "$ref": "../subtypes/organization.schema.json"
+    },
+    "courseName": {
+      "type": "string",
+      "description": "The name of the course.",
+      "maxLength": 256
+    },
+    "description": {
+      "type": "string",
+      "description": "A detailed description of the course. ",
+      "maxLength": 2048
+    },
+    "courseCode": {
+      "type": "string",
+      "description": "The code of the course as it appears in the provider's records.",
+      "maxLength": 256
+    },
+    "courseType": {
+      "type": "string",
+      "description": "The type of course, e.g., professional training, preparation for a license exam, academic course, etc.",
+      "maxLength": 256
+    },
+    "courseMode": {
+      "type": "string",
+      "description": "The course mode or method of teaching, e.g. online, instructor led, lecture, workshop, etc. ",
+      "maxLength": 256
+    },
+    "courseLevel": {
+      "type": "string",
+      "description": "The level of the course, e.g., standard, basic, advanced, etc. ",
+      "maxLength": 64
+    },
+    "courseDuration": {
+      "type": "string",
+      "format": "duration",
+      "description": "The duration of the course in ISO 8601 Duration format. See https://en.wikipedia.org/wiki/ISO_8601#Durations"
+    },
+    "recipient": {
+      "$ref": "../subtypes/personName.schema.json"
+    },
+    "alignment": {
+      "type": "array",
+      "description": "A public resource to which the course is aligned.",
+      "items": {
+        "$ref": "../subtypes/alignment.schema.json"
       }
     }
-  ],
+  },
   "x-internal": false
 }

@@ -53,8 +53,11 @@
   },
   "additionalProperties": false,
   "properties": {
+    "@context": {
+      "$ref": "../json-ld-context.schema.json"
+    },
     "recipient": {
-      "$ref": "../subtypes/personName-v1.1.schema.json"
+      "$ref": "../subtypes/personName.schema.json"
     },
     "hasCredential": {
       "type": "object",
@@ -111,7 +114,7 @@
           "type": "array",
           "description": "An array of objects describing which objectives or educational standards this badge aligns to, if any.",
           "items": {
-            "$ref": "../subtypes/alignment-v1.1.schema.json"
+            "$ref": "../subtypes/alignment.schema.json"
           }
         },
         "tags": {
@@ -137,14 +140,11 @@
         "familyName": "Hafez"
       },
       "hasCredential": {
+        "type": "BadgeClass",
         "name": "Influenza Vaccine Immunization Education (IVIE)",
         "image": "http://example.com/ivie.png",
         "description": "Influenza Vaccine Immunization Education (IVIE) is a self-guided learning module for nursing students to gain training specific to the administration of influenza vaccine in organized clinics for communities of people",
-        "issuer": {
-          "type": "Profile",
-          "id": "did:ion:declanhospital",
-          "name": "Declan Hospital"
-        },
+        "issuer": "did:ion:declanhospital",
         "criteria": "https://example.com/ivie/criteria.html",
         "alignment": [
           {

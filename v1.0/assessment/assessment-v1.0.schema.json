@@ -4,7 +4,7 @@
   "$id": "https://velocitynetwork.foundation/schemas/assessment-v1.0",
   "allOf": [
     {
-      "$ref": "./assessment-dimension.schema.json"
+      "$ref": "./assessment-dimension-base.schema.json"
     },
     {
       "type": "object",

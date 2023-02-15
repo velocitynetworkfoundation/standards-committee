@@ -2,54 +2,50 @@
   "title": "Assessment-dimension-base",
   "$schema": "http://json-schema.org/draft-07/schema#",
   "$id": "https://velocitynetwork.foundation/schemas/assessment-dimension-base-v1.1",
-  "allOf": [
-    {
+  "type": "object",
+  "properties": {
+    "@context": {
       "$ref": "../json-ld-context.schema.json"
     },
-    {
-      "type": "object",
-      "properties": {
-        "name": {
-          "type": "string",
-          "description": "The name of the assessment.",
-          "maxLength": 64
-        },
-        "assesses": {
-          "type": "string",
-          "description": "The competency or learning outcome that is being assessed by the assessment.",
-          "maxLength": 128
-        },
-        "description": {
-          "type": "string",
-          "description": "A detailed description of the assessment.",
-          "maxLength": 2048
-        },
-        "assessmentLevel": {
-          "type": "string",
-          "description": "The level of the assessment, e.g., standard, basic, advanced, etc. ",
-          "maxLength": 32
-        },
-        "assessmentMethod": {
-          "type": "string",
-          "description": "The method for assessing, such as written exam, oral exam, role play, multiple choice, etc. ",
-          "maxLength": 32
-        },
-        "alignment": {
-          "type": "array",
-          "description": "A public resource to which the assessment is aligned. ",
-          "items": {
-            "$ref": "../subtypes/alignment-v1.1.schema.json"
-          }
-        },
-        "score": {
-          "$ref": "../subtypes/score-v1.1.schema.json"
-        },
-        "assessmentDate": {
-          "$ref": "../subtypes/date-v1.1.schema.json"
-        }
+    "name": {
+      "type": "string",
+      "description": "The name of the assessment.",
+      "maxLength": 64
+    },
+    "assesses": {
+      "type": "string",
+      "description": "The competency or learning outcome that is being assessed by the assessment.",
+      "maxLength": 128
+    },
+    "description": {
+      "type": "string",
+      "description": "A detailed description of the assessment.",
+      "maxLength": 2048
+    },
+    "assessmentLevel": {
+      "type": "string",
+      "description": "The level of the assessment, e.g., standard, basic, advanced, etc. ",
+      "maxLength": 32
+    },
+    "assessmentMethod": {
+      "type": "string",
+      "description": "The method for assessing, such as written exam, oral exam, role play, multiple choice, etc. ",
+      "maxLength": 32
+    },
+    "alignment": {
+      "type": "array",
+      "description": "A public resource to which the assessment is aligned. ",
+      "items": {
+        "$ref": "../subtypes/alignment.schema.json"
       }
+    },
+    "score": {
+      "$ref": "../subtypes/score.schema.json"
+    },
+    "assessmentDate": {
+      "$ref": "../subtypes/date.schema.json"
     }
-  ],
+  },
   "x-tags": [
     "assessment"
   ],
