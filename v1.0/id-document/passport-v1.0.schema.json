@@ -2,42 +2,39 @@
   "title": "Passport",
   "$schema": "http://json-schema.org/draft-07/schema#",
   "$id": "https://velocitynetwork.foundation/schemas/passport-v1.0",
-  "allOf": [
-    {
+  "type": "object",
+  "additionalProperties": false,
+  "properties": {
+    "@context": {
       "$ref": "../json-ld-context.schema.json"
     },
-    {
-      "type": "object",
-      "properties": {
-        "documentCode": {
-          "type": "string",
-          "pattern": "P[A-Z]?",
-          "description": "The type of passport. The letter P + an optional additional letter to indicate type, e.g. diplomatic. \nOne additional capital letter may be used, in the\ncharacter position after the letter P and at the discretion of the issuing State or organization.",
-          "maxLength": 2
-        },
-        "authority": {
-          "$ref": "../subtypes/organization.schema.json"
-        },
-        "validity": {
-          "$ref": "../subtypes/validity.schema.json"
-        },
-        "person": {
-          "$ref": "../subtypes/person.schema.json"
-        },
-        "identifier": {
-          "type": "string",
-          "description": "The passport number.",
-          "maxLength": 64
-        },
-        "nationality": {
-          "type": "string",
-          "pattern": "^[A-Z]{2}$",
-          "description": "The nationality of the person holding the passport.",
-          "maxLength": 2
-        }
-      }
+    "documentCode": {
+      "type": "string",
+      "pattern": "P[A-Z]?",
+      "description": "The type of passport. The letter P + an optional additional letter to indicate type, e.g. diplomatic. \nOne additional capital letter may be used, in the\ncharacter position after the letter P and at the discretion of the issuing State or organization.",
+      "maxLength": 2
+    },
+    "authority": {
+      "$ref": "../subtypes/organization.schema.json"
+    },
+    "validity": {
+      "$ref": "../subtypes/validity.schema.json"
+    },
+    "person": {
+      "$ref": "../subtypes/person.schema.json"
+    },
+    "identifier": {
+      "type": "string",
+      "description": "The passport number.",
+      "maxLength": 64
+    },
+    "nationality": {
+      "type": "string",
+      "pattern": "^[A-Z]{2}$",
+      "description": "The nationality of the person holding the passport.",
+      "maxLength": 2
     }
-  ],
+  },
   "required": [
     "documentCode",
     "authority",

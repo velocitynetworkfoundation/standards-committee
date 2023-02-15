@@ -10,10 +10,10 @@
       "maxLength": 256
     },
     "identifier": {
-      "$ref": "./did-v1.1.schema.json"
+      "$ref": "./did.schema.json"
     },
     "place": {
-      "$ref": "./place-v1.1.schema.json"
+      "$ref": "./place.schema.json"
     }
   },
   "required": [

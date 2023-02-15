@@ -9,13 +9,13 @@
       "type": "object",
       "properties": {
         "registrationDate": {
-          "$ref": "../subtypes/date-v1.1.schema.json"
+          "$ref": "../subtypes/date.schema.json"
         },
         "startDate": {
-          "$ref": "../subtypes/date-v1.1.schema.json"
+          "$ref": "../subtypes/date.schema.json"
         },
         "endDate": {
-          "$ref": "../subtypes/date-v1.1.schema.json"
+          "$ref": "../subtypes/date.schema.json"
         }
       }
     }
