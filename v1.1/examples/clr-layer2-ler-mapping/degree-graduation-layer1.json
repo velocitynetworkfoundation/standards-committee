@@ -27,9 +27,9 @@
 		"description": "To meet an increasing demand for cybersecurity professionals, the Bachelor of Science in Cybersecurity and Information Assurance (BSCSIA degree program prepares IT professionals to apply knowledge and experience in risk management anddigital forensics to safeguard infrastructure and secure data through continuity planning and disaster recovery operations. Courses deliver proven methods for information security using\nsoftware analysis techniques, web engineering, cloud management, and networking strategies to prevent, detect, and mitigate cyberattacks. This\nprogram features nationally recognized, high demand certifications in the field of cybersecurity.",
 		"conferredDate": "2020-06",
 		"score": {
-			"scoreMethod": {
-				"scoreMethodDescription": "Passed or Not Passed"
-			},
+      "method": { 
+        "description": "Passed or Not Passed" 
+      },
 			"passFail": "Pass"
 		}
 	}
