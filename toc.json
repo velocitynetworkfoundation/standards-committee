@@ -99,7 +99,12 @@
           "items": [
             {
               "type": "item",
-              "title": "Open Badge",
+              "title": "Open Badge v3 (VC Native)",
+              "uri": "v1.1/badge/open-badge-credential.schema.json"
+            },
+            {
+              "type": "item",
+              "title": "Open Badge v2",
               "uri": "v1.1/badge/open-badge-v2.0.schema.json"
             },
             {
@@ -291,11 +296,11 @@
         },
         {
           "type": "group",
-          "title": "Open Badge",
+          "title": "Badges",
           "items": [
             {
               "type": "item",
-              "title": "Open Badge",
+              "title": "Open Badge v1",
               "uri": "v1.0/open-badge/open-badge-v1.0.schema.json"
             }
           ]
