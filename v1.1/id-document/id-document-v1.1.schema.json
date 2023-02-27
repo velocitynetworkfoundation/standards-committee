@@ -35,7 +35,7 @@
     },
     "postalAddress": {
       "$ref": "../subtypes/address.schema.json"
-      }
+    }
   },
   "required": [
     "documentType",
@@ -43,5 +43,35 @@
     "identifier",
     "person"
   ],
-  "examples": []
+  "examples": [
+    {
+      "@context": "https://velocitynetwork.foundation/contexts/id-document",
+      "authority": {
+        "name": "Colorado State Government",
+        "identifier": "did:ion:0257274276a4e539741ca11b590b9447b26a8051",
+        "place": {
+          "addressLocality": "Denver",
+          "addressRegion": "US-CO",
+          "addressCountry": "US"
+        }
+      },
+      "validity": {
+        "firstValidFrom": "2019-05-09",
+        "validFrom": "2019-05-09"
+      },
+      "person": {
+        "givenName": "Ken",
+        "familyName": "Williams",
+        "middleName": "Robert",
+        "birthDate": "1960-03-15"
+      },
+      "identifier": "123456",
+      "postalAddress": {
+        "streetAddress": "10 Admiral Rd",
+        "addressLocality": "Denver",
+        "addressRegion": "US-CO",
+        "addressCountry": "US"
+      }
+    }
+  ]
 }
