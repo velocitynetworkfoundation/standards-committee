@@ -58,10 +58,11 @@
       "person": {
         "givenName": "Ken",
         "familyName": "Williams",
-        "middleName": "Robert"
+        "middleName": "Robert",
+        "birthDate": "1999-03-15"
       },
       "identifier": "713-80-5241"
-    },    
+    },
     {
       "@context": "https://velocitynetwork.foundation/contexts/id-document",
       "documentType": "ID For Voting Purpose",
@@ -76,7 +77,7 @@
       },
       "validity": {
         "validFrom": "2019-05-09",
-        "validTo": "2029-05-09"
+        "validUntil": "2029-05-09"
       },
       "person": {
         "givenName": "Ken",
