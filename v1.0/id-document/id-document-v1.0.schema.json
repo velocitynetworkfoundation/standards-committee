@@ -46,30 +46,49 @@
   "examples": [
     {
       "@context": "https://velocitynetwork.foundation/contexts/id-document",
+      "documentType": "Social Security Number",
       "authority": {
-        "name": "Colorado State Government",
+        "name": "Department of Health and Human Services",
         "identifier": "did:ion:0257274276a4e539741ca11b590b9447b26a8051",
         "place": {
-          "addressLocality": "Denver",
-          "addressRegion": "US-CO",
+          "addressRegion": "US-DC",
+          "addressCountry": "US"
+        }
+      },
+      "person": {
+        "givenName": "Ken",
+        "familyName": "Williams",
+        "middleName": "Robert"
+      },
+      "identifier": "713-80-5241"
+    },    
+    {
+      "@context": "https://velocitynetwork.foundation/contexts/id-document",
+      "documentType": "ID For Voting Purpose",
+      "authority": {
+        "name": "Georgia State Government",
+        "identifier": "did:ion:011111490ds0474276a4e539741ca11b590b9447b26a8051",
+        "place": {
+          "addressLocality": "Atlanta",
+          "addressRegion": "US-GA",
           "addressCountry": "US"
         }
       },
       "validity": {
-        "firstValidFrom": "2019-05-09",
-        "validFrom": "2019-05-09"
+        "validFrom": "2019-05-09",
+        "validTo": "2029-05-09"
       },
       "person": {
         "givenName": "Ken",
         "familyName": "Williams",
         "middleName": "Robert",
-        "birthDate": "1960-03-15"
+        "birthDate": "1999-03-15"
       },
-      "identifier": "123456",
+      "identifier": "034569393",
       "postalAddress": {
-        "streetAddress": "10 Admiral Rd",
-        "addressLocality": "Denver",
-        "addressRegion": "US-CO",
+        "streetAddress": "10 Admiral Parkway",
+        "addressLocality": "Atlanta",
+        "addressRegion": "US-GA",
         "addressCountry": "US"
       }
     }
