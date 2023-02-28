@@ -113,6 +113,7 @@
         "alignment": {
           "type": "array",
           "description": "An array of objects describing which objectives or educational standards this badge aligns to, if any.",
+          "minItems": 1,
           "items": {
             "$ref": "../subtypes/alignment.schema.json"
           }
@@ -120,6 +121,7 @@
         "tags": {
           "type": "array",
           "description": "Tags that describes the type of achievement.",
+          "minItems": 1,
           "items": {
             "type": "string",
             "maxLength": 64

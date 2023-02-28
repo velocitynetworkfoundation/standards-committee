@@ -38,6 +38,7 @@
     "endorsementCode": {
       "type": "array",
       "description": "Endorsements to the license such as vehicle class A1, B.",
+      "minItems": 1,
       "items": {
         "type": "string",
         "maxLength": 128
@@ -46,6 +47,7 @@
     "restrictionCode": {
       "type": "array",
       "description": "Restrictions to the license such as need to wear glasses.",
+      "minItems": 1,
       "items": {
         "type": "string",
         "maxLength": 128
