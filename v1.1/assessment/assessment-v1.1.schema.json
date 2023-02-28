@@ -15,6 +15,7 @@
         "assessmentDimensions": {
           "type": "array",
           "description": "Dimensions are sub-assessments within the parent assessment. Each dimension refers to a different aspect of what is being assessed.",
+          "minItems": 1,
           "items": {
             "$ref": "./assessment-dimension.schema.json"
           }

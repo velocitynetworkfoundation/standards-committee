@@ -20,6 +20,7 @@
     },
     "employmentType": {
       "type": "array",
+      "minItems": 1,
       "items": {
         "type": "string",
         "enum": [
@@ -40,6 +41,7 @@
     "alignment": {
       "type": "array",
       "description": "A public resource to which the employment position is aligned.",
+      "minItems": 1,
       "items": {
         "$ref": "../subtypes/alignment.schema.json"
       }

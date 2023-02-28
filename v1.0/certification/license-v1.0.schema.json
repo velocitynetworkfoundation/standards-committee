@@ -20,6 +20,7 @@
         "endorsementCode": {
           "type": "array",
           "description": "Endorsements to the license such as vehicle class A1, B, in driver's license, or specialties in nursing license.",
+          "minItems": 1,
           "items": {
             "type": "string",
             "maxLength": 128
@@ -28,6 +29,7 @@
         "restrictionCode": {
           "type": "array",
           "description": "Restrictions to the license such as need to wear glasses in driver's license.",
+          "minItems": 1,
           "items": {
             "type": "string",
             "maxLength": 128

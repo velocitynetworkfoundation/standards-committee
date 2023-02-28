@@ -34,6 +34,7 @@
     "alignment": {
       "type": "array",
       "description": "A public resource to which the assessment is aligned. ",
+      "minItems": 1,
       "items": {
         "$ref": "../subtypes/alignment.schema.json"
       }
