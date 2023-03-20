@@ -13,7 +13,7 @@
       "description": "The family name or surname of the person.",
       "maxLength": 64
     },
-    "middleName": {
+    "additionalName": {
       "type": "string",
       "description": "The middle name of the person.",
       "maxLength": 256
@@ -54,7 +54,7 @@
     {
       "givenName": "Olivia",
       "familyName": "Hafez",
-      "middleName": "Melanie",
+      "additionalName": "Melanie",
       "namePrefix": "Dr",
       "birthDate": "1994-06-20",
       "birthPlace": {
