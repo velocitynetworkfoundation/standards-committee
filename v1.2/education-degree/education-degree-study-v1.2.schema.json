@@ -1,30 +1,48 @@
 {
   "title": "Education degree study",
+  "x-stoplight": {
+    "id": "2124d64681f0e"
+  },
   "$id": "https://velocitynetwork.foundation/schemas/education-degree-study-v1.1",
   "allOf": [
     {
-      "$ref": "./education-degree-base.schema.json"
+      "$ref": "./education-degree-base.schema.json",
+      "x-stoplight": {
+        "id": "90x3d42gtl35t"
+      }
     },
     {
       "type": "object",
+      "x-stoplight": {
+        "id": "ltd9gzhz57lw1"
+      },
       "properties": {
         "registrationDate": {
-          "$ref": "../subtypes/date.schema.json"
+          "$ref": "/p/v1.1/subtypes/date.schema.json",
+          "x-stoplight": {
+            "id": "2569ga03mo869"
+          }
         },
         "startDate": {
-          "$ref": "../subtypes/date.schema.json"
+          "$ref": "/p/v1.1/subtypes/date.schema.json",
+          "x-stoplight": {
+            "id": "tmle99eo2ckcb"
+          }
         },
         "endDate": {
-          "$ref": "../subtypes/date.schema.json"
+          "$ref": "/p/v1.1/subtypes/date.schema.json",
+          "x-stoplight": {
+            "id": "wxqp3y5waf9mo"
+          }
+        },
+        "garde": {
+          "$ref": "/p/v1.0/subtypes/score.schema.json",
+          "x-stoplight": {
+            "id": "6jb68mrn2gjvr"
+          }
         }
       }
     }
-  ],
-  "required": [
-    "institution",
-    "degreeName",
-    "startDate",
-    "recipient"
   ],
   "examples": [
     {
@@ -115,5 +133,6 @@
         "familyName": "Hafez"
       }
     }
-  ]
+  ],
+  "description": ""
 }

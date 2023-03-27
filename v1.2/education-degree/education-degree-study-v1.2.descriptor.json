@@ -1,7 +1,7 @@
 {
   "title": {
     "path": [
-      "$.legalEmployer.name"
+      "$.institution.name"
     ],
     "schema": {
       "type": "string"
@@ -10,7 +10,7 @@
   },
   "subtitle": {
     "path": [
-      "$.role"
+      "$.degreeName"
     ],
     "schema": {
       "type": "string"
@@ -19,7 +19,7 @@
   },
   "summary_detail": {
     "path": [
-      "$.endDate"
+      "$.startDate"
     ],
     "schema": {
       "type": "string",
@@ -28,11 +28,20 @@
     "fallback": "-"
   },
   "description": {
-    "text": "Past employment position"
+    "text": "Degree study"
   },
   "properties": [
     {
-      "label": "Role description",
+      "label": "School or department",
+      "path": [
+        "$.school.name"
+      ],
+      "schema": {
+        "type": "string"
+      }
+    },
+    {
+      "label": "Description",
       "path": [
         "$.description"
       ],
@@ -41,7 +50,17 @@
       }
     },
     {
-      "label": "Start Date",
+      "label": "Registration date",
+      "path": [
+        "$.registrationDate"
+      ],
+      "schema": {
+        "type": "string",
+        "format": "date"
+      }
+    },
+    {
+      "label": "Start date",
       "path": [
         "$.startDate"
       ],
@@ -61,36 +80,54 @@
       }
     },
     {
-      "label": "Place of work",
+      "label": "Major",
       "path": [
-        "$.place.addressLocality"
+        "$.degreeMajor"
       ],
       "schema": {
         "type": "string"
       }
     },
     {
-      "label": "State or region of work",
+      "label": "Minor",
       "path": [
-        "$.place.addressRegion"
+        "$.degreeMinor"
       ],
       "schema": {
         "type": "string"
       }
     },
     {
-      "label": "Country of work",
+      "label": "Program",
       "path": [
-        "$.place.addressCountry"
+        "$.programName"
       ],
       "schema": {
         "type": "string"
       }
     },
     {
-      "label": "Employment type",
+      "label": "Program type",
       "path": [
-        "$.employmentType[*]"
+        "$.programType"
+      ],
+      "schema": {
+        "type": "string"
+      }
+    },
+    {
+      "label": "Program mode",
+      "path": [
+        "$.programMode"
+      ],
+      "schema": {
+        "type": "string"
+      }
+    },
+    {
+      "label": "Grade",
+      "path": [
+        "$.grade.scoreValue"
       ],
       "schema": {
         "type": "string"

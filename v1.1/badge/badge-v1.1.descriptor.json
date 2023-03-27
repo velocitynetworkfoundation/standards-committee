@@ -53,16 +53,6 @@
       }
     },
     {
-      "label": "Badge Id",
-      "path": [
-        "$.hasCredential.id"
-      ],
-      "schema": {
-        "type": "string"
-      },
-      "fallback": "-"
-    },
-    {
       "label": "Description",
       "path": [
         "$.hasCredential.description"
