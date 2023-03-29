@@ -1,48 +1,54 @@
 {
   "title": "Education degree study",
   "x-stoplight": {
-    "id": "2124d64681f0e"
+    "id": "29u5umyrlz2gt"
   },
   "$id": "https://velocitynetwork.foundation/schemas/education-degree-study-v1.1",
   "allOf": [
     {
       "$ref": "./education-degree-base.schema.json",
       "x-stoplight": {
-        "id": "90x3d42gtl35t"
+        "id": "65akuwz3vg99a"
       }
     },
     {
       "type": "object",
       "x-stoplight": {
-        "id": "ltd9gzhz57lw1"
+        "id": "iqzyiwcryeac9"
       },
       "properties": {
         "registrationDate": {
-          "$ref": "/p/v1.1/subtypes/date.schema.json",
+          "$ref": "../subtypes/date.schema.json",
           "x-stoplight": {
-            "id": "2569ga03mo869"
+            "id": "5r4x684t3lpr5"
           }
         },
         "startDate": {
-          "$ref": "/p/v1.1/subtypes/date.schema.json",
+          "$ref": "../subtypes/date.schema.json",
           "x-stoplight": {
-            "id": "tmle99eo2ckcb"
+            "id": "5ati50uh81wfa"
           }
         },
         "endDate": {
-          "$ref": "/p/v1.1/subtypes/date.schema.json",
+          "$ref": "../subtypes/date.schema.json",
           "x-stoplight": {
-            "id": "wxqp3y5waf9mo"
+            "id": "k7tt67s3v1jrz"
           }
         },
-        "garde": {
-          "$ref": "/p/v1.0/subtypes/score.schema.json",
+        "grade": {
+          "$ref": "../subtypes/score.schema.json",
           "x-stoplight": {
-            "id": "6jb68mrn2gjvr"
+            "id": "nybda4fm2xphq"
           }
         }
       }
     }
+  ],
+    "required": [
+    "institution",
+    "startDate",
+    "degreeName",
+    "recipient"
   ],
   "examples": [
     {
@@ -133,6 +139,5 @@
         "familyName": "Hafez"
       }
     }
-  ],
-  "description": ""
+  ]
 }

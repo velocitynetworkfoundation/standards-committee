@@ -80,6 +80,33 @@
       }
     },
     {
+      "label": "Grade",
+      "path": [
+        "$.grade.scoreValue"
+      ],
+      "schema": {
+        "type": "string"
+      }
+    },
+    {
+      "label": "Result",
+      "path": [
+        "$.grade.result"
+      ],
+      "schema": {
+        "type": "string"
+      }
+    },
+    {
+      "label": "Pass or fail",
+      "path": [
+        "$.grade.passFail"
+      ],
+      "schema": {
+        "type": "string"
+      }
+    },
+    {
       "label": "Major",
       "path": [
         "$.degreeMajor"
@@ -119,15 +146,6 @@
       "label": "Program mode",
       "path": [
         "$.programMode"
-      ],
-      "schema": {
-        "type": "string"
-      }
-    },
-    {
-      "label": "Grade",
-      "path": [
-        "$.grade.scoreValue"
       ],
       "schema": {
         "type": "string"
