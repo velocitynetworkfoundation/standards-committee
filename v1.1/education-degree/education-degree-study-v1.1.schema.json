@@ -1,29 +1,53 @@
 {
   "title": "Education degree study",
+  "x-stoplight": {
+    "id": "29u5umyrlz2gt"
+  },
   "$id": "https://velocitynetwork.foundation/schemas/education-degree-study-v1.1",
   "allOf": [
     {
-      "$ref": "./education-degree-base.schema.json"
+      "$ref": "./education-degree-base.schema.json",
+      "x-stoplight": {
+        "id": "65akuwz3vg99a"
+      }
     },
     {
       "type": "object",
+      "x-stoplight": {
+        "id": "iqzyiwcryeac9"
+      },
       "properties": {
         "registrationDate": {
-          "$ref": "../subtypes/date.schema.json"
+          "$ref": "../subtypes/date.schema.json",
+          "x-stoplight": {
+            "id": "5r4x684t3lpr5"
+          }
         },
         "startDate": {
-          "$ref": "../subtypes/date.schema.json"
+          "$ref": "../subtypes/date.schema.json",
+          "x-stoplight": {
+            "id": "5ati50uh81wfa"
+          }
         },
         "endDate": {
-          "$ref": "../subtypes/date.schema.json"
+          "$ref": "../subtypes/date.schema.json",
+          "x-stoplight": {
+            "id": "k7tt67s3v1jrz"
+          }
+        },
+        "grade": {
+          "$ref": "../subtypes/score.schema.json",
+          "x-stoplight": {
+            "id": "nybda4fm2xphq"
+          }
         }
       }
     }
   ],
-  "required": [
+    "required": [
     "institution",
-    "degreeName",
     "startDate",
+    "degreeName",
     "recipient"
   ],
   "examples": [

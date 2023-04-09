@@ -1,42 +1,72 @@
 {
   "title": "Degree-base",
+  "x-stoplight": {
+    "id": "vxxq4pfjumop2"
+  },
   "type": "object",
   "properties": {
     "@context": {
-      "$ref": "../json-ld-context.schema.json"
+      "$ref": "../json-ld-context.schema.json",
+      "x-stoplight": {
+        "id": "y69g1od6dhayn"
+      }
     },
     "institution": {
-      "$ref": "../subtypes/organization.schema.json"
+      "$ref": "../subtypes/organization.schema.json",
+      "x-stoplight": {
+        "id": "8xb8q76dwqavr"
+      }
     },
     "school": {
-      "$ref": "../subtypes/organization.schema.json"
+      "$ref": "../subtypes/organization.schema.json",
+      "x-stoplight": {
+        "id": "uftcfc4kq26xb"
+      }
     },
     "programName": {
       "type": "string",
       "description": "The program in which the person holding the degree studied for the degree.",
-      "maxLength": 256
+      "maxLength": 256,
+      "x-stoplight": {
+        "id": "yclymizsjalta"
+      }
     },
     "programType": {
       "type": "string",
       "description": "The type of program, e.g., full.",
-      "maxLength": 256
+      "maxLength": 256,
+      "x-stoplight": {
+        "id": "lrenfpcb0lkxu"
+      }
     },
     "programMode": {
       "type": "string",
       "description": "The program mode or method of teaching, e.g., online.",
-      "maxLength": 256
+      "maxLength": 256,
+      "x-stoplight": {
+        "id": "d5yzg344zmo1d"
+      }
     },
     "degreeName": {
       "type": "string",
       "description": "The name of the degree.",
-      "maxLength": 256
+      "maxLength": 256,
+      "x-stoplight": {
+        "id": "55yezwcy08vgv"
+      }
     },
     "degreeMajor": {
       "type": "array",
       "description": "The major field or fields of study of the degree.",
       "items": {
         "type": "string",
-        "maxLength": 128
+        "maxLength": 128,
+        "x-stoplight": {
+          "id": "u6kgtelh4rl5x"
+        }
+      },
+      "x-stoplight": {
+        "id": "mwo2beugjj4eq"
       }
     },
     "degreeMinor": {
@@ -44,22 +74,40 @@
       "description": "The minor field or fields of study of the degree.",
       "items": {
         "type": "string",
-        "maxLength": 128
+        "maxLength": 128,
+        "x-stoplight": {
+          "id": "lp1rsg4xvycla"
+        }
+      },
+      "x-stoplight": {
+        "id": "ltj627swyyelh"
       }
     },
     "description": {
       "type": "string",
       "description": "A detailed description of the degree.",
-      "maxLength": 2048
+      "maxLength": 2048,
+      "x-stoplight": {
+        "id": "kzq2jkno9rvka"
+      }
     },
     "recipient": {
-      "$ref": "../subtypes/personName.schema.json"
+      "$ref": "../subtypes/personName.schema.json",
+      "x-stoplight": {
+        "id": "u78mwlex9m429"
+      }
     },
     "alignment": {
       "type": "array",
       "description": "A public resource to which the degree is aligned.",
       "items": {
-        "$ref": "../subtypes/alignment.schema.json"
+        "$ref": "../subtypes/alignment.schema.json",
+        "x-stoplight": {
+          "id": "8imt4cg5ge8bh"
+        }
+      },
+      "x-stoplight": {
+        "id": "uowhvmg0tx7o8"
       }
     }
   },
