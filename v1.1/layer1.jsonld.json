@@ -1,130 +1,303 @@
 {
   "@context": {
-    "ceterms": "https://credreg.net/ctdl/terms/",
     "schema": "http://schema.org/",
-    "vnf": "https://velocitynetwork.foundation/contexts/",
-    "obi": "https://w3id.org/openbadges/v2",
-
-    "Address": "schema:PostalAddress",
-    "streetAddress": "schema:streetAddress",
-    "addressLocality": "schema:addressLocality",
-    "addressRegion": "schema:addressRegion",
-    "postCode": "schema:postalCode",
-    "addressCountry": "schema:addressCountry",
-
-    "Place": "schema:PostalAddress",
-    "name": "schema:name",
-    
-    "Validity-1.0": "vnf:Validity-1.0",
-    "firstValidFrom": { "@id": "vnf:firstValidFrom", "@type": "schema:Date" },
-    "validFrom": "schema:validFrom",
-    "validUntil": "schema:validUntil",
-    "validIn": "vnf:validIn",
-
-    "Person": "schema:Person",
-    "givenName": "schema:givenName",
-    "familyName": "schema:familyName",
-    "middleName": "schema:additionalName",
-    "namePrefix": "schema:honorificPrefix",
-    "nameSuffix": "schema:honorificSuffix",
-    "birthDate": "schema:birthDate",
-    "birthPlace": {
-      "@id":"vnf:birthPlace", 
-      "@type": "@id"
+    "xsd": "https://www.w3.org/2001/XMLSchema#",
+    "vnf": "https://velocitynetwork.foundation/contexts#",
+    "obiv2": "https://w3id.org/openbadges/v2#",
+    "ceterms": "https://credreg.net/ctdl/terms/",
+    "Address": {
+      "@id": "vnf:PostalAddress",
+      "@context": {
+        "streetAddress": "schema:streetAddress",
+        "addressLocality": "schema:addressLocality",
+        "addressRegion": "schema:addressRegion",
+        "postCode": "schema:postalCode",
+        "addressCountry": "schema:addressCountry"
+      }
     },
-    "gender": "schema:gender",
-
-    "Organization": "schema:Organization",
-    "identifier": {
-      "@id": "schema:identifier", 
-      "@type": "@id"
+    "Place": {
+      "@id": "vnf:Place",
+      "@context": {
+        "name": "schema:name",
+        "addressLocality": "schema:addressLocality",
+        "addressRegion": "schema:addressRegion",
+        "addressCountry": "schema:addressCountry"
+      }
     },
-    "place": {
-      "@id":"vnf:place", 
-      "@type": "@id"
+    "Validity": {
+      "@id": "vnf:Validity",
+      "@context": {
+        "firstValidFrom": {
+          "@id": "vnf:firstValidFrom",
+          "@type": "schema:Date"
+        },
+        "validFrom": "schema:validFrom",
+        "validUntil": "schema:validUntil",
+        "validIn": "vnf:Place"
+      }
     },
-
-    "AlignmentObject": "schema:AlignmentObject",
-    "targetName": "schema:targetName",
-    "targetUrl": "schema:targetUrl",
-    "targetDescription": "schema:targetDescription",
-    "targetFramework": "schema:educationalFramework",
-    "targetCode": "obi:targetCode",
-
-    "Score-1.0": "vnf:Score-1.0",
-    "scoreMethod": { "@id": "vnf:scoringMethod", "@type": "@id" },
-    "scoreMethodType": "ceterms:scoringMethodType",
-    "scoreMethodDescription": "ceterms:scoringMethodDescription",
-    "alignment": { "@id": "vnf:alignment", "@type": "@id" },
-    "passingScore": "ceterms:requires",
-    "scoreValue": "vnf:scoreValue",
-    "result": "vnf:result",
-    "passFail": "vnf:passFail",
-    
-    "Email-1.0": "vnf:Email-1.0",
-    "email": "schema:email",
-    
-    "Phone-1.0": "vnf:Phone-1.0",
-    "phone": "schema:telephone",
-
-    "IdDocument-1.0": "vnf:IdDocument-1.0",
-    "documentType": "schema:additionalType",
-    "authority": { "@id": "vnf:authority", "@type": "@id" },
-    "validity": { "@id": "vnf:validity", "@type": "@id" },
-    "person": { "@id": "vnf:person", "@type": "@id" },
-    "nationality": "schema:addressCountry",
-    "postalAddress": { "@id": "vnf:postalAddress", "@type": "@id" },
-
-    "Passport-1.0": "vnf:Passport-1.0",
-    "documentCode": "schema:additionalType",
-
-    "driversLicense": "vnf:DriversLicense-1.0",
-    "address": { "@id": "vnf:postalAddress", "@type": "@id" },
-
-    "Employment-1.0": "vnf:Employment-1.0",
-    "description": "schema:description",
-    "legalEmployer": { "@id": "vnf:legalEmployer", "@type": "@id" },
-    "role": "schema:roleName",
-    "employmentType": "schema:employmentType",
-    "startDate": { "@id": "vnf:startDate", "@type": "schema:Date"},
-    "endDate": { "@id": "vnf:endDate", "@type": "schema:Date"},
-
-    "Degree-1.0": "vnf:EducationDegree-1.0",
-    "institution": { "@id": "vnf:institution", "@type": "@id" },
-    "school": { "@id": "vnf:school", "@type": "@id" },
-    "programName": "schema:name",
-    "programType": "schema:programType",
-    "programMode": "schema:educationalProgramMode",
-    "degreeName": "schema:educationalCredentialAwarded",
-    "degreeMajor": "ceterms:degreeMajor",
-    "degreeMinor": "ceterms:degreeMinor",
-    "honors": "vnf:honors",
-    "grade": { "@id": "vnf:score", "@type": "@id" },
-    "registrationDate": { "@id": "vnf:registrationDate", "@type": "schema:Date"},
-    "conferredDate": { "@id": "vnf:conferredDate", "@type": "schema:Date"},
-
-    "Course-1.0": "vnf:Course-1.0",
-    "provider": { "@id": "vnf:provider", "@type": "@id" },
-    "contentProvider": { "@id": "vnf:contentProvider", "@type": "@id" },
-    "courseName": "schema:educationalCredentialAwarded",
-    "courseCode": "schema:courseCode",
-    "courseType": "schema:programType",
-    "courseMode": "schema:educationalProgramMode",
-    "courseLevel": "schema:educationalLevel",
-    "courseDuration": "schema:timeToComplete",
-    "completionDate": { "@id": "vnf:completionDate", "@type": "schema:Date"},
-
-    "Assessment-1.0": "vnf:Assessment-1.0",
-    "assesses": "schema:assesses",
-    "assessmentLevel": "schema:educationalLevel",
-    "assessmentMethod": "ceterms:assessmentMethodDescription",
-    "assessmentDate": { "@id": "vnf:assessmentDate", "@type": "schema:Date"},  
-    "assessmentDimensions": { "@id": "vnf:assessmentDimensions", "@container": "@list" },  
-    "score": { "@id": "vnf:score", "@type": "@id" },
-
-    "Certifcation-1.0": "vnf:Certification-1.0",
-    "endorsementCode": "vnf:endorsementCode",
-    "restrictionCode": "vnf:restrictionsCode",
-    "License-1.0": "vnf:License-1.0"
+    "Person": {
+      "@id": "vnf:Person",
+      "@context": {
+        "givenName": "schema:givenName",
+        "familyName": "schema:familyName",
+        "middleName": "schema:additionalName",
+        "namePrefix": "schema:honorificPrefix",
+        "nameSuffix": "schema:honorificSuffix",
+        "birthDate": "schema:birthDate",
+        "birthPlace": {
+          "@id":"vnf:birthPlace",
+          "@type": "@id"
+        },
+        "gender": "schema:gender"
+      }
+    },
+    "PersonName": {
+      "@id": "vnf:Person",
+      "@context": {
+        "givenName": "schema:givenName",
+        "familyName": "schema:familyName",
+        "middleName": "schema:additionalName",
+        "namePrefix": "schema:honorificPrefix",
+        "nameSuffix": "schema:honorificSuffix"
+      }
+    },
+    "Organization": {
+      "@id": "vnf:Organization",
+      "@context": {
+        "name": "schema:name",
+        "identifier": {
+          "@id": "schema:identifier",
+          "@type": "@id"
+        },
+        "place": {
+          "@id":"vnf:place",
+          "@type": "@id"
+        }
+      }
+    },
+    "AlignmentObject": {
+      "@id": "vnf:AlignmentObject",
+      "@context": {
+        "targetCode": {
+          "@id": "obiv2:targetCode",
+          "@type": "xsd:string"
+        },
+        "targetDescription": "schema:targetDescription",
+        "targetFramework": "schema:targetFramework",
+        "targetName": "schema:targetName",
+        "targetType": {
+          "@id": "obiv2:targetType",
+          "@type": "xsd:string"
+        },
+        "targetUrl": {
+          "@id": "schema:targetUrl",
+          "@type": "xsd:anyURI"
+        }
+      }
+    },
+    "Score": {
+      "@id": "vnf:Score",
+      "@context": {
+        "scoreMethod": "vnf:ScoreMethod",
+        "scoreValue": {
+          "@id": "vnf:scoreValue",
+          "@type": "xsd:string"
+        },
+        "result": {
+          "@id": "vnf:result",
+          "@type": "xsd:string"
+        },
+        "passFail":  {
+          "@id": "vnf:passFail",
+          "@type": "xsd:string"
+        }
+      }
+    },
+    "ScoreMethod": {
+      "@id": "vnf:ScoreMethod",
+      "@context": {
+        "scoreMethodType": "ceterms:scoringMethodType",
+        "scoreMethodDescription": "ceterms:scoringMethodDescription",
+        "alignment": { "@id": "vnf:AlignmentObject", "@container": "@set" },
+        "passingScore": "ceterms:requires"
+      }
+    },
+    "Email": {
+      "@id": "vnf:Email",
+      "@context": {
+        "email": "schema:email"
+      }
+    },
+    "Phone": {
+      "@id": "vnf:Phone",
+      "@context": {
+        "phone": "schema:telephone"
+      }
+    },
+    "IdDocument":  {
+      "@id": "vnf:IdDocument",
+      "@context": {
+        "documentType": "schema:additionalType",
+        "postalAddress": { "@id": "vnf:Address", "@type": "@id" },
+        "authority": { "@id": "vnf:Organization", "@type": "@id" },
+        "validity": { "@id": "vnf:Validity", "@type": "@id" },
+        "person": { "@id": "vnf:Person", "@type": "@id" },
+        "identifier": {
+          "@id": "schema:identifier",
+          "@type": "@id"
+        },
+        "nationality": "schema:addressCountry"
+      }
+    },
+    "Passport":  {
+      "@id": "vnf:Passport",
+      "@context": {
+        "documentCode": "schema:additionalType",
+        "authority": { "@id": "vnf:Organization", "@type": "@id" },
+        "validity": { "@id": "vnf:Validity", "@type": "@id" },
+        "person": { "@id": "vnf:Person", "@type": "@id" },
+        "identifier": {
+          "@id": "schema:identifier",
+          "@type": "@id"
+        },
+        "nationality": "schema:addressCountry"
+      }
+    },
+    "DriversLicense": {
+      "@id": "vnf:DriversLicense",
+      "@context": {
+        "authority": { "@id": "vnf:Organization", "@type": "@id" },
+        "validity": { "@id": "vnf:Validity", "@type": "@id" },
+        "person": { "@id": "vnf:Person", "@type": "@id" },
+        "identifier": {
+          "@id": "schema:identifier",
+          "@type": "@id"
+        },
+        "nationality": "schema:addressCountry",
+        "address": { "@id": "vnf:Address", "@type": "@id" },
+        "description": "schema:description",
+        "endorsementCode": { "@id": "xsd:string", "@container": "@set" },
+        "restrictionCode": { "@id": "xsd:string", "@container": "@set" },
+        "alignment": { "@id": "vnf:AlignmentObject", "@container": "@set" }
+      }
+    },
+    "Employment-1.1": {
+      "@id": "vnf:Employment-1.1",
+      "@context": {
+        "legalEmployer": { "@id": "vnf:Organization", "@type": "@id" },
+        "role": "schema:roleName",
+        "description": "schema:description",
+        "employmentType": "schema:employmentType",
+        "startDate": { "@id": "vnf:startDate", "@type": "schema:Date"},
+        "endDate": { "@id": "vnf:endDate", "@type": "schema:Date"},
+        "place": "vnf:place",
+        "recipient": "vnf:PersonName",
+        "alignment": { "@id": "vnf:AlignmentObject", "@container": "@set" }
+      }
+    },
+    "EducationDegree-1.1": {
+      "@id": "vnf:EducationDegree-1.1",
+      "@context": {
+        "institution": { "@id": "vnf:Organization", "@type": "@id" },
+        "school": { "@id": "vnf:Organization", "@type": "@id" },
+        "programName": "schema:name",
+        "programType": "schema:programType",
+        "programMode": "schema:educationalProgramMode",
+        "degreeName": "schema:educationalCredentialAwarded",
+        "degreeMajor": "ceterms:degreeMajor",
+        "degreeMinor": "ceterms:degreeMinor",
+        "description": "schema:description",
+        "recipient": "vnf:PersonName",
+        "alignment": { "@id": "vnf:AlignmentObject", "@container": "@set" },
+        "registrationDate": { "@id": "vnf:registrationDate", "@type": "schema:Date"},
+        "conferredDate": { "@id": "vnf:conferredDate", "@type": "schema:Date"},
+        "startDate": { "@id": "vnf:startDate", "@type": "schema:Date"},
+        "endDate": { "@id": "vnf:endDate", "@type": "schema:Date"},
+        "honors": "xsd:string",
+        "grade": { "@id": "vnf:Score" }
+      }
+    },
+    "Course-1.1": {
+      "@id": "vnf:Course-1.1",
+      "@context": {
+        "provider": { "@id": "vnf:Organization", "@type": "@id" },
+        "contentProvider": { "@id": "vnf:Organization", "@type": "@id" },
+        "courseName": "schema:educationalCredentialAwarded",
+        "courseCode": "schema:courseCode",
+        "courseType": "schema:programType",
+        "courseMode": "schema:educationalProgramMode",
+        "courseLevel": "schema:educationalLevel",
+        "courseDuration": "schema:timeToComplete",
+        "description": "schema:description",
+        "recipient": "vnf:PersonName",
+        "alignment": { "@id": "vnf:AlignmentObject", "@container": "@set" },
+        "grade": { "@id": "vnf:Score" },
+        "registrationDate": { "@id": "vnf:registrationDate", "@type": "schema:Date"},
+        "startDate": { "@id": "vnf:startDate", "@type": "schema:Date"},
+        "completionDate": { "@id": "vnf:completionDate", "@type": "schema:Date"}
+      }
+    },
+    "AssessmentDimension": {
+      "@id": "vnf:AssessmentDimension",
+      "@context": {
+        "name": "schema:name",
+        "assesses": "schema:assesses",
+        "description": "schema:description",
+        "assessmentLevel": "schema:educationalLevel",
+        "assessmentMethod": "ceterms:assessmentMethodDescription",
+        "alignment": { "@id": "vnf:AlignmentObject", "@container": "@set" },
+        "score": { "@id": "vnf:Score" },
+        "assessmentDate": { "@id": "vnf:assessmentDate", "@type": "schema:Date"}
+      }
+    },
+    "Assessment-1.1": {
+      "@id": "vnf:Assessment-1.1",
+      "@context": {
+        "name": "schema:name",
+        "authority": { "@id": "vnf:Organization", "@type": "@id" },
+        "assesses": "schema:assesses",
+        "description": "schema:description",
+        "assessmentLevel": "schema:educationalLevel",
+        "assessmentMethod": "ceterms:assessmentMethodDescription",
+        "recipient": "vnf:PersonName",
+        "alignment": { "@id": "vnf:AlignmentObject", "@container": "@set" },
+        "score": { "@id": "vnf:Score" },
+        "assessmentDate": { "@id": "vnf:assessmentDate", "@type": "schema:Date"},
+        "assessmentDimensions": { "@id": "vnf:AssessmentDimension", "@container": "@list" }
+      }
+    },
+    "Certification-1.1": {
+      "@id": "vnf:Certification-1.1",
+      "@context": {
+        "name": "schema:name",
+        "authority": { "@id": "vnf:Organization", "@type": "@id" },
+        "description": "schema:description",
+        "identifier": {
+          "@id": "schema:identifier",
+          "@type": "@id"
+        },
+        "validity": { "@id": "vnf:Validity", "@type": "@id" },
+        "recipient": "vnf:PersonName",
+        "alignment": { "@id": "vnf:AlignmentObject", "@container": "@set" }
+      }
+    },
+    "License-1.1": {
+      "@id": "vnf:License-1.1",
+      "@context": {
+        "name": "schema:name",
+        "authority": { "@id": "vnf:Organization", "@type": "@id" },
+        "description": "schema:description",
+        "identifier": {
+          "@id": "schema:identifier",
+          "@type": "@id"
+        },
+        "validity": { "@id": "vnf:Validity", "@type": "@id" },
+        "recipient": "vnf:PersonName",
+        "alignment": { "@id": "vnf:AlignmentObject", "@container": "@set" },
+        "endorsementCode": { "@id": "xsd:string", "@container": "@set" },
+        "restrictionCode": { "@id": "xsd:string", "@container": "@set" }
+      }
+    }
   }
 }
