@@ -45,6 +45,25 @@
   "alignment": {
     "ui:widget": "hidden"
   },
+  "grade": {
+    "scoreValue": {
+      "ui:title": "Grade"
+    },
+    "result": {
+      "ui:title": "Result"
+    },
+    "passFail": {
+      "ui:title": "Pass or fail"
+    },
+    "scoreMethod": {
+      "ui:widget": "hidden"
+    },
+    "ui:order": [
+      "scoreValue",
+      "result",
+      "passFail"
+    ]
+  },
   "registrationDate": {
     "ui:title": "Registration date",
     "ui:widget": "date"
@@ -65,6 +84,7 @@
     "registrationDate",
     "startDate",
     "endDate",
+    "grade",
     "degreeMajor",
     "degreeMinor",
     "programName"

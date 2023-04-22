@@ -16,6 +16,9 @@
         },
         "endDate": {
           "$ref": "../subtypes/date.schema.json"
+        },
+        "grade": {
+          "$ref": "../subtypes/score.schema.json"
         }
       }
     }

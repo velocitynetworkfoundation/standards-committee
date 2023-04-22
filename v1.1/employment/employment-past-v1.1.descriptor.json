@@ -90,7 +90,7 @@
     {
       "label": "Employment type",
       "path": [
-        "$.employmentType"
+        "$.employmentType[*]"
       ],
       "schema": {
         "type": "string"
