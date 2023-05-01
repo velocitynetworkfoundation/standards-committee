@@ -73,7 +73,7 @@
     {
       "label": "Criteria",
       "path": [
-        "$.hasCredential.criteria"
+        "$.hasCredential.criteria", "$.hasCredential.criteria.narrative"
       ],
       "schema": {
         "type": "string"
