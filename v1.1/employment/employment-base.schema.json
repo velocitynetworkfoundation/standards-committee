@@ -5,6 +5,10 @@
     "@context": {
       "$ref": "../json-ld-context.schema.json"
     },
+    "type": {
+      "type": "string",
+      "default": "Employment"
+    },
     "legalEmployer": {
       "$ref": "../subtypes/organization.schema.json"
     },

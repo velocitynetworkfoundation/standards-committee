@@ -8,6 +8,10 @@
     "@context": {
       "$ref": "../json-ld-context.schema.json"
     },
+    "type": {
+      "type": "string",
+      "default": "IdDocument"
+    },
     "authority": {
       "$ref": "../subtypes/organization.schema.json"
     },
@@ -39,24 +43,30 @@
   ],
   "examples": [
     {
-      "@context": "https://velocitynetwork.foundation/contexts/resident-permit",
+      "@context": ["https://lib.velocitynetwork.foundation/layer1-context-v1.0.json"],
+      "type": "IdDocument",
       "authority": {
+        "type": "Organization",
         "name": "State of Israel Ministry of Transport",
         "identifier": "did:velocity:0xc257274276a4e539741ca11b590b9447b26a8051",
         "place": {
+          "type": "Place",
           "addressLocality": "Jerusalem",
           "addressRegion": "IL-JM",
           "addressCountry": "IL"
         }
       },
       "validity": {
+        "type": "Validity",
         "validFrom": "2009-12-15"
       },
       "person": {
+        "type": "Person",
         "givenName": "Hila",
         "familyName": "Harlap",
         "birthDate": "1976-10-17",
         "birthPlace": {
+          "type": "Place",
           "addressLocality": "Portland",
           "addressRegion": "US-OR",
           "addressCountry": "US"
@@ -65,6 +75,7 @@
       "identifier": "39642782",
       "nationality": "US",
       "postalAddress": {
+        "type": "Address",
         "streetAddress": "10 Mishmar Hyarden St.",
         "addressLocality": "Givatayym",
         "addressRegion": "IL-TA",
@@ -72,25 +83,31 @@
       }
     },
     {
-      "@context": "https://velocitynetwork.foundation/contexts/resident-permit",
+      "@context": ["https://lib.velocitynetwork.foundation/layer1-context-v1.0.json"],
+      "type": "IdDocument",
       "authority": {
+        "type": "Organization",
         "name": "Dirección General de la Policía",
         "identifier": "did:velocity:0xc257274276a4e539741ca11b590b9447b26a8051",
         "place": {
+          "type": "Place",
           "addressLocality": "Madrid",
           "addressRegion": "ES-MD",
           "addressCountry": "ES"
         }
       },
       "validity": {
+        "type": "Validity",
         "validFrom": "2018-01-15",
         "validUntil": "2019-01-15"
       },
       "person": {
+        "type": "Person",
         "givenName": "Juana",
         "familyName": "Villareal",
         "birthDate": "2001-06-20",
         "birthPlace": {
+          "type": "Place",
           "addressLocality": "Buenos Aires",
           "addressRegion": "AR-B",
           "addressCountry": "AR"
@@ -99,6 +116,7 @@
       "identifier": "X4795665G",
       "nationality": "AR",
       "postalAddress": {
+        "type": "Address",
         "streetAddress": "280 c/ Muntaner",
         "addressLocality": "Barcelona",
         "addressRegion": "ES-CT",

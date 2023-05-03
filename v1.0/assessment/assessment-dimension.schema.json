@@ -1,7 +1,11 @@
 {
   "title": "Assessment dimension",
   "$schema": "http://json-schema.org/draft-07/schema#",
-  "allOf": [{"$ref": "./assessment-dimension-base.schema.json"}],
+  "allOf": [{"$ref": "./assessment-dimension-base.schema.json"}, {
+    "type": "string",
+    "default": "AssessmentDimension"
+  }
+  ],
   "required": [
     "name"
   ],

@@ -3,6 +3,10 @@
   "type": "object",
   "additionalProperties": false,
   "properties": {
+    "type": {
+      "type": "string",
+      "default": "Place"
+    },
     "name": {
       "type": "string",
       "description": "The name of the place, e.g., building name, branch name, etc.",
@@ -31,26 +35,26 @@
   ],
   "examples": [
     {
-      "@context": "https://velocitynetwork.foundation/contexts/Place",
+      "type": "Place",
       "name": "Lincoln Square",
       "addressLocality": "Buffalo",
       "addressRegion": "US-NY",
       "addressCountry": "US"
     },
     {
-      "@context": "https://velocitynetwork.foundation/contexts/Place",
+      "type": "Place",
       "addressLocality": "Cerdanyola del Vallès",
       "addressRegion": "ES-CT",
       "addressCountry": "ES"
     },
     {
-      "@context": "https://velocitynetwork.foundation/contexts/Place",
+      "type": "Place",
       "addressLocality": "Long Valley",
       "addressRegion": "US-NJ",
       "addressCountry": "US"
     },
     {
-      "@context": "https://velocitynetwork.foundation/contexts/Place",
+      "type": "Place",
       "name": "Microsoft Visitor Center",
       "addressLocality": "Redmond",
       "addressRegion": "US-WA",

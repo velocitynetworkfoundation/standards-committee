@@ -8,6 +8,10 @@
     "@context": {
       "$ref": "../json-ld-context.schema.json"
     },
+    "type": {
+      "type": "string",
+      "default": "IdDocument"
+    },
     "authority": {
       "$ref": "../subtypes/organization.schema.json"
     },
@@ -39,28 +43,34 @@
   ],
   "examples": [
     {
-      "@context": "https://velocitynetwork.foundation/contexts/national-id-card",
+      "@context": ["https://lib.velocitynetwork.foundation/layer1-context-v1.0.json"],
+      "type": "IdDocument",
       "authority": {
+        "type": "Organization",
         "name": "Direção Geral da Administração da Justiça",
         "identifier": "did:velocity:0xc257274276a4e539741ca11b590b9447b26a8051",
         "place": {
+          "type": "Place",
           "addressLocality": "Lisboa",
           "addressRegion": "PT-11",
           "addressCountry": "PT"
         }
       },
       "validity": {
+        "type": "Validity",
         "firstValidFrom": "2009-07-15",
         "validFrom": "2009-07-15",
         "validUntil": "2019-07-15"
       },
       "person": {
+        "type": "Person",
         "givenName": "Heurelho",
         "familyName": "Gomes",
         "middleName": "da Silva",
         "birthDate": "1985-01-22",
         "gender": "Male",
         "birthPlace": {
+          "type": "Place",
           "addressLocality": "Porto",
           "addressRegion": "PT-13",
           "addressCountry": "PT"
@@ -70,27 +80,33 @@
       "nationality": "PT"
     },
     {
-      "@context": "https://velocitynetwork.foundation/contexts/id-document",
+      "@context": ["https://lib.velocitynetwork.foundation/layer1-context-v1.0.json"],
+      "type": "IdDocument",
       "authority": {
+        "type": "Organization",
         "name": "State of Israel Minsitry of Transport",
         "identifier": "did:velocity:0xc257274276a4e539741ca11b590b9447b26a8051",
         "place": {
+          "type": "Place",
           "addressLocality": "Jerusaelm",
           "addressRegion": "IL-JM",
           "addressCountry": "IL"
         }
       },
       "validity": {
+        "type": "Validity",
         "validFrom": "2009-12-15",
         "validUntil": "2019-07-15"
       },
       "person": {
+        "type": "Person",
         "givenName": "Ida",
         "familyName": "Perlmuter",
         "birthDate": "1986-06-24",
         "gender": "Female",
         "birthPlace": {
-          "addressLocality": "Jerusaelm",
+          "type": "Place",
+          "addressLocality": "Jerusalem",
           "addressRegion": "IL-JM",
           "addressCountry": "IL"
         }

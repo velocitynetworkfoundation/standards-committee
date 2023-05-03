@@ -27,11 +27,14 @@
   ],
   "examples": [
     {
-      "@context": "https://velocitynetwork.foundation/contexts/course",
+      "@context": ["https://lib.velocitynetwork.foundation/layer1-context-v1.0.json"],
+      "type": "Course",
       "provider": {
+        "type": "Organization",
         "name": "The University of Chicago",
         "identifier": "did:ion:EiClkZMDxPKqC9c-umQfTkR8vvZ9JPhl_xLDI9Nfk38w5w",
         "place": {
+          "type": "Place",
           "addressLocality": "Chicago",
           "addressRegion": "US-IL",
           "addressCountry": "US"
@@ -46,20 +49,25 @@
       "startDate": "2020-10-01"
     },
     {
-      "@context": "https://velocitynetwork.foundation/contexts/course",
+      "@context": ["https://lib.velocitynetwork.foundation/layer1-context-v1.0.json"],
+      "type": "Course",
       "provider": {
+        "type": "Organization",
         "name": "ACME Inc",
         "identifier": "did:velocity:0xc257274276a4e539741ca11b590b9447b26a8051",
         "place": {
+          "type": "Place",
           "addressLocality": "Miami",
           "addressRegion": "US-FL",
           "addressCountry": "US"
         }
       },
       "contentProvider": {
+        "type": "Organization",
         "name": "Flaxman Training Center",
         "identifier": "did:velocity:0xc30b69405238038080c641cc20a63715ca97d706",
         "place": {
+          "type": "Place",
           "addressLocality": "Fort Lauderdale",
           "addressRegion": "US-FL",
           "addressCountry": "US"
@@ -74,11 +82,14 @@
       "startDate": "2021-05-01"
     },
     {
-      "@context": "https://velocitynetwork.foundation/contexts/course",
+      "@context": ["https://lib.velocitynetwork.foundation/layer1-context-v1.0.json"],
+      "type": "Course",
       "provider": {
+        "type": "Organization",
         "name": "Nurse.com",
         "identifier": "did:velocity:0xc257274276a4e539741ca11b590b9447b26a8051",
         "place": {
+          "type": "Place",
           "addressLocality": "Morrisville",
           "addressRegion": "US-NC",
           "addressCountry": "US"
@@ -94,6 +105,7 @@
       "courseLevel": "Advanced",
       "alignment": [
         {
+          "type": "AlignmentObject",
           "targetName": "Live Online Skin and Wound Management Course",
           "targetUrl": "https://credentialfinder.org/credential/20923/Live_Online_Skin_and_Wound_Management_Course",
           "targetDescription": "This course offers an evidence-based approach to wound management to help clinicians stay current with the standards of care and legally defensible at bedside. The Wound Care Education Institute® (WCEI®) provides dynamic instructors who use engaging teaching methods proven to help students learn better and retain new material.This course prepares students for the Wound Care Certification (WCC®) or Nutrition Wound Care Certification (NWCC®) board certified exams administered by the National Alliance of Wound Care and Ostomy® (NAWCO®).",
@@ -101,7 +113,9 @@
         }
       ],
       "grade": {
+        "type": "Score",
         "scoreMethod": {
+          "type": "ScoreMethod",
           "scoreMethodType": "CriterionReferenced",
           "scoreMethodDescription": "Poor, Fair, Good, Very Good",
           "passingScore": "Good"

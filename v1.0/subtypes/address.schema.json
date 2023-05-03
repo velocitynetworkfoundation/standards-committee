@@ -3,6 +3,10 @@
   "type": "object",
   "additionalProperties": false,
   "properties": {
+    "type": {
+      "type": "string",
+      "default": "Address"
+    },
     "streetAddress": {
       "type": "string",
       "description": "The street address.",
@@ -36,7 +40,7 @@
   ],
   "examples": [
     {
-      "@context": "https://velocitynetwork.foundation/contexts/address",
+      "type": "Address",
       "streetAddress": "3 Dairy Ln",
       "addressLocality": "Long Valley",
       "addressRegion": "US-NJ",
@@ -44,7 +48,7 @@
       "addressCountry": "US"
     },
     {
-      "@context": "https://velocitynetwork.foundation/contexts/Address",
+      "type": "Address",
       "streetAddress": "C/ Santa Engarcia 13b 4º-2ª  Bellaterra",
       "addressLocality": "Cerdanyola del Vallès",
       "addressRegion": "ES-CT",

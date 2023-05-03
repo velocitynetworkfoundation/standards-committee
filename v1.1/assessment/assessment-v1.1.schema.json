@@ -9,13 +9,17 @@
     {
       "type": "object",
       "properties": {
+        {
+          "type": "string",
+          "default": "Assessment"
+        },
         "authority": {
           "$ref": "../subtypes/organization.schema.json"
         },
         "assessmentDimensions": {
           "type": "array",
-          "description": "Dimensions are sub-assessments within the parent assessment. Each dimension refers to a different aspect of what is being assessed.",
           "minItems": 1,
+          "description": "Dimensions are sub-assessments within the parent assessment. Each dimension refers to a different aspect of what is being assessed.",
           "items": {
             "$ref": "./assessment-dimension.schema.json"
           }
@@ -33,11 +37,14 @@
   ],
   "examples": [
     {
-      "@context": "https://velocitynetwork.foundation/contexts/assessment",
+      "@context": ["https://lib.velocitynetwork.foundation/layer1-context-v1.1.json"],
+      "type": "Assessment",
       "authority": {
+        "type": "Organization",
         "name": "Korn Ferry",
         "identifier": "did:velocity:0xc30b69405238038080c641cc20a63715ca97d706",
         "place": {
+          "type": "Place",
           "addressLocality": "Los Angeles",
           "addressRegion": "US-CA",
           "addressCountry": "US"
@@ -47,7 +54,9 @@
       "assesses": "Leadership capabilities",
       "description": "Korn Ferry's leadership assessment takes a contemporary, whole-person view of behavior. It values indidivdual qualities that impact and govern leaders' job performance in areasof Competencies, Exepriences, Traits, and Drivers. ",
       "score": {
+        "type": "Score",
         "scoreMethod": {
+          "type": "ScoreMethod",
           "scoreMethodType": "NormReferenced",
           "scoreMethodDescription": "Korn Ferry global norm 2018. Norm size: 25,000.  score range 1-10."
         },
@@ -57,10 +66,13 @@
       "assessmentMethod": "Written",
       "assessmentDimensions": [
         {
+          "type": "AssessmentDimension",
           "name": "Credibility",
           "description": "The degree of consistency between a person's words and actions.",
           "score": {
+            "type": "Score",
             "scoreMethod": {
+              "type": "ScoreMethod",
               "scoreMethodType": "NormReferenced",
               "scoreMethodDescription": "Korn Ferry global norm 2018. Norm size: 25,000.  score range 1-10."
             },
@@ -70,10 +82,13 @@
           "assessmentMethod": "Written"
         },
         {
+          "type": "AssessmentDimension",
           "name": "Assertiveness",
           "description": "The assertiveness of a person",
           "score": {
+            "type": "Score",
             "scoreMethod": {
+              "type": "ScoreMethod",
               "scoreMethodType": "NormReferenced",
               "scoreMethodDescription": "Korn Ferry global norm 2018. Norm size: 25,000.  score range 1-10."
             },
@@ -83,15 +98,19 @@
         }
       ],
       "recipient": {
+        "type": "PersonName",
         "givenName": "Olivia",
         "familyName": "Hafez"
       }
     },
     {
-      "@context": "https://velocitynetwork.foundation/contexts/assessment",
+      "@context": ["https://lib.velocitynetwork.foundation/layer1-context-v1.1.json"],
+      "type": "Assessment",
       "authority": {
+        "type": "Organization",
         "name": "The institute for occupational health ",
         "place": {
+          "type": "Place",
           "addressLocality": "New Rochelle ",
           "addressRegion": "US-NY",
           "addressCountry": "US"
@@ -100,7 +119,9 @@
       "name": "Color blindness test",
       "assesses": "Color blindness",
       "score": {
+        "type": "Score",
         "scoreMethod": {
+          "type": "ScoreMethod",
           "scoreMethodType": "CriterionReferenced",
           "scoreMethodDescription": "Standard Ishihara color plate test"
         },
@@ -111,28 +132,35 @@
       "assessmentLevel": "Standard",
       "assessmentMethod": "Online",
       "recipient": {
+        "type": "PersonName",
         "givenName": "Olivia",
         "familyName": "Hafez"
       }
     },
     {
-      "@context": "https://velocitynetwork.foundation/contexts/assessment",
+      "@context": ["https://lib.velocitynetwork.foundation/layer1-context-v1.1.json"],
+      "type": "Assessment",
       "authority": {
+        "type": "Organization",
         "name": "XYZ University ",
         "place": {
+          "type": "Place",
           "addressLocality": "Chicago ",
           "addressRegion": "US-IL",
           "addressCountry": "US"
         }
       },
       "recipient": {
+        "type": "PersonName",
         "givenName": "Olivia",
         "familyName": "Hafez"
       },
       "name": "Algebraic geometry - Final Exam",
       "assesses": "Algebraic curves and surfaces",
       "score": {
+        "type": "Score",
         "scoreMethod": {
+          "type": "ScoreMethod",
           "scoreMethodType": "CriterionReferenced",
           "scoreMethodDescription": "1-100 scale",
           "passingScore": "60"

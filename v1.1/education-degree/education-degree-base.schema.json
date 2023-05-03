@@ -11,6 +11,10 @@
         "id": "y69g1od6dhayn"
       }
     },
+    "type": {
+      "type": "string",
+      "default": "EducationDegree"
+    },
     "institution": {
       "$ref": "../subtypes/organization.schema.json",
       "x-stoplight": {

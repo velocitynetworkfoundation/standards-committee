@@ -6,6 +6,10 @@
     "@context": {
       "$ref": "../json-ld-context.schema.json"
     },
+    "type": {
+      "type": "string",
+      "default": "CertificationLicense"
+    },
     "authority": {
       "$ref": "../subtypes/organization.schema.json"
     },

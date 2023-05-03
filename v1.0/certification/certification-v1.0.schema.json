@@ -26,11 +26,14 @@
   ],
   "examples": [
     {
-      "@context": "https://velocitynetwork.foundation/contexts/certification-license",
+      "@context": ["https://lib.velocitynetwork.foundation/layer1-context-v1.0.json"],
+      "type": "CertificationLicense",
       "authority": {
+        "type": "Organization",
         "name": "New Jersey Department of Health",
         "identifier": "did:velocity:0xc257274276a4e539741ca11b590b9447b26a8051",
         "place": {
+          "type": "Place",
           "addressLocality": "Trenton",
           "addressRegion": "US-NJ",
           "addressCountry": "US"
@@ -39,6 +42,7 @@
       "name": "Certified Nurse Aid",
       "identifier": "54377868",
       "validity": {
+        "type": "Validity",
         "firstValidFrom": "2012-03-14",
         "validFrom": "2014-03-14",
         "validUntil": "2016-03-14",
@@ -49,6 +53,7 @@
       },
       "alignment": [
         {
+          "type": "AlignmentObject",
           "targetName": "Certified Nursing Assistant",
           "targetUrl": "https://sandbox.credentialengine.org/finder/credential/8723/Certified_Nursing_Assistant",
           "targetDescription": "Certified Nursing Assistant by the New Jersey Department of Health",
@@ -58,11 +63,14 @@
       ]
     },
     {
-      "@context": "https://velocitynetwork.foundation/contexts/certification-license",
+      "@context": ["https://lib.velocitynetwork.foundation/layer1-context-v1.0.json"],
+      "type": "CertificationLicense",
       "authority": {
+        "type": "Organization",
         "name": "Microsoft",
         "identifier": "did:velocity:0xc257274276a4e539741ca11b590b9447b26a8051",
         "place": {
+          "type": "Place",
           "addressLocality": "Redmond",
           "addressRegion": "WA",
           "addressCountry": "US",
@@ -72,12 +80,14 @@
       "name": "Azure Solutions Architect Expert",
       "identifier": "E2000-1234",
       "validity": {
+        "type": "Validity",
         "firstValidFrom": "2015-01-18",
         "validFrom": "2015-01-18",
         "validUntil": "2025-01-01"
       },
       "alignment": [
         {
+          "type": "AlignmentObject",
           "targetName": "Azure Solutions Architect Expert Certification",
           "targetUrl": "https://docs.microsoft.com/en-us/learn/certifications/azure-solutions-architect/",
           "targetDescription": "Required exams: AZ-303AZ-304",

@@ -4,71 +4,13 @@
   "$id": "https://velocitynetwork.foundation/schemas/passport-v1.0",
   "type": "object",
   "additionalProperties": false,
-  "examples": [
-    {
-      "@context": "https://velocitynetwork.foundation/contexts/passport",
-      "documentCode": "P",
-      "authority": {
-        "name": "Ministry of Interior",
-        "identifier": "did:velocity:0xc257274276a4e539741ca11b590b9447b26a8051",
-        "place": {
-          "addressLocality": "Jerusalem",
-          "addressRegion": "IL-JM",
-          "addressCountry": "IL"
-        }
-      },
-      "validity": {
-        "validFrom": "2010-07-12",
-        "validUntil": "2020-07-12"
-      },
-      "person": {
-        "givenName": "Adi",
-        "familyName": "Gordon",
-        "birthDate": "1966-03-04",
-        "birthPlace": {
-          "addressLocality": "Binyamina",
-          "addressRegion": "IL-Z",
-          "addressCountry": "IL"
-        },
-        "gender": "Female"
-      },
-      "identifier": "63039602",
-      "nationality": "IL"
-    },
-    {
-      "@context": "https://velocitynetwork.foundation/contexts/passport",
-      "documentCode": "PC",
-      "authority": {
-        "name": "HM Passport office",
-        "identifier": "did:velocity:0xc257274276a4e539741ca11b590b9447b26a8051",
-        "place": {
-          "addressLocality": "London",
-          "addressRegion": "GB-ENG",
-          "addressCountry": "GB"
-        }
-      },
-      "validity": {
-        "validFrom": "2011-11-06",
-        "validUntil": "2021-11-06"
-      },
-      "person": {
-        "givenName": "Andrew",
-        "familyName": "Hall",
-        "birthDate": "1988-08-24",
-        "birthPlace": {
-          "addressLocality": "Dorset",
-          "addressRegion": "GB-ENG",
-          "addressCountry": "GB"
-        },
-        "gender": "Male"
-      },
-      "identifier": "1081234567",
-      "nationality": "GB"
-    }
-  ],
   "properties": {
     "@context": {
       "$ref": "../json-ld-context.schema.json"
+    },
+    "type": {
+      "type": "string",
+      "default": "Passport"
     },
     "documentCode": {
       "type": "string",
@@ -102,5 +44,79 @@
     "authority",
     "person",
     "identifier"
+  ],
+  "examples": [
+    {
+      "@context": ["https://lib.velocitynetwork.foundation/layer1-context-v1.0.json"],
+      "type": "Passport",
+      "documentCode": "P",
+      "authority": {
+        "type": "Organization",
+        "name": "Ministry of Interior",
+        "identifier": "did:velocity:0xc257274276a4e539741ca11b590b9447b26a8051",
+        "place": {
+          "type": "Place",
+          "addressLocality": "Jerusalem",
+          "addressRegion": "IL-JM",
+          "addressCountry": "IL"
+        }
+      },
+      "validity": {
+        "type": "Validity",
+        "validFrom": "2010-07-12",
+        "validUntil": "2020-07-12"
+      },
+      "person": {
+        "type": "Person",
+        "givenName": "Adi",
+        "familyName": "Gordon",
+        "birthDate": "1966-03-04",
+        "birthPlace": {
+          "type": "Place",
+          "addressLocality": "Binyamina",
+          "addressRegion": "IL-Z",
+          "addressCountry": "IL"
+        },
+        "gender": "Female"
+      },
+      "identifier": "63039602",
+      "nationality": "IL"
+    },
+    {
+      "@context": ["https://lib.velocitynetwork.foundation/layer1-context-v1.0.json"],
+      "type": "Passport",
+      "documentCode": "PC",
+      "authority": {
+        "type": "Organization",
+        "name": "HM Passport office",
+        "identifier": "did:velocity:0xc257274276a4e539741ca11b590b9447b26a8051",
+        "place": {
+          "type": "Place",
+          "addressLocality": "London",
+          "addressRegion": "GB-ENG",
+          "addressCountry": "GB"
+        }
+      },
+      "validity": {
+        "type": "Validity",
+        "validFrom": "2011-11-06",
+        "validUntil": "2021-11-06"
+      },
+      "person": {
+        "type": "Person",
+        "givenName": "Andrew",
+        "familyName": "Hall",
+        "birthDate": "1988-08-24",
+        "birthPlace": {
+          "type": "Place",
+          "addressLocality": "Dorset",
+          "addressRegion": "GB-ENG",
+          "addressCountry": "GB"
+        },
+        "gender": "Male"
+      },
+      "identifier": "1081234567",
+      "nationality": "GB"
+    }
   ]
 }

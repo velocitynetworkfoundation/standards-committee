@@ -17,7 +17,7 @@
   "description": "Simplified context for Velocity Publishers to Use",
   "examples": [
     {
-      "@context": "https://velocitynetwork.foundation/schemas/v1.0/layer1.jsonld.json"
+      "@context": "https://lib.velocitynetwork.foundation/layer1-context-v1.0.jsonld.json"
     }
   ]
 }

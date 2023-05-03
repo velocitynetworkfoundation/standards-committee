@@ -7,6 +7,10 @@
     "@context": {
       "$ref": "../json-ld-context.schema.json"
     },
+    "type": {
+      "type": "string",
+      "default": "Phone"
+    },
     "phone": {
       "type": "string",
       "pattern": "^\\+[1-9]\\d{1,14}$",
@@ -20,7 +24,8 @@
   ],
   "examples": [
     {
-      "@context": "https://velocitynetwork.foundation/contexts/phone",
+      "@context": ["https://lib.velocitynetwork.foundation/layer1-context-v1.1.json"],
+      "type": "Phone",
       "phone": "+19177777777"
     }
   ]

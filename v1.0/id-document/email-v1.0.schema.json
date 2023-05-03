@@ -7,6 +7,10 @@
     "@context": {
       "$ref": "../json-ld-context.schema.json"
     },
+    "type": {
+      "type": "string",
+      "default": "Email"
+    },
     "email": {
       "type": "string",
       "format": "email",
@@ -19,7 +23,8 @@
   ],
   "examples": [
     {
-      "@context": "https://velocitynetwork.foundation/contexts/email",
+      "@context": ["https://lib.velocitynetwork.foundation/layer1-context-v1.0.json"],
+      "type": "Email",
       "email": "olivia.hafez@example.com"
     }
   ]

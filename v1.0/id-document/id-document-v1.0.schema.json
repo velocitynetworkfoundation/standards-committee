@@ -8,6 +8,10 @@
     "@context": {
       "$ref": "../json-ld-context.schema.json"
     },
+    "type": {
+      "type": "string",
+      "default": "IdDocument"
+    },
     "documentType": {
       "type": "string",
       "description": "The type of document.",
@@ -45,17 +49,21 @@
   ],
   "examples": [
     {
-      "@context": "https://velocitynetwork.foundation/contexts/id-document",
+      "@context": ["https://lib.velocitynetwork.foundation/layer1-context-v1.0.json"],
+      "type": "IdDocument",
       "documentType": "Social Security Number",
       "authority": {
+        "type": "Organization",
         "name": "Department of Health and Human Services",
         "identifier": "did:ion:0257274276a4e539741ca11b590b9447b26a8051",
         "place": {
+          "type": "Place",
           "addressRegion": "US-DC",
           "addressCountry": "US"
         }
       },
       "person": {
+        "type": "Person",
         "givenName": "Ken",
         "familyName": "Williams",
         "middleName": "Robert",
@@ -64,22 +72,27 @@
       "identifier": "713-80-5241"
     },
     {
-      "@context": "https://velocitynetwork.foundation/contexts/id-document",
+      "@context": ["https://lib.velocitynetwork.foundation/layer1-context-v1.0.json"],
+      "type": "IdDocument",
       "documentType": "ID For Voting Purpose",
       "authority": {
+        "type": "Organization",
         "name": "Georgia State Government",
         "identifier": "did:ion:011111490ds0474276a4e539741ca11b590b9447b26a8051",
         "place": {
+          "type": "Place",
           "addressLocality": "Atlanta",
           "addressRegion": "US-GA",
           "addressCountry": "US"
         }
       },
       "validity": {
+        "type": "Validity",
         "validFrom": "2019-05-09",
         "validUntil": "2029-05-09"
       },
       "person": {
+        "type": "Person",
         "givenName": "Ken",
         "familyName": "Williams",
         "middleName": "Robert",
@@ -87,6 +100,7 @@
       },
       "identifier": "034569393",
       "postalAddress": {
+        "type": "Address",
         "streetAddress": "10 Admiral Parkway",
         "addressLocality": "Atlanta",
         "addressRegion": "US-GA",

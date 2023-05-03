@@ -3,6 +3,10 @@
   "type": "object",
   "additionalProperties": false,
   "properties": {
+    "type": {
+      "type": "string",
+      "default": "Person"
+    },
     "givenName": {
       "type": "string",
       "description": "The given name or first name of the person.",
@@ -53,6 +57,7 @@
   ],
   "examples": [
     {
+      "type": "Person",
       "givenName": "Olivia",
       "familyName": "Hafez",
       "middleName": "Melanie",
@@ -66,6 +71,7 @@
       "gender": "Female"
     },
     {
+      "type": "Person",
       "givenName": "Oliver",
       "familyName": "Barrett ",
       "namePrefix": "string",
@@ -79,6 +85,7 @@
       "nameSuffix": "Jr"
     },
     {
+      "type": "Person",
       "givenName": "Joan Manuel ",
       "familyName": "Serrat Teresa",
       "birthDate": "1943-12-27",

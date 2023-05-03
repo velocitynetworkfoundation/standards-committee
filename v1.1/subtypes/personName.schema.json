@@ -3,6 +3,10 @@
   "type": "object",
   "additionalProperties": false,
   "properties": {
+    "type": {
+      "type": "string",
+      "default": "PersonName"
+    },
     "givenName": {
       "type": "string",
       "description": "The given name or first name of the person.",
@@ -35,17 +39,20 @@
   ],
   "examples": [
     {
+      "type": "PersonName",
       "givenName": "Olivia",
       "familyName": "Hafez",
       "middleName": "Melanie",
       "namePrefix": "Dr"
     },
     {
+      "type": "PersonName",
       "givenName": "Oliver",
       "familyName": "Barrett",
       "nameSuffix": "Jr"
     },
     {
+      "type": "PersonName",
       "givenName": "Joan Manuel",
       "familyName": "Serrat"
  }

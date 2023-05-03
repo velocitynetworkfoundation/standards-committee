@@ -3,6 +3,10 @@
   "type": "object",
   "additionalProperties": false,
   "properties": {
+    "type": {
+      "type": "string",
+      "default": "AlignmentObject"
+    },
     "targetName": {
       "type": "string",
       "description": "Name of the target alignment.",
@@ -33,6 +37,7 @@
   "required": ["targetName", "targetUrl"],
   "examples": [
     {
+      "type": "Alignment",
       "targetName": "CCSS.ELA-Literacy.RST.11-12.3",
       "targetUrl": "http://www.corestandards.org/ELA-Literacy/RST/11-12/3/",
       "targetDescription": "A description of the ELA ltieracy certification",
@@ -40,6 +45,7 @@
       "targetFramework": "Mozilla 21st Century Skills"
     },
     {
+      "type": "Alignment",
       "targetName": "Certified Nursing Assistant",
       "targetUrl": "https://sandbox.credentialengine.org/finder/credential/8723/Certified_Nursing_Assistant",
       "targetDescription": "Certified Nursing Assistant by the New Jersey Department of Health",
