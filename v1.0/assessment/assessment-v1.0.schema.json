@@ -9,7 +9,7 @@
     {
       "type": "object",
       "properties": {
-        {
+        "type": {
           "type": "string",
           "default": "Assessment"
         },
