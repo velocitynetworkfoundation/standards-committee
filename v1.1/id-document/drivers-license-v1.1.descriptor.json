@@ -29,6 +29,15 @@
   "description": {
     "text": "Driver's license"
   },
+  "logo": {
+    "path": [
+      "$.authority.image"
+    ],
+    "schema": {
+      "type": "string",
+      "format": "uri"
+    }
+  },
   "properties": [
     {
       "label": "License number",

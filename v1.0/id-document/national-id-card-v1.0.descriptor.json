@@ -29,6 +29,15 @@
   "description": {
     "text": "National ID card"
   },
+  "logo": {
+    "path": [
+      "$.authority.image"
+    ],
+    "schema": {
+      "type": "string",
+      "format": "uri"
+    }
+  },
   "properties": [
     {
       "label": "Id number",

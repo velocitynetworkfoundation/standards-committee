@@ -30,6 +30,15 @@
   "description": {
     "text": "License"
   },
+  "logo": {
+    "path": [
+      "$.authority.image"
+    ],
+    "schema": {
+      "type": "string",
+      "format": "uri"
+    }
+  },
   "properties": [
     {
       "label": "License number",
