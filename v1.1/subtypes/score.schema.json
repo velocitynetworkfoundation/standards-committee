@@ -8,6 +8,10 @@
       "description": "The method according to which the score is given. ",
       "additionalProperties": false,
       "properties": {
+        "type": {
+          "type": "string",
+          "default": "ScoreMethod"
+        },
         "scoreMethodType": {
           "type": "string",
           "enum": [
@@ -24,6 +28,7 @@
         "alignment": {
           "type": "array",
           "description": "A public resource to which the scoring method is aligned.",
+          "minItems": 1,
           "items": {
             "$ref": "./alignment.schema.json"
           }
@@ -34,6 +39,10 @@
           "maxLength": 16
         }
       }
+    },
+    "type": {
+      "type": "string",
+      "default": "Score"
     },
     "scoreValue": {
       "type": "string",
@@ -56,7 +65,9 @@
   },
   "examples": [
     {
+      "type": "Score",
       "scoreMethod": {
+        "type": "ScoreMethod",
         "scoreMethodDescription": "GPA",
         "passingScore": "0.7"
       },
@@ -65,7 +76,9 @@
       "passFail": "Pass"
     },
     {
+      "type": "Score",
       "scoreMethod": {
+        "type": "ScoreMethod",
         "scoreMethodDescription": "0-100 range",
         "passingScore": "60"
       },
@@ -74,14 +87,18 @@
       "passFail": "Fail"
     },
     {
+      "type": "Score",
       "scoreMethod": {
+        "type": "ScoreMethod",
         "scoreMethodDescription": "Korn Ferry global norm 2018. Norm size: 25,000. Score range 1-10. ",
         "scoreMethodType": "NormReferenced"
       },
       "scoreValue": "7.2"
     },
     {
+      "type": "Score",
       "scoreMethod": {
+        "type": "ScoreMethod",
         "scoreMethodDescription": "All answers should be correct.",
         "scoreMethodType": "CriterionReferenced"
       },

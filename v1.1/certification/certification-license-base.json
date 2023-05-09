@@ -6,6 +6,10 @@
     "@context": {
       "$ref": "../json-ld-context.schema.json"
     },
+    "type": {
+      "type": "string",
+      "default": "CertificationLicense"
+    },
     "authority": {
       "$ref": "../subtypes/organization.schema.json"
     },
@@ -24,6 +28,7 @@
     },
     "alignment": {
       "type": "array",
+      "minItems": 1,
       "description": "A public resource to which the certification or license is aligned.",
       "items": {
         "$ref": "../subtypes/alignment.schema.json"

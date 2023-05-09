@@ -5,6 +5,10 @@
     "@context": {
       "$ref": "../json-ld-context.schema.json"
     },
+    "type": {
+      "type": "string",
+      "default": "Course"
+    },
     "provider": {
       "$ref": "../subtypes/organization.schema.json"
     },
@@ -49,6 +53,7 @@
     "alignment": {
       "type": "array",
       "description": "A public resource to which the course is aligned.",
+      "minItems": 1,
       "items": {
         "$ref": "../subtypes/alignment.schema.json"
       }

@@ -8,6 +8,10 @@
     "@context": {
       "$ref": "../json-ld-context.schema.json"
     },
+    "type": {
+      "type": "string",
+      "default": "IdDocument"
+    },
     "authority": {
       "$ref": "../subtypes/organization.schema.json"
     },
@@ -39,21 +43,26 @@
   ],
   "examples": [
     {
-      "@context": "https://velocitynetwork.foundation/contexts/proof-of-age",
+      "@context": ["https://lib.velocitynetwork.foundation/layer1-context-v1.1.json"],
+      "type": "IdDocument",
       "authority": {
+        "type": "Organization",
         "name": "Victoria state government",
         "identifier": "did:velocity:0xc257274276a4e539741ca11b590b9447b26a8051",
         "place": {
+          "type": "Place",
           "addressLocality": "Melbourne",
           "addressRegion": "AU-VIC",
           "addressCountry": "AU"
         }
       },
       "validity": {
+        "type": "Validity",
         "firstValidFrom": "2019-05-09",
         "validFrom": "2019-05-09"
       },
       "person": {
+        "type": "Person",
         "givenName": "Ken",
         "familyName": "Williams",
         "middleName": "Robert",
@@ -62,6 +71,7 @@
       "identifier": "123456",
       "nationality": "AU",
       "postalAddress": {
+        "type": "Address",
         "streetAddress": "10 Admiral Rd",
         "addressLocality": "Melbourne",
         "addressRegion": "AU-VIC",

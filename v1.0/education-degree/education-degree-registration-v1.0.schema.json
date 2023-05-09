@@ -24,19 +24,24 @@
   ],
   "examples": [
     {
-      "@context": "https://velocitynetwork.foundation/contexts/education-degree",
+      "@context": ["https://lib.velocitynetwork.foundation/layer1-context-v1.0.json"],
+      "type": "EducationDegree",
       "institution": {
+        "type": "Organization",
         "name": "XYZ University",
         "identifier": "did:web:www.xyzuniversity.com",
         "place": {
+          "type": "Place",
           "addressLocality": "Chicago",
           "addressRegion": "US-IL",
           "addressCountry": "US"
         }
       },
       "school": {
+        "type": "Organization",
         "name": "School of nursing",
         "place": {
+          "type": "Place",
           "name": "Florida Branch",
           "addressLocality": "Fort Myers",
           "addressRegion": "US-FL",
@@ -52,6 +57,7 @@
       ],
       "description": "Starfield College’s RN to BSN Online Option allows working nurses to advance your degree in as few as 3 semesters.\n If you are a registered nurse with an active RN license looking to earn your BSN, Chamberlain's online RN to BSN option can help prepare you for the next step in your career.\n Our RN to BSN online option allows you to earn your degree while you work.",
       "alignment": [{
+          "type": "AlignmentObject",
           "targetName": "Bachelor of Science in Nursing, RN to BSN",
           "targetUrl": "https://credentialfinder.org/credential/5769/Bachelor_of_Science_in_Nursing,_RN_to_BSN",
           "targetDescription": "The RN to BSN completion program has been developed to address the specific needs of working registered nurses who return to the university to earn the BSN.",
@@ -63,17 +69,21 @@
     {
       "@context": "https://velocitynetwork.foundation/contexts/education-degree",
       "institution": {
+        "type": "Organization",
         "name": "ABC University",
         "identifier": "did:web:www.abcuniversity.com",
         "place": {
+          "type": "Place",
           "addressLocality": "Cardiff",
           "addressRegion": "GB-WLS",
           "addressCountry": "GB"
         }
       },
       "school": {
+        "type": "Organization",
         "name": "College of Liberal Arts and Sciences",
         "place": {
+          "type": "Place",
           "name": "Graduate Studies Building",
           "addressLocality": "Barry",
           "addressRegion": "GB-WLS",
@@ -91,6 +101,7 @@
       ],
       "description": "The program prepares students for graduate study, and so emphasizes practice in the research techniques which are used in graduate school and professionally later on.",
       "alignment": [{
+        "type": "AlignmentObject",
         "targetName": "Bachelor of Science (BS) in Psychology - General Psychology",
         "targetUrl": "https://nces.ed.gov/ipeds/cipcode/cipdetail.aspx?y=55&cipid=88527",
         "targetDescription": "A general program that focuses on the scientific study of individual and collective behavior, the physical and environmental bases of behavior, and the analysis and treatment of behavior problems and disorders. Includes instruction in the principles of the various subfields of psychology, research methods, and psychological assessment and testing methods.",

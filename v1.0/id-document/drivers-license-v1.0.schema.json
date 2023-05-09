@@ -8,6 +8,10 @@
     "@context": {
       "$ref": "../json-ld-context.schema.json"
     },
+    "type": {
+      "type": "string",
+      "default": "DriversLicense"
+    },
     "name": {
       "type": "string",
       "description": "The name of the license.",
@@ -38,6 +42,7 @@
     "endorsementCode": {
       "type": "array",
       "description": "Endorsements to the license such as vehicle class A1, B.",
+      "minItems": 1,
       "items": {
         "type": "string",
         "maxLength": 128
@@ -46,6 +51,7 @@
     "restrictionCode": {
       "type": "array",
       "description": "Restrictions to the license such as need to wear glasses.",
+      "minItems": 1,
       "items": {
         "type": "string",
         "maxLength": 128
@@ -57,21 +63,26 @@
   },
   "examples": [
     {
-      "@context": "https://velocitynetwork.foundation/contexts/drivers-license",
+      "@context": ["https://lib.velocitynetwork.foundation/layer1-context-v1.0.json"],
+      "type": "DriversLicense",
       "authority": {
+        "type": "Organization",
         "name": "DMV State of California",
         "identifier": "did:velocity:0xc257274276a4e539741ca11b590b9447b26a8051",
         "place": {
+          "type": "Place",
           "addressLocality": "Sacramento",
           "addressRegion": "US-CA",
           "addressCountry": "US"
         }
       },
       "validity": {
+        "type": "Validity",
         "validFrom": "2009-08-21",
         "validUntil": "2014-08-21"
       },
       "person": {
+        "type": "Person",
         "givenName": "Noah",
         "familyName": "Brown",
         "birthDate": "1990-08-21",
@@ -79,6 +90,7 @@
       },
       "identifier": "12200244",
       "address": {
+        "type": "Address",
         "streetAddress": "3390 Fairway Drive",
         "addressLocality": "San Jose",
         "postCode": "95113",
@@ -94,27 +106,33 @@
       ]
     },
     {
-      "@context": "https://velocitynetwork.foundation/contexts/drivers-license",
+      "@context": ["https://lib.velocitynetwork.foundation/layer1-context-v1.0.json"],
+      "type": "DriversLicense",
       "authority": {
+        "type": "Organization",
         "name": "State of Israel Minsitry of Transport",
         "identifier": "did:velocity:0xc257274276a4e539741ca11b590b9447b26a8051",
         "place": {
+          "type": "Place",
           "addressLocality": "Jerusalem",
           "addressRegion": "IL-JM",
           "addressCountry": "IL"
         }
       },
       "validity": {
+        "type": "Validity",
         "validFrom": "2016-04-20",
         "validUntil": "2026-04-20"
       },
       "person": {
+        "type": "Person",
         "givenName": "Zoahr",
         "familyName": "Argov",
         "birthDate": "1955-07-16"
       },
       "identifier": "7198054",
       "address": {
+        "type": "Address",
         "streetAddress": "99 Dizzengof St.",
         "addressLocality": "Tel Aviv",
         "addressRegion": "IL-TA",

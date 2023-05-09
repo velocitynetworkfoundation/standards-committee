@@ -20,6 +20,7 @@
         "endorsementCode": {
           "type": "array",
           "description": "Endorsements to the license such as vehicle class A1, B, in driver's license, or specialties in nursing license.",
+          "minItems": 1,
           "items": {
             "type": "string",
             "maxLength": 128
@@ -28,6 +29,7 @@
         "restrictionCode": {
           "type": "array",
           "description": "Restrictions to the license such as need to wear glasses in driver's license.",
+          "minItems": 1,
           "items": {
             "type": "string",
             "maxLength": 128
@@ -44,11 +46,14 @@
   ],
   "examples": [
     {
-      "@context": "https://velocitynetwork.foundation/contexts/certification-license",
+      "@context": ["https://lib.velocitynetwork.foundation/layer1-context-v1.1.json"],
+      "type": "CertificationLicense",
       "authority": {
+        "type": "Organization",
         "name": "New Jersey Board of Nursing",
         "identifier": "did:velocity:0xc257274276a4e539741ca11b590b9447b26a8052",
         "place": {
+          "type": "Place",
           "addressLocality": "Newark",
           "addressRegion": "US-NJ",
           "addressCountry": "US"
@@ -58,25 +63,31 @@
       "description": "As an assistant to physicians and registered nurses (RNs), a licensed practical nurse (LPN) takes care of basic nursing duties in settings such as hospitals, nursing homes, and long-term care facilities.  To acquiire the license the applicant must sit for the NCLEX-LPN exam.",
       "identifier": "7765430",
       "validity": {
+        "type": "Validity",
         "firstValidFrom": "2018-07-01",
         "validFrom": "2020-07-01",
         "validUntil": "2022-07-01",
         "validIn": {
+          "type": "Place",
           "addressRegion": "US-NJ",
           "addressCountry": "US"
         }
       },
       "recipient": {
+        "type": "PersonName",
         "givenName": "Olivia",
         "familyName": "Hafez"
       }
     },
     {
-      "@context": "https://velocitynetwork.foundation/contexts/certification-license",
+      "@context": ["https://lib.velocitynetwork.foundation/layer1-context-v1.1.json"],
+      "type": "CertificationLicense",
       "authority": {
+        "type": "Organization",
         "name": "California State Board of Accountancy",
         "identifier": "did:velocity:0xc257274276a4e539741ca11b590b9447b26a8052",
         "place": {
+          "type": "Place",
           "addressLocality": "Sacramento",
           "addressRegion": "US-CA",
           "addressCountry": "US"
@@ -86,14 +97,17 @@
       "description": "The CPA designation distinguishes licensed accounting professionals committed to protecting the public interest.These professionals offer financial statement audits and other attestation services to help inform investors about the financial health of organizations. They provide individuals and families with valuable knowledge and advice on taxes and financial planning.",
       "identifier": "82532887",
       "validity": {
+        "type": "Validity",
         "firstValidFrom": "2014-05-10",
         "validFrom": "2014-05-10",
         "validIn": {
+          "type": "Place",
           "addressRegion": "US-CA",
           "addressCountry": "US"
         }
       },
       "recipient": {
+        "type": "PersonName",
         "givenName": "Olivia",
         "familyName": "Hafez"
       }
@@ -101,9 +115,11 @@
     {
       "@context": "https://velocitynetwork.foundation/contexts/certification-license",
       "authority": {
+        "type": "Organization",
         "name": "DMV State of California",
         "identifier": "did:velocity:0xc257274276a4e539741ca11b590b9447b26a8052",
         "place": {
+          "type": "Place",
           "addressLocality": "Sacramento",
           "addressRegion": "US-CA",
           "addressCountry": "US"
@@ -112,6 +128,7 @@
       "name": "California Driver's License",
       "identifier": "G1234568",
       "validity": {
+        "type": "Validity",
         "validFrom": "2009-08-21",
         "validUntil": "2014-08-21"
       },
@@ -122,6 +139,7 @@
         "Spectacles or contact lenses required"
       ],
       "recipient": {
+        "type": "PersonName",
         "givenName": "Olivia",
         "familyName": "Hafez"
       }

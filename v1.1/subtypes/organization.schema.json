@@ -3,6 +3,10 @@
   "type": "object",
   "additionalProperties": false,
   "properties": {
+    "type": {
+      "type": "string",
+      "default": "Organization"
+    },
     "name": {
       "type": "string",
       "description": "The name of the organization.",
@@ -21,18 +25,22 @@
   ],
   "examples": [
     {
+      "type": "Organization",
       "name": "New Jersey Motor Vehicle Commission",
       "identifier": "did:velocity:0xc30b69405238038080c641cc20a63715ca97d706",
       "place": {
+        "type": "Place",
         "addressLocality": "Trenton",
         "addressRegion": "US-NJ",
         "addressCountry": "US"
       }
     },
     {
+      "type": "Organization",
       "name": "Microsoft Corporation",
       "identifier": "did:velocity:0xc30b69405238038080c641cc20a63715ca97d706",
       "place": {
+        "type": "Place",
         "addressLocality": "Portland",
         "addressRegion": "US-OR",
         "addressCountry": "US",
@@ -40,9 +48,11 @@
       }
     },
     {
+      "type": "Organization",
       "name": "Harvard University",
       "identifier": "did:velocity:0xc30b69405238038080c641cc20a63715ca97d706",
       "place": {
+        "type": "Place",
         "addressLocality": "Cambridge",
         "addressRegion": "US-MA",
         "addressCountry": "US"

@@ -5,6 +5,10 @@
     "@context": {
       "$ref": "../json-ld-context.schema.json"
     },
+    "type": {
+      "type": "string",
+      "default": "EducationDegree"
+    },
     "institution": {
       "$ref": "../subtypes/organization.schema.json"
     },
@@ -34,6 +38,7 @@
     "degreeMajor": {
       "type": "array",
       "description": "The major field or fields of study of the degree.",
+      "minItems": 1,
       "items": {
         "type": "string",
         "maxLength": 128
@@ -42,6 +47,7 @@
     "degreeMinor": {
       "type": "array",
       "description": "The minor field or fields of study of the degree.",
+      "minItems": 1,
       "items": {
         "type": "string",
         "maxLength": 128
@@ -55,6 +61,7 @@
     "alignment": {
       "type": "array",
       "description": "A public resource to which the degree is aligned.",
+      "minItems": 1,
       "items": {
         "$ref": "../subtypes/alignment.schema.json"
       }

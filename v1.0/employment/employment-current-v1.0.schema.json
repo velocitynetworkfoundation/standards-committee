@@ -21,11 +21,14 @@
   ],
   "examples": [
     {
-      "@context": "https://velocitynetwork.foundation/contexts/employment",
+      "@context": ["https://lib.velocitynetwork.foundation/layer1-context-v1.0.json"],
+      "type": "Employment",
       "legalEmployer": {
+        "type": "Organization",
         "name": "Ocatgon Bank",
         "identifier": "did:velocity:0xc257274276a4e539741ca11b590b9447b26a8051",
         "place": {
+          "type": "Place",
           "addressLocality": "London",
           "addressRegion": "GB-ENG",
           "addressCountry": "GB"
@@ -38,6 +41,7 @@
         "contract"
       ],
       "place": {
+        "type": "Place",
         "name": "Branch 4644",
         "addressLocality": "Birmingham",
         "addressRegion": "GB-ENG",
@@ -46,11 +50,14 @@
       "startDate": "2017-01"
     },
     {
-      "@context": "https://velocitynetwork.foundation/contexts/employment",
+      "@context": ["https://lib.velocitynetwork.foundation/layer1-context-v1.0.json"],
+      "type": "Employment",
       "legalEmployer": {
+        "type": "Organization",
         "name": "Microsoft Corporation",
         "identifier": "did:velocity:0xc257274276a4e539741ca11b590b9447b26a8051",
         "place": {
+          "type": "Place",
           "addressLocality": "Bellevue",
           "addressRegion": "US-WA",
           "addressCountry": "US"
@@ -63,6 +70,7 @@
         "permanent"
       ],
       "place": {
+        "type": "Place",
         "name": "Media Lab",
         "addressLocality": "Buffalo",
         "addressRegion": "US-NY",
