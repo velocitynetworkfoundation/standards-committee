@@ -32,7 +32,7 @@
   },
   "logo": {
     "path": [
-      "$.institution.image"
+      "$.legalEmployer.image"
     ],
     "schema": {
       "type": "string",

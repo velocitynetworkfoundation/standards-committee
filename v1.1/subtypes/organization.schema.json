@@ -2,27 +2,6 @@
   "title": "Organization",
   "type": "object",
   "additionalProperties": false,
-  "properties": {
-    "type": {
-      "type": "string",
-      "default": "Organization"
-    },
-    "name": {
-      "type": "string",
-      "description": "The name of the organization.",
-      "maxLength": 256
-    },
-    "identifier": {
-      "$ref": "./did.schema.json"
-    },
-    "place": {
-      "$ref": "./place.schema.json"
-    }
-  },
-  "required": [
-    "name",
-    "place"
-  ],
   "examples": [
     {
       "type": "Organization",
@@ -58,5 +37,32 @@
         "addressCountry": "US"
       }
     }
+  ],
+  "properties": {
+    "type": {
+      "type": "string",
+      "default": "Organization"
+    },
+    "name": {
+      "type": "string",
+      "description": "The name of the organization.",
+      "maxLength": 256
+    },
+    "identifier": {
+      "$ref": "./did.schema.json"
+    },
+    "place": {
+      "$ref": "./place.schema.json"
+    },
+    "image": {
+      "type": "string",
+      "maxLength": 2048,
+      "format": "uri",
+      "description": "IRI representing the logo of the organization. This must be JPG, PNG or SVG file. \nFor PNG or JPG: 300px x 300px minimum, maximum size 500kb. "
+    }
+  },
+  "required": [
+    "name",
+    "place"
   ]
 }
