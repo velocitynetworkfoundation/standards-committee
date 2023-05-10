@@ -30,6 +30,15 @@
   "description": {
     "text": "Past employment position"
   },
+  "logo": {
+    "path": [
+      "$.institution.image"
+    ],
+    "schema": {
+      "type": "string",
+      "format": "uri"
+    }
+  },
   "properties": [
     {
       "label": "Role description",

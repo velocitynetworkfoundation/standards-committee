@@ -30,6 +30,15 @@
   "description": {
     "text": "Course attendance"
   },
+  "logo": {
+    "path": [
+      "$.provider.image"
+    ],
+    "schema": {
+      "type": "string",
+      "format": "uri"
+    }
+  },
   "properties": [
     {
       "label": "Description",

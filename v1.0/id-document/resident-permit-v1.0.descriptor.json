@@ -29,6 +29,15 @@
   "description": {
     "text": "Resident permit"
   },
+  "logo": {
+    "path": [
+      "$.authority.image"
+    ],
+    "schema": {
+      "type": "string",
+      "format": "uri"
+    }
+  },
   "properties": [
     {
       "label": "Permit number",

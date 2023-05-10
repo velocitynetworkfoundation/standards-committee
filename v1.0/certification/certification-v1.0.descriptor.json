@@ -29,6 +29,15 @@
   "description": {
     "text": "Certification"
   },
+  "logo": {
+    "path": [
+      "$.authority.image"
+    ],
+    "schema": {
+      "type": "string",
+      "format": "uri"
+    }
+  },
   "properties": [
     {
       "label": "Certification number",

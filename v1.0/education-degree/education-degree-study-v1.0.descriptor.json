@@ -30,6 +30,15 @@
   "description": {
     "text": "Degree study"
   },
+  "logo": {
+    "path": [
+      "$.institution.image"
+    ],
+    "schema": {
+      "type": "string",
+      "format": "uri"
+    }
+  },
   "properties": [
     {
       "label": "School or department",
