@@ -58,7 +58,7 @@
       "type": "string",
       "maxLength": 2048,
       "format": "uri",
-      "description": "IRI or document representing the logo of the organization. This must be JPG, PNG or SVG file. \nFor PNG or JPG: 300px x 300px minimum, maximum size 500kb. "
+      "description": "IRI representing the logo of the organization. This must be JPG, PNG or SVG file. \nFor PNG or JPG: 300px x 300px minimum, maximum size 500kb. "
     }
   },
   "required": [
