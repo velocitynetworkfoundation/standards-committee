@@ -56,12 +56,9 @@
     },
     "image": {
       "type": "string",
-      "x-stoplight": {
-        "id": "u7k2c1il9d9a2"
-      },
       "format": "uri",
       "maxLength": 2048,
-      "description": "IRI or document representing the logo of the organizament. This must be JPG, PNG or SVG file. \nFor PNG or JPG: 300px x 300px minimum, maximum size 500kb. "
+      "description": "IRI or document representing the logo of the organization. This must be JPG, PNG or SVG file. \nFor PNG or JPG: 300px x 300px minimum, maximum size 500kb. "
     }
   },
   "required": [
