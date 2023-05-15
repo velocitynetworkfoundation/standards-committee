@@ -305,6 +305,13 @@
         "restrictionCode": { "@id": "xsd:string", "@container": "@set" },
         "recipient": { "@id": "https://velocitynetwork.foundation/contexts#personName" }
       }
+    },
+    "Badge": {
+      "@id": "https://velocitynetwork.foundation/contexts#License",
+      "@context": {
+        "hasCredential": { "@id": "https://velocitynetwork.foundation/contexts#hasCredential" },
+        "recipient": { "@id": "https://velocitynetwork.foundation/contexts#personName" }
+      }
     }
   }
 }

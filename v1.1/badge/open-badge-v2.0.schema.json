@@ -112,6 +112,13 @@
     "@context": {
       "$ref": "../json-ld-context.schema.json"
     },
+    "type": {
+      "type": "string",
+      "x-stoplight": {
+        "id": "rodhv3so7ansh"
+      },
+      "default": "Badge"
+    },
     "hasCredential": {
       "type": "object",
       "required": [
@@ -123,6 +130,32 @@
         "issuer"
       ],
       "properties": {
+        "@context": {
+          "x-stoplight": {
+            "id": "h4g06rscaedrh"
+          },
+          "oneOf": [
+            {
+              "type": "string",
+              "x-stoplight": {
+                "id": "x45h4dq16j4bw"
+              },
+              "default": "https://openbadgespec.org/v2/context.json"
+            },
+            {
+              "type": "array",
+              "x-stoplight": {
+                "id": "kz0auxwmq508x"
+              },
+              "items": {
+                "x-stoplight": {
+                  "id": "dctb0zeirdsi6"
+                },
+                "type": "string"
+              }
+            }
+          ]
+        },
         "type": {
           "oneOf": [
             {
@@ -164,9 +197,9 @@
               "format": "uri",
               "description": "IRI or document representing an image of the achievement. This must be a PNG or SVG image.",
               "maxLength": 2048
-            }, {
+            },
+            {
               "type": "object",
-              "required": ["id"],
               "properties": {
                 "type": {
                   "oneOf": [
@@ -209,7 +242,10 @@
                     }
                   ]
                 }
-              }
+              },
+              "required": [
+                "id"
+              ]
             }
           ]
         },

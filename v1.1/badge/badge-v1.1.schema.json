@@ -52,9 +52,40 @@
     }
   },
   "additionalProperties": false,
+  "examples": [
+    {
+      "@context": "context:string",
+      "recipient": {
+        "givenName": "Olivia",
+        "familyName": "Hafez"
+      },
+      "hasCredential": {
+        "type": "BadgeClass",
+        "name": "Influenza Vaccine Immunization Education (IVIE)",
+        "image": "http://example.com/ivie.png",
+        "description": "Influenza Vaccine Immunization Education (IVIE) is a self-guided learning module for nursing students to gain training specific to the administration of influenza vaccine in organized clinics for communities of people",
+        "issuer": "did:ion:declanhospital",
+        "criteria": "https://example.com/ivie/criteria.html",
+        "alignment": [
+          {
+            "targetName": "North Dakota Medical Education Profile 3",
+            "targetUrl": "http://credentialengine.com",
+            "targetCode": "NDMEP3"
+          }
+        ]
+      }
+    }
+  ],
   "properties": {
     "@context": {
       "$ref": "../json-ld-context.schema.json"
+    },
+    "type": {
+      "type": "string",
+      "x-stoplight": {
+        "id": "4wkykt9df36pe"
+      },
+      "default": "Badge"
     },
     "recipient": {
       "$ref": "../subtypes/personName.schema.json"
@@ -70,6 +101,12 @@
         "issuer"
       ],
       "properties": {
+        "@context": {
+          "$ref": "../../v1.0/json-ld-context.schema.json",
+          "x-stoplight": {
+            "id": "mo05q7hbwn5zq"
+          }
+        },
         "type": {
           "type": "string",
           "default": "BadgeClass",
@@ -131,31 +168,7 @@
     }
   },
   "required": [
-    "hasCredential",
-    "recipient"
-  ],
-  "examples": [
-    {
-      "@context": "context:string",
-      "recipient": {
-        "givenName": "Olivia",
-        "familyName": "Hafez"
-      },
-      "hasCredential": {
-        "type": "BadgeClass",
-        "name": "Influenza Vaccine Immunization Education (IVIE)",
-        "image": "http://example.com/ivie.png",
-        "description": "Influenza Vaccine Immunization Education (IVIE) is a self-guided learning module for nursing students to gain training specific to the administration of influenza vaccine in organized clinics for communities of people",
-        "issuer": "did:ion:declanhospital",
-        "criteria": "https://example.com/ivie/criteria.html",
-        "alignment": [
-          {
-            "targetName": "North Dakota Medical Education Profile 3",
-            "targetUrl": "http://credentialengine.com",
-            "targetCode": "NDMEP3"
-          }
-        ]
-      }
-    }
+    "recipient",
+    "hasCredential"
   ]
 }
