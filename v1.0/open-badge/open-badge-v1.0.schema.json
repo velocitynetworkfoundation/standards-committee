@@ -8,6 +8,10 @@
     "@context": {
       "$ref": "../json-ld-context.schema.json"
     },
+    "type": {
+      "type": "string",
+      "default": "Badge"
+    },
     "hasCredential": {
       "type": "object",
       "required": [
@@ -19,6 +23,20 @@
         "issuer"
       ],
       "properties": {
+         "@context": {
+           "oneOf": [
+             {
+               "type": "string",
+               "default": "https://openbadgespec.org/v1/context.json"
+             },
+             {
+               "type": "array",
+               "items": {
+                 "type": "string"
+               }
+             }
+           ]
+        },
         "type": {
           "oneOf": [
             {

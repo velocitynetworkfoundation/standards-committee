@@ -289,6 +289,12 @@
         "endorsementCode": { "@id": "xsd:string", "@container": "@set" },
         "restrictionCode": { "@id": "xsd:string", "@container": "@set" }
       }
+    },
+    "Badge": {
+      "@id": "https://velocitynetwork.foundation/contexts#License",
+      "@context": {
+        "hasCredential": { "@id": "https://velocitynetwork.foundation/contexts#hasCredential" }
+      }
     }
   }
 }
