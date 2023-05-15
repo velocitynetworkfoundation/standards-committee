@@ -56,6 +56,10 @@
     "@context": {
       "$ref": "../json-ld-context.schema.json"
     },
+    "type": {
+       "type": "string",
+       "default": "Badge"
+    },
     "recipient": {
       "$ref": "../subtypes/personName.schema.json"
     },
@@ -70,6 +74,9 @@
         "issuer"
       ],
       "properties": {
+        "@context": {
+           "$ref": "../../v1.0/json-ld-context.schema.json"
+        },        
         "type": {
           "type": "string",
           "default": "BadgeClass",
