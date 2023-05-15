@@ -26,7 +26,8 @@
          "@context": {
            "oneOf": [
              {
-               "type": "string"
+               "type": "string",
+               "default": "https://openbadgespec.org/v1/context.json"
              },
              {
                "type": "array",
