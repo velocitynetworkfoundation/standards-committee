@@ -84,6 +84,33 @@
       }
     },
     {
+      "label": "Score method type",
+      "path": [
+        "$.score.scoreMethod.scoreMethodType"
+      ],
+      "schema": {
+        "type": "string"
+      }
+    },
+    {
+      "label": "Score method description",
+      "path": [
+        "$.score.scoreMethod.scoreMethodDescription"
+      ],
+      "schema": {
+        "type": "string"
+      }
+    },
+    {
+      "label": "Passing score",
+      "path": [
+        "$.score.scoreMethod.passingScore"
+      ],
+      "schema": {
+        "type": "string"
+      }
+    },
+    {
       "label": "Assessment level",
       "path": [
         "$.assessmentLevel"
@@ -150,6 +177,33 @@
       "label": "Dimension - Pass or fail",
       "path": [
         "$.assessmentDimensions[0].score.passFail"
+      ],
+      "schema": {
+        "type": "string"
+      }
+    },
+    {
+      "label": "Dimension - Score method type",
+      "path": [
+        "$.assessmentDimensions[*].score.scoreMethod.scoreMethodType"
+      ],
+      "schema": {
+        "type": "string"
+      }
+    },
+    {
+      "label": "Dimension - Score method description",
+      "path": [
+        "$.assessmentDimensions[*].score.scoreMethod.scoreMethodDescription"
+      ],
+      "schema": {
+        "type": "string"
+      }
+    },
+    {
+      "label": "Dimension - Passing score",
+      "path": [
+        "$.assessmentDimensions[*].score.scoreMethod.passingScore"
       ],
       "schema": {
         "type": "string"
