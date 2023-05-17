@@ -138,7 +138,7 @@
       }
     },
     {
-      "label": "Dimension description",
+      "label": "Description",
       "path": [
         "$.assessmentDimensions[*].description"
       ],
@@ -147,7 +147,7 @@
       }
     },
     {
-      "label": "Dimension - assesses",
+      "label": "Assesses",
       "path": [
         "$.assessmentDimensions[*].assesses"
       ],
@@ -156,7 +156,7 @@
       }
     },
     {
-      "label": "Dimension score",
+      "label": "Score",
       "path": [
         "$.assessmentDimensions[*].score.scoreValue"
       ],
@@ -165,7 +165,7 @@
       }
     },
     {
-      "label": "Dimension result",
+      "label": "Result",
       "path": [
         "$.assessmentDimensions[*].score.result"
       ],
@@ -174,7 +174,7 @@
       }
     },
     {
-      "label": "Dimension - Pass or fail",
+      "label": "Pass or fail",
       "path": [
         "$.assessmentDimensions[*].score.passFail"
       ],
@@ -183,7 +183,7 @@
       }
     },
     {
-      "label": "Dimension - Score method type",
+      "label": "Score method type",
       "path": [
         "$.assessmentDimensions[*].score.scoreMethod.scoreMethodType"
       ],
@@ -192,7 +192,7 @@
       }
     },
     {
-      "label": "Dimension - Score method description",
+      "label": "Score method description",
       "path": [
         "$.assessmentDimensions[*].score.scoreMethod.scoreMethodDescription"
       ],
@@ -201,7 +201,7 @@
       }
     },
     {
-      "label": "Dimension - Passing score",
+      "label": "Passing score",
       "path": [
         "$.assessmentDimensions[*].score.scoreMethod.passingScore"
       ],
