@@ -81,7 +81,7 @@
     {
       "label": "Major",
       "path": [
-        "$.degreeMajor"
+        "$.degreeMajor[*]"
       ],
       "schema": {
         "type": "string"
@@ -90,7 +90,7 @@
     {
       "label": "Minor",
       "path": [
-        "$.degreeMinor"
+        "$.degreeMinor[*]"
       ],
       "schema": {
         "type": "string"
