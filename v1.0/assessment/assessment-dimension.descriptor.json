@@ -77,6 +77,33 @@
       }
     },
     {
+      "label": "Score method type",
+      "path": [
+        "$.assessmentDimensions[*].score.scoreMethod.scoreMethodType"
+      ],
+      "schema": {
+        "type": "string"
+      }
+    },
+    {
+      "label": "Score method description",
+      "path": [
+        "$.assessmentDimensions[0].score.scoreMethod.scoreMethodDescription"
+      ],
+      "schema": {
+        "type": "string"
+      }
+    },
+    {
+      "label": "Passing score",
+      "path": [
+        "$.assessmentDimensions[0].score.scoreMethod.passingScore"
+      ],
+      "schema": {
+        "type": "string"
+      }
+    },
+    {
       "label": "Assessment level",
       "path": [
         "$.assessmentDimensions[0].assessmentLevel"
