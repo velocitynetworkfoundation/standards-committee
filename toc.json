@@ -450,7 +450,23 @@
               "uri": "v0/open-badge/badge.schema.json"
             }
           ]
-        }              ]
+        }              
+      ]
+    },
+    {
+      "type": "divider",
+      "title": "Verifiable Credentials"
+    },
+    {
+      "type": "group",
+      "title": "VC Data Model",
+      "items": [
+        {
+          "type": "item",
+          "title": "Velocity W3C-compatible VC",
+          "uri": "VC-data-model/vnf-verification-credential.schema.json"
+        }
+      ]
     }
   ]
 }
