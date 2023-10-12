@@ -274,23 +274,8 @@
         "recipient": { "@id": "https://velocitynetwork.foundation/contexts#personName" }
       }
     },
-    "Certification": {
-      "@id": "https://velocitynetwork.foundation/contexts#Certification",
-      "@context": {
-        "name": "schema:name",
-        "authority": { "@id": "https://velocitynetwork.foundation/contexts#primaryOrganization" },
-        "description": "schema:description",
-        "identifier": {
-          "@id": "schema:identifier",
-          "@type": "@id"
-        },
-        "validity": { "@id": "https://velocitynetwork.foundation/contexts#validity" },
-        "alignment": { "@id": "https://velocitynetwork.foundation/contexts#alignment", "@container": "@set" },
-        "recipient": { "@id": "https://velocitynetwork.foundation/contexts#personName" }
-      }
-    },
-    "License": {
-      "@id": "https://velocitynetwork.foundation/contexts#License",
+    "CertificationLicense": {
+      "@id": "https://velocitynetwork.foundation/contexts#CertificationLicense",
       "@context": {
         "name": "schema:name",
         "authority": { "@id": "https://velocitynetwork.foundation/contexts#primaryOrganization" },
@@ -307,10 +292,17 @@
       }
     },
     "Badge": {
-       "@id": "https://velocitynetwork.foundation/contexts#License",
+       "@id": "https://velocitynetwork.foundation/contexts#Badge",
        "@context": {
+         "issuer": { "@id": "https://velocitynetwork.foundation/contexts#primaryOrganization" },
          "hasCredential": { "@id": "https://velocitynetwork.foundation/contexts#hasCredential" },
          "recipient": { "@id": "https://velocitynetwork.foundation/contexts#personName" }
+       }
+    },
+    "AchievementSubject": {
+       "@id": "https://velocitynetwork.foundation/contexts#Badge",
+       "@context": {
+         "issuer": { "@id": "https://velocitynetwork.foundation/contexts#primaryOrganization" }
        }
     }
   }
