@@ -260,21 +260,7 @@
         "assessmentDimensions": { "@id": "https://velocitynetwork.foundation/contexts#assessmentDimension", "@container": "@list" }
       }
     },
-    "Certification": {
-      "@id": "https://velocitynetwork.foundation/contexts#Certification",
-      "@context": {
-        "name": "schema:name",
-        "authority": { "@id": "https://velocitynetwork.foundation/contexts#primaryOrganization" },
-        "description": "schema:description",
-        "identifier": {
-          "@id": "schema:identifier",
-          "@type": "@id"
-        },
-        "validity": { "@id": "https://velocitynetwork.foundation/contexts#validity" },
-        "alignment": { "@id": "https://velocitynetwork.foundation/contexts#alignment", "@container": "@set" }
-      }
-    },
-    "License": {
+    "CertificationLicense": {
       "@id": "https://velocitynetwork.foundation/contexts#License",
       "@context": {
         "name": "schema:name",
@@ -293,6 +279,7 @@
     "Badge": {
       "@id": "https://velocitynetwork.foundation/contexts#License",
       "@context": {
+        "issuer": { "@id": "https://velocitynetwork.foundation/contexts#primaryOrganization" },
         "hasCredential": { "@id": "https://velocitynetwork.foundation/contexts#hasCredential" }
       }
     }
