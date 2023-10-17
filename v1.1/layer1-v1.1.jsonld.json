@@ -78,6 +78,17 @@
       }
     },
     "PrimaryOrganization": "Organization",
+    "ObiProfile": {      
+      "@id": "https://velocitynetwork.foundation/contexts#ObiProfile",
+      "@context": {
+        "name": "schema:name",
+        "id": {
+          "@id": "schema:identifier",
+          "@type": "@id"
+        }
+      }
+    },
+    "PrimarySourceProfile": "ObiProfile",
     "AlignmentObject": {
       "@id": "https://velocitynetwork.foundation/contexts#AlignmentObject",
       "@context": {
@@ -294,15 +305,20 @@
     "Badge": {
        "@id": "https://velocitynetwork.foundation/contexts#Badge",
        "@context": {
-         "issuer": { "@id": "https://velocitynetwork.foundation/contexts#primaryOrganization" },
          "hasCredential": { "@id": "https://velocitynetwork.foundation/contexts#hasCredential" },
          "recipient": { "@id": "https://velocitynetwork.foundation/contexts#personName" }
        }
     },
+    "HasCredential": {
+      "@id": "https://velocitynetwork.foundation/contexts#HasCredential",
+      "@context": {
+        "issuer": { "@id": "https://velocitynetwork.foundation/contexts#primarySourceProfile" }
+      }
+    },
     "AchievementSubject": {
        "@id": "https://velocitynetwork.foundation/contexts#Badge",
        "@context": {
-         "issuer": { "@id": "https://velocitynetwork.foundation/contexts#primaryOrganization" }
+         "source": { "@id": "https://velocitynetwork.foundation/contexts#primarySourceProfile" }
        }
     }
   }
