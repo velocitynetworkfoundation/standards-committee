@@ -81,11 +81,8 @@
     "ObiProfile": {      
       "@id": "https://velocitynetwork.foundation/contexts#ObiProfile",
       "@context": {
-        "name": "schema:name",
-        "id": {
-          "@id": "schema:identifier",
-          "@type": "@id"
-        }
+        "id": "@id",
+        "type": "@type"
       }
     },
     "PrimarySourceProfile": "ObiProfile",
@@ -312,13 +309,20 @@
     "HasCredential": {
       "@id": "https://velocitynetwork.foundation/contexts#HasCredential",
       "@context": {
-        "issuer": { "@id": "https://velocitynetwork.foundation/contexts#primarySourceProfile" }
+        "type": "@type",
+        "issuer": { 
+          "@id": "https://velocitynetwork.foundation/contexts#primarySourceProfile", 
+          "@type": "@id"  
+        }
       }
     },
     "AchievementSubject": {
        "@id": "https://velocitynetwork.foundation/contexts#Badge",
        "@context": {
-         "source": { "@id": "https://velocitynetwork.foundation/contexts#primarySourceProfile" }
+         "source": { 
+           "@id": "https://velocitynetwork.foundation/contexts#primarySourceProfile", 
+           "@type": "@id" 
+          }
        }
     }
   }

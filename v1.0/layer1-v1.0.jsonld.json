@@ -71,11 +71,8 @@
     "ObiProfile": {      
       "@id": "https://velocitynetwork.foundation/contexts#ObiProfile",
       "@context": {
-        "name": "schema:name",
-        "id": {
-          "@id": "schema:identifier",
-          "@type": "@id"
-        }
+        "id": "@id",
+        "type": "@type"
       }
     },
     "PrimarySourceProfile": "ObiProfile",
@@ -297,6 +294,7 @@
     "HasCredential": {
       "@id": "https://velocitynetwork.foundation/contexts#HasCredential",
       "@context": {
+        "type": "@type",
         "issuer": { "@id": "https://velocitynetwork.foundation/contexts#primarySourceProfile" }
       }
     }
