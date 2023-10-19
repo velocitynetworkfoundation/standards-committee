@@ -78,6 +78,14 @@
       }
     },
     "PrimaryOrganization": "Organization",
+    "ObiProfile": {      
+      "@id": "https://velocitynetwork.foundation/contexts#ObiProfile",
+      "@context": {
+        "id": "@id",
+        "type": "@type"
+      }
+    },
+    "PrimarySourceProfile": "ObiProfile",
     "AlignmentObject": {
       "@id": "https://velocitynetwork.foundation/contexts#AlignmentObject",
       "@context": {
@@ -274,23 +282,8 @@
         "recipient": { "@id": "https://velocitynetwork.foundation/contexts#personName" }
       }
     },
-    "Certification": {
-      "@id": "https://velocitynetwork.foundation/contexts#Certification",
-      "@context": {
-        "name": "schema:name",
-        "authority": { "@id": "https://velocitynetwork.foundation/contexts#primaryOrganization" },
-        "description": "schema:description",
-        "identifier": {
-          "@id": "schema:identifier",
-          "@type": "@id"
-        },
-        "validity": { "@id": "https://velocitynetwork.foundation/contexts#validity" },
-        "alignment": { "@id": "https://velocitynetwork.foundation/contexts#alignment", "@container": "@set" },
-        "recipient": { "@id": "https://velocitynetwork.foundation/contexts#personName" }
-      }
-    },
-    "License": {
-      "@id": "https://velocitynetwork.foundation/contexts#License",
+    "CertificationLicense": {
+      "@id": "https://velocitynetwork.foundation/contexts#CertificationLicense",
       "@context": {
         "name": "schema:name",
         "authority": { "@id": "https://velocitynetwork.foundation/contexts#primaryOrganization" },
@@ -307,10 +300,29 @@
       }
     },
     "Badge": {
-       "@id": "https://velocitynetwork.foundation/contexts#License",
+       "@id": "https://velocitynetwork.foundation/contexts#Badge",
        "@context": {
          "hasCredential": { "@id": "https://velocitynetwork.foundation/contexts#hasCredential" },
          "recipient": { "@id": "https://velocitynetwork.foundation/contexts#personName" }
+       }
+    },
+    "HasCredential": {
+      "@id": "https://velocitynetwork.foundation/contexts#HasCredential",
+      "@context": {
+        "type": "@type",
+        "issuer": { 
+          "@id": "https://velocitynetwork.foundation/contexts#primarySourceProfile", 
+          "@type": "@id"  
+        }
+      }
+    },
+    "AchievementSubject": {
+       "@id": "https://velocitynetwork.foundation/contexts#Badge",
+       "@context": {
+         "source": { 
+           "@id": "https://velocitynetwork.foundation/contexts#primarySourceProfile", 
+           "@type": "@id" 
+          }
        }
     }
   }
