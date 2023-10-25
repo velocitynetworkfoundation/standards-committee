@@ -287,15 +287,7 @@
     "Badge": {
       "@id": "https://velocitynetwork.foundation/contexts#License",
       "@context": {
-        "issuer": { "@id": "https://velocitynetwork.foundation/contexts#primaryOrganization" },
         "hasCredential": { "@id": "https://velocitynetwork.foundation/contexts#hasCredential" }
-      }
-    },
-    "HasCredential": {
-      "@id": "https://velocitynetwork.foundation/contexts#HasCredential",
-      "@context": {
-        "type": "@type",
-        "issuer": { "@id": "https://velocitynetwork.foundation/contexts#primarySourceProfile" }
       }
     }
   }
