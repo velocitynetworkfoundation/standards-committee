@@ -77,6 +77,15 @@
       }
     },
     {
+      "label": "Score Description",
+      "path": [
+        "$.score.scoreDescription"
+      ],
+      "schema": {
+        "type": "string"
+      }
+    },
+    {
       "label": "Score method type",
       "path": [
         "$.assessmentDimensions[*].score.scoreMethod.scoreMethodType"

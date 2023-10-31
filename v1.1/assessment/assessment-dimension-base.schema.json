@@ -14,7 +14,7 @@
     "assesses": {
       "type": "string",
       "description": "The competency or learning outcome that is being assessed by the assessment.",
-      "maxLength": 128
+      "maxLength": 960
     },
     "description": {
       "type": "string",
@@ -29,7 +29,7 @@
     "assessmentMethod": {
       "type": "string",
       "description": "The method for assessing, such as written exam, oral exam, role play, multiple choice, etc. ",
-      "maxLength": 32
+      "maxLength": 256
     },
     "alignment": {
       "type": "array",
