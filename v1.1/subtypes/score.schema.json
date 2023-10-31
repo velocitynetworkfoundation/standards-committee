@@ -2,67 +2,6 @@
   "title": "Score",
   "type": "object",
   "additionalProperties": false,
-  "properties": {
-    "scoreMethod": {
-      "type": "object",
-      "description": "The method according to which the score is given. ",
-      "additionalProperties": false,
-      "properties": {
-        "type": {
-          "type": "string",
-          "default": "ScoreMethod"
-        },
-        "scoreMethodType": {
-          "type": "string",
-          "enum": [
-            "NormReferenced",
-            "CriterionReferenced"
-          ],
-          "description": "One of: NormReferenced, CriterionReferenced."
-        },
-        "scoreMethodDescription": {
-          "type": "string",
-          "description": "A description of the scoring method used.",
-          "maxLength": 2048
-        },
-        "alignment": {
-          "type": "array",
-          "description": "A public resource to which the scoring method is aligned.",
-          "minItems": 1,
-          "items": {
-            "$ref": "./alignment.schema.json"
-          }
-        },
-        "passingScore": {
-          "type": "string",
-          "description": "The minimum passing score",
-          "maxLength": 16
-        }
-      }
-    },
-    "type": {
-      "type": "string",
-      "default": "Score"
-    },
-    "scoreValue": {
-      "type": "string",
-      "description": "The score achieved by the person.",
-      "maxLength": 16
-    },
-    "result": {
-      "type": "string",
-      "description": "The result achieved by the person, e.g. acceptable, excellent, poor. Applicable when results are not stated as scores. ",
-      "maxLength": 32
-    },
-    "passFail": {
-      "type": "string",
-      "enum": [
-        "Pass",
-        "Fail"
-      ],
-      "description": "One of: Pass, Fail"
-    }
-  },
   "examples": [
     {
       "type": "Score",
@@ -105,5 +44,72 @@
       "result": "Normal color vision",
       "passFail": "Pass"
     }
-  ]
+  ],
+  "properties": {
+    "scoreMethod": {
+      "type": "object",
+      "description": "The method according to which the score is given. ",
+      "additionalProperties": false,
+      "properties": {
+        "type": {
+          "type": "string",
+          "default": "ScoreMethod"
+        },
+        "scoreMethodType": {
+          "type": "string",
+          "enum": [
+            "NormReferenced",
+            "CriterionReferenced"
+          ],
+          "description": "One of: NormReferenced, CriterionReferenced."
+        },
+        "alignment": {
+          "type": "array",
+          "description": "A public resource to which the scoring method is aligned.",
+          "minItems": 1,
+          "items": {
+            "$ref": "./alignment.schema.json"
+          }
+        },
+        "scoreMethodDescription": {
+          "type": "string",
+          "description": "A description of the scoring method used.",
+          "maxLength": 2048
+        },
+        "passingScore": {
+          "type": "string",
+          "description": "The minimum passing score",
+          "maxLength": 16
+        }
+      }
+    },
+    "type": {
+      "type": "string",
+      "default": "Score"
+    },
+    "scoreValue": {
+      "type": "string",
+      "description": "The score achieved by the person.",
+      "maxLength": 16
+    },
+    "result": {
+      "type": "string",
+      "description": "The result achieved by the person, e.g. acceptable, excellent, poor. Applicable when results are not stated as scores. ",
+      "maxLength": 2048
+    },
+    "passFail": {
+      "type": "string",
+      "enum": [
+        "Pass",
+        "Fail"
+      ],
+      "description": "One of: Pass, Fail"
+    },
+    "scoreDescription": {
+      "type": "string",
+      "description": "Explanation or description of the meaning of the score and/or result achieved.",
+      "maxLength": 2048
+    }
+  },
+  "description": ""
 }
