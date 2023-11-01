@@ -1,0 +1,136 @@
+{
+  "title": "display-descriptor Schema",
+  "x-stoplight": {
+    "id": "z1yp47qoi4n3s"
+  },
+  "type": "object",
+  "properties": {
+    "title": {
+      "type": "string",
+      "x-stoplight": {
+        "id": "ej95jmomcqhyo"
+      }
+    },
+    "subtitle": {
+      "type": "string",
+      "x-stoplight": {
+        "id": "8ferffdthr8sw"
+      }
+    },
+    "summary_detail": {
+      "type": "string",
+      "x-stoplight": {
+        "id": "1iecg30121vv6"
+      }
+    },
+    "description": {
+      "type": "string",
+      "x-stoplight": {
+        "id": "ea1y6yqxj16yf"
+      }
+    },
+    "logo": {
+      "type": "string",
+      "x-stoplight": {
+        "id": "j5mn8w6l8uwuw"
+      }
+    },
+    "properties": {
+      "type": "array",
+      "x-stoplight": {
+        "id": "cm7jpmjeeym9a"
+      },
+      "items": {
+        "x-stoplight": {
+          "id": "mu390ajzau4lt"
+        },
+        "oneOf": [
+          {
+            "additionalProperties": false,
+            "properties": {
+              "path": {
+                "type": "array",
+                "x-stoplight": {
+                  "id": "srw4n2rigdcw9"
+                },
+                "items": {
+                  "x-stoplight": {
+                    "id": "f7jgsjuwaxkxf"
+                  },
+                  "type": "string"
+                }
+              },
+              "label": {
+                "type": "string",
+                "x-stoplight": {
+                  "id": "q11l2fao4ouf1"
+                }
+              },
+              "schema": {
+                "oneOf": [
+                  {
+                    "additionalProperties": false,
+                    "type": "object",
+                    "properties": {
+                      "type": {
+                        "type": "string",
+                        "enum": [
+                          "boolean",
+                          "number",
+                          "integer"
+                        ]
+                      }
+                    },
+                    "required": [
+                      "type"
+                    ]
+                  },
+                  {
+                    "anyOf": [
+                      {
+                        "additionalProperties": false
+                      },
+                      {
+                        "additionalProperties": false
+                      }
+                    ]
+                  }
+                ],
+                "x-stoplight": {
+                  "id": "6ecn39ywkol7t"
+                }
+              },
+              "fallback": {
+                "type": "string",
+                "x-stoplight": {
+                  "id": "xka35vs3c9wyj"
+                }
+              }
+            },
+            "required": [
+              "path",
+              "label",
+              "schema"
+            ]
+          },
+          {
+            "additionalProperties": false,
+            "properties": {
+              "text": {
+                "type": "string"
+              },
+              "label": {
+                "type": "string"
+              }
+            },
+            "required": [
+              "text",
+              "label"
+            ]
+          }
+        ],
+        "type": "object"
+      }
+    }
+  }
+}
