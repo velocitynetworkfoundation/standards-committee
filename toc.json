@@ -467,6 +467,17 @@
           "uri": "VC-data-model/vnf-verification-credential.schema.json"
         }
       ]
+    },
+    {
+      "type": "group",
+      "title": "VC Display Descriptor",
+      "items": [
+        {
+          "type": "item",
+          "title": "VC Display Descriptor",
+          "uri": "VC-display-descriptor/display-descriptor.schema.json"
+        }
+      ]
     }
   ]
 }
