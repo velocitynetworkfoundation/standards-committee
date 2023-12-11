@@ -5,6 +5,7 @@
   },
   "type": "object",
   "additionalProperties": false,
+  "description": "The model for a vc mapper",
   "properties": {
     "type": {
       "type": "string",
@@ -45,6 +46,7 @@
           "id": "rcof498a2q1r4"
         },
         "type": "object",
+        "additionalProperties": false,
         "properties": {
           "case": {
             "type": "string",
@@ -69,6 +71,5 @@
   "required": [
     "type",
     "mapOver"
-  ],
-  "description": "The model for a vc mapper"
+  ]
 }
