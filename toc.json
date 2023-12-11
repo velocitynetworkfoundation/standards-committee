@@ -478,6 +478,17 @@
           "uri": "VC-display-descriptor/display-descriptor.schema.json"
         }
       ]
+    },
+    {
+      "type": "group",
+      "title": "VC Mapper",
+      "items": [
+        {
+          "type": "item",
+          "title": "VC Display Descriptor",
+          "uri": "VC-mapper/vc-mapper.schema.json"
+        }
+      ]
     }
   ]
 }
