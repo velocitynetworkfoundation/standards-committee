@@ -55,7 +55,7 @@
             }
           },
           "template": {
-            "type": "string",
+            "type": "object",
             "x-stoplight": {
               "id": "1q2m1rnqq28jp"
             }
