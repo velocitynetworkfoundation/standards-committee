@@ -14,6 +14,27 @@
       },
       "description": "the unique type of the mapper"
     },
+    "match": {
+      "type": "string",
+      "x-stoplight": {
+        "id": "4hrapkou49phz"
+      },
+      "description": "the value to dereference when deciding to run this mapper or not"
+    },
+    "matchEquals": {
+      "type": "string",
+      "x-stoplight": {
+        "id": "s0iam4l4h9yfa"
+      },
+      "description": "match if the values deeply equal the dereferenced value of `match`\none of matchEquals or matchIncludes must be specified"
+    },
+    "matchIncludes": {
+      "type": "string",
+      "x-stoplight": {
+        "id": "n8mluu772z06d"
+      },
+      "description": "match against one value with the array dereferences by `match`\none of matchEquals or matchIncludes must be specified"
+    },
     "mapOver": {
       "type": "string",
       "x-stoplight": {
@@ -28,7 +49,7 @@
       },
       "description": "the name of an individual item from the mapOver collection"
     },
-    "switch": {
+    "templateMatch": {
       "type": "string",
       "x-stoplight": {
         "id": "vscz27a019mws"
@@ -48,11 +69,19 @@
         "type": "object",
         "additionalProperties": false,
         "properties": {
-          "case": {
+          "matchEquals": {
             "type": "string",
             "x-stoplight": {
               "id": "c3z9fprhxp6ob"
-            }
+            },
+            "description": "match if the values deeply equal the dereferenced value of templateMatch\none of matchEquals or matchIncludes must be specified"
+          },
+          "matchIncludes": {
+            "type": "string",
+            "x-stoplight": {
+              "id": "czsrkshz1jk6g"
+            },
+            "description": "match against one value with the array dereferences by templateMatch\none of matchEquals or matchIncludes must be specified"
           },
           "template": {
             "type": "object",
@@ -62,7 +91,6 @@
           }
         },
         "required": [
-          "case",
           "template"
         ]
       }
