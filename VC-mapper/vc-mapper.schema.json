@@ -21,14 +21,14 @@
       },
       "description": "the value to dereference when deciding to run this mapper or not"
     },
-    "matchEquals": {
+    "caseEquals": {
       "type": "string",
       "x-stoplight": {
         "id": "s0iam4l4h9yfa"
       },
       "description": "match if the values deeply equal the dereferenced value of `match`\none of matchEquals or matchIncludes must be specified"
     },
-    "matchIncludes": {
+    "caseIncludes": {
       "type": "string",
       "x-stoplight": {
         "id": "n8mluu772z06d"
@@ -69,14 +69,14 @@
         "type": "object",
         "additionalProperties": false,
         "properties": {
-          "matchEquals": {
+          "caseEquals": {
             "type": "string",
             "x-stoplight": {
               "id": "c3z9fprhxp6ob"
             },
             "description": "match if the values deeply equal the dereferenced value of templateMatch\none of matchEquals or matchIncludes must be specified"
           },
-          "matchIncludes": {
+          "caseIncludes": {
             "type": "string",
             "x-stoplight": {
               "id": "czsrkshz1jk6g"
