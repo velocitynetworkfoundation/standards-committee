@@ -485,7 +485,7 @@
       "items": [
         {
           "type": "item",
-          "title": "VC Display Descriptor",
+          "title": "VC Mapper Schema",
           "uri": "VC-mapper/vc-mapper.schema.json"
         }
       ]
