@@ -1,0 +1,74 @@
+{
+  "title": "vc-mapper.schema",
+  "x-stoplight": {
+    "id": "sifzzsmyerg1f"
+  },
+  "type": "object",
+  "additionalProperties": false,
+  "properties": {
+    "type": {
+      "type": "string",
+      "x-stoplight": {
+        "id": "eaql7p58fn27d"
+      },
+      "description": "the unique type of the mapper"
+    },
+    "mapOver": {
+      "type": "string",
+      "x-stoplight": {
+        "id": "gppmlw8gyjojd"
+      },
+      "description": "a reference to a collection on the offer. If the result of evuating mapOver is a single object then it is treated as a collection of size one."
+    },
+    "template": {
+      "type": "object",
+      "x-stoplight": {
+        "id": "bf8rnh2070538"
+      },
+      "description": "the name of an individual item from the mapOver collection"
+    },
+    "switch": {
+      "type": "string",
+      "x-stoplight": {
+        "id": "vscz27a019mws"
+      },
+      "description": "when needing to map an offer to multiple types use switch to describe which var is used to determine which mapper to use"
+    },
+    "templates": {
+      "type": "array",
+      "x-stoplight": {
+        "id": "bpif90sybth4u"
+      },
+      "description": "an array of templates. Each template contains the template as well as the case which represents the value of the switch",
+      "items": {
+        "x-stoplight": {
+          "id": "rcof498a2q1r4"
+        },
+        "type": "object",
+        "properties": {
+          "case": {
+            "type": "string",
+            "x-stoplight": {
+              "id": "c3z9fprhxp6ob"
+            }
+          },
+          "template": {
+            "type": "string",
+            "x-stoplight": {
+              "id": "1q2m1rnqq28jp"
+            }
+          }
+        },
+        "required": [
+          "case",
+          "template"
+        ]
+      }
+    }
+  },
+  "required": [
+    "type",
+    "mapOver"
+  ],
+  "description": "The model for a vc mapper"
+}
