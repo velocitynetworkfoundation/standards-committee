@@ -92,6 +92,18 @@
         },
         "required": [
           "template"
+        ],
+        "oneOf": [
+          {
+              "required": [
+                  "caseEquals"
+              ]
+          },
+          {
+              "required": [
+                  "caseIncludes"
+              ]
+          }
         ]
       }
     }
@@ -99,5 +111,18 @@
   "required": [
     "type",
     "mapOver"
+  ],
+  "oneOf": [
+    {
+        "required": [
+            "template"
+        ]
+    },
+    {
+        "required": [
+            "templateMatch",
+            "templates"
+        ]
+    }
   ]
 }
