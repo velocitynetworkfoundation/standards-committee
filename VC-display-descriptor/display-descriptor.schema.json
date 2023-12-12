@@ -6,156 +6,224 @@
   "type": "object",
   "properties": {
     "title": {
-      "type": "string",
+      "$ref": "./property-descriptor.schema.json",
       "x-stoplight": {
         "id": "ej95jmomcqhyo"
       }
     },
     "subtitle": {
-      "type": "string",
+      "$ref": "./property-descriptor.schema.json",
       "x-stoplight": {
         "id": "8ferffdthr8sw"
       }
     },
     "summary_detail": {
-      "type": "string",
+      "$ref": "./property-descriptor.schema.json",
       "x-stoplight": {
         "id": "1iecg30121vv6"
       }
     },
     "description": {
-      "type": "string",
+      "$ref": "./property-descriptor.schema.json",
       "x-stoplight": {
         "id": "ea1y6yqxj16yf"
       }
     },
     "logo": {
-      "type": "string",
+      "$ref": "./property-descriptor.schema.json",
       "x-stoplight": {
         "id": "j5mn8w6l8uwuw"
       }
     },
     "properties": {
-      "type": "array",
       "x-stoplight": {
         "id": "cm7jpmjeeym9a"
       },
+      "type": "array",
       "items": {
+        "$ref": "./labelled-property-descriptor.json",
         "x-stoplight": {
           "id": "mu390ajzau4lt"
-        },
-        "oneOf": [
-          {
-            "additionalProperties": false,
-            "properties": {
-              "path": {
-                "type": "array",
-                "x-stoplight": {
-                  "id": "srw4n2rigdcw9"
-                },
-                "items": {
-                  "x-stoplight": {
-                    "id": "f7jgsjuwaxkxf"
-                  },
-                  "type": "string"
-                }
-              },
-              "label": {
-                "type": "string",
-                "x-stoplight": {
-                  "id": "q11l2fao4ouf1"
-                }
-              },
-              "schema": {
-                "oneOf": [
-                  {
-                    "type": "object",
-                    "additionalProperties": false,
-                    "properties": {
-                      "type": {
-                        "type": "string",
-                        "enum": ["boolean", "number", "integer"]
-                      }
-                    },
-                    "required": ["type"]
-                  },
-                  {
-                    "anyOf": [
-                      {
-                        "type": "object",
-                        "additionalProperties": false,
-                        "properties": {
-                          "type": {
-                            "type": "string",
-                            "enum": ["string"]
-                          },
-                          "format": {
-                            "type": "string",
-                            "enum": ["date-time", "time", "date", "email", "idn-email", "hostname", "idn-hostname", "ipv4", "ipv6", "uri", "uri-reference", "iri", "iri-reference"]
-                          }
-                        },
-                        "required": ["type"]
-                      },
-                      {
-                        "type": "object",
-                        "additionalProperties": false,
-                        "properties": {
-                          "type": {
-                            "type": "string",
-                            "enum": ["string"]
-                          },
-                          "contentEncoding": {
-                            "type": "string",
-                            "enum": ["7bit", "8bit", "binary", "quoted-printable", "base16", "base32", "base64"]
-                          },
-                          "contentMediaType": {
-                            "type": "string"
-                          }
-                        },
-                        "required": ["type"]
-                      }
-                    ]
-                  }
-                ],
-                "x-stoplight": {
-                  "id": "6ecn39ywkol7t"
-                }
-              },
-              "fallback": {
-                "type": "string",
-                "x-stoplight": {
-                  "id": "xka35vs3c9wyj"
-                }
-              }
-            },
-            "required": [
-              "path",
-              "label",
-              "schema"
-            ]
-          },
-          {
-            "additionalProperties": false,
-            "properties": {
-              "text": {
-                "type": "string"
-              },
-              "label": {
-                "type": "string"
-              }
-            },
-            "required": [
-              "text",
-              "label"
-            ]
-          }
-        ],
-        "type": "object"
+        }
       }
     }
   },
   "required": [
     "title",
     "subtitle"
+  ],
+  "examples": [
+    {
+      "title": {
+        "path": [
+          "$.authority.name"
+        ],
+        "schema": {
+          "type": "string"
+        },
+        "fallback": "-"
+      },
+      "subtitle": {
+        "path": [
+          "$.name"
+        ],
+        "schema": {
+          "type": "string"
+        },
+        "fallback": "-"
+      },
+      "summary_detail": {
+        "path": [
+          "$.validity.validUntil"
+        ],
+        "schema": {
+          "type": "string",
+          "format": "date"
+        }
+      },
+      "description": {
+        "text": "Certification"
+      },
+      "logo": {
+        "path": [
+          "$.authority.image"
+        ],
+        "schema": {
+          "type": "string",
+          "format": "uri"
+        }
+      },
+      "properties": [
+        {
+          "label": "Certification number",
+          "path": [
+            "$.identifier"
+          ],
+          "schema": {
+            "type": "string"
+          }
+        },
+        {
+          "label": "Renewal date",
+          "path": [
+            "$.validity.validFrom"
+          ],
+          "schema": {
+            "type": "string",
+            "format": "date"
+          }
+        },
+        {
+          "label": "Valid until",
+          "path": [
+            "$.validity.validUntil"
+          ],
+          "schema": {
+            "type": "string",
+            "format": "date"
+          }
+        },
+        {
+          "label": "Locality",
+          "path": [
+            "$.validity.validIn.addressLocality"
+          ],
+          "schema": {
+            "type": "string"
+          }
+        },
+        {
+          "label": "Region",
+          "path": [
+            "$.validity.validIn.addressRegion"
+          ],
+          "schema": {
+            "type": "string"
+          }
+        },
+        {
+          "path": [
+            "$.validity.validIn.addressCountry"
+          ],
+          "label": "Country",
+          "schema": {
+            "type": "string"
+          }
+        },
+        {
+          "label": "Recipient given name",
+          "path": [
+            "$.recipient.givenName"
+          ],
+          "schema": {
+            "type": "string"
+          }
+        },
+        {
+          "label": "Recipient middle name",
+          "path": [
+            "$.recipient.middleName"
+          ],
+          "schema": {
+            "type": "string"
+          }
+        },
+        {
+          "label": "Recipient family name",
+          "path": [
+            "$.recipient.familyName"
+          ],
+          "schema": {
+            "type": "string"
+          }
+        },
+        {
+          "label": "Recipient name prefix",
+          "path": [
+            "$.recipient.namePrefix"
+          ],
+          "schema": {
+            "type": "string"
+          }
+        },
+        {
+          "label": "Recipient name suffix",
+          "path": [
+            "$.recipient.nameSuffix"
+          ],
+          "schema": {
+            "type": "string"
+          }
+        },
+        {
+          "label": "Alignment",
+          "path": [
+            "$.alignment[0].targetName"
+          ],
+          "schema": {
+            "type": "string"
+          }
+        },
+        {
+          "label": "Alignment URL",
+          "path": [
+            "$.alignment[0].targetUrl"
+          ],
+          "schema": {
+            "type": "string",
+            "format": "uri"
+          }
+        },
+        {
+          "label": "Alignment framework",
+          "path": [
+            "$.alignment[0].targetFramework"
+          ],
+          "schema": {
+            "type": "string"
+          }
+        }
+      ]
+    }
   ]
 }

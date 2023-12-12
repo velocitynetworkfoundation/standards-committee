@@ -1,0 +1,191 @@
+{
+  "title": "labelled-property-descriptor",
+  "x-stoplight": {
+    "id": "m4h4alb24149l"
+  },
+  "type": "object",
+  "oneOf": [
+    {
+      "additionalProperties": false,
+      "properties": {
+        "path": {
+          "type": "array",
+          "x-stoplight": {
+            "id": "srw4n2rigdcw9"
+          },
+          "items": {
+            "x-stoplight": {
+              "id": "f7jgsjuwaxkxf"
+            },
+            "type": "string"
+          }
+        },
+        "label": {
+          "type": "string",
+          "x-stoplight": {
+            "id": "q11l2fao4ouf1"
+          }
+        },
+        "schema": {
+          "oneOf": [
+            {
+              "type": "object",
+              "additionalProperties": false,
+              "properties": {
+                "type": {
+                  "type": "string",
+                  "enum": [
+                    "boolean",
+                    "number",
+                    "integer"
+                  ],
+                  "x-stoplight": {
+                    "id": "fwj4e1bgk6qe0"
+                  }
+                }
+              },
+              "required": [
+                "type"
+              ],
+              "x-stoplight": {
+                "id": "oly14yws0sk6n"
+              }
+            },
+            {
+              "anyOf": [
+                {
+                  "type": "object",
+                  "additionalProperties": false,
+                  "properties": {
+                    "type": {
+                      "type": "string",
+                      "enum": [
+                        "string"
+                      ],
+                      "x-stoplight": {
+                        "id": "xm0fs1ty2m248"
+                      }
+                    },
+                    "format": {
+                      "type": "string",
+                      "enum": [
+                        "date-time",
+                        "time",
+                        "date",
+                        "email",
+                        "idn-email",
+                        "hostname",
+                        "idn-hostname",
+                        "ipv4",
+                        "ipv6",
+                        "uri",
+                        "uri-reference",
+                        "iri",
+                        "iri-reference"
+                      ],
+                      "x-stoplight": {
+                        "id": "ej9zaqv0jczz6"
+                      }
+                    }
+                  },
+                  "required": [
+                    "type"
+                  ],
+                  "x-stoplight": {
+                    "id": "oonesm1e79ok8"
+                  }
+                },
+                {
+                  "type": "object",
+                  "additionalProperties": false,
+                  "properties": {
+                    "type": {
+                      "type": "string",
+                      "enum": [
+                        "string"
+                      ],
+                      "x-stoplight": {
+                        "id": "kcfyvqzcgqvsg"
+                      }
+                    },
+                    "contentEncoding": {
+                      "type": "string",
+                      "enum": [
+                        "7bit",
+                        "8bit",
+                        "binary",
+                        "quoted-printable",
+                        "base16",
+                        "base32",
+                        "base64"
+                      ],
+                      "x-stoplight": {
+                        "id": "13wsll248zcu3"
+                      }
+                    },
+                    "contentMediaType": {
+                      "type": "string",
+                      "x-stoplight": {
+                        "id": "cjr94u7eqdhn9"
+                      }
+                    }
+                  },
+                  "required": [
+                    "type"
+                  ],
+                  "x-stoplight": {
+                    "id": "n62hnqcjziibz"
+                  }
+                }
+              ],
+              "x-stoplight": {
+                "id": "e1z07lwvipfgi"
+              }
+            }
+          ],
+          "x-stoplight": {
+            "id": "6ecn39ywkol7t"
+          }
+        },
+        "fallback": {
+          "type": "string",
+          "x-stoplight": {
+            "id": "xka35vs3c9wyj"
+          }
+        }
+      },
+      "required": [
+        "path",
+        "label",
+        "schema"
+      ],
+      "x-stoplight": {
+        "id": "us54egz7yrxj3"
+      }
+    },
+    {
+      "additionalProperties": false,
+      "properties": {
+        "text": {
+          "type": "string",
+          "x-stoplight": {
+            "id": "2ze56xytre224"
+          }
+        },
+        "label": {
+          "type": "string",
+          "x-stoplight": {
+            "id": "xdj5c23290jlw"
+          }
+        }
+      },
+      "required": [
+        "text",
+        "label"
+      ],
+      "x-stoplight": {
+        "id": "ac8pet0xi9jes"
+      }
+    }
+  ]
+}
