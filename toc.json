@@ -455,6 +455,36 @@
     },
     {
       "type": "divider",
+      "title": "Layer 2 subjects"
+    },
+    {
+      "type": "group",
+      "title": "IMS Global",
+      "items": [
+        {
+          "type": "item",
+          "title": "CLR Credential Subject",
+          "uri": "Layer 2/clr-subject.schema.json"
+        }
+      ]
+    },
+    {
+      "type": "divider",
+      "title": "Verifiable Credentials"
+    },  {
+          "type": "item",
+          "title": "CLR Subject Spec",
+          "uri": "Layer 2/clr-subject.schema.json"
+        },
+        {
+          "type": "item",
+          "title": "CLR VC & Subject Spec",
+          "uri": "Layer 2/clr.schema.json"
+        }
+      ]
+    },
+    {
+      "type": "divider",
       "title": "Verifiable Credentials"
     },
     {
