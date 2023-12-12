@@ -459,34 +459,19 @@
     },
     {
       "type": "group",
-      "title": "IMS Global",
+      "title": "IMS Global Schemas",
       "items": [
         {
           "type": "item",
-          "title": "CLR Credential Subject",
+          "title": "CLR Subject Only",
           "uri": "Layer 2/clr-subject.schema.json"
+        },
+        {
+          "type": "item",
+          "title": "CLR VC & Subject Spec",
+          "uri": "Layer 2/clr.schema.json"
         }
       ]
-    },
-    {
-      "type": "divider",
-      "title": "Verifiable Credentials"
-    },  
-{
-        "type": "group",
-      "title": "IMS Global Schemas",
-      "items": [
-    {
-        "type": "item",
-        "title": "CLR Subject Spec",
-        "uri": "Layer 2/clr-subject.schema.json"
-      },
-      {
-        "type": "item",
-        "title": "CLR VC & Subject Spec",
-        "uri": "Layer 2/clr.schema.json"
-      }
-    ]
     },
     {
       "type": "divider",
