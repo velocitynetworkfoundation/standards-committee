@@ -471,17 +471,22 @@
     {
       "type": "divider",
       "title": "Verifiable Credentials"
-    },  {
-          "type": "item",
-          "title": "CLR Subject Spec",
-          "uri": "Layer 2/clr-subject.schema.json"
-        },
-        {
-          "type": "item",
-          "title": "CLR VC & Subject Spec",
-          "uri": "Layer 2/clr.schema.json"
-        }
-      ]
+    },  
+{
+        "type": "group",
+      "title": "IMS Global Schemas",
+      "items": [
+    {
+        "type": "item",
+        "title": "CLR Subject Spec",
+        "uri": "Layer 2/clr-subject.schema.json"
+      },
+      {
+        "type": "item",
+        "title": "CLR VC & Subject Spec",
+        "uri": "Layer 2/clr.schema.json"
+      }
+    ]
     },
     {
       "type": "divider",
