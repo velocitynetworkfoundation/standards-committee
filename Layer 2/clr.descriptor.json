@@ -6,10 +6,10 @@
     "schema": {
       "type": "string"
     },
-    "fallback": "Badge"
+    "fallback": "CLR"
   },
   "subtitle": {
-    "text": "Open Badge"
+    "text": "Comprehensive Learner Record"
   },
   "summary_detail": {
     "path": [
@@ -21,7 +21,7 @@
     "fallback": "-"
   },
   "description": {
-    "text": "Open Badge"
+    "text": "Comprehensive Learner Record"
   },
   "logo": {
     "path": [
