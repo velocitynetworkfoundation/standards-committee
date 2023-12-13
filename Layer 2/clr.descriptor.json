@@ -1,0 +1,112 @@
+{
+  "title": {
+    "path": [
+      "$.source.name"
+      ],
+    "schema": {
+      "type": "string"
+    },
+    "fallback": "Badge"
+  },
+  "subtitle": {
+    "text": "Open Badge"
+  },
+  "summary_detail": {
+    "path": [
+      "$.achievement.name"
+    ],
+    "schema": {
+      "type": "string"
+    },
+    "fallback": "-"
+  },
+  "description": {
+    "text": "Open Badge"
+  },
+  "logo": {
+    "path": [
+      "$.achievement.image.id"
+    ],
+    "schema": {
+      "type": "string",
+      "format": "uri"
+    }
+  },
+  "properties": [
+    {
+      "label": "",
+      "path": [
+        "$.achievement.image.id"
+      ],
+      "schema": {
+        "type": "string"
+      }
+    },
+    {
+      "label": "Achievement type",
+      "path": [
+        "$.achievement.type"
+      ],
+      "schema": {
+        "type": "string"
+      },
+      "fallback": "-"
+    },
+    {
+      "label": "Description",
+      "path": [
+        "$.achievement.description"
+      ],
+      "schema": {
+        "type": "string"
+      },
+      "fallback": "-"
+    },
+    {
+      "label": "Criteria",
+      "path": [
+        "$.achievement.criteria.narrative"
+      ],
+      "schema": {
+        "type": "string"
+      }
+    },
+    {
+      "label": "Criteria type",
+      "path": [
+        "$.achievement.criteria.type"
+      ],
+      "schema": {
+        "type": "string"
+      }
+    },
+    {
+      "label": "Alignment",
+      "path": [
+        "$.achievement.alignment[0].targetName"
+      ],
+      "schema": {
+        "type": "string"
+      }
+    },
+    {
+      "label": "Alignment URL",
+      "path": [
+        "$.achievement.alignment[0].targetUrl"
+      ],
+      "schema": {
+        "type": "string",
+        "format": "uri"
+      }
+    },
+    {
+      "label": "Alignment framework",
+      "path": [
+        "$.achievement.alignment[0].targetFramework"
+      ],
+      "schema": {
+        "type": "string"
+      }
+    }
+  ]
+}
