@@ -474,7 +474,7 @@
         {
           "type": "item",
           "title": "CLR Descriptor",
-          "uri": "Layer 2/clr.descriptor.json"
+          "uri": "https://github.com/velocitynetworkfoundation/standards-committee/blob/main/Layer 2/clr.descriptor.json"
         }
       ]
     },
