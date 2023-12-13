@@ -470,6 +470,11 @@
           "type": "item",
           "title": "CLR VC & Subject Spec",
           "uri": "Layer 2/clr.schema.json"
+        },
+        {
+          "type": "item",
+          "title": "CLR Descriptor",
+          "uri": "Layer 2/clr.descriptor.json"
         }
       ]
     },
