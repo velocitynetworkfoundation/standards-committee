@@ -490,7 +490,7 @@
         {
           "type": "item",
           "title": "NCSBN Descriptor",
-          "uri": "NCSBNMultiLicensev1.1.descriptor.json"
+          "uri": "Layer 2/NCSBNMultiLicensev1.0.descriptor.json"
         }
       ]
     },
