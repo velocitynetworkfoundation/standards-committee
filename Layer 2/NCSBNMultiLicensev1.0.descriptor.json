@@ -1,0 +1,136 @@
+{
+  "title": {
+    "text": "NCSBN Multi-license"
+  },
+  "subtitle": {
+    "path": [
+      "$.personName.familyName"
+    ],
+    "schema": {
+      "type": "string"
+    },
+    "fallback": "--"
+  },
+  "summary_detail": {
+    "path": [
+      "$.Ncsbnid"
+    ],
+    "schema": {
+      "type": "string"
+    },
+    "fallback": "--"
+  },
+  "description": {
+    "text": "NCSBN Multi-license"
+  },
+  "properties": [
+    {
+      "label": "Given Name",
+      "path": [
+        "$.personName.givenName"
+      ],
+      "schema": {
+        "type": "string"
+      }
+    },
+    {
+      "label": "Middle Name",
+      "path": [
+        "$.personName.middleName"
+      ],
+      "schema": {
+        "type": "string"
+      }
+    },
+    {
+      "label": "Family Name",
+      "path": [
+        "$.personName.familyName"
+      ],
+      "schema": {
+        "type": "string"
+      }
+    },
+    {
+      "label": "NCSBN ID",
+      "path": [
+        "$.Ncsbnid"
+      ],
+      "schema": {
+        "type": "string"
+      }
+    },
+    {
+      "label": "Messages",
+      "path": [
+        "$.messages[*]"
+      ],
+      "schema": {
+        "type": "string"
+      }
+    },
+    {
+      "label": "License Type",
+      "path": [
+        "$.License[*].LicenseType"
+      ],
+      "schema": {
+        "type": "string"
+      }
+    },
+    {
+      "label": "State",
+      "path": [
+        "$.License[*].JurisdictionAbbreviation"
+      ],
+      "schema": {
+        "type": "string"
+      }
+    },
+    {
+      "label": "License Status",
+      "path": [
+        "$.License[*].LicenseStatus"
+      ],
+      "schema": {
+        "type": "string"
+      }
+    },
+    {
+      "label": "Issuance Date",
+      "path": [
+        "$.License[*].LicenseOriginalIssueDate"
+      ],
+      "schema": {
+        "type": "string"
+      }
+    },
+    {
+      "label": "Expiration Date",
+      "path": [
+        "$.License[*].LicenseExpirationDate"
+      ],
+      "schema": {
+        "type": "string"
+      }
+    },
+    {
+      "label": "Authorizations to practice as RN",
+      "path": [
+        "$.RnAuthorizationsToPractice[*].StateAbbreviation"
+      ],
+      "schema": {
+        "type": "string"
+      }
+    },
+    {
+      "label": "Authorizations to practice as PN",
+      "path": [
+        "$.PnAuthorizationsToPractice[*].StateAbbreviation"
+      ],
+      "schema": {
+        "type": "string"
+      }
+    }
+  ]
+}

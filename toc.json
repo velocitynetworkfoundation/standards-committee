@@ -479,6 +479,22 @@
       ]
     },
     {
+      "type": "group",
+      "title": "NCSBN Schema ",
+      "items": [
+        {
+          "type": "item",
+          "title": "NCSBN Multi-License Schema V1.0 ",
+          "uri": "Layer 2/NCSBNMultiLicenseV1.0.json"
+        },
+        {
+          "type": "item",
+          "title": "NCSBN Descriptor",
+          "uri": "Layer 2/NCSBNMultiLicensev1.0.descriptor.json"
+        }
+      ]
+    },
+    {
       "type": "divider",
       "title": "Verifiable Credentials"
     },
