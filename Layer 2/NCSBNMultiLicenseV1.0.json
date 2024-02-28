@@ -530,15 +530,9 @@
       ],
       "properties": {
         "Name": {
-          "type": "object",
-          "items": {
-            "$ref": "#/definitions/PersonName",
-            "x-stoplight": {
-              "id": "ev1yufzt3npr6"
-            }
-          },
+          "$ref": "#/definitions/PersonName",
           "x-stoplight": {
-            "id": "j8cx3hmsvwkvb"
+            "id": "ev1yufzt3npr6"
           }
         },
         "LicenseType": {
