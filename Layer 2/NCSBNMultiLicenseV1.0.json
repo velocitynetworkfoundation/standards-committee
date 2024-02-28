@@ -851,56 +851,58 @@
     "id": "4fe4f0w546dze"
   },
   "type": "object",
-  "Name": {
-    "type": "object",
-    "items": {
-      "$ref": "#/definitions/PersonName"
-    },
-    "NcsbnId": {
-      "type": [
-        "string",
-        "null"
-      ]
-    },
-    "Messages": {
-      "type": [
-        "array",
-        "null"
-      ],
+  "properties": {
+    "Name": {
+      "type": "object",
       "items": {
+        "$ref": "#/definitions/PersonName"
+      }
+    },
+      "NcsbnId": {
         "type": [
           "string",
           "null"
         ]
-      }
-    },
-    "Licenses": {
-      "type": [
-        "array",
-        "null"
-      ],
-      "items": {
-        "$ref": "#/definitions/License"
-      }
-    },
-    "RNAuthorizationsToPractice": {
-      "type": [
-        "array",
-        "null"
-      ],
-      "items": {
-        "$ref": "#/definitions/AuthorizationToPractice"
-      }
-    },
-    "PNAuthorizationsToPractice": {
-      "type": [
-        "array",
-        "null"
-      ],
-      "items": {
-        "$ref": "#/definitions/AuthorizationToPractice"
-      }
-    }
+      },
+      "Messages": {
+        "type": [
+          "array",
+          "null"
+        ],
+        "items": {
+          "type": [
+            "string",
+            "null"
+          ]
+        }
+      },
+      "Licenses": {
+        "type": [
+          "array",
+          "null"
+        ],
+        "items": {
+          "$ref": "#/definitions/License"
+        }
+      },
+      "RNAuthorizationsToPractice": {
+        "type": [
+          "array",
+          "null"
+        ],
+        "items": {
+          "$ref": "#/definitions/AuthorizationToPractice"
+        }
+      },
+      "PNAuthorizationsToPractice": {
+        "type": [
+          "array",
+          "null"
+        ],
+        "items": {
+          "$ref": "#/definitions/AuthorizationToPractice"
+        }
+      }  
   },
   "required": [
     "Name",
