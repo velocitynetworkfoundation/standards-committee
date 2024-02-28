@@ -853,10 +853,7 @@
   "type": "object",
   "properties": {
     "Name": {
-      "type": "object",
-      "items": {
-        "$ref": "#/definitions/PersonName"
-      }
+      "$ref": "#/definitions/PersonName"      
     },
       "NcsbnId": {
         "type": [
