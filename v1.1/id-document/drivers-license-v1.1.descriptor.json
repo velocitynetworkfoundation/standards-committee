@@ -49,7 +49,7 @@
       }
     },
     {
-      "label": "Country",
+      "label": "Country of issuing authority",
       "path": [
         "$.authority.place.addressCountry"
       ],
@@ -58,7 +58,7 @@
       }
     },
     {
-      "label": "Region or State",
+      "label": "Region or state of issuing authority",
       "path": [
         "$.authority.place.addressRegion"
       ],
@@ -97,7 +97,7 @@
       }
     },
     {
-      "label": "Given name",
+      "label": "First name",
       "path": [
         "$.person.givenName"
       ],
@@ -115,7 +115,7 @@
       }
     },
     {
-      "label": "Family name",
+      "label": "Last name",
       "path": [
         "$.person.familyName"
       ],
@@ -197,7 +197,7 @@
       }
     },
     {
-      "label": "Address locality",
+      "label": "City",
       "path": [
         "$.addressLocality"
       ],
@@ -206,7 +206,7 @@
       }
     },
     {
-      "label": "Address region or state",
+      "label": "Region or state",
       "path": [
         "$.addressRegion"
       ],
@@ -215,7 +215,7 @@
       }
     },
     {
-      "label": "Address post code",
+      "label": "Postal code",
       "path": [
         "$.postCode"
       ],
@@ -224,7 +224,7 @@
       }
     },
     {
-      "label": "Address country",
+      "label": "Country",
       "path": [
         "$.addressCountry"
       ],

@@ -16,7 +16,7 @@
     "role": {
       "type": "string",
       "description": "The role the person has in the organization.",
-      "maxLength": 64
+      "maxLength": 256
     },
     "description": {
       "type": "string",
@@ -61,5 +61,6 @@
         "$ref": "../subtypes/alignment.schema.json"
       }
     }
-  }
+  },
+  "description": ""
 }

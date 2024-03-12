@@ -48,7 +48,7 @@
       }
     },
     {
-      "label": "Assesses",
+      "label": "What was assessed",
       "path": [
         "$.assesses"
       ],
@@ -93,7 +93,7 @@
       }
     },
     {
-      "label": "Score method type",
+      "label": "Score method",
       "path": [
         "$.score.scoreMethod.scoreMethodType"
       ],
@@ -102,7 +102,7 @@
       }
     },
     {
-      "label": "Score method description",
+      "label": "Score method details",
       "path": [
         "$.score.scoreMethod.scoreMethodDescription"
       ],
@@ -138,7 +138,7 @@
       }
     },
     {
-      "label": "Dimension Name",
+      "label": "Dimension",
       "path": [
         "$.assessmentDimensions[*].name"
       ],
@@ -156,7 +156,7 @@
       }
     },
     {
-      "label": "Assesses",
+      "label": "What was assessed",
       "path": [
         "$.assessmentDimensions[*].assesses"
       ],
@@ -192,7 +192,7 @@
       }
     },
     {
-      "label": "Score method type",
+      "label": "Score method",
       "path": [
         "$.assessmentDimensions[*].score.scoreMethod.scoreMethodType"
       ],
@@ -201,7 +201,7 @@
       }
     },
     {
-      "label": "Score method description",
+      "label": "Score method details",
       "path": [
         "$.assessmentDimensions[*].score.scoreMethod.scoreMethodDescription"
       ],
@@ -219,7 +219,7 @@
       }
     },
     {
-      "label": "Recipient given name",
+      "label": "First name",
       "path": [
         "$.recipient.givenName"
       ],
@@ -228,7 +228,7 @@
       }
     },
     {
-      "label": "Recipient middle name",
+      "label": "Middle name",
       "path": [
         "$.recipient.middleName"
       ],
@@ -237,7 +237,7 @@
       }
     },
     {
-      "label": "Recipient family name",
+      "label": "Last name",
       "path": [
         "$.recipient.familyName"
       ],
@@ -246,7 +246,7 @@
       }
     },
     {
-      "label": "Recipient name prefix",
+      "label": "Name prefix",
       "path": [
         "$.recipient.namePrefix"
       ],
@@ -255,7 +255,7 @@
       }
     },
     {
-      "label": "Recipient name suffix",
+      "label": "Name suffix",
       "path": [
         "$.recipient.nameSuffix"
       ],
@@ -264,31 +264,13 @@
       }
     },
     {
-      "label": "Alignment",
-      "path": [
-        "$.alignment[0].targetName"
-      ],
-      "schema": {
-        "type": "string"
-      }
-    },
-    {
-      "label": "Alignment URL",
+      "label": "Learn more about the credential",
       "path": [
         "$.alignment[0].targetUrl"
       ],
       "schema": {
         "type": "string",
         "format": "uri"
-      }
-    },
-    {
-      "label": "Alignment framework",
-      "path": [
-        "$.alignment[0].targetFramework"
-      ],
-      "schema": {
-        "type": "string"
       }
     }
   ]

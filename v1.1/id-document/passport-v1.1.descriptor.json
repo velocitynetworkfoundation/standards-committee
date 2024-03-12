@@ -40,6 +40,24 @@
   },
   "properties": [
     {
+      "label": "Country of issuing authority",
+      "path": [
+        "$.authority.place.addressCountry"
+      ],
+      "schema": {
+        "type": "string"
+      }
+    },
+    {
+      "label": "Nationality",
+      "path": [
+        "$.nationality"
+      ],
+      "schema": {
+        "type": "string"
+      }
+    },
+    {
       "label": "Passport number",
       "path": [
         "$.identifier"
@@ -93,7 +111,7 @@
       "fallback": "-"
     },
     {
-      "label": "Given name",
+      "label": "First name",
       "path": [
         "$.person.givenName"
       ],
@@ -112,7 +130,7 @@
       }
     },
     {
-      "label": "Family name",
+      "label": "Last name",
       "path": [
         "$.person.familyName"
       ],
@@ -187,18 +205,9 @@
       }
     },
     {
-      "label": "Nationality",
+      "label": "Address",
       "path": [
         "$.streetAddress"
-      ],
-      "schema": {
-        "type": "string"
-      }
-    },
-    {
-      "label": "Address locality",
-      "path": [
-        "$.nationality"
       ],
       "schema": {
         "type": "string"
