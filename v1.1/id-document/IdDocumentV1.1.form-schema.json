@@ -62,13 +62,13 @@
   },
   "person": {
     "givenName": {
-      "ui:title": "Given Name"
+      "ui:title": "First Name"
     },
     "additionalName": {
       "ui:title": "Middle name"
     },
     "familyName": {
-      "ui:title": "Family name"
+      "ui:title": "Last name"
     },
     "namePrefix": {
       "ui:title": "Name prefix"
@@ -132,7 +132,7 @@
   },
   "address": {
     "addressCountry": {
-      "ui:title": "Address country",
+      "ui:title": "Country",
       "ui:enum": [
         "TARGET_COUNTRIES_ENUM"
       ],
@@ -142,7 +142,7 @@
       "ui:widget": "select"
     },
     "addressRegion": {
-      "ui:title": "Address region or state",
+      "ui:title": "Region or state",
       "ui:enum": [
         "TARGET_REGIONS_ENUM"
       ],
@@ -152,7 +152,7 @@
       "ui:widget": "select"
     },
     "addressLocality": {
-      "ui:title": "Address locality"
+      "ui:title": "City"
     },
     "streetAddress": {
       "ui:title": "Street address"
@@ -161,11 +161,11 @@
       "ui:title": "Post code"
     },
     "ui:order": [
-      "addressCountry",
-      "addressRegion",
-      "addressLocality",
       "streetAddress",
-      "postCode"
+      "addressLocality",
+      "addressRegion",
+      "postCode",
+      "addressCountry"   
     ]
   },
   "ui:order": [

@@ -6,7 +6,7 @@
     "ui:widget": "hidden"
   },
   "description": {
-    "ui:title": "description"
+    "ui:title": "Course description"
   },
   "provider": {
     "name": {
@@ -32,7 +32,7 @@
     "ui:widget": "hidden"
   },
   "courseDuration": {
-    "ui:title": "Course Duration"
+    "ui:title": "Course duration"
   },
   "alignment": {
     "ui:widget": "hidden"
@@ -47,19 +47,19 @@
   },
   "recipient": {
     "givenName": {
-      "ui:title": "Recipient given name"
+      "ui:title": "First name"
     },
     "middleName": {
-      "ui:title": "Recipient middle name"
+      "ui:title": "Middle name"
     },
     "familyName": {
-      "ui:title": "Recipient family name"
+      "ui:title": "Last name"
     },
     "namePrefix": {
-      "ui:title": "Recipient name prefix"
+      "ui:title": "Name prefix"
     },
     "nameSuffix": {
-      "ui:title": "Recipient name suffix"
+      "ui:title": "Name suffix"
     },
     "ui:order": [
       "givenName",

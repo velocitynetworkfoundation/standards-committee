@@ -62,13 +62,13 @@
   },
   "person": {
     "givenName": {
-      "ui:title": "Given Name"
+      "ui:title": "First Name"
     },
     "additionalName": {
       "ui:title": "Middle name"
     },
     "familyName": {
-      "ui:title": "Family name"
+      "ui:title": "Last name"
     },
     "namePrefix": {
       "ui:title": "Name prefix"
