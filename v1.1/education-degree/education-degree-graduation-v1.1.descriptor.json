@@ -216,7 +216,7 @@
       }
     },
     {
-      "label": "Mame suffix",
+      "label": "Name suffix",
       "path": [
         "$.recipient.nameSuffix"
       ],
