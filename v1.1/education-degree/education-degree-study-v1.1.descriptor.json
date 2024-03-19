@@ -19,13 +19,12 @@
   },
   "summary_detail": {
     "path": [
-      "$.startDate"
+      "$.school.name"
     ],
     "schema": {
-      "type": "string",
-      "format": "date"
+      "type": "string"
     },
-    "fallback": "-"
+    "fallback": "programName"
   },
   "description": {
     "text": "Degree study"
@@ -50,7 +49,7 @@
       }
     },
     {
-      "label": "Description",
+      "label": "Degree description",
       "path": [
         "$.description"
       ],
@@ -116,7 +115,7 @@
       }
     },
     {
-      "label": "Major",
+      "label": "Major(s)",
       "path": [
         "$.degreeMajor[*]"
       ],
@@ -125,7 +124,7 @@
       }
     },
     {
-      "label": "Minor",
+      "label": "Minor(s)",
       "path": [
         "$.degreeMinor[*]"
       ],
@@ -161,7 +160,7 @@
       }
     },
     {
-      "label": "Recipient given name",
+      "label": "First name",
       "path": [
         "$.recipient.givenName"
       ],
@@ -170,7 +169,7 @@
       }
     },
     {
-      "label": "Recipient middle name",
+      "label": "Middle name",
       "path": [
         "$.recipient.middleName"
       ],
@@ -179,7 +178,7 @@
       }
     },
     {
-      "label": "Recipient family name",
+      "label": "Last name",
       "path": [
         "$.recipient.familyName"
       ],
@@ -188,7 +187,7 @@
       }
     },
     {
-      "label": "Recipient name prefix",
+      "label": "Name prefix",
       "path": [
         "$.recipient.namePrefix"
       ],
@@ -197,7 +196,7 @@
       }
     },
     {
-      "label": "Recipient name suffix",
+      "label": "Name suffix",
       "path": [
         "$.recipient.nameSuffix"
       ],
@@ -206,31 +205,13 @@
       }
     },
     {
-      "label": "Alignment",
-      "path": [
-        "$.alignment[0].targetName"
-      ],
-      "schema": {
-        "type": "string"
-      }
-    },
-    {
-      "label": "Alignment URL",
+      "label": "Learn more about the credential",
       "path": [
         "$.alignment[0].targetUrl"
       ],
       "schema": {
         "type": "string",
         "format": "uri"
-      }
-    },
-    {
-      "label": "Alignment framework",
-      "path": [
-        "$.alignment[0].targetFramework"
-      ],
-      "schema": {
-        "type": "string"
       }
     }
   ]
