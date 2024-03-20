@@ -21,7 +21,7 @@
       "ui:title": "Badge name"
     },
     "description": {
-      "ui:title": "Description"
+      "ui:title": "Badge description"
     },
     "criteria": {
       "ui:widget": "hidden"

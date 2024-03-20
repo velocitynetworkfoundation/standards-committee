@@ -3,7 +3,7 @@
     "ui:title": "Degree"
   },
   "description": {
-    "ui:title": "description"
+    "ui:title": "Degree description"
   },
   "institution": {
     "name": {
@@ -37,10 +37,10 @@
     "ui:widget": "hidden"
   },
   "degreeMajor": {
-    "ui:title": "Major"
+    "ui:title": "Major(s)"
   },
   "degreeMinor": {
-    "ui:title": "Minor"
+    "ui:title": "Minor(s)"
   },
   "alignment": {
     "ui:widget": "hidden"
@@ -55,19 +55,19 @@
   },
   "recipient": {
     "givenName": {
-      "ui:title": "Recipient given name"
+      "ui:title": "First name"
     },
     "middleName": {
-      "ui:title": "Recipient middle name"
+      "ui:title": "Middle name"
     },
     "familyName": {
-      "ui:title": "Recipient family name"
+      "ui:title": "Last name"
     },
     "namePrefix": {
-      "ui:title": "Recipient name prefix"
+      "ui:title": "Name prefix"
     },
     "nameSuffix": {
-      "ui:title": "Holder name suffix"
+      "ui:title": "Name suffix"
     },
     "ui:order": [
       "givenName",
