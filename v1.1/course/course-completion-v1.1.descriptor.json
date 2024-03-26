@@ -41,7 +41,7 @@
   },
   "properties": [
     {
-      "label": "Description",
+      "label": "Course description",
       "path": [
         "$.description"
       ],
