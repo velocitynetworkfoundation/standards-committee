@@ -93,7 +93,7 @@
       "fallback": "-"
     },
     {
-      "label": "Given name",
+      "label": "First name",
       "path": [
         "$.person.givenName"
       ],
@@ -112,7 +112,7 @@
       }
     },
     {
-      "label": "Family name",
+      "label": "Last name",
       "path": [
         "$.person.familyName"
       ],
@@ -187,7 +187,7 @@
       }
     },
     {
-      "label": "Nationality",
+      "label": "Street address",
       "path": [
         "$.streetAddress"
       ],
@@ -196,7 +196,7 @@
       }
     },
     {
-      "label": "Address locality",
+      "label": "Nationality",
       "path": [
         "$.nationality"
       ],
