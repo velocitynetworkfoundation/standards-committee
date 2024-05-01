@@ -10,10 +10,12 @@
       "default": "Course"
     },
     "provider": {
-      "$ref": "../subtypes/organization.schema.json"
+      "$ref": "../subtypes/organization.schema.json",
+      "description": "The organization that provides or delivers the course"
     },
     "contentProvider": {
-      "$ref": "../subtypes/organization.schema.json"
+      "$ref": "../subtypes/organization.schema.json",
+      "description": "The organization that provides or develops the content of the course"
     },
     "courseName": {
       "type": "string",
