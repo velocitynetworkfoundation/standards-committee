@@ -101,7 +101,8 @@
         "$.courseDuration"
       ],
       "schema": {
-        "type": "string"
+        "type": "string", 
+        "format": "duration"
       }
     },
     {
