@@ -51,6 +51,10 @@
       "description": "The method according to which the score is given. ",
       "additionalProperties": false,
       "properties": {
+        "type": {
+          "type": "string",
+          "default": "ScoreMethod"
+        },
         "scoreMethodType": {
           "type": "string",
           "enum": [
