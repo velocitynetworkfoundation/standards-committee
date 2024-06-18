@@ -274,6 +274,12 @@
         "null"
       ],
       "properties": {
+        "LicenseType": {
+          "type": [
+            "string",
+            "null"
+          ]
+        },
         "StateAbbreviation": {
           "type": [
             "string",
@@ -321,6 +327,7 @@
         }
       },
       "required": [
+        "LicenseType",
         "StateAbbreviation",
         "StateDescription",
         "AuthorizationToPracticeCode",
@@ -612,6 +619,15 @@
             "id": "0ca2d0happ67k"
           }
         },
+        "CompactPrivileges": {
+          "type": [
+            "array",
+            "null"
+          ],
+          "items": {
+            "$ref": "#/definitions/CompactPrivileges"
+          }
+          },
         "Messages": {
           "type": [
             "array",
@@ -704,6 +720,7 @@
         "LicenseOriginalIssueDate",
         "LicenseExpirationDate",
         "CompactStatus",
+        "CompactPrivileges",
         "Messages",
         "Disciplines",
         "Notifications",
@@ -713,6 +730,83 @@
       "x-stoplight": {
         "id": "vidm1pqmlp4od"
       }
+    },
+"CompactPrivileges ": {
+      "type": [
+        "object",
+        "null"
+      ],
+      "properties": {
+        "JurisdictionAbbreviation": {
+          "type": [
+            "string",
+            "null"
+          ]
+        },
+        "Jurisdiction": {
+          "type": [
+            "string",
+            "null"
+          ]
+        },
+        "HomeJurisdictionAbbreviation": {
+          "type": [
+            "string",
+            "null"
+          ]
+        },
+        "HomeJurisdiction": {
+          "type": [
+            "string",
+            "null"
+          ]
+        },
+        "IssueDate": {
+          "type": [
+            "string",
+            "null"
+          ],
+          "format": "date-time"
+        },
+        "ExpirationDate": {
+          "type": [
+            "string",
+            "null"
+          ],
+          "format": "date-time"
+        },
+        "RenewalDate": {
+          "type": [
+            "string",
+            "null"
+          ],
+          "format": "date-time"
+        },
+        "Status": {
+          "type": "string",
+          "enum": [
+          "Active",
+          "Expired",
+          "Terminated"
+        ]
+        },
+        "Number": {
+          "type": [
+            "string",
+            "null"
+          ]
+      },
+      "required": [
+        "JurisdictionAbbreviation",
+        "Jurisdiction",
+        "HomeJurisdictionAbbreviation",
+        "HomeJurisdiction",
+        "IssueDate",
+        "ExpirationDate",
+       "RenewalDate",
+       "Status",
+       "Number "
+      ]
     },
     "Notification": {
       "type": [
@@ -849,7 +943,7 @@
     "Name": {
       "$ref": "#/definitions/PersonName"      
     },
-      "NcsbnId": {
+      "UniqueId": {
         "type": [
           "string",
           "null"
@@ -876,16 +970,7 @@
           "$ref": "#/definitions/License"
         }
       },
-      "RNAuthorizationsToPractice": {
-        "type": [
-          "array",
-          "null"
-        ],
-        "items": {
-          "$ref": "#/definitions/AuthorizationToPractice"
-        }
-      },
-      "PNAuthorizationsToPractice": {
+      "AuthorizationToPractice": {
         "type": [
           "array",
           "null"
@@ -897,10 +982,10 @@
   },
   "required": [
     "Name",
-    "NcsbnId",
+    "UniqueId",
     "Messages",
     "Licenses",
-    "RNAuthorizationsToPractice",
-    "PNAuthorizationsToPractice"
+    "AuthorizationToPractice"
   ]
+}
 }
