@@ -731,7 +731,7 @@
         "id": "vidm1pqmlp4od"
       }
     },
-"CompactPrivileges ": {
+    "CompactPrivileges ": {
       "type": [
         "object",
         "null"
@@ -785,10 +785,10 @@
         "Status": {
           "type": "string",
           "enum": [
-          "Active",
-          "Expired",
-          "Terminated"
-        ]
+            "Active",
+            "Expired",
+            "Terminated"
+          ]
         },
         "Number": {
           "type": [
@@ -803,9 +803,9 @@
         "HomeJurisdiction",
         "IssueDate",
         "ExpirationDate",
-       "RenewalDate",
-       "Status",
-       "Number "
+        "RenewalDate",
+        "Status",
+        "Number"
       ]
     },
     "Notification": {
