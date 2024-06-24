@@ -480,17 +480,17 @@
     },
     {
       "type": "group",
-      "title": "NCSBN Schema ",
+      "title": "Multi-licens Schema ",
       "items": [
         {
           "type": "item",
-          "title": "NCSBN Multi-License Schema V1.0 ",
-          "uri": "Layer 2/NCSBNMultiLicenseV1.0.json"
+          "title": "Multi-License Schema V1.0 ",
+          "uri": "Layer 2/MultiLicenseV1.0.json"
         },
         {
           "type": "item",
-          "title": "NCSBN Descriptor",
-          "uri": "Layer 2/NCSBNMultiLicensev1.0.descriptor.json"
+          "title": "Multi-license Descriptor",
+          "uri": "Layer 2/NMultiLicensev1.0.descriptor.json"
         }
       ]
     },
