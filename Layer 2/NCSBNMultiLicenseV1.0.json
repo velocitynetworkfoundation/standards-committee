@@ -783,7 +783,10 @@
           "format": "date-time"
         },
         "Status": {
-          "type": "string",
+          "type": [
+            "string",
+            "null"
+          ],
           "enum": [
             "Active",
             "Expired",
