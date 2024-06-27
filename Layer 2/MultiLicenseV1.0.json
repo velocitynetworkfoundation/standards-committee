@@ -625,9 +625,9 @@
             "null"
           ],
           "items": {
-            "$ref": "#/definitions/CompactPrivileges"
+          "$ref": "#/definitions/CompactPrivileges"
           }
-          },
+        },
         "Messages": {
           "type": [
             "array",
