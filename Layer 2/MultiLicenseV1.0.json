@@ -1,4 +1,7 @@
 {
+  "$schema": "https://json-schema.org/draft/2019-09/schema#",
+  "title": "JSON Schema NCSBN Multilicense.",
+  "description": "",
   "definitions": {
     "Action": {
       "type": [
@@ -274,6 +277,12 @@
         "null"
       ],
       "properties": {
+        "LicenseType": {
+          "type": [
+            "string",
+            "null"
+          ]
+        },
         "StateAbbreviation": {
           "type": [
             "string",
@@ -321,6 +330,7 @@
         }
       },
       "required": [
+        "LicenseType",
         "StateAbbreviation",
         "StateDescription",
         "AuthorizationToPracticeCode",
@@ -612,6 +622,15 @@
             "id": "0ca2d0happ67k"
           }
         },
+        "CompactPrivileges": {
+          "type": [
+            "array",
+            "null"
+          ],
+          "items": {
+            "$ref": "#/definitions/CompactPrivileges"
+          }
+        },
         "Messages": {
           "type": [
             "array",
@@ -704,6 +723,7 @@
         "LicenseOriginalIssueDate",
         "LicenseExpirationDate",
         "CompactStatus",
+        "CompactPrivileges",
         "Messages",
         "Disciplines",
         "Notifications",
@@ -713,6 +733,87 @@
       "x-stoplight": {
         "id": "vidm1pqmlp4od"
       }
+    },
+    "CompactPrivileges": {
+      "type": [
+        "object",
+        "null"
+      ],
+      "properties": {
+        "JurisdictionAbbreviation": {
+          "type": [
+            "string",
+            "null"
+          ]
+        },
+        "Jurisdiction": {
+          "type": [
+            "string",
+            "null"
+          ]
+        },
+        "HomeJurisdictionAbbreviation": {
+          "type": [
+            "string",
+            "null"
+          ]
+        },
+        "HomeJurisdiction": {
+          "type": [
+            "string",
+            "null"
+          ]
+        },
+        "IssueDate": {
+          "type": [
+            "string",
+            "null"
+          ],
+          "format": "date-time"
+        },
+        "ExpirationDate": {
+          "type": [
+            "string",
+            "null"
+          ],
+          "format": "date-time"
+        },
+        "RenewalDate": {
+          "type": [
+            "string",
+            "null"
+          ],
+          "format": "date-time"
+        },
+        "Status": {
+          "type": [
+            "string",
+            "null"
+          ],
+          "enum": [
+            "Active",
+            "Expired",
+            "Terminated"
+          ]
+        },
+        "Number": {
+          "type": [
+            "string",
+            "null"
+          ]
+        }
+      },
+      "required": [
+        "JurisdictionAbbreviation",
+        "Jurisdiction",
+        "HomeJurisdictionAbbreviation",
+        "HomeJurisdiction",
+        "IssueDate",
+        "ExpirationDate",
+        "RenewalDate",
+        "Status",
+        "Number"
+      ]
     },
     "Notification": {
       "type": [
@@ -849,58 +950,48 @@
     "Name": {
       "$ref": "#/definitions/PersonName"      
     },
-      "NcsbnId": {
+    "Id": {
+      "type": [
+        "string",
+        "null"
+      ]
+    },
+    "Messages": {
+      "type": [
+        "array",
+        "null"
+      ],
+      "items": {
         "type": [
           "string",
           "null"
         ]
-      },
-      "Messages": {
-        "type": [
-          "array",
-          "null"
-        ],
-        "items": {
-          "type": [
-            "string",
-            "null"
-          ]
-        }
-      },
-      "Licenses": {
-        "type": [
-          "array",
-          "null"
-        ],
-        "items": {
-          "$ref": "#/definitions/License"
-        }
-      },
-      "RNAuthorizationsToPractice": {
-        "type": [
-          "array",
-          "null"
-        ],
-        "items": {
-          "$ref": "#/definitions/AuthorizationToPractice"
-        }
-      },
-      "PNAuthorizationsToPractice": {
-        "type": [
-          "array",
-          "null"
-        ],
-        "items": {
-          "$ref": "#/definitions/AuthorizationToPractice"
-        }
-      }  
+      }
+    },
+    "Licenses": {
+      "type": [
+        "array",
+        "null"
+      ],
+      "items": {
+        "$ref": "#/definitions/License"
+      }
+    },
+    "AuthorizationToPractice": {
+      "type": [
+        "array",
+        "null"
+      ],
+      "items": {
+        "$ref": "#/definitions/AuthorizationToPractice"
+      }
+    }  
   },
   "required": [
     "Name",
-    "NcsbnId",
+    "Id",
     "Messages",
     "Licenses",
-    "RNAuthorizationsToPractice",
-    "PNAuthorizationsToPractice"
+    "AuthorizationToPractice"
   ]
 }

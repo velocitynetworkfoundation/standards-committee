@@ -1,6 +1,6 @@
 {
   "title": {
-    "text": "NCSBN Multi-license"
+    "text": "Multi-license"
   },
   "subtitle": {
     "path": [
@@ -13,7 +13,7 @@
   },
   "summary_detail": {
     "path": [
-      "$.Ncsbnid"
+      "$.Id"
     ],
     "schema": {
       "type": "string"
@@ -21,7 +21,7 @@
     "fallback": "--"
   },
   "description": {
-    "text": "NCSBN Multi-license"
+    "text": "Multi-license"
   },
   "properties": [
     {
@@ -52,9 +52,9 @@
       }
     },
     {
-      "label": "NCSBN ID",
+      "label": "ID",
       "path": [
-        "$.Ncsbnid"
+        "$.Id"
       ],
       "schema": {
         "type": "string"
@@ -115,18 +115,9 @@
       }
     },
     {
-      "label": "Authorizations to practice as RN",
+      "label": "Authorizations to practice",
       "path": [
-        "$.RnAuthorizationsToPractice[*].StateAbbreviation"
-      ],
-      "schema": {
-        "type": "string"
-      }
-    },
-    {
-      "label": "Authorizations to practice as PN",
-      "path": [
-        "$.PnAuthorizationsToPractice[*].StateAbbreviation"
+        "$.AuthorizationToPractice[*].StateAbbreviation"
       ],
       "schema": {
         "type": "string"
