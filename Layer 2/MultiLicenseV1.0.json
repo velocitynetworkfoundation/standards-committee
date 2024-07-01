@@ -1,4 +1,7 @@
 {
+  "$schema": "https://json-schema.org/draft/2019-09/schema#",
+  "title": "JSON Schema NCSBN Multilicense.",
+  "description": "",
   "definitions": {
     "Action": {
       "type": [
@@ -625,7 +628,7 @@
             "null"
           ],
           "items": {
-          "$ref": "#/definitions/CompactPrivileges"
+            "$ref": "#/definitions/CompactPrivileges"
           }
         },
         "Messages": {
@@ -731,7 +734,7 @@
         "id": "vidm1pqmlp4od"
       }
     },
-    "CompactPrivileges ": {
+    "CompactPrivileges": {
       "type": [
         "object",
         "null"
@@ -798,6 +801,7 @@
             "string",
             "null"
           ]
+        }
       },
       "required": [
         "JurisdictionAbbreviation",
@@ -946,42 +950,42 @@
     "Name": {
       "$ref": "#/definitions/PersonName"      
     },
-      "Id": {
+    "Id": {
+      "type": [
+        "string",
+        "null"
+      ]
+    },
+    "Messages": {
+      "type": [
+        "array",
+        "null"
+      ],
+      "items": {
         "type": [
           "string",
           "null"
         ]
-      },
-      "Messages": {
-        "type": [
-          "array",
-          "null"
-        ],
-        "items": {
-          "type": [
-            "string",
-            "null"
-          ]
-        }
-      },
-      "Licenses": {
-        "type": [
-          "array",
-          "null"
-        ],
-        "items": {
-          "$ref": "#/definitions/License"
-        }
-      },
-      "AuthorizationToPractice": {
-        "type": [
-          "array",
-          "null"
-        ],
-        "items": {
-          "$ref": "#/definitions/AuthorizationToPractice"
-        }
-      }  
+      }
+    },
+    "Licenses": {
+      "type": [
+        "array",
+        "null"
+      ],
+      "items": {
+        "$ref": "#/definitions/License"
+      }
+    },
+    "AuthorizationToPractice": {
+      "type": [
+        "array",
+        "null"
+      ],
+      "items": {
+        "$ref": "#/definitions/AuthorizationToPractice"
+      }
+    }  
   },
   "required": [
     "Name",
@@ -990,5 +994,4 @@
     "Licenses",
     "AuthorizationToPractice"
   ]
-}
 }
