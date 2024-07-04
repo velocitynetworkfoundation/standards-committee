@@ -1,5 +1,8 @@
 {
   "$schema": "https://json-schema.org/draft/2019-09/schema#",
+  "x-stoplight": {
+    "id": "4fe4f0w546dze"
+  },
   "title": "JSON Schema NCSBN Multilicense.",
   "description": "",
   "definitions": {
@@ -281,7 +284,10 @@
           "type": [
             "string",
             "null"
-          ]
+          ],
+          "x-stoplight": {
+            "id": "4fyfa1mgkk9k8"
+          }
         },
         "StateAbbreviation": {
           "type": [
@@ -628,7 +634,13 @@
             "null"
           ],
           "items": {
-            "$ref": "#/definitions/CompactPrivileges"
+            "$ref": "#/definitions/CompactPrivileges",
+            "x-stoplight": {
+              "id": "6t6v084w0q5wa"
+            }
+          },
+          "x-stoplight": {
+            "id": "fh041uv1cbxnc"
           }
         },
         "Messages": {
@@ -744,46 +756,67 @@
           "type": [
             "string",
             "null"
-          ]
+          ],
+          "x-stoplight": {
+            "id": "br07tbiv7qgan"
+          }
         },
         "Jurisdiction": {
           "type": [
             "string",
             "null"
-          ]
+          ],
+          "x-stoplight": {
+            "id": "itln8o6lujitm"
+          }
         },
         "HomeJurisdictionAbbreviation": {
           "type": [
             "string",
             "null"
-          ]
+          ],
+          "x-stoplight": {
+            "id": "mjh2pxi8vp4gn"
+          }
         },
         "HomeJurisdiction": {
           "type": [
             "string",
             "null"
-          ]
+          ],
+          "x-stoplight": {
+            "id": "t93ya4xr6mor5"
+          }
         },
         "IssueDate": {
           "type": [
             "string",
             "null"
           ],
-          "format": "date-time"
+          "format": "date-time",
+          "x-stoplight": {
+            "id": "ob4hpesrb5i9e"
+          }
         },
         "ExpirationDate": {
           "type": [
             "string",
             "null"
           ],
-          "format": "date-time"
+          "format": "date-time",
+          "x-stoplight": {
+            "id": "uq7a3h7lxoa6m"
+          }
         },
         "RenewalDate": {
           "type": [
             "string",
             "null"
           ],
-          "format": "date-time"
+          "format": "date-time",
+          "x-stoplight": {
+            "id": "98ffbtgpeb9s7"
+          }
         },
         "Status": {
           "type": [
@@ -794,13 +827,19 @@
             "Active",
             "Expired",
             "Terminated"
-          ]
+          ],
+          "x-stoplight": {
+            "id": "po121n9muijnz"
+          }
         },
         "Number": {
           "type": [
             "string",
             "null"
-          ]
+          ],
+          "x-stoplight": {
+            "id": "nz20ydmiavqmu"
+          }
         }
       },
       "required": [
@@ -813,7 +852,10 @@
         "RenewalDate",
         "Status",
         "Number"
-      ]
+      ],
+      "x-stoplight": {
+        "id": "omw3ehbmzk6sw"
+      }
     },
     "Notification": {
       "type": [
@@ -942,19 +984,22 @@
       }
     }
   },
-  "x-stoplight": {
-    "id": "4fe4f0w546dze"
-  },
   "type": "object",
   "properties": {
     "Name": {
-      "$ref": "#/definitions/PersonName"      
+      "$ref": "#/definitions/PersonName",
+      "x-stoplight": {
+        "id": "h75qn0s5kezdd"
+      }
     },
     "Id": {
       "type": [
         "string",
         "null"
-      ]
+      ],
+      "x-stoplight": {
+        "id": "zcfponjmwa04y"
+      }
     },
     "Messages": {
       "type": [
@@ -965,7 +1010,13 @@
         "type": [
           "string",
           "null"
-        ]
+        ],
+        "x-stoplight": {
+          "id": "x64w32gmy9r1n"
+        }
+      },
+      "x-stoplight": {
+        "id": "nllr7uxc5d9ad"
       }
     },
     "Licenses": {
@@ -974,7 +1025,13 @@
         "null"
       ],
       "items": {
-        "$ref": "#/definitions/License"
+        "$ref": "#/definitions/License",
+        "x-stoplight": {
+          "id": "jffs1rxfaskck"
+        }
+      },
+      "x-stoplight": {
+        "id": "3u8en3xa3m597"
       }
     },
     "AuthorizationToPractice": {
@@ -983,9 +1040,15 @@
         "null"
       ],
       "items": {
-        "$ref": "#/definitions/AuthorizationToPractice"
+        "$ref": "#/definitions/AuthorizationToPractice",
+        "x-stoplight": {
+          "id": "kmf2dj61iry0y"
+        }
+      },
+      "x-stoplight": {
+        "id": "y0o88ondu2257"
       }
-    }  
+    }
   },
   "required": [
     "Name",
