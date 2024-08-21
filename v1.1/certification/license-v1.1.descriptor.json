@@ -48,6 +48,15 @@
       }
     },
     {
+      "label": "Description",
+      "path": [
+        "$.description"
+      ],
+      "schema": {
+        "type": "string"
+      }
+    },
+    {
       "label": "Date issued",
       "path": [
         "$.validity.firstValidFrom"
