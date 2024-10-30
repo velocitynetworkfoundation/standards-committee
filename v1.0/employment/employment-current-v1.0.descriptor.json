@@ -1,7 +1,7 @@
 {
   "title": {
     "path": [
-      "$.legalEmployer.name"
+      "$.legalEmployer.name", "$.credentialSubject.legalEmployer.name"
     ],
     "schema": {
       "type": "string"
@@ -10,7 +10,7 @@
   },
   "subtitle": {
     "path": [
-      "$.role"
+      "$.role", "$.credentialSubject.role"
     ],
     "schema": {
       "type": "string"
@@ -19,7 +19,7 @@
   },
   "summary_detail": {
     "path": [
-      "$.startDate"
+      "$.startDate", "$.credentialSubject.startDate"
     ],
     "schema": {
       "type": "string",
@@ -32,7 +32,7 @@
   },
   "logo": {
     "path": [
-      "$.legalEmployer.image"
+      "$.legalEmployer.image", "$.credentialSubject.legalEmployer.image"
     ],
     "schema": {
       "type": "string",
@@ -43,7 +43,7 @@
     {
       "label": "Role description",
       "path": [
-        "$.description"
+        "$.description", "$.credentialSubject.description"
       ],
       "schema": {
         "type": "string"
@@ -52,7 +52,7 @@
     {
       "label": "Start date",
       "path": [
-        "$.startDate"
+        "$.startDate", "$.credentialSubject.startDate"
       ],
       "schema": {
         "type": "string",
@@ -62,7 +62,7 @@
     {
       "label": "Place of work",
       "path": [
-        "$.place.addressLocality"
+        "$.place.addressLocality", "$.credentialSubject.place.addressLocality"
       ],
       "schema": {
         "type": "string"
@@ -71,7 +71,7 @@
     {
       "label": "State or region of work",
       "path": [
-        "$.place.addressRegion"
+        "$.place.addressRegion", "$.credentialSubject.place.addressRegion"
       ],
       "schema": {
         "type": "string"
@@ -80,7 +80,7 @@
     {
       "label": "Country of work",
       "path": [
-        "$.place.addressCountry"
+        "$.place.addressCountry", "$.credentialSubject.place.addressCountry"
       ],
       "schema": {
         "type": "string"
@@ -89,7 +89,7 @@
     {
       "label": "Employment type",
       "path": [
-        "$.employmentType[*]"
+        "$.employmentType[*]", "$.credentialSubject.employmentType[*]"
       ],
       "schema": {
         "type": "string"
@@ -98,7 +98,7 @@
     {
       "label": "Alignment",
       "path": [
-        "$.alignment[0].targetName"
+        "$.alignment[0].targetName", "$.credentialSubject.alignment[0].targetName"
       ],
       "schema": {
         "type": "string"
@@ -107,7 +107,7 @@
     {
       "label": "Alignment URL",
       "path": [
-        "$.alignment[0].targetUrl"
+        "$.alignment[0].targetUrl", "$.credentialSubject.alignment[0].targetUrl"
       ],
       "schema": {
         "type": "string",
@@ -117,7 +117,7 @@
     {
       "label": "Alignment framework",
       "path": [
-        "$.alignment[0].targetFramework"
+        "$.alignment[0].targetFramework", "$.credentialSubject.alignment[0].targetFramework"
       ],
       "schema": {
         "type": "string"

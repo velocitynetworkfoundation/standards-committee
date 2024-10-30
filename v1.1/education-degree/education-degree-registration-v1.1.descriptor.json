@@ -1,7 +1,7 @@
 {
   "title": {
     "path": [
-      "$.institution.name"
+      "$.institution.name", "$.credentialSubject.institution.name"
     ],
     "schema": {
       "type": "string"
@@ -10,7 +10,7 @@
   },
   "subtitle": {
     "path": [
-      "$.degreeName"
+      "$.degreeName", "$.credentialSubject.degreeName"
     ],
     "schema": {
       "type": "string"
@@ -19,7 +19,7 @@
   },
   "summary_detail": {
     "path": [
-      "$.school.name"
+      "$.school.name", "$.credentialSubject.school.name"
     ],
     "schema": {
       "type": "string"
@@ -31,7 +31,7 @@
   },
   "logo": {
     "path": [
-      "$.institution.image"
+      "$.institution.image", "$.credentialSubject.institution.image"
     ],
     "schema": {
       "type": "string",
@@ -42,7 +42,7 @@
     {
       "label": "School or department",
       "path": [
-        "$.school.name"
+        "$.school.name", "$.credentialSubject.school.name"
       ],
       "schema": {
         "type": "string"
@@ -51,7 +51,7 @@
     {
       "label": "Degree description",
       "path": [
-        "$.description"
+        "$.description", "$.credentialSubject.description"
       ],
       "schema": {
         "type": "string"
@@ -60,7 +60,7 @@
     {
       "label": "Registration Date",
       "path": [
-        "$.registrationDate"
+        "$.registrationDate", "$.credentialSubject.registrationDate"
       ],
       "schema": {
         "type": "string",
@@ -70,7 +70,7 @@
     {
       "label": "Start date",
       "path": [
-        "$.startDate"
+        "$.startDate", "$.credentialSubject.startDate"
       ],
       "schema": {
         "type": "string",
@@ -80,7 +80,7 @@
     {
       "label": "Major(s)",
       "path": [
-        "$.degreeMajor[*]"
+        "$.degreeMajor[*]", "$.credentialSubject.degreeMajor[*]"
       ],
       "schema": {
         "type": "string"
@@ -89,7 +89,7 @@
     {
       "label": "Minor(s)",
       "path": [
-        "$.degreeMinor[*]"
+        "$.degreeMinor[*]", "$.credentialSubject.degreeMinor[*]"
       ],
       "schema": {
         "type": "string"
@@ -98,7 +98,7 @@
     {
       "label": "Program",
       "path": [
-        "$.programName"
+        "$.programName", "$.credentialSubject.programName"
       ],
       "schema": {
         "type": "string"
@@ -107,7 +107,7 @@
     {
       "label": "Program type",
       "path": [
-        "$.programType"
+        "$.programType", "$.credentialSubject.programType"
       ],
       "schema": {
         "type": "string"
@@ -116,7 +116,7 @@
     {
       "label": "Program mode",
       "path": [
-        "$.programMode"
+        "$.programMode", "$.credentialSubject.programMode"
       ],
       "schema": {
         "type": "string"
@@ -125,7 +125,7 @@
     {
       "label": "First name",
       "path": [
-        "$.recipient.givenName"
+        "$.recipient.givenName", "$.credentialSubject.recipient.givenName"
       ],
       "schema": {
         "type": "string"
@@ -134,7 +134,7 @@
     {
       "label": "Middle name",
       "path": [
-        "$.recipient.middleName"
+        "$.recipient.middleName", "$.credentialSubject.recipient.middleName"
       ],
       "schema": {
         "type": "string"
@@ -143,7 +143,7 @@
     {
       "label": "Last name",
       "path": [
-        "$.recipient.familyName"
+        "$.recipient.familyName", "$.credentialSubject.recipient.familyName"
       ],
       "schema": {
         "type": "string"
@@ -152,7 +152,7 @@
     {
       "label": "Name prefix",
       "path": [
-        "$.recipient.namePrefix"
+        "$.recipient.namePrefix", "$.credentialSubject.recipient.namePrefix"
       ],
       "schema": {
         "type": "string"
@@ -161,7 +161,7 @@
     {
       "label": "Name suffix",
       "path": [
-        "$.recipient.nameSuffix"
+        "$.recipient.nameSuffix", "$.credentialSubject.recipient.nameSuffix"
       ],
       "schema": {
         "type": "string"
@@ -170,7 +170,7 @@
     {
       "label": "Learn more about the credential",
       "path": [
-        "$.alignment[0].targetUrl"
+        "$.alignment[0].targetUrl", "$.credentialSubject.alignment[0].targetUrl"
       ],
       "schema": {
         "type": "string",

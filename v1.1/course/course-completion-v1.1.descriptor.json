@@ -1,7 +1,7 @@
 {
   "title": {
     "path": [
-      "$.provider.name"
+      "$.provider.name", "$.credentialSubject.provider.name"
     ],
     "schema": {
       "type": "string"
@@ -10,7 +10,7 @@
   },
   "subtitle": {
     "path": [
-      "$.courseName"
+      "$.courseName", "$.credentialSubject.courseName"
     ],
     "schema": {
       "type": "string"
@@ -19,7 +19,7 @@
   },
   "summary_detail": {
     "path": [
-      "$.completionDate"
+      "$.completionDate", "$.credentialSubject.completionDate"
     ],
     "schema": {
       "type": "string",
@@ -32,7 +32,7 @@
   },
    "logo": {
     "path": [
-      "$.provider.image"
+      "$.provider.image", "$.credentialSubject.provider.image"
     ],
     "schema": {
       "type": "string",
@@ -43,7 +43,7 @@
     {
       "label": "Course description",
       "path": [
-        "$.description"
+        "$.description", "$.credentialSubject.description"
       ],
       "schema": {
         "type": "string"
@@ -52,7 +52,7 @@
     {
       "label": "Registration Date",
       "path": [
-        "$.registrationDate"
+        "$.registrationDate", "$.credentialSubject.registrationDate"
       ],
       "schema": {
         "type": "string",
@@ -62,7 +62,7 @@
     {
       "label": "Start Date",
       "path": [
-        "$.startDate"
+        "$.startDate", "$.credentialSubject.startDate"
       ],
       "schema": {
         "type": "string",
@@ -72,7 +72,7 @@
     {
       "label": "Completion Date",
       "path": [
-        "$.completionDate"
+        "$.completionDate", "$.credentialSubject.completionDate"
       ],
       "schema": {
         "type": "string",
@@ -82,7 +82,7 @@
     {
       "label": "Grade",
       "path": [
-        "$.grade.scoreValue"
+        "$.grade.scoreValue", "$.credentialSubject.grade.scoreValue"
       ],
       "schema": {
         "type": "string"
@@ -91,7 +91,7 @@
     {
       "label": "Result",
       "path": [
-        "$.grade.result"
+        "$.grade.result", "$.credentialSubject.grade.result"
       ],
       "schema": {
         "type": "string"
@@ -100,7 +100,7 @@
     {
       "label": "Pass or fail",
       "path": [
-        "$.grade.passFail"
+        "$.grade.passFail", "$.credentialSubject.grade.passFail"
       ],
       "schema": {
         "type": "string"
@@ -109,7 +109,7 @@
     {
       "label": "Score method",
       "path": [
-        "$.score.scoreMethod.scoreMethodType"
+        "$.score.scoreMethod.scoreMethodType", "$.credentialSubject.score.scoreMethod.scoreMethodType"
       ],
       "schema": {
         "type": "string"
@@ -118,7 +118,7 @@
     {
       "label": "Score method details",
       "path": [
-        "$.score.scoreMethod.scoreMethodDescription"
+        "$.score.scoreMethod.scoreMethodDescription", "$.credentialSubject.score.scoreMethod.scoreMethodDescription"
       ],
       "schema": {
         "type": "string"
@@ -127,7 +127,7 @@
     {
       "label": "Passing score",
       "path": [
-        "$.score.scoreMethod.passingScore"
+        "$.score.scoreMethod.passingScore", "$.credentialSubject.score.scoreMethod.passingScore"
       ],
       "schema": {
         "type": "string"
@@ -136,7 +136,7 @@
     {
       "label": "Course type",
       "path": [
-        "$.courseType"
+        "$.courseType", "$.credentialSubject.courseType"
       ],
       "schema": {
         "type": "string"
@@ -145,7 +145,7 @@
     {
       "label": "Course mode",
       "path": [
-        "$.courseMode"
+        "$.courseMode", "$.credentialSubject.courseMode"
       ],
       "schema": {
         "type": "string"
@@ -154,7 +154,7 @@
     {
       "label": "Course level",
       "path": [
-        "$.courseLevel"
+        "$.courseLevel", "$.credentialSubject.courseLevel"
       ],
       "schema": {
         "type": "string"
@@ -163,7 +163,7 @@
     {
       "label": "Course duration",
       "path": [
-        "$.courseDuration"
+        "$.courseDuration", "$.credentialSubject.courseDuration"
       ],
       "schema": {
         "type": "string", 
@@ -173,7 +173,7 @@
     {
       "label": "First name",
       "path": [
-        "$.recipient.givenName"
+        "$.recipient.givenName", "$.credentialSubject.recipient.givenName"
       ],
       "schema": {
         "type": "string"
@@ -182,7 +182,7 @@
     {
       "label": "Middle name",
       "path": [
-        "$.recipient.middleName"
+        "$.recipient.middleName", "$.credentialSubject.recipient.middleName"
       ],
       "schema": {
         "type": "string"
@@ -191,7 +191,7 @@
     {
       "label": "Last name",
       "path": [
-        "$.recipient.familyName"
+        "$.recipient.familyName", "$.credentialSubject.recipient.familyName"
       ],
       "schema": {
         "type": "string"
@@ -200,7 +200,7 @@
     {
       "label": "Name prefix",
       "path": [
-        "$.recipient.namePrefix"
+        "$.recipient.namePrefix", "$.credentialSubject.recipient.namePrefix"
       ],
       "schema": {
         "type": "string"
@@ -209,7 +209,7 @@
     {
       "label": "Name suffix",
       "path": [
-        "$.recipient.nameSuffix"
+        "$.recipient.nameSuffix", "$.credentialSubject.recipient.nameSuffix"
       ],
       "schema": {
         "type": "string"
@@ -218,7 +218,7 @@
     {
       "label": "Learn more about the credential",
       "path": [
-        "$.alignment[0].targetUrl"
+        "$.alignment[0].targetUrl", "$.credentialSubject.alignment[0].targetUrl"
       ],
       "schema": {
         "type": "string",

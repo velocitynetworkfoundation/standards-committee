@@ -1,7 +1,7 @@
 {
   "title": {
     "path": [
-      "$.authority.name"
+      "$.authority.name", "$.credentialSubject.authority.name"
     ],
     "schema": {
       "type": "string"
@@ -10,7 +10,7 @@
   },
   "subtitle": {
     "path": [
-      "$.name"
+      "$.name", "$.credentialSubject.name"
     ],
     "schema": {
       "type": "string"
@@ -19,7 +19,7 @@
   },
   "summary_detail": {
     "path": [
-      "$.identifier"
+      "$.identifier", "$.credentialSubject.identifier"
     ],
     "schema": {
       "type": "string"
@@ -30,7 +30,7 @@
   },
     "logo": {
     "path": [
-      "$.authority.image"
+      "$.authority.image", "$.credentialSubject.authority.image"
     ],
     "schema": {
       "type": "string",
@@ -41,7 +41,7 @@
     {
       "label": "Certification number",
       "path": [
-        "$.identifier"
+        "$.identifier", "$.credentialSubject.identifier"
       ],
       "schema": {
         "type": "string"
@@ -50,7 +50,7 @@
     {
       "label": "Description",
       "path": [
-        "$.description"
+        "$.description", "$.credentialSubject.description"
       ],
       "schema": {
         "type": "string"
@@ -59,7 +59,7 @@
     {
       "label": "Date issued",
       "path": [
-        "$.validity.firstValidFrom"
+        "$.validity.firstValidFrom", "$.credentialSubject.validity.firstValidFrom"
       ],
       "schema": {
         "type": "string",
@@ -69,7 +69,7 @@
     {
       "label": "Date renewed",
       "path": [
-        "$.validity.validFrom"
+        "$.validity.validFrom", "$.credentialSubject.validity.validFrom"
       ],
       "schema": {
         "type": "string",
@@ -79,7 +79,7 @@
     {
       "label": "Valid until",
       "path": [
-        "$.validity.validUntil"
+        "$.validity.validUntil", "$.credentialSubject.validity.validUntil"
       ],
       "schema": {
         "type": "string",
@@ -89,7 +89,7 @@
     {
       "label": "City where valid",
       "path": [
-        "$.validity.validIn.addressLocality"
+        "$.validity.validIn.addressLocality", "$.credentialSubject.validity.validIn.addressLocality"
       ],
       "schema": {
         "type": "string"
@@ -98,7 +98,7 @@
     {
       "label": "Region or state where valid",
       "path": [
-        "$.validity.validIn.addressRegion"
+        "$.validity.validIn.addressRegion", "$.credentialSubject.validity.validIn.addressRegion"
       ],
       "schema": {
         "type": "string"
@@ -107,7 +107,7 @@
     {
       "label": "Country where valid",
       "path": [
-        "$.validity.validIn.addressCountry"
+        "$.validity.validIn.addressCountry", "$.credentialSubject.validity.validIn.addressCountry"
       ],
       "schema": {
         "type": "string"
@@ -116,7 +116,7 @@
     {
       "label": "First name",
       "path": [
-        "$.recipient.givenName"
+        "$.recipient.givenName", "$.credentialSubject.recipient.givenName"
       ],
       "schema": {
         "type": "string"
@@ -125,7 +125,7 @@
     {
       "label": "Middle name",
       "path": [
-        "$.recipient.middleName"
+        "$.recipient.middleName", "$.credentialSubject.recipient.middleName"
       ],
       "schema": {
         "type": "string"
@@ -134,7 +134,7 @@
     {
       "label": "Last name",
       "path": [
-        "$.recipient.familyName"
+        "$.recipient.familyName", "$.credentialSubject.recipient.familyName"
       ],
       "schema": {
         "type": "string"
@@ -143,7 +143,7 @@
     {
       "label": "Name prefix",
       "path": [
-        "$.recipient.namePrefix"
+        "$.recipient.namePrefix", "$.credentialSubject.recipient.namePrefix"
       ],
       "schema": {
         "type": "string"
@@ -152,7 +152,7 @@
     {
       "label": "Name suffix",
       "path": [
-        "$.recipient.nameSuffix"
+        "$.recipient.nameSuffix", "$.credentialSubject.recipient.nameSuffix"
       ],
       "schema": {
         "type": "string"
@@ -161,7 +161,7 @@
     {
       "label": "Learn more about the credential",
       "path": [
-        "$.alignment[0].targetUrl"
+        "$.alignment[0].targetUrl", "$.credentialSubject.alignment[0].targetUrl"
       ],
       "schema": {
         "type": "string",
