@@ -1,7 +1,7 @@
 {
   "title": {
     "path": [
-      "$.provider.name", "$.credentialSubject.provider.name"
+      "$.provider.name"
     ],
     "schema": {
       "type": "string"
@@ -10,7 +10,7 @@
   },
   "subtitle": {
     "path": [
-      "$.courseName", "$.credentialSubject.courseName"
+      "$.courseName"
     ],
     "schema": {
       "type": "string"
@@ -19,7 +19,7 @@
   },
   "summary_detail": {
     "path": [
-      "$.registrationDate", "$.credentialSubject.registrationDate"
+      "$.registrationDate"
     ],
     "schema": {
       "type": "string",
@@ -32,7 +32,7 @@
   },
   "logo": {
     "path": [
-      "$.provider.image", "$.credentialSubject.provider.image"
+      "$.provider.image"
     ],
     "schema": {
       "type": "string",
@@ -43,7 +43,7 @@
     {
       "label": "Description",
       "path": [
-        "$.description", "$.credentialSubject.description"
+        "$.description"
       ],
       "schema": {
         "type": "string"
@@ -52,7 +52,7 @@
     {
       "label": "Registration date",
       "path": [
-        "$.registrationDate", "$.credentialSubject.registrationDate"
+        "$.registrationDate"
       ],
       "schema": {
         "type": "string",
@@ -62,7 +62,7 @@
     {
       "label": "Start date",
       "path": [
-        "$.startDate", "$.credentialSubject.startDate"
+        "$.startDate"
       ],
       "schema": {
         "type": "string",
@@ -72,7 +72,7 @@
     {
       "label": "Course type",
       "path": [
-        "$.courseType", "$.credentialSubject.courseType"
+        "$.courseType"
       ],
       "schema": {
         "type": "string"
@@ -81,7 +81,7 @@
     {
       "label": "Course mode",
       "path": [
-        "$.courseMode", "$.credentialSubject.courseMode"
+        "$.courseMode"
       ],
       "schema": {
         "type": "string"
@@ -90,7 +90,7 @@
     {
       "label": "Course level",
       "path": [
-        "$.courseLevel", "$.credentialSubject.courseLevel"
+        "$.courseLevel"
       ],
       "schema": {
         "type": "string"
@@ -99,7 +99,7 @@
     {
       "label": "Course duration",
       "path": [
-        "$.courseDuration", "$.credentialSubject.courseDuration"
+        "$.courseDuration"
       ],
       "schema": {
         "type": "string"
@@ -108,7 +108,7 @@
     {
       "label": "Alignment",
       "path": [
-        "$.alignment[0].targetName", "$.credentialSubject.alignment[0].targetName"
+        "$.alignment[0].targetName"
       ],
       "schema": {
         "type": "string"
@@ -117,7 +117,7 @@
     {
       "label": "Alignment URL",
       "path": [
-        "$.alignment[0].targetUrl", "$.credentialSubject.alignment[0].targetUrl"
+        "$.alignment[0].targetUrl"
       ],
       "schema": {
         "type": "string",
@@ -127,7 +127,7 @@
     {
       "label": "Alignment framework",
       "path": [
-        "$.alignment[0].targetFramework", "$.credentialSubject.alignment[0].targetFramework"
+        "$.alignment[0].targetFramework"
       ],
       "schema": {
         "type": "string"

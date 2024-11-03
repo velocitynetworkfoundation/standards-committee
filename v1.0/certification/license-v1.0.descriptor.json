@@ -1,7 +1,7 @@
 {
   "title": {
     "path": [
-      "$.authority.name", "$.credentialSubject.authority.name"
+      "$.authority.name"
     ],
     "schema": {
       "type": "string"
@@ -10,7 +10,7 @@
   },
   "subtitle": {
     "path": [
-      "$.name", "$.credentialSubject.name"
+      "$.name"
     ],
     "schema": {
       "type": "string"
@@ -19,7 +19,7 @@
   },
   "summary_detail": {
     "path": [
-      "$.validity.validUntil", "$.credentialSubject.validity.validUntil"
+      "$.validity.validUntil"
     ],
     "schema": {
       "type": "string",
@@ -32,7 +32,7 @@
   },
   "logo": {
     "path": [
-      "$.authority.image", "$.credentialSubject.authority.image"
+      "$.authority.image"
     ],
     "schema": {
       "type": "string",
@@ -43,7 +43,7 @@
     {
       "label": "License number",
       "path": [
-        "$.identifier", "$.credentialSubject.identifier"
+        "$.identifier"
       ],
       "schema": {
         "type": "string"
@@ -52,7 +52,7 @@
     {
       "label": "License date",
       "path": [
-        "$.validity.firstValidFrom", "$.credentialSubject.validity.firstValidFrom"
+        "$.validity.firstValidFrom"
       ],
       "schema": {
         "type": "string",
@@ -62,7 +62,7 @@
     {
       "label": "Renewal date",
       "path": [
-        "$.validity.validFrom", "$.credentialSubject.validity.validFrom"
+        "$.validity.validFrom"
       ],
       "schema": {
         "type": "string",
@@ -72,7 +72,7 @@
     {
       "label": "Valid until",
       "path": [
-        "$.validity.validUntil", "$.credentialSubject.validity.validUntil"
+        "$.validity.validUntil"
       ],
       "schema": {
         "type": "string",
@@ -82,7 +82,7 @@
     {
       "label": "Locality",
       "path": [
-        "$.validity.validIn.addressLocality", "$.credentialSubject.validity.validIn.addressLocality"
+        "$.validity.validIn.addressLocality"
       ],
       "schema": {
         "type": "string"
@@ -91,7 +91,7 @@
     {
       "label": "Region",
       "path": [
-        "$.validity.validIn.addressRegion", "$.credentialSubject.validity.validIn.addressRegion"
+        "$.validity.validIn.addressRegion"
       ],
       "schema": {
         "type": "string"
@@ -99,7 +99,7 @@
     },
     {
       "path": [
-        "$.validity.validIn.addressCountry", "$.credentialSubject.validity.validIn.addressCountry"
+        "$.validity.validIn.addressCountry"
       ],
       "label": "Country",
       "schema": {
@@ -109,7 +109,7 @@
     {
       "label": "Endorsement codes",
       "path": [
-        "$.endorsementCode", "$.credentialSubject.endorsementCode"
+        "$.endorsementCode"
       ],
       "schema": {
         "type": "string"
@@ -118,7 +118,7 @@
     {
       "label": "Restriction codes",
       "path": [
-        "$.restrictionCode", "$.credentialSubject.restrictionCode"
+        "$.restrictionCode"
       ],
       "schema": {
         "type": "string"
@@ -127,7 +127,7 @@
     {
       "label": "Alignment",
       "path": [
-        "$.alignment[0].targetName", "$.credentialSubject.alignment[0].targetName"
+        "$.alignment[0].targetName"
       ],
       "schema": {
         "type": "string"
@@ -136,7 +136,7 @@
     {
       "label": "Alignment URL",
       "path": [
-        "$.alignment[0].targetUrl", "$.credentialSubject.alignment[0].targetUrl"
+        "$.alignment[0].targetUrl"
       ],
       "schema": {
         "type": "string",
@@ -146,7 +146,7 @@
     {
       "label": "Alignment framework",
       "path": [
-        "$.alignment[0].targetFramework", "$.credentialSubject.alignment[0].targetFramework"
+        "$.alignment[0].targetFramework"
       ],
       "schema": {
         "type": "string"

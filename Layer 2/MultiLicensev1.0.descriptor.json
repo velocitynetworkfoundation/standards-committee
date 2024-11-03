@@ -4,7 +4,7 @@
   },
   "subtitle": {
     "path": [
-      "$.personName.familyName", "$.credentialSubject.personName.familyName"
+      "$.personName.familyName"
     ],
     "schema": {
       "type": "string"
@@ -13,7 +13,7 @@
   },
   "summary_detail": {
     "path": [
-      "$.Id", "$.credentialSubject.Id"
+      "$.Id"
     ],
     "schema": {
       "type": "string"
@@ -27,7 +27,7 @@
     {
       "label": "Given Name",
       "path": [
-        "$.personName.givenName", "$.credentialSubject.personName.givenName"
+        "$.personName.givenName"
       ],
       "schema": {
         "type": "string"
@@ -36,7 +36,7 @@
     {
       "label": "Middle Name",
       "path": [
-        "$.personName.middleName", "$.credentialSubject.personName.middleName"
+        "$.personName.middleName"
       ],
       "schema": {
         "type": "string"
@@ -45,7 +45,7 @@
     {
       "label": "Family Name",
       "path": [
-        "$.personName.familyName", "$.credentialSubject.personName.familyName"
+        "$.personName.familyName"
       ],
       "schema": {
         "type": "string"
@@ -54,7 +54,7 @@
     {
       "label": "ID",
       "path": [
-        "$.Id", "$.credentialSubject.Id"
+        "$.Id"
       ],
       "schema": {
         "type": "string"
@@ -63,7 +63,7 @@
     {
       "label": "Messages",
       "path": [
-        "$.messages[*]", "$.credentialSubject.messages[*]"
+        "$.messages[*]"
       ],
       "schema": {
         "type": "string"
@@ -72,7 +72,7 @@
     {
       "label": "License Type",
       "path": [
-        "$.License[*].LicenseType", "$.credentialSubject.License[*].LicenseType"
+        "$.License[*].LicenseType"
       ],
       "schema": {
         "type": "string"
@@ -81,7 +81,7 @@
     {
       "label": "State",
       "path": [
-        "$.License[*].JurisdictionAbbreviation", "$.credentialSubject.License[*].JurisdictionAbbreviation"
+        "$.License[*].JurisdictionAbbreviation"
       ],
       "schema": {
         "type": "string"
@@ -90,7 +90,7 @@
     {
       "label": "License Status",
       "path": [
-        "$.License[*].LicenseStatus", "$.credentialSubject.License[*].LicenseStatus"
+        "$.License[*].LicenseStatus"
       ],
       "schema": {
         "type": "string"
@@ -99,7 +99,7 @@
     {
       "label": "Issuance Date",
       "path": [
-        "$.License[*].LicenseOriginalIssueDate", "$.credentialSubject.License[*].LicenseOriginalIssueDate"
+        "$.License[*].LicenseOriginalIssueDate"
       ],
       "schema": {
         "type": "string"
@@ -108,7 +108,7 @@
     {
       "label": "Expiration Date",
       "path": [
-        "$.License[*].LicenseExpirationDate", "$.credentialSubject.License[*].LicenseExpirationDate"
+        "$.License[*].LicenseExpirationDate"
       ],
       "schema": {
         "type": "string"
@@ -117,7 +117,7 @@
     {
       "label": "Authorizations to practice",
       "path": [
-        "$.AuthorizationToPractice[*].StateAbbreviation", "$.credentialSubject.AuthorizationToPractice[*].StateAbbreviation"
+        "$.AuthorizationToPractice[*].StateAbbreviation"
       ],
       "schema": {
         "type": "string"

@@ -1,7 +1,7 @@
 {
   "title": {
     "path": [
-      "$.kind", "$.credentialSubject.kind"
+      "$.kind"
     ],
     "schema": {
       "type": "string"
@@ -10,7 +10,7 @@
   },
   "subtitle": {
     "path": [
-      "$.authority.localized.en", "$.credentialSubject.authority.localized.en"
+      "$.authority.localized.en"
     ],
     "schema": {
       "type": "string"
@@ -19,7 +19,7 @@
   },
   "summary_detail": {
     "path": [
-      "$.location.countryCode", "$.credentialSubject.location.countryCode"
+      "$.location.countryCode"
     ],
     "schema": {
       "type": "string"
@@ -33,7 +33,7 @@
     {
       "label": "Document number",
       "path": [
-        "$.identityNumber", "$.credentialSubject.identityNumber"
+        "$.identityNumber"
       ],
       "schema": {
         "type": "string"
@@ -43,7 +43,7 @@
     {
       "label": "First name",
       "path": [
-        "$.firstName.localized.en", "$.credentialSubject.firstName.localized.en"
+        "$.firstName.localized.en"
       ],
       "schema": {
         "type": "string"
@@ -53,7 +53,7 @@
     {
       "label": "Middle names",
       "path": [
-        "$.middleNames.localized.en", "$.credentialSubject.middleNames.localized.en"
+        "$.middleNames.localized.en"
       ],
       "schema": {
         "type": "string"
@@ -62,7 +62,7 @@
     {
       "label": "Last name",
       "path": [
-        "$.lastName.localized.en", "$.credentialSubject.lastName.localized.en"
+        "$.lastName.localized.en"
       ],
       "schema": {
         "type": "string"
@@ -72,7 +72,7 @@
     {
       "label": "Date of birth",
       "path": [
-        "$.dob", "$.credentialSubject.dob"
+        "$.dob"
       ],
       "schema": {
         "type": "string",
@@ -83,7 +83,7 @@
     {
       "label": "Street address",
       "path": [
-        "$.address.line1", "$.credentialSubject.address.line1"
+        "$.address.line1"
       ],
       "schema": {
         "type": "string"
@@ -92,7 +92,7 @@
     {
       "label": "Address line 2",
       "path": [
-        "$.address.line2", "$.credentialSubject.address.line2"
+        "$.address.line2"
       ],
       "schema": {
         "type": "string"
@@ -101,7 +101,7 @@
     {
       "label": "Address line 3",
       "path": [
-        "$.address.line3", "$.credentialSubject.address.line3"
+        "$.address.line3"
       ],
       "schema": {
         "type": "string"
@@ -110,7 +110,7 @@
     {
       "label": "Address region or state",
       "path": [
-        "$.regionCode", "$.credentialSubject.regionCode"
+        "$.regionCode"
       ],
       "schema": {
         "type": "string"
@@ -119,7 +119,7 @@
     {
       "label": "Address post code",
       "path": [
-        "$.postCode", "$.credentialSubject.postCode"
+        "$.postCode"
       ],
       "schema": {
         "type": "string"
@@ -128,7 +128,7 @@
     {
       "label": "Address country",
       "path": [
-        "$.countryCode", "$.credentialSubject.countryCode"
+        "$.countryCode"
       ],
       "schema": {
         "type": "string"

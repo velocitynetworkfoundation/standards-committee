@@ -1,7 +1,7 @@
 {
   "title": {
     "path": [
-      "$.authorityName.localized.en", "$.credentialSubject.authorityName.localized.en"
+      "$.authorityName.localized.en"
     ],
     "schema": {
       "type": "string"
@@ -10,7 +10,7 @@
   },
   "subtitle": {
     "path": [
-      "$.name.localized.en", "$.credentialSubject.name.localized.en"
+      "$.name.localized.en"
     ],
     "schema": {
       "type": "string"
@@ -19,7 +19,7 @@
   },
   "summary_detail": {
     "path": [
-      "$.date", "$.credentialSubject.date"
+      "$.date"
     ],
     "schema": {
       "type": "string"
@@ -32,7 +32,7 @@
     {
       "label": "Description",
       "path": [
-        "$.description.localized.en", "$.credentialSubject.description.localized.en"
+        "$.description.localized.en"
       ],
       "schema": {
         "type": "string"
@@ -41,7 +41,7 @@
     {
       "label": "Score",
       "path": [
-        "$.absoluteScore", "$.credentialSubject.absoluteScore"
+        "$.absoluteScore"
       ],
       "schema": {
         "type": "string"
@@ -50,7 +50,7 @@
     {
       "label": "Score range",
       "path": [
-        "$.scoreRange", "$.credentialSubject.scoreRange"
+        "$.scoreRange"
       ],
       "schema": {
         "type": "string"
@@ -59,7 +59,7 @@
     {
       "label": "Pass or fail",
       "path": [
-        "$.passFail", "$.credentialSubject.passFail"
+        "$.passFail"
       ],
       "schema": {
         "type": "string"
@@ -68,7 +68,7 @@
     {
       "label": "Norm",
       "path": [
-        "$.normName.localized.en", "$.credentialSubject.normName.localized.en"
+        "$.normName.localized.en"
       ],
       "schema": {
         "type": "string"
@@ -77,7 +77,7 @@
     {
       "label": "Norm description",
       "path": [
-        "$.normDescription.localized.en", "$.credentialSubject.normDescription.localized.en"
+        "$.normDescription.localized.en"
       ],
       "schema": {
         "type": "string"
@@ -86,7 +86,7 @@
     {
       "label": "Norm size",
       "path": [
-        "$.normSize", "$.credentialSubject.normSize"
+        "$.normSize"
       ],
       "schema": {
         "type": "string"
@@ -95,7 +95,7 @@
     {
       "label": "Percentile score",
       "path": [
-        "$.percentileScore", "$.credentialSubject.percentileScore"
+        "$.percentileScore"
       ],
       "schema": {
         "type": "string"
@@ -104,7 +104,7 @@
     {
       "label": "Alignment",
       "path": [
-        "$.alignment[0].targetName", "$.credentialSubject.alignment[0].targetName"
+        "$.alignment[0].targetName"
       ],
       "schema": {
         "type": "string"
@@ -113,7 +113,7 @@
     {
       "label": "Alignment URL",
       "path": [
-        "$.alignment[0].targetUrl", "$.credentialSubject.alignment[0].targetUrl"
+        "$.alignment[0].targetUrl"
       ],
       "schema": {
         "type": "string",
@@ -123,7 +123,7 @@
     {
       "label": "Alignment framework",
       "path": [
-        "$.alignment[0].targetFramework", "$.credentialSubject.alignment[0].targetFramework"
+        "$.alignment[0].targetFramework"
       ],
       "schema": {
         "type": "string"

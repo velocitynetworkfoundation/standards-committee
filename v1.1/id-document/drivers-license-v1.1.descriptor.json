@@ -1,7 +1,7 @@
 {
   "title": {
     "path": [
-      "$.name", "$.credentialSubject.name"
+      "$.name"
     ],
     "schema": {
       "type": "string"
@@ -10,7 +10,7 @@
   },
   "subtitle": {
     "path": [
-      "$.authority.name", "$.credentialSubject.authority.name"
+      "$.authority.name"
     ],
     "schema": {
       "type": "string"
@@ -19,7 +19,7 @@
   },
   "summary_detail": {
     "path": [
-      "$.identifier", "$.credentialSubject.identifier"
+      "$.identifier"
     ],
     "schema": {
       "type": "string"
@@ -31,7 +31,7 @@
   },
   "logo": {
     "path": [
-      "$.authority.image", "$.credentialSubject.authority.image"
+      "$.authority.image"
     ],
     "schema": {
       "type": "string",
@@ -42,7 +42,7 @@
     {
       "label": "License number",
       "path": [
-        "$.identifier", "$.credentialSubject.identifier"
+        "$.identifier"
       ],
       "schema": {
         "type": "string"
@@ -51,7 +51,7 @@
     {
       "label": "Country of issuing authority",
       "path": [
-        "$.authority.place.addressCountry", "$.credentialSubject.authority.place.addressCountry"
+        "$.authority.place.addressCountry"
       ],
       "schema": {
         "type": "string"
@@ -60,7 +60,7 @@
     {
       "label": "Region or state of issuing authority",
       "path": [
-        "$.authority.place.addressRegion", "$.credentialSubject.authority.place.addressRegion"
+        "$.authority.place.addressRegion"
       ],
       "schema": {
         "type": "string"
@@ -69,7 +69,7 @@
     {
       "label": "Date issued",
       "path": [
-        "$.validity.firstValidFrom", "$.credentialSubject.validity.firstValidFrom"
+        "$.validity.firstValidFrom"
       ],
       "schema": {
         "type": "string",
@@ -79,7 +79,7 @@
     {
       "label": "Date renewed",
       "path": [
-        "$.validity.validFrom", "$.credentialSubject.validity.validFrom"
+        "$.validity.validFrom"
       ],
       "schema": {
         "type": "string",
@@ -89,7 +89,7 @@
     {
       "label": "Valid until",
       "path": [
-        "$.validity.validUntil", "$.credentialSubject.validity.validUntil"
+        "$.validity.validUntil"
       ],
       "schema": {
         "type": "string",
@@ -99,7 +99,7 @@
     {
       "label": "First name",
       "path": [
-        "$.person.givenName", "$.credentialSubject.person.givenName"
+        "$.person.givenName"
       ],
       "schema": {
         "type": "string"
@@ -108,7 +108,7 @@
     {
       "label": "Middle name",
       "path": [
-        "$.person.additionalName", "$.credentialSubject.person.additionalName"
+        "$.person.additionalName"
       ],
       "schema": {
         "type": "string"
@@ -117,7 +117,7 @@
     {
       "label": "Last name",
       "path": [
-        "$.person.familyName", "$.credentialSubject.person.familyName"
+        "$.person.familyName"
       ],
       "schema": {
         "type": "string"
@@ -126,7 +126,7 @@
     {
       "label": "Name prefix",
       "path": [
-        "$.person.namePrefix", "$.credentialSubject.person.namePrefix"
+        "$.person.namePrefix"
       ],
       "schema": {
         "type": "string"
@@ -135,7 +135,7 @@
     {
       "label": "Name suffix",
       "path": [
-        "$.person.nameSuffix", "$.credentialSubject.person.nameSuffix"
+        "$.person.nameSuffix"
       ],
       "schema": {
         "type": "string"
@@ -144,7 +144,7 @@
     {
       "label": "Date of birth",
       "path": [
-        "$.person.birthDate", "$.credentialSubject.person.birthDate"
+        "$.person.birthDate"
       ],
       "schema": {
         "type": "string",
@@ -154,7 +154,7 @@
     {
       "label": "Country of birth",
       "path": [
-        "$.person.birthPlace.addressCountry", "$.credentialSubject.person.birthPlace.addressCountry"
+        "$.person.birthPlace.addressCountry"
       ],
       "schema": {
         "type": "string"
@@ -163,7 +163,7 @@
     {
       "label": "Region or state of birth",
       "path": [
-        "$.person.birthPlace.addressRegion", "$.credentialSubject.person.birthPlace.addressRegion"
+        "$.person.birthPlace.addressRegion"
       ],
       "schema": {
         "type": "string"
@@ -172,7 +172,7 @@
     {
       "label": "Place of birth",
       "path": [
-        "$.person.birthPlace.addressLocality", "$.credentialSubject.person.birthPlace.addressLocality"
+        "$.person.birthPlace.addressLocality"
       ],
       "schema": {
         "type": "string"
@@ -181,7 +181,7 @@
     {
       "label": "Gender",
       "path": [
-        "$.person.gender", "$.credentialSubject.person.gender"
+        "$.person.gender"
       ],
       "schema": {
         "type": "string"
@@ -190,7 +190,7 @@
     {
       "label": "Street address",
       "path": [
-        "$.streetAddress", "$.credentialSubject.streetAddress"
+        "$.streetAddress"
       ],
       "schema": {
         "type": "string"
@@ -199,7 +199,7 @@
     {
       "label": "City",
       "path": [
-        "$.addressLocality", "$.credentialSubject.addressLocality"
+        "$.addressLocality"
       ],
       "schema": {
         "type": "string"
@@ -208,7 +208,7 @@
     {
       "label": "Region or state",
       "path": [
-        "$.addressRegion", "$.credentialSubject.addressRegion"
+        "$.addressRegion"
       ],
       "schema": {
         "type": "string"
@@ -217,7 +217,7 @@
     {
       "label": "Postal code",
       "path": [
-        "$.postCode", "$.credentialSubject.postCode"
+        "$.postCode"
       ],
       "schema": {
         "type": "string"
@@ -226,7 +226,7 @@
     {
       "label": "Country",
       "path": [
-        "$.addressCountry", "$.credentialSubject.addressCountry"
+        "$.addressCountry"
       ],
       "schema": {
         "type": "string"

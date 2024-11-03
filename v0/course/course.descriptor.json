@@ -1,7 +1,7 @@
 {
   "title": {
     "path": [
-      "$.title.localized.en", "$.credentialSubject.title.localized.en"
+      "$.title.localized.en"
     ],
     "schema": {
       "type": "string"
@@ -10,7 +10,7 @@
   },
   "subtitle": {
     "path": [
-      "$.type", "$.credentialSubject.type"
+      "$.type"
     ],
     "schema": {
       "type": "string"
@@ -19,7 +19,7 @@
   },
   "summary_detail": {
     "path": [
-      "$.completionDate", "$.credentialSubject.completionDate"
+      "$.completionDate"
     ],
     "schema": {
       "type": "string",
@@ -27,7 +27,7 @@
     },
     "fallback": {
       "path": [
-        "$.startDate", "$.credentialSubject.startDate"
+        "$.startDate"
       ],
       "schema": {
         "type": "string",
@@ -41,7 +41,7 @@
       {
         "label": "Content Provider",
         "path": [
-          "$.contentProviderName.localized.en", "$.credentialSubject.contentProviderName.localized.en"
+          "$.contentProviderName.localized.en"
         ],
         "schema": {
           "type": "string"
@@ -50,7 +50,7 @@
       {
         "label": "Description",
         "path": [
-          "$.description.localized.en", "$.credentialSubject.description.localized.en"
+          "$.description.localized.en"
         ],
         "schema": {
           "type": "string"
@@ -59,7 +59,7 @@
       {
         "label": "Registration Date",
         "path": [
-          "$.registrationDate", "$.credentialSubject.registrationDate"
+          "$.registrationDate"
         ],
         "schema": {
           "type": "string",
@@ -69,7 +69,7 @@
       {
         "label": "Start Date",
         "path": [
-          "$.startDate", "$.credentialSubject.startDate"
+          "$.startDate"
         ],
         "schema": {
           "type": "string",
@@ -79,7 +79,7 @@
       {
         "label": "Course duration",
         "path": [
-          "$.duration", "$.credentialSubject.duration"
+          "$.duration"
         ],
         "schema": {
           "type": "string"
@@ -88,7 +88,7 @@
       {
         "label": "Grade",
         "path": [
-          "$.score", "$.credentialSubject.score"
+          "$.score"
         ],
         "schema": {
           "type": "string"
@@ -97,7 +97,7 @@
       {
         "label": "Grade range",
         "path": [
-          "$.scoreRange", "$.credentialSubject.scoreRange"
+          "$.scoreRange"
         ],
         "schema": {
           "type": "string"
@@ -106,7 +106,7 @@
       {
         "label": "Alignment",
         "path": [
-          "$.alignment[0].targetName", "$.credentialSubject.alignment[0].targetName"
+          "$.alignment[0].targetName"
         ],
         "schema": {
           "type": "string"
@@ -115,7 +115,7 @@
       {
         "label": "Alignment URL",
         "path": [
-          "$.alignment[0].targetUrl", "$.credentialSubject.alignment[0].targetUrl"
+          "$.alignment[0].targetUrl"
         ],
         "schema": {
           "type": "string",
@@ -125,7 +125,7 @@
       {
         "label": "Alignment framework",
         "path": [
-          "$.alignment[0].targetFramework", "$.credentialSubject.alignment[0].targetFramework"
+          "$.alignment[0].targetFramework"
         ],
         "schema": {
           "type": "string"

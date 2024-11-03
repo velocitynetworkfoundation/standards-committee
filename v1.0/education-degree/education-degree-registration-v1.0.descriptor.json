@@ -1,7 +1,7 @@
 {
   "title": {
     "path": [
-      "$.institution.name", "$.credentialSubject.institution.name"
+      "$.institution.name"
     ],
     "schema": {
       "type": "string"
@@ -10,7 +10,7 @@
   },
   "subtitle": {
     "path": [
-      "$.degreeName", "$.credentialSubject.degreeName"
+      "$.degreeName"
     ],
     "schema": {
       "type": "string"
@@ -19,7 +19,7 @@
   },
   "summary_detail": {
     "path": [
-      "$.registrationDate", "$.credentialSubject.registrationDate"
+      "$.registrationDate"
     ],
     "schema": {
       "type": "string",
@@ -32,7 +32,7 @@
   },
   "logo": {
     "path": [
-      "$.institution.image", "$.credentialSubject.institution.image"
+      "$.institution.image"
     ],
     "schema": {
       "type": "string",
@@ -43,7 +43,7 @@
     {
       "label": "School or department",
       "path": [
-        "$.school.name", "$.credentialSubject.school.name"
+        "$.school.name"
       ],
       "schema": {
         "type": "string"
@@ -52,7 +52,7 @@
     {
       "label": "Description",
       "path": [
-        "$.description", "$.credentialSubject.description"
+        "$.description"
       ],
       "schema": {
         "type": "string"
@@ -61,7 +61,7 @@
     {
       "label": "Registration Date",
       "path": [
-        "$.registrationDate", "$.credentialSubject.registrationDate"
+        "$.registrationDate"
       ],
       "schema": {
         "type": "string",
@@ -71,7 +71,7 @@
     {
       "label": "Start Date",
       "path": [
-        "$.startDate", "$.credentialSubject.startDate"
+        "$.startDate"
       ],
       "schema": {
         "type": "string",
@@ -81,7 +81,7 @@
     {
       "label": "Major",
       "path": [
-        "$.degreeMajor[*]", "$.credentialSubject.degreeMajor[*]"
+        "$.degreeMajor[*]"
       ],
       "schema": {
         "type": "string"
@@ -90,7 +90,7 @@
     {
       "label": "Minor",
       "path": [
-        "$.degreeMinor[*]", "$.credentialSubject.degreeMinor[*]"
+        "$.degreeMinor[*]"
       ],
       "schema": {
         "type": "string"
@@ -99,7 +99,7 @@
     {
       "label": "Program",
       "path": [
-        "$.programName", "$.credentialSubject.programName"
+        "$.programName"
       ],
       "schema": {
         "type": "string"
@@ -108,7 +108,7 @@
     {
       "label": "Program type",
       "path": [
-        "$.programType", "$.credentialSubject.programType"
+        "$.programType"
       ],
       "schema": {
         "type": "string"
@@ -117,7 +117,7 @@
     {
       "label": "Program mode",
       "path": [
-        "$.programMode", "$.credentialSubject.programMode"
+        "$.programMode"
       ],
       "schema": {
         "type": "string"
@@ -126,7 +126,7 @@
     {
       "label": "Alignment",
       "path": [
-        "$.alignment[0].targetName", "$.credentialSubject.alignment[0].targetName"
+        "$.alignment[0].targetName"
       ],
       "schema": {
         "type": "string"
@@ -135,7 +135,7 @@
     {
       "label": "Alignment URL",
       "path": [
-        "$.alignment[0].targetUrl", "$.credentialSubject.alignment[0].targetUrl"
+        "$.alignment[0].targetUrl"
       ],
       "schema": {
         "type": "string",
@@ -145,7 +145,7 @@
     {
       "label": "Alignment framework",
       "path": [
-        "$.alignment[0].targetFramework", "$.credentialSubject.alignment[0].targetFramework"
+        "$.alignment[0].targetFramework"
       ],
       "schema": {
         "type": "string"

@@ -1,7 +1,7 @@
 {
   "title": {
     "path": [
-      "$.legalEmployer.name", "$.credentialSubject.legalEmployer.name"
+      "$.legalEmployer.name"
     ],
     "schema": {
       "type": "string"
@@ -10,7 +10,7 @@
   },
   "subtitle": {
     "path": [
-      "$.role", "$.credentialSubject.role"
+      "$.role"
     ],
     "schema": {
       "type": "string"
@@ -19,7 +19,7 @@
   },
   "summary_detail": {
     "path": [
-      "$.place.name", "$.credentialSubject.place.name"
+      "$.place.name"
     ],
     "schema": {
       "type": "string"
@@ -31,7 +31,7 @@
   },
   "logo": {
     "path": [
-      "$.legalEmployer.image", "$.credentialSubject.legalEmployer.image"
+      "$.legalEmployer.image"
     ],
     "schema": {
       "type": "string",
@@ -42,7 +42,7 @@
     {
       "label": "Role",
       "path": [
-        "$.role", "$.credentialSubject.role"
+        "$.role"
       ],
       "schema": {
         "type": "string"
@@ -51,7 +51,7 @@
     {
       "label": "Role description",
       "path": [
-        "$.description", "$.credentialSubject.description"
+        "$.description"
       ],
       "schema": {
         "type": "string"
@@ -60,7 +60,7 @@
     {
       "label": "Start date",
       "path": [
-        "$.startDate", "$.credentialSubject.startDate"
+        "$.startDate"
       ],
       "schema": {
         "type": "string",
@@ -70,7 +70,7 @@
     {
       "label": "End date",
       "path": [
-        "$.endDate", "$.credentialSubject.endDate"
+        "$.endDate"
       ],
       "schema": {
         "type": "string",
@@ -80,7 +80,7 @@
     {
       "label": "Place of work",
       "path": [
-        "$.place.name", "$.credentialSubject.place.name"
+        "$.place.name"
       ],
       "schema": {
         "type": "string"
@@ -89,7 +89,7 @@
     {
       "label": "City of work",
       "path": [
-        "$.place.addressLocality", "$.credentialSubject.place.addressLocality"
+        "$.place.addressLocality"
       ],
       "schema": {
         "type": "string"
@@ -98,7 +98,7 @@
     {
       "label": "State or region of work",
       "path": [
-        "$.place.addressRegion", "$.credentialSubject.place.addressRegion"
+        "$.place.addressRegion"
       ],
       "schema": {
         "type": "string"
@@ -107,7 +107,7 @@
     {
       "label": "Country of work",
       "path": [
-        "$.place.addressCountry", "$.credentialSubject.place.addressCountry"
+        "$.place.addressCountry"
       ],
       "schema": {
         "type": "string"
@@ -116,7 +116,7 @@
     {
       "label": "Employment type",
       "path": [
-        "$.employmentType[*]", "$.credentialSubject.employmentType[*]"
+        "$.employmentType[*]"
       ],
       "schema": {
         "type": "string"
@@ -125,7 +125,7 @@
     {
       "label": "First name",
       "path": [
-        "$.recipient.givenName", "$.credentialSubject.recipient.givenName"
+        "$.recipient.givenName"
       ],
       "schema": {
         "type": "string"
@@ -134,7 +134,7 @@
     {
       "label": "Middle name",
       "path": [
-        "$.recipient.middleName", "$.credentialSubject.recipient.middleName"
+        "$.recipient.middleName"
       ],
       "schema": {
         "type": "string"
@@ -143,7 +143,7 @@
     {
       "label": "Last name",
       "path": [
-        "$.recipient.familyName", "$.credentialSubject.recipient.familyName"
+        "$.recipient.familyName"
       ],
       "schema": {
         "type": "string"
@@ -152,7 +152,7 @@
     {
       "label": "Name prefix",
       "path": [
-        "$.recipient.namePrefix", "$.credentialSubject.recipient.namePrefix"
+        "$.recipient.namePrefix"
       ],
       "schema": {
         "type": "string"
@@ -161,7 +161,7 @@
     {
       "label": "Name suffix",
       "path": [
-        "$.recipient.nameSuffix", "$.credentialSubject.recipient.nameSuffix"
+        "$.recipient.nameSuffix"
       ],
       "schema": {
         "type": "string"
@@ -170,7 +170,7 @@
     {
       "label": "Learn more about the credential",
       "path": [
-        "$.alignment[0].targetUrl", "$.credentialSubject.alignment[0].targetUrl"
+        "$.alignment[0].targetUrl"
       ],
       "schema": {
         "type": "string",

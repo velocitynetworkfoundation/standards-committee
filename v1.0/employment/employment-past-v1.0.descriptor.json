@@ -1,7 +1,7 @@
 {
   "title": {
     "path": [
-      "$.legalEmployer.name", "$.credentialSubject.legalEmployer.name"
+      "$.legalEmployer.name"
     ],
     "schema": {
       "type": "string"
@@ -10,7 +10,7 @@
   },
   "subtitle": {
     "path": [
-      "$.role", "$.credentialSubject.role"
+      "$.role"
     ],
     "schema": {
       "type": "string"
@@ -19,7 +19,7 @@
   },
   "summary_detail": {
     "path": [
-      "$.endDate", "$.credentialSubject.endDate"
+      "$.endDate"
     ],
     "schema": {
       "type": "string",
@@ -32,7 +32,7 @@
   },
   "logo": {
     "path": [
-      "$.legalEmployer.image", "$.credentialSubject.legalEmployer.image"
+      "$.legalEmployer.image"
     ],
     "schema": {
       "type": "string",
@@ -43,7 +43,7 @@
     {
       "label": "Role description",
       "path": [
-        "$.description", "$.credentialSubject.description"
+        "$.description"
       ],
       "schema": {
         "type": "string"
@@ -52,7 +52,7 @@
     {
       "label": "Start Date",
       "path": [
-        "$.startDate", "$.credentialSubject.startDate"
+        "$.startDate"
       ],
       "schema": {
         "type": "string",
@@ -62,7 +62,7 @@
     {
       "label": "End date",
       "path": [
-        "$.endDate", "$.credentialSubject.endDate"
+        "$.endDate"
       ],
       "schema": {
         "type": "string",
@@ -72,7 +72,7 @@
     {
       "label": "Place of work",
       "path": [
-        "$.place.addressLocality", "$.credentialSubject.place.addressLocality"
+        "$.place.addressLocality"
       ],
       "schema": {
         "type": "string"
@@ -81,7 +81,7 @@
     {
       "label": "State or region of work",
       "path": [
-        "$.place.addressRegion", "$.credentialSubject.place.addressRegion"
+        "$.place.addressRegion"
       ],
       "schema": {
         "type": "string"
@@ -90,7 +90,7 @@
     {
       "label": "Country of work",
       "path": [
-        "$.place.addressCountry", "$.credentialSubject.place.addressCountry"
+        "$.place.addressCountry"
       ],
       "schema": {
         "type": "string"
@@ -99,7 +99,7 @@
     {
       "label": "Employment type",
       "path": [
-        "$.employmentType[*]", "$.credentialSubject.employmentType[*]"
+        "$.employmentType[*]"
       ],
       "schema": {
         "type": "string"
@@ -108,7 +108,7 @@
     {
       "label": "Alignment",
       "path": [
-        "$.alignment[0].targetName", "$.credentialSubject.alignment[0].targetName"
+        "$.alignment[0].targetName"
       ],
       "schema": {
         "type": "string"
@@ -117,7 +117,7 @@
     {
       "label": "Alignment URL",
       "path": [
-        "$.alignment[0].targetUrl", "$.credentialSubject.alignment[0].targetUrl"
+        "$.alignment[0].targetUrl"
       ],
       "schema": {
         "type": "string",
@@ -127,7 +127,7 @@
     {
       "label": "Alignment framework",
       "path": [
-        "$.alignment[0].targetFramework", "$.credentialSubject.alignment[0].targetFramework"
+        "$.alignment[0].targetFramework"
       ],
       "schema": {
         "type": "string"
