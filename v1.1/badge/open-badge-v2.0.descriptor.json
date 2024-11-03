@@ -1,8 +1,13 @@
-  {
+{
   "title": {
     "path": [
-      "$.hasCredential.issuer.name", "$.hasCredential.issuer.id", "$.hasCredential.issuer", "$.credentialSubject.hasCredential.issuer.name", "$.hasCredential.issuer.id", "$.hasCredential.issuer"
-      ],
+      "$.hasCredential.issuer.name",
+      "$.hasCredential.issuer.id",
+      "$.hasCredential.issuer",
+      "$.credentialSubject.hasCredential.issuer.name",
+      "$.credentialSubject.hasCredential.issuer.id",
+      "$.credentialSubject.hasCredential.issuer"
+    ],
     "schema": {
       "type": "string"
     },
@@ -13,7 +18,8 @@
   },
   "summary_detail": {
     "path": [
-      "$.hasCredential.name", "$.credentialSubject.hasCredential.name"
+      "$.hasCredential.name",
+      "$.credentialSubject.hasCredential.name"
     ],
     "schema": {
       "type": "string"
@@ -25,7 +31,8 @@
   },
   "logo": {
     "path": [
-      "$.hasCredential.image", "$.credentialSubject.hasCredential.image"
+      "$.hasCredential.image",
+      "$.credentialSubject.hasCredential.image"
     ],
     "schema": {
       "type": "string",
@@ -36,7 +43,8 @@
     {
       "label": "Badge name",
       "path": [
-        "$.hasCredential.name", "$.credentialSubject.hasCredential.name"
+        "$.hasCredential.name",
+        "$.credentialSubject.hasCredential.name"
       ],
       "schema": {
         "type": "string"
@@ -46,7 +54,8 @@
     {
       "label": "",
       "path": [
-        "$.hasCredential.image", "$.credentialSubject.hasCredential.image"
+        "$.hasCredential.image",
+        "$.credentialSubject.hasCredential.image"
       ],
       "schema": {
         "type": "string"
@@ -55,7 +64,8 @@
     {
       "label": "Badge description",
       "path": [
-        "$.hasCredential.description", "$.credentialSubject.hasCredential.description"
+        "$.hasCredential.description",
+        "$.credentialSubject.hasCredential.description"
       ],
       "schema": {
         "type": "string"
@@ -64,7 +74,8 @@
     {
       "label": "Type",
       "path": [
-        "$.hasCredential.type", "$.credentialSubject.hasCredential.type"
+        "$.hasCredential.type",
+        "$.credentialSubject.hasCredential.type"
       ],
       "schema": {
         "type": "string"
@@ -73,7 +84,10 @@
     {
       "label": "Criteria for obtaining the credential",
       "path": [
-        "$.hasCredential.criteria", "$.hasCredential.criteria.narrative", "$.credentialSubject.hasCredential.criteria", "$.hasCredential.criteria.narrative"
+        "$.hasCredential.criteria",
+        "$.hasCredential.criteria.narrative",
+        "$.credentialSubject.hasCredential.criteria",
+        "$.credentialSubject.hasCredential.criteria.narrative"
       ],
       "schema": {
         "type": "string"
@@ -82,7 +96,8 @@
     {
       "label": "Tags",
       "path": [
-        "$.hasCredential.tags", "$.credentialSubject.hasCredential.tags"
+        "$.hasCredential.tags",
+        "$.credentialSubject.hasCredential.tags"
       ],
       "schema": {
         "type": "array",
@@ -94,7 +109,8 @@
     {
       "label": "Learn more about the credential",
       "path": [
-        "$.hasCredential.alignment[0].targetUrl", "$.credentialSubject.hasCredential.alignment[0].targetUrl"
+        "$.hasCredential.alignment[0].targetUrl",
+        "$.credentialSubject.hasCredential.alignment[0].targetUrl"
       ],
       "schema": {
         "type": "string",
