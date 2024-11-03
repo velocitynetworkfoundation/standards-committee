@@ -1,7 +1,7 @@
 {
   "title": {
     "path": [
-      "$.holds.issuer.name"
+      "$.holds.issuer.name", "$.credentialSubject.holds.issuer.name"
     ],
     "schema": {
       "type": "string"
@@ -10,7 +10,7 @@
   },
   "subtitle": {
     "path": [
-      "$.holds.type"
+      "$.holds.type", "$.credentialSubject.holds.type"
     ],
     "schema": {
       "type": "string"
@@ -19,7 +19,7 @@
   },
   "summary_detail": {
     "path": [
-      "$.holds.name"
+      "$.holds.name", "$.credentialSubject.holds.name"
     ],
     "schema": {
       "type": "string"
@@ -31,7 +31,7 @@
   },
   "logo": {
     "path": [
-      "$.holds.image"
+      "$.holds.image", "$.credentialSubject.holds.image"
     ],
     "schema": {
       "type": "string",
@@ -42,7 +42,7 @@
     {
       "label": "Badge name",
       "path": [
-        "$.holds.name"
+        "$.holds.name", "$.credentialSubject.holds.name"
       ],
       "schema": {
         "type": "string"
@@ -52,7 +52,7 @@
     {
       "label": "Badge Id",
       "path": [
-        "$.holds.id"
+        "$.holds.id", "$.credentialSubject.holds.id"
       ],
       "schema": {
         "type": "string"
@@ -62,7 +62,7 @@
     {
       "label": "Description",
       "path": [
-        "$.holds.description"
+        "$.holds.description", "$.credentialSubject.holds.description"
       ],
       "schema": {
         "type": "string"
@@ -71,7 +71,7 @@
     {
       "label": "Criteria",
       "path": [
-        "$.holds.criteria"
+        "$.holds.criteria", "$.credentialSubject.holds.criteria"
       ],
       "schema": {
         "type": "string"
@@ -80,7 +80,7 @@
     {
       "label": "Tags",
       "path": [
-        "$.holds.tags"
+        "$.holds.tags", "$.credentialSubject.holds.tags"
       ],
       "schema": {
         "type": "array",
@@ -92,7 +92,7 @@
     {
       "label": "",
       "path": [
-        "$.holds.image"
+        "$.holds.image", "$.credentialSubject.holds.image"
       ],
       "schema": {
         "type": "string"
@@ -101,7 +101,7 @@
     {
       "label": "Alignment",
       "path": [
-        "$.holds.alignment[0].targetName"
+        "$.holds.alignment[0].targetName", "$.credentialSubject.holds.alignment[0].targetName"
       ],
       "schema": {
         "type": "string"
@@ -110,7 +110,7 @@
     {
       "label": "Alignment URL",
       "path": [
-        "$.holds.alignment[0].targetUrl"
+        "$.holds.alignment[0].targetUrl", "$.credentialSubject.holds.alignment[0].targetUrl"
       ],
       "schema": {
         "type": "string",
@@ -120,7 +120,7 @@
     {
       "label": "Alignment framework",
       "path": [
-        "$.holds.alignment[0].targetFramework"
+        "$.holds.alignment[0].targetFramework", "$.credentialSubject.holds.alignment[0].targetFramework"
       ],
       "schema": {
         "type": "string"

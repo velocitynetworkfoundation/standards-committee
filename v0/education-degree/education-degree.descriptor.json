@@ -1,7 +1,7 @@
 {
   "title": {
     "path": [
-      "$.schoolName.localized.en"
+      "$.schoolName.localized.en", "$.credentialSubject.schoolName.localized.en"
     ],
     "schema": {
       "type": "string"
@@ -10,7 +10,7 @@
   },
   "subtitle": {
     "path": [
-      "$.degreeName.localized.en"
+      "$.degreeName.localized.en", "$.credentialSubject.degreeName.localized.en"
     ],
     "schema": {
       "type": "string"
@@ -19,7 +19,7 @@
   },
   "summary_detail": {
     "path": [
-      "$.endMonthYear"
+      "$.endMonthYear", "$.credentialSubject.endMonthYear"
     ],
     "schema": {
       "type": "string",
@@ -34,7 +34,7 @@
     {
       "label": "Program",
       "path": [
-        "$.program.localized.en"
+        "$.program.localized.en", "$.credentialSubject.program.localized.en"
       ],
       "schema": {
         "type": "string"
@@ -43,7 +43,7 @@
     {
       "label": "Fields of study",
       "path": [
-        "$.fieldsOFStudy.localized.en"
+        "$.fieldsOFStudy.localized.en", "$.credentialSubject.fieldsOFStudy.localized.en"
       ],
       "schema": {
         "type": "string"
@@ -52,7 +52,7 @@
     {
       "label": "Start date",
       "path": [
-        "$.startMonthYear"
+        "$.startMonthYear", "$.credentialSubject.startMonthYear"
       ],
       "schema": {
         "type": "string",
@@ -62,7 +62,7 @@
     {
       "label": "Grade",
       "path": [
-        "$.grade.localized.en"
+        "$.grade.localized.en", "$.credentialSubject.grade.localized.en"
       ],
       "schema": {
         "type": "string"
@@ -71,7 +71,7 @@
     {
       "label": "Alignment",
       "path": [
-        "$.alignment[0].targetName"
+        "$.alignment[0].targetName", "$.credentialSubject.alignment[0].targetName"
       ],
       "schema": {
         "type": "string"
@@ -80,7 +80,7 @@
     {
       "label": "Alignment URL",
       "path": [
-        "$.alignment[0].targetUrl"
+        "$.alignment[0].targetUrl", "$.credentialSubject.alignment[0].targetUrl"
       ],
       "schema": {
         "type": "string",
@@ -90,7 +90,7 @@
     {
       "label": "Alignment framework",
       "path": [
-        "$.alignment[0].targetFramework"
+        "$.alignment[0].targetFramework", "$.credentialSubject.alignment[0].targetFramework"
       ],
       "schema": {
         "type": "string"

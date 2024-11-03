@@ -1,7 +1,7 @@
 {
   "title": {
     "path": [
-      "$.authorityName.localized.en"
+      "$.authorityName.localized.en", "$.credentialSubject.authorityName.localized.en"
     ],
     "schema": {
       "type": "string"
@@ -10,7 +10,7 @@
   },
   "subtitle": {
     "path": [
-      "$.name.localized.en"
+      "$.name.localized.en", "$.credentialSubject.name.localized.en"
     ],
     "schema": {
       "type": "string"
@@ -19,7 +19,7 @@
   },
   "summary_detail": {
     "path": [
-      "$.type.localized.en"
+      "$.type.localized.en", "$.credentialSubject.type.localized.en"
     ],
     "schema": {
       "type": "string"
@@ -32,7 +32,7 @@
     {
       "label": "Number",
       "path": [
-        "$.identifier"
+        "$.identifier", "$.credentialSubject.identifier"
       ],
       "schema": {
         "type": "string"
@@ -41,7 +41,7 @@
     {
       "label": "Date",
       "path": [
-        "$.certificationDate"
+        "$.certificationDate", "$.credentialSubject.certificationDate"
       ],
       "schema": {
         "type": "string",
@@ -51,7 +51,7 @@
     {
       "label": "Renewal date",
       "path": [
-        "$.datesRenewed"
+        "$.datesRenewed", "$.credentialSubject.datesRenewed"
       ],
       "schema": {
         "type": "string",
@@ -61,7 +61,7 @@
     {
       "label": "Alignment",
       "path": [
-        "$.alignment[0].targetName"
+        "$.alignment[0].targetName", "$.credentialSubject.alignment[0].targetName"
       ],
       "schema": {
         "type": "string"
@@ -70,7 +70,7 @@
     {
       "label": "Alignment URL",
       "path": [
-        "$.alignment[0].targetUrl"
+        "$.alignment[0].targetUrl", "$.credentialSubject.alignment[0].targetUrl"
       ],
       "schema": {
         "type": "string",
@@ -80,7 +80,7 @@
     {
       "label": "Alignment framework",
       "path": [
-        "$.alignment[0].targetFramework"
+        "$.alignment[0].targetFramework", "$.credentialSubject.alignment[0].targetFramework"
       ],
       "schema": {
         "type": "string"

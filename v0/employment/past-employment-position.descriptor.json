@@ -1,7 +1,7 @@
 {
   "title": {
     "path": [
-      "$.companyName.localized.en"
+      "$.companyName.localized.en", "$.credentialSubject.companyName.localized.en"
     ],
     "schema": {
       "type": "string"
@@ -10,7 +10,7 @@
   },
   "subtitle": {
     "path": [
-      "$.title.localized.en"
+      "$.title.localized.en", "$.credentialSubject.title.localized.en"
     ],
     "schema": {
       "type": "string"
@@ -19,7 +19,7 @@
   },
   "summary_detail": {
     "path": [
-      "$.endMonthYear"
+      "$.endMonthYear", "$.credentialSubject.endMonthYear"
     ],
     "schema": {
       "type": "string",
@@ -34,7 +34,7 @@
     {
       "label": "Role description",
       "path": [
-        "$.description.localized.en"
+        "$.description.localized.en", "$.credentialSubject.description.localized.en"
       ],
       "schema": {
         "type": "string"
@@ -43,7 +43,7 @@
     {
       "label": "Start date",
       "path": [
-        "$.startMonthYear"
+        "$.startMonthYear", "$.credentialSubject.startMonthYear"
       ],
       "schema": {
         "type": "string",
@@ -53,7 +53,7 @@
     {
       "label": "End date",
       "path": [
-        "$.endMonthYear"
+        "$.endMonthYear", "$.credentialSubject.endMonthYear"
       ],
       "schema": {
         "type": "string",
@@ -63,7 +63,7 @@
     {
       "label": "State or region of work",
       "path": [
-        "$.location.regionCode"
+        "$.location.regionCode", "$.credentialSubject.location.regionCode"
       ],
       "schema": {
         "type": "string"
@@ -72,7 +72,7 @@
     {
       "label": "Country of work",
       "path": [
-        "$.location.countryCode"
+        "$.location.countryCode", "$.credentialSubject.location.countryCode"
       ],
       "schema": {
         "type": "string"
@@ -81,7 +81,7 @@
     {
       "label": "Location",
       "path": [
-        "$.locationName.localized.en"
+        "$.locationName.localized.en", "$.credentialSubject.locationName.localized.en"
       ],
       "schema": {
         "type": "string"
@@ -90,7 +90,7 @@
     {
       "label": "Alignment",
       "path": [
-        "$.alignment[0].targetName"
+        "$.alignment[0].targetName", "$.credentialSubject.alignment[0].targetName"
       ],
       "schema": {
         "type": "string"
@@ -99,7 +99,7 @@
     {
       "label": "Alignment URL",
       "path": [
-        "$.alignment[0].targetUrl"
+        "$.alignment[0].targetUrl", "$.credentialSubject.alignment[0].targetUrl"
       ],
       "schema": {
         "type": "string",
@@ -109,7 +109,7 @@
     {
       "label": "Alignment framework",
       "path": [
-        "$.alignment[0].targetFramework"
+        "$.alignment[0].targetFramework", "$.credentialSubject.alignment[0].targetFramework"
       ],
       "schema": {
         "type": "string"

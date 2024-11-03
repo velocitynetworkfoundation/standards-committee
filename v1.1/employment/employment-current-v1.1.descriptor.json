@@ -1,7 +1,7 @@
 {
   "title": {
     "path": [
-      "$.legalEmployer.name"
+      "$.legalEmployer.name", "$.credentialSubject.legalEmployer.name"
     ],
     "schema": {
       "type": "string"
@@ -10,7 +10,7 @@
   },
   "subtitle": {
     "path": [
-      "$.role"
+      "$.role", "$.credentialSubject.role"
     ],
     "schema": {
       "type": "string"
@@ -19,7 +19,7 @@
   },
   "summary_detail": {
     "path": [
-      "$.place.name"
+      "$.place.name", "$.credentialSubject.place.name"
     ],
     "schema": {
       "type": "string"
@@ -31,7 +31,7 @@
   },
   "logo": {
     "path": [
-      "$.legalEmployer.image"
+      "$.legalEmployer.image", "$.credentialSubject.legalEmployer.image"
     ],
     "schema": {
       "type": "string",
@@ -42,7 +42,7 @@
     {
       "label": "Role",
       "path": [
-        "$.role"
+        "$.role", "$.credentialSubject.role"
       ],
       "schema": {
         "type": "string"
@@ -51,7 +51,7 @@
     {
       "label": "Role description",
       "path": [
-        "$.description"
+        "$.description", "$.credentialSubject.description"
       ],
       "schema": {
         "type": "string"
@@ -60,7 +60,7 @@
     {
       "label": "Start date",
       "path": [
-        "$.startDate"
+        "$.startDate", "$.credentialSubject.startDate"
       ],
       "schema": {
         "type": "string",
@@ -70,7 +70,7 @@
     {
       "label": "Place of work",
       "path": [
-        "$.place.name"
+        "$.place.name", "$.credentialSubject.place.name"
       ],
       "schema": {
         "type": "string"
@@ -79,7 +79,7 @@
     {
       "label": "City of work",
       "path": [
-        "$.place.addressLocality"
+        "$.place.addressLocality", "$.credentialSubject.place.addressLocality"
       ],
       "schema": {
         "type": "string"
@@ -88,7 +88,7 @@
     {
       "label": "State or region of work",
       "path": [
-        "$.place.addressRegion"
+        "$.place.addressRegion", "$.credentialSubject.place.addressRegion"
       ],
       "schema": {
         "type": "string"
@@ -97,7 +97,7 @@
     {
       "label": "Country of work",
       "path": [
-        "$.place.addressCountry"
+        "$.place.addressCountry", "$.credentialSubject.place.addressCountry"
       ],
       "schema": {
         "type": "string"
@@ -106,7 +106,7 @@
     {
       "label": "Employment type",
       "path": [
-        "$.employmentType[*]"
+        "$.employmentType[*]", "$.credentialSubject.employmentType[*]"
       ],
       "schema": {
         "type": "string"
@@ -115,7 +115,7 @@
     {
       "label": "First name",
       "path": [
-        "$.recipient.givenName"
+        "$.recipient.givenName", "$.credentialSubject.recipient.givenName"
       ],
       "schema": {
         "type": "string"
@@ -124,7 +124,7 @@
     {
       "label": "Middle name",
       "path": [
-        "$.recipient.middleName"
+        "$.recipient.middleName", "$.credentialSubject.recipient.middleName"
       ],
       "schema": {
         "type": "string"
@@ -133,7 +133,7 @@
     {
       "label": "Last name",
       "path": [
-        "$.recipient.familyName"
+        "$.recipient.familyName", "$.credentialSubject.recipient.familyName"
       ],
       "schema": {
         "type": "string"
@@ -142,7 +142,7 @@
     {
       "label": "Mame prefix",
       "path": [
-        "$.recipient.namePrefix"
+        "$.recipient.namePrefix", "$.credentialSubject.recipient.namePrefix"
       ],
       "schema": {
         "type": "string"
@@ -151,7 +151,7 @@
     {
       "label": "Name suffix",
       "path": [
-        "$.recipient.nameSuffix"
+        "$.recipient.nameSuffix", "$.credentialSubject.recipient.nameSuffix"
       ],
       "schema": {
         "type": "string"
@@ -160,7 +160,7 @@
     {
       "label": "Learn more about the credential",
       "path": [
-        "$.alignment[0].targetUrl"
+        "$.alignment[0].targetUrl", "$.credentialSubject.alignment[0].targetUrl"
       ],
       "schema": {
         "type": "string",

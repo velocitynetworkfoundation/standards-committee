@@ -7,7 +7,7 @@
   },
   "subtitle": {
     "path": [
-      "$.phone"
+      "$.phone", "$.credentialSubject.phone"
     ],
     "schema": {
       "type": "string"
