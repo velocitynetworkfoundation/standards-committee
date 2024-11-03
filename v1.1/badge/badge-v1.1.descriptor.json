@@ -1,8 +1,13 @@
 {
   "title": {
     "path": [
-      "$.hasCredential.issuer.name", "$.hasCredential.issuer.id", "$.hasCredential.issuer", "$.credentialSubject.hasCredential.issuer.name", "$.hasCredential.issuer.id", "$.hasCredential.issuer"
-      ],
+      "$.hasCredential.issuer.name",
+      "$.hasCredential.issuer.id",
+      "$.hasCredential.issuer",
+      "$.credentialSubject.hasCredential.issuer.name",
+      "$.credentialSubject.hasCredential.issuer.id",
+      "$.credentialSubject.hasCredential.issuer"
+    ],
     "schema": {
       "type": "string"
     },
@@ -13,7 +18,8 @@
   },
   "summary_detail": {
     "path": [
-      "$.hasCredential.name", "$.credentialSubject.hasCredential.name"
+      "$.hasCredential.name",
+      "$.credentialSubject.hasCredential.name"
     ],
     "schema": {
       "type": "string"
@@ -25,7 +31,8 @@
   },
   "logo": {
     "path": [
-      "$.hasCredential.image", "$.credentialSubject.hasCredential.image"
+      "$.hasCredential.image",
+      "$.credentialSubject.hasCredential.image"
     ],
     "schema": {
       "type": "string",
@@ -36,7 +43,8 @@
     {
       "label": "Badge name",
       "path": [
-        "$.hasCredential.name", "$.credentialSubject.hasCredential.name"
+        "$.hasCredential.name",
+        "$.credentialSubject.hasCredential.name"
       ],
       "schema": {
         "type": "string"
@@ -46,7 +54,8 @@
     {
       "label": "",
       "path": [
-        "$.hasCredential.image", "$.credentialSubject.hasCredential.image"
+        "$.hasCredential.image",
+        "$.credentialSubject.hasCredential.image"
       ],
       "schema": {
         "type": "string"
@@ -55,7 +64,8 @@
     {
       "label": "Badge description",
       "path": [
-        "$.hasCredential.description", "$.credentialSubject.hasCredential.description"
+        "$.hasCredential.description",
+        "$.credentialSubject.hasCredential.description"
       ],
       "schema": {
         "type": "string"
@@ -64,7 +74,8 @@
     {
       "label": "Type",
       "path": [
-        "$.hasCredential.type", "$.credentialSubject.hasCredential.type"
+        "$.hasCredential.type",
+        "$.credentialSubject.hasCredential.type"
       ],
       "schema": {
         "type": "string"
@@ -73,7 +84,8 @@
     {
       "label": "Criteria for obtaining the credential",
       "path": [
-        "$.hasCredential.criteria", "$.credentialSubject.hasCredential.criteria"
+        "$.hasCredential.criteria",
+        "$.credentialSubject.hasCredential.criteria"
       ],
       "schema": {
         "type": "string"
@@ -82,7 +94,8 @@
     {
       "label": "Tags",
       "path": [
-        "$.hasCredential.tags", "$.credentialSubject.hasCredential.tags"
+        "$.hasCredential.tags",
+        "$.credentialSubject.hasCredential.tags"
       ],
       "schema": {
         "type": "array",
@@ -95,7 +108,8 @@
     {
       "label": "First name",
       "path": [
-        "$.recipient.givenName", "$.credentialSubject.recipient.givenName"
+        "$.recipient.givenName",
+        "$.credentialSubject.recipient.givenName"
       ],
       "schema": {
         "type": "string"
@@ -104,7 +118,8 @@
     {
       "label": "Middle name",
       "path": [
-        "$.recipient.middleName", "$.credentialSubject.recipient.middleName"
+        "$.recipient.middleName",
+        "$.credentialSubject.recipient.middleName"
       ],
       "schema": {
         "type": "string"
@@ -113,7 +128,8 @@
     {
       "label": "Last name",
       "path": [
-        "$.recipient.familyName", "$.credentialSubject.recipient.familyName"
+        "$.recipient.familyName",
+        "$.credentialSubject.recipient.familyName"
       ],
       "schema": {
         "type": "string"
@@ -122,7 +138,8 @@
     {
       "label": "Name prefix",
       "path": [
-        "$.recipient.namePrefix", "$.credentialSubject.recipient.namePrefix"
+        "$.recipient.namePrefix",
+        "$.credentialSubject.recipient.namePrefix"
       ],
       "schema": {
         "type": "string"
@@ -131,7 +148,8 @@
     {
       "label": "Name suffix",
       "path": [
-        "$.recipient.nameSuffix", "$.credentialSubject.recipient.nameSuffix"
+        "$.recipient.nameSuffix",
+        "$.credentialSubject.recipient.nameSuffix"
       ],
       "schema": {
         "type": "string"
@@ -140,7 +158,8 @@
     {
       "label": "Learn more about the credential",
       "path": [
-        "$.hasCredential.alignment[0].targetUrl", "$.credentialSubject.hasCredential.alignment[0].targetUrl"
+        "$.hasCredential.alignment[0].targetUrl",
+        "$.credentialSubject.hasCredential.alignment[0].targetUrl"
       ],
       "schema": {
         "type": "string",
