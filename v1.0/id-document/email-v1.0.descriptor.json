@@ -7,7 +7,7 @@
   },
   "subtitle": {
     "path": [
-      "$.email"
+      "$.email", "$.credentialSubject.email"
     ],
     "schema": {
       "type": "string",

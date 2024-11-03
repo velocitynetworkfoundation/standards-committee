@@ -1,7 +1,7 @@
 {
   "title": {
     "path": [
-      "$.authority.name"
+      "$.authority.name", "$.credentialSubject.authority.name"
     ],
     "schema": {
       "type": "string"
@@ -10,7 +10,7 @@
   },
   "subtitle": {
     "path": [
-      "$.name"
+      "$.name", "$.credentialSubject.name"
     ],
     "schema": {
       "type": "string"
@@ -19,7 +19,7 @@
   },
   "summary_detail": {
     "path": [
-      "$.assessmentDate"
+      "$.assessmentDate", "$.credentialSubject.assessmentDate"
     ],
     "schema": {
       "type": "string"
@@ -30,7 +30,7 @@
   },
   "logo": {
     "path": [
-      "$.authority.image"
+      "$.authority.image", "$.credentialSubject.authority.image"
     ],
     "schema": {
       "type": "string",
@@ -41,7 +41,7 @@
     {
       "label": "Description",
       "path": [
-        "$.description"
+        "$.description", "$.credentialSubject.description"
       ],
       "schema": {
         "type": "string"
@@ -50,7 +50,7 @@
     {
       "label": "Assesses",
       "path": [
-        "$.assesses"
+        "$.assesses", "$.credentialSubject.assesses"
       ],
       "schema": {
         "type": "string"
@@ -59,7 +59,7 @@
     {
       "label": "Score",
       "path": [
-        "$.score.scoreValue"
+        "$.score.scoreValue", "$.credentialSubject.score.scoreValue"
       ],
       "schema": {
         "type": "string"
@@ -68,7 +68,7 @@
     {
       "label": "Result",
       "path": [
-        "$.score.result"
+        "$.score.result", "$.credentialSubject.score.result"
       ],
       "schema": {
         "type": "string"
@@ -77,7 +77,7 @@
     {
       "label": "Pass or fail",
       "path": [
-        "$.score.passFail"
+        "$.score.passFail", "$.credentialSubject.score.passFail"
       ],
       "schema": {
         "type": "string"
@@ -86,7 +86,7 @@
     {
       "label": "Score method type",
       "path": [
-        "$.score.scoreMethod.scoreMethodType"
+        "$.score.scoreMethod.scoreMethodType", "$.credentialSubject.score.scoreMethod.scoreMethodType"
       ],
       "schema": {
         "type": "string"
@@ -95,7 +95,7 @@
     {
       "label": "Score method description",
       "path": [
-        "$.score.scoreMethod.scoreMethodDescription"
+        "$.score.scoreMethod.scoreMethodDescription", "$.credentialSubject.score.scoreMethod.scoreMethodDescription"
       ],
       "schema": {
         "type": "string"
@@ -104,7 +104,7 @@
     {
       "label": "Passing score",
       "path": [
-        "$.score.scoreMethod.passingScore"
+        "$.score.scoreMethod.passingScore", "$.credentialSubject.score.scoreMethod.passingScore"
       ],
       "schema": {
         "type": "string"
@@ -113,7 +113,7 @@
     {
       "label": "Assessment level",
       "path": [
-        "$.assessmentLevel"
+        "$.assessmentLevel", "$.credentialSubject.assessmentLevel"
       ],
       "schema": {
         "type": "string"
@@ -122,7 +122,7 @@
     {
       "label": "Assessment method",
       "path": [
-        "$.assessmentMethod"
+        "$.assessmentMethod", "$.credentialSubject.assessmentMethod"
       ],
       "schema": {
         "type": "string"
@@ -131,7 +131,7 @@
     {
       "label": "Dimension Name",
       "path": [
-        "$.assessmentDimensions[*].name"
+        "$.assessmentDimensions[*].name", "$.credentialSubject.assessmentDimensions[*].name"
       ],
       "schema": {
         "type": "string"
@@ -140,7 +140,7 @@
     {
       "label": "Description",
       "path": [
-        "$.assessmentDimensions[*].description"
+        "$.assessmentDimensions[*].description", "$.credentialSubject.assessmentDimensions[*].description"
       ],
       "schema": {
         "type": "string"
@@ -149,7 +149,7 @@
     {
       "label": "Assesses",
       "path": [
-        "$.assessmentDimensions[*].assesses"
+        "$.assessmentDimensions[*].assesses", "$.credentialSubject.assessmentDimensions[*].assesses"
       ],
       "schema": {
         "type": "string"
@@ -158,7 +158,7 @@
     {
       "label": "Score",
       "path": [
-        "$.assessmentDimensions[*].score.scoreValue"
+        "$.assessmentDimensions[*].score.scoreValue", "$.credentialSubject.assessmentDimensions[*].score.scoreValue"
       ],
       "schema": {
         "type": "string"
@@ -167,7 +167,7 @@
     {
       "label": "Result",
       "path": [
-        "$.assessmentDimensions[*].score.result"
+        "$.assessmentDimensions[*].score.result", "$.credentialSubject.assessmentDimensions[*].score.result"
       ],
       "schema": {
         "type": "string"
@@ -176,7 +176,7 @@
     {
       "label": "Pass or fail",
       "path": [
-        "$.assessmentDimensions[*].score.passFail"
+        "$.assessmentDimensions[*].score.passFail", "$.credentialSubject.assessmentDimensions[*].score.passFail"
       ],
       "schema": {
         "type": "string"
@@ -185,7 +185,7 @@
     {
       "label": "Score method type",
       "path": [
-        "$.assessmentDimensions[*].score.scoreMethod.scoreMethodType"
+        "$.assessmentDimensions[*].score.scoreMethod.scoreMethodType", "$.credentialSubject.assessmentDimensions[*].score.scoreMethod.scoreMethodType"
       ],
       "schema": {
         "type": "string"
@@ -194,7 +194,7 @@
     {
       "label": "Score method description",
       "path": [
-        "$.assessmentDimensions[*].score.scoreMethod.scoreMethodDescription"
+        "$.assessmentDimensions[*].score.scoreMethod.scoreMethodDescription", "$.credentialSubject.assessmentDimensions[*].score.scoreMethod.scoreMethodDescription"
       ],
       "schema": {
         "type": "string"
@@ -203,7 +203,7 @@
     {
       "label": "Passing score",
       "path": [
-        "$.assessmentDimensions[*].score.scoreMethod.passingScore"
+        "$.assessmentDimensions[*].score.scoreMethod.passingScore", "$.credentialSubject.assessmentDimensions[*].score.scoreMethod.passingScore"
       ],
       "schema": {
         "type": "string"
@@ -212,7 +212,7 @@
     {
       "label": "Alignment",
       "path": [
-        "$.alignment[0].targetName"
+        "$.alignment[0].targetName", "$.credentialSubject.alignment[0].targetName"
       ],
       "schema": {
         "type": "string"
@@ -221,7 +221,7 @@
         {
       "label": "Alignment URL",
       "path": [
-        "$.alignment[0].targetUrl"
+        "$.alignment[0].targetUrl", "$.credentialSubject.alignment[0].targetUrl"
       ],
       "schema": {
         "type": "string",
@@ -231,7 +231,7 @@
     {
       "label": "Alignment framework",
       "path": [
-        "$.alignment[0].targetFramework"
+        "$.alignment[0].targetFramework", "$.credentialSubject.alignment[0].targetFramework"
       ],
       "schema": {
         "type": "string"
