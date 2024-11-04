@@ -1,5 +1,5 @@
 {
-  "$schema": "https://json-schema.org/draft/2019-09/schema#",
+  "$schema": "http://json-schema.org/draft-07/schema#",
   "$id": "https://purl.imsglobal.org/spec/clr/v2p0/schema/json/clr_v2p0_clrcredential_schema.json#CredentialSubject",
   "title": "JSON Schema for the ClrSubject class.",
   "description": "A collection of information about the learner that is the subject of this CLR credential.",
