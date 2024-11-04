@@ -1,5 +1,5 @@
 {
-  "$schema": "http://json-schema.org/draft-07/schema#",
+  "$schema": "https://json-schema.org/draft/2019-09/schema#",
   "$id": "https://purl.imsglobal.org/spec/clr/v2p0/schema/json/clr_v2p0_clrcredential_schema.json",
   "title": "JSON Schema for the ClrCredential class.",
   "description": "A ClrCredential is a CLR with all the properties needed to conform with a Verifiable Credential as defined in the [[VC-DATA-MODEL]].",
