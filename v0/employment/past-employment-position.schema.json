@@ -6,7 +6,7 @@
   "definitions": {
     "DID": {
       "type": "string",
-      "pattern": "did:[a-z]+:[a-zA-Z0-9_#;?&=\\.-]+"
+      "pattern": "^did:[a-z0-9]+:[A-Za-z0-9._:?=&%;-]+$"
     },
     "MultiLingualString": {
       "type": "object",
