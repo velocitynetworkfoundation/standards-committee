@@ -120,7 +120,7 @@
         "name": "Influenza Vaccine Immunization Education (IVIE)",
         "image": "http://example.com/ivie.png",
         "description": "Influenza Vaccine Immunization Education (IVIE) is a self-guided learning module for nursing students to gain training specific to the administration of influenza vaccine in organized clinics for communities of people",
-        "issuer": "did:ion:declanhospital",
+        "issuer": "did:web:declan-hospital.com",
         "criteria": "https://example.com/ivie/criteria.html",
         "alignment": [
           {

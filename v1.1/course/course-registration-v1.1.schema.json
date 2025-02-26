@@ -68,7 +68,7 @@
       "provider": {
         "type": "Organization",
         "name": "The University of Chicago",
-        "identifier": "did:ion:EiClkZMDxPKqC9c-umQfTkR8vvZ9JPhl_xLDI9Nfk38w5w",
+        "identifier": "did:web:uchicago.edu",
         "place": {
           "type": "Place",
           "addressLocality": "Chicago",

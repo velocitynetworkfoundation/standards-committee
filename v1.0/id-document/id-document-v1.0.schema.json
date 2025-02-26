@@ -55,7 +55,7 @@
       "authority": {
         "type": "Organization",
         "name": "Department of Health and Human Services",
-        "identifier": "did:ion:0257274276a4e539741ca11b590b9447b26a8051",
+        "identifier": "did:web:dhhs.gov",
         "place": {
           "type": "Place",
           "addressRegion": "US-DC",
@@ -78,7 +78,7 @@
       "authority": {
         "type": "Organization",
         "name": "Georgia State Government",
-        "identifier": "did:ion:011111490ds0474276a4e539741ca11b590b9447b26a8051",
+        "identifier": "did:web:georgia.gov",
         "place": {
           "type": "Place",
           "addressLocality": "Atlanta",
