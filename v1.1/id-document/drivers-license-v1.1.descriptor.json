@@ -67,7 +67,7 @@
       }
     },
     {
-      "label": "Date issued",
+      "label": "Initial validity",
       "path": [
         "$.validity.firstValidFrom", "$.credentialSubject.validity.firstValidFrom"
       ],
@@ -77,7 +77,7 @@
       }
     },
     {
-      "label": "Date renewed",
+      "label": "Valid from",
       "path": [
         "$.validity.validFrom", "$.credentialSubject.validity.validFrom"
       ],
