@@ -38,11 +38,11 @@
   "examples": [
     {
       "type": "Alignment",
-      "targetName": "CCSS.ELA-Literacy.RST.11-12.3",
-      "targetUrl": "http://www.corestandards.org/ELA-Literacy/RST/11-12/3/",
-      "targetDescription": "A description of the ELA ltieracy certification",
-      "targetCode": "CCSS.ELA-Literacy.RST.11-12.3",
-      "targetFramework": "Mozilla 21st Century Skills"
+      "targetName": "Fundamentals of 3D Modeling Certificate",
+      "targetUrl": "https:/credentialfinder.org/resources/ce-64d07ada-6659-4097-9bc2-9f1c111b0826",
+      "targetDescription": "Additional information powered by the Credential Registry.",
+      "targetCode": "ce-64d07ada-6659-4097-9bc2-9f1c111b0826",
+      "targetFramework": "Credential Transparency Description Language"
     },
     {
       "type": "Alignment",
